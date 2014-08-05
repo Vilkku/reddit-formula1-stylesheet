@@ -1785,7 +1785,7 @@ a[href="/ide"]:before,a[href="/inoue"]:before,a[href="/kovalainen2"]:before,a[hr
 a[href="/montoya"]:before,a[href="/patrese"]:before,a[href="/peterson"]:before,a[href="/pic"]:before,
 a[href="/piquet"]:before,a[href="/pryce"]:before,a[href="/purley"]:before,a[href="/razia"]:before,
 a[href="/rossi"]:before,a[href="/sato"]:before,a[href="/speed"]:before,a[href="/villeneuve"]:before,
-a[href="/visoiu"]:before,a[href="/brabham"]:before,a[href="/chandhok"]:before,a[href="/hill"]:before,
+a[href="/visoiu"]:before,a[href="/jack-brabham"]:before,a[href="/chandhok"]:before,a[href="/hill"]:before,
 a[href="/mansell"]:before,a[href="/stewart"]:before,a[href="/caterham"]:before,a[href="/ferrari"]:before,
 a[href="/forceindia"]:before,a[href="/lotus"]:before,a[href="/marussia"]:before,a[href="/mclaren"]:before,
 a[href="/mercedes"]:before,a[href="/redbull"]:before,a[href="/sauber"]:before,a[href="/tororosso"]:before,
@@ -1900,7 +1900,7 @@ margin-right: 4px;
 .flair-speed:before,a[href="/speed"]:before{background-position:-1px -1055px}
 .flair-villeneuve:before,a[href="/villeneuve"]:before{background-position:-1px -1072px}
 .flair-visoiu:before,a[href="/visoiu"]:before{background-position:-1px -1089px}
-.flair-brabham:before,a[href="/brabham"]:before{background-position:-1px -1106px}
+.flair-jack-brabham:before,a[href="/jack-brabham"]:before{background-position:-1px -1106px}
 .flair-chandhok:before,a[href="/chandhok"]:before{background-position:-1px -1123px}
 .flair-hill:before,a[href="/hill"]:before{background-position:-1px -1140px}
 .flair-mansell:before,a[href="/mansell"]:before{background-position:-1px -1157px}
