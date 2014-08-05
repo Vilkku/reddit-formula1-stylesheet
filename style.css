@@ -1,3 +1,7 @@
+#test{
+color: white;
+}
+
 /* [1.0] Default css  */
 html:not([lang="ns"])  body {
 position: relative;
