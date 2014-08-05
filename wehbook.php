@@ -4,20 +4,31 @@
 // you probably have to move this file to another directory for this
 // to work.
 
+$home = '';
+$secret = '';
+
+$headers = getallheaders();
+$hubSignature = $headers['X-Hub-Signature'];
+list($algo, $hash) = explode('=', $hubSignature, 2);
+
 try {
-    $payload = json_decode(file_get_contents('php://input'));
+    $payload = file_get_contents('php://input');
+    $data = json_decode($payload);
 } catch(Exception $e) {
     http_response_code(400);
     exit('invalid payload format');
 }
 
-if ($payload->repository->id != '5750416') {
+if ($hash !== hash_hmac($algo, $payload, $secret)) {
     http_response_code(403);
-    exit('invalid github repository id ('.$payload->repository->id.')');
+    exit('invalid secret');
 }
 
-if ($payload->ref === 'refs/heads/master') {
-    exec('sh ../../../../reddit-formula1-stylesheet/webhook.sh');
+if ($data->ref === 'refs/heads/master') {
+    exec('sh '.$home.'/reddit-formula1-stylesheet/webhook.sh');
+    exit('success');
 }
+
+exit('branch not master, nothing done');
 
 ?>
