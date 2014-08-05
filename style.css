@@ -1677,27 +1677,27 @@ color:#92c700;
 border:1px solid #153726;
 }
 
-.link .entry a[href="#E22"]:after, 
-.link .entry a[href="#F14T"]:after, 
-.link .entry a[href="#RB10"]:after, 
-.link .entry a[href="#VJM07"]:after, 
+.link .entry a[href="#E22"]:after,
+.link .entry a[href="#F14T"]:after,
+.link .entry a[href="#RB10"]:after,
+.link .entry a[href="#VJM07"]:after,
 .link .entry a[href="#MR03"]:after,
-.link .entry a[href="#MP4-29"]:after, 
-.link .entry a[href="#F1W05"]:after, 
-.link .entry a[href="#C33"]:after, 
-.link .entry a[href="#STR9"]:after, 
-.link .entry a[href="#FW36"]:after, 
+.link .entry a[href="#MP4-29"]:after,
+.link .entry a[href="#F1W05"]:after,
+.link .entry a[href="#C33"]:after,
+.link .entry a[href="#STR9"]:after,
+.link .entry a[href="#FW36"]:after,
 .link .entry a[href="#CT05"]:after,
-.wiki a[href="#E22"]:after, 
-.wiki a[href="#F14T"]:after, 
-.wiki a[href="#RB10"]:after, 
-.wiki a[href="#VJM07"]:after, 
+.wiki a[href="#E22"]:after,
+.wiki a[href="#F14T"]:after,
+.wiki a[href="#RB10"]:after,
+.wiki a[href="#VJM07"]:after,
 .wiki a[href="#MR03"]:after,
-.wiki a[href="#MP4-29"]:after, 
-.wiki a[href="#F1W05"]:after, 
-.wiki a[href="#C33"]:after, 
-.wiki a[href="#STR9"]:after, 
-.wiki a[href="#FW36"]:after, 
+.wiki a[href="#MP4-29"]:after,
+.wiki a[href="#F1W05"]:after,
+.wiki a[href="#C33"]:after,
+.wiki a[href="#STR9"]:after,
+.wiki a[href="#FW36"]:after,
 .wiki a[href="#CT05"]:after {
 width: 65px;
 height: 22px;
@@ -1802,11 +1802,25 @@ a[href="/john-surtees"]:before,a[href="/john-watson"]:before,a[href="/jos-versta
 a[href="/juan-manuel-fangio"]:before,a[href="/keke-rosberg"]:before,a[href="/luciano-burti"]:before,
 a[href="/magnussen"]:before,a[href="/michael-andretti"]:before,a[href="/mike-hawthorn"]:before,
 a[href="/nick-heidfeld"]:before,a[href="/ralf-schumacher"]:before,a[href="/schumacher-1990s"]:before,
-a[href="/stirling-moss"]:before,a[href="/thierry-boutsen"]:before,a[href="/kvyat"]:before,a[href="/hamiltonALT"]:before{
+a[href="/stirling-moss"]:before,a[href="/thierry-boutsen"]:before,a[href="/kvyat"]:before,a[href="/hamiltonALT"]:before,
+a[href="/alfa-romeo-quadrifoglio"]:before,a[href="/alfa-romeo"]:before,a[href="/andrea-moda"]:before,
+a[href="/arrows"]:before,a[href="/bar-honda"]:before,a[href="/benetton"]:before,
+a[href="/bmw-sauber"]:before,a[href="/bmw-williams"]:before,a[href="/brabham"]:before,
+a[href="/brawn-gp"]:before,a[href="/brm"]:before,a[href="/coloni"]:before,
+a[href="/de-tomaso"]:before,a[href="/fittipaldi-copersucar-2"]:before,a[href="/fittipaldi-copersucar"]:before,
+a[href="/footwork"]:before,a[href="/forti"]:before,a[href="/hesketh"]:before,a[href="/honda-racing"]:before,
+a[href="/honda-rd"]:before,a[href="/hrt"]:before,a[href="/jaguar-difference"]:before,
+a[href="/jordan-gp"]:before,a[href="/jordan"]:before,a[href="/larrousse"]:before,
+a[href="/life"]:before,a[href="/ligier"]:before,a[href="/march"]:before,
+a[href="/matra"]:before,a[href="/midland"]:before,a[href="/minardi"]:before,
+a[href="/orange-arrows"]:before,a[href="/renault"]:before,a[href="/repco-brabham"]:before,
+a[href="/super-aguri"]:before,a[href="/team-lotus"]:before,a[href="/toleman"]:before,
+a[href="/toyota-racing"]:before,a[href="/tyrrell"]:before,a[href="/us-f1"]:before,
+a[href="/virgin-racing"]:before,a[href="/walter-wolf"] {
 width:20px;
 height:16px;
 content:" ";
-background:url(%%flair-august-2014%%) no-repeat scroll -9999px -9999px transparent;
+background:url(%%flair-april-2014%%) no-repeat scroll -9999px -9999px transparent;
 display:inline-block
 }
 
@@ -1815,7 +1829,7 @@ content: "";
 height: 16px;
 width: 20px;
 display: inline-block;
-background-image:url(%%flair-august-2014%%);
+background-image:url(%%flair-april-2014%%);
 background-repeat: no-repeat;
 vertical-align: middle;
 margin-right: 4px;
@@ -1945,8 +1959,47 @@ margin-right: 4px;
 .flair-thierry-boutsen:before,a[href="/thierry-boutsen"]:before{background-position:-1px -2058px}
 .flair-kvyat:before,a[href="/kvyat"]:before{background-position:-1px -2075px }
 .flair-hamiltonALT:before,a[href="/hamiltonALT"]:before{background-position:-1px -2092px }
-
-
+.flair-alfa-romeo:before,a[href="/alfa-romeo"]:before{background-position: 0 -2127px}
+.flair-andrea-moda:before,a[href="/andrea-moda"]:before{background-position: 0 -2144px}
+.flair-arrows:before,a[href="/arrows"]:before{background-position: 0 -2161px}
+.flair-bar-honda:before,a[href="/bar-honda"]:before{background-position: 0 -2178px}
+.flair-benetton:before,a[href="/benetton"]:before{background-position: 0 -2195px}
+.flair-bmw-sauber:before,a[href="/bmw-sauber"]:before{background-position: 0 -2212px}
+.flair-bmw-williams:before,a[href="/bmw-williams"]:before{background-position: 0 -2229px}
+.flair-brabham:before,a[href="/brabham"]:before{background-position: 0 -2246px}
+.flair-brawn-gp:before,a[href="/brawn-gp"]:before{background-position: 0 -2263px}
+.flair-brm:before,a[href="/brm"]:before{background-position: 0 -2280px}
+.flair-coloni:before,a[href="/coloni"]:before{background-position: 0 -2297px}
+.flair-de-tomaso:before,a[href="/de-tomaso"]:before{background-position: 0 -2314px}
+.flair-fittipaldi-copersucar-2:before,a[href="/fittipaldi-copersucar-2"]:before{background-position: 0 -2331px}
+.flair-fittipaldi-copersucar:before,a[href="/fittipaldi-copersucar"]:before{background-position: 0 -2348px}
+.flair-footwork:before,a[href="/footwork"]:before{background-position: 0 -2365px}
+.flair-forti:before,a[href="/forti"]:before{background-position: 0 -2382px}
+.flair-hesketh:before,a[href="/hesketh"]:before{background-position: 0 -2399px}
+.flair-honda-racing:before,a[href="/honda-racing"]:before{background-position: 0 -2416px}
+.flair-honda-rd:before,a[href="/honda-rd"]:before{background-position: 0 -2433px}
+.flair-hrt:before,a[href="/hrt"]:before{background-position: 0 -2450px}
+.flair-jaguar-difference:before,a[href="/jaguar-difference"]:before{background-position: 0 -2467px}
+.flair-jordan-gp:before,a[href="/jordan-gp"]:before{background-position: 0 -2484px}
+.flair-jordan:before,a[href="/jordan"]:before{background-position: 0 -2501px}
+.flair-larrousse:before,a[href="/larrousse"]:before{background-position: 0 -2518px}
+.flair-life:before,a[href="/life"]:before{background-position: 0 -2535px}
+.flair-ligier:before,a[href="/ligier"]:before{background-position: 0 -2552px}
+.flair-march:before,a[href="/march"]:before{background-position: 0 -2569px}
+.flair-matra:before,a[href="/matra"]:before{background-position: 0 -2586px}
+.flair-midland:before,a[href="/midland"]:before{background-position: 0 -2603px}
+.flair-minardi:before,a[href="/minardi"]:before{background-position: 0 -2620px}
+.flair-orange-arrows:before,a[href="/orange-arrows"]:before{background-position: 0 -2637px}
+.flair-renault:before,a[href="/renault"]:before{background-position: 0 -2654px}
+.flair-repco-brabham:before,a[href="/repco-brabham"]:before{background-position: 0 -2671px}
+.flair-super-aguri:before,a[href="/super-aguri"]:before{background-position: 0 -2688px}
+.flair-team-lotus:before,a[href="/team-lotus"]:before{background-position: 0 -2705px}
+.flair-toleman:before,a[href="/toleman"]:before{background-position: 0 -2722px}
+.flair-toyota-racing:before,a[href="/toyota-racing"]:before{background-position: 0 -2739px}
+.flair-tyrrell:before,a[href="/tyrrell"]:before{background-position: 0 -2756px}
+.flair-us-f1:before,a[href="/us-f1"]:before{background-position: 0 -2773px}
+.flair-virgin-racing:before,a[href="/virgin-racing"]:before{background-position: 0 -2790px}
+.flair-walter-wolf:before,a[href="/walter-wolf"]:before{background-position: 0 -2807px}
 
 /* Put team logos beside their names */
 
@@ -1956,7 +2009,7 @@ content: "";
 display: inline-block;
 width: 19px;
 height: 18px;
-background-image: url(%%flair-august-2014%%);background-repeat: no-repeat;
+background-image: url(%%flair-april-2014%%);background-repeat: no-repeat;
 position: absolute;
 top: 6px;
 left: -2px;
@@ -2432,7 +2485,7 @@ html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child,
 html.res-nightmode:not([lang="ns"]) body,
 html:not([lang="ns"]) body.res-nightmode .comments-page .sitetable,
 html:not([lang="ns"]) body.res-nightmode  { background: #181818!important; background-color: #181818!important; background-image:none !important; }
-html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child>ul:hover>li:first-child, 
+html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child>ul:hover>li:first-child,
 html:not([lang="ns"]) body.res-nightmode blockquote:last-child>ul:hover>li:first-child { color: #C6C6C6 !important; }
 html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child ul li,
 html:not([lang="ns"]) .res-nightmode .titlebox blockquote:last-child ul li { border-color: #373737; color: #fff; background-color:#181818 !important;}
@@ -2465,13 +2518,13 @@ html:not([lang="ns"]) .res-nightmode .side .submit .morelink a:hover { color: #a
 html:not([lang="ns"]) .res-nightmode .linklisting .thing,
 html.res-nightmode:not([lang="ns"]) .linklisting .thing { background-color:transparent; box-shadow:none; }
 html:not([lang="ns"]) .res-nightmode .side .md>h3:nth-of-type(2),
-html.res-nightmode:not([lang="ns"]) .side .md>h3:nth-of-type(2) {  
-border-left: 4px solid #353535; 
-background-color: #242424!important; 
-box-shadow: 0 0px 1px #242424; 
-color: #8A8A8A; 
-background-image:url(%%sprite%%);  
-text-shadow: 0px 1px 0px #000; 
+html.res-nightmode:not([lang="ns"]) .side .md>h3:nth-of-type(2) {
+border-left: 4px solid #353535;
+background-color: #242424!important;
+box-shadow: 0 0px 1px #242424;
+color: #8A8A8A;
+background-image:url(%%sprite%%);
+text-shadow: 0px 1px 0px #000;
 }
 html:not([lang="ns"]) .res-nightmode .side .md>h3:nth-of-type(3) { color: #CACACA; text-shadow: 0px 1px 0 #000; }
 html:not([lang="ns"]) .res-nightmode .md table { border: 1px solid black; }
