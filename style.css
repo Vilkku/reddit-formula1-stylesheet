@@ -1820,7 +1820,7 @@ a[href="/virgin-racing"]:before,a[href="/walter-wolf"] {
 width:20px;
 height:16px;
 content:" ";
-background:url(%%flair-april-2014%%) no-repeat scroll -9999px -9999px transparent;
+background:url(%%flair-august-2014%%) no-repeat scroll -9999px -9999px transparent;
 display:inline-block
 }
 
@@ -1829,7 +1829,7 @@ content: "";
 height: 16px;
 width: 20px;
 display: inline-block;
-background-image:url(%%flair-april-2014%%);
+background-image:url(%%flair-august-2014%%);
 background-repeat: no-repeat;
 vertical-align: middle;
 margin-right: 4px;
@@ -2009,7 +2009,7 @@ content: "";
 display: inline-block;
 width: 19px;
 height: 18px;
-background-image: url(%%flair-april-2014%%);background-repeat: no-repeat;
+background-image: url(%%flair-august-2014%%);background-repeat: no-repeat;
 position: absolute;
 top: 6px;
 left: -2px;
