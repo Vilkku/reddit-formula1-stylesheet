@@ -1,0 +1,7 @@
+{
+    "reddit": {
+        "username": "username",
+        "password": "password",
+        "user_agent": "Descriptive user agent string"
+    }
+}
