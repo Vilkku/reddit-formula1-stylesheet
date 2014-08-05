@@ -1,7 +1,3 @@
-#test{
-color: green;
-}
-
 /* [1.0] Default css  */
 html:not([lang="ns"])  body {
 position: relative;
