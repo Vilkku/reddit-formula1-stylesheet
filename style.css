@@ -1,511 +1,2685 @@
-/* "Joke" stuff for the footer */
-.footer-parent {
-    background-image: url(%%f1racestars%%);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    height: 430px;
+/* [1.0] Default css  */
+html:not([lang="ns"])  body {
+position: relative;
+background-color:transparent;
+background-image:url(%%backdrop%%);
+background-repeat:repeat;
+}
+html:not([lang="ns"]) { background:rgb(233, 233, 233);}
+a, a:link{ color:#08c; }
+a:hover, a:focus{ color:#005580; }
+
+/* [2.0] Header */
+html:not([lang="ns"]) #header {
+border-bottom:none;
+background:none;
+font-family:"Helvetica", Arial, sans-serif;
 }
 
-/* Hide the downvote arrow if there are less than 3 upvotes */
-.link[data-ups="0"] .arrow.down { display: none; }
-.link[data-ups="1"] .arrow.down { display: none; }
-.link[data-ups="2"] .arrow.down { display: none; }
-.link[data-ups="3"] .arrow.down { display: none; }
-
-/* Subreddit bar */
-.sr-bar a, .dropdown.srdrop .selected {
-    color: #4a4a4a;
-    text-shadow: white 0px 1px 0px
-}
-.sr-bar a:hover {
-    color: #5bbcee;
-    text-decoration: underline;
-}
-#sr-more-link {
-    display: none;
+html:not([lang="ns"]) #header-bottom-left {
+height: 110px;
+color: rgb(255,255,255);
+box-shadow: 0px 2px 1px rgb(204,204,204);
+border-bottom: 2px solid #fff;
+background-color:#000205;
+background:#000205
 }
 
-/* Header style */
-#header {
-    border-bottom: 0 solid #364657;
-}
-#header-bottom-left {
-    background-repeat: repeat-x;
-    background-image:  url(%%heikki-bg%%);
-    background-position: left;
-    vertical-align: bottom;
-    box-shadow: 0 0 6px #555555;
-    padding: 0;
-}
-#header-img {
-    margin-top: 7px;
+html:not([lang="ns"]) #header-bottom-left:after {
+content: "";
+height: 35px;
+background: #fff;
+width: 100%;
+display: inline-block;
+position: absolute;
+left: 0px;
+bottom: 0px;
+border-top:2px solid red;
 }
 
-/* Subreddit name */
-.pagename a {
-    background: url("%%heikki-text%%") no-repeat;
-    display: block;
-    padding: 30px 110px 0 0;
-    font-size: 0;
-    position: absolute;
-    left: 80px;
-    top: 89px;
-    height: 0;
-    overflow: hidden;
-}
-.redditname {
-    display: inline-block;
-    text-indent: -3000px;
-    white-space: nowrap;
+html:not([lang="ns"]) #header-img-a {
+display: inline-block;
+position: relative;
+z-index:100
 }
 
-/* Announcement Box */
-.titlebox .usertext-body .md h5 {
-    display: block;
-    position: absolute;
-    z-index: 100;
-    top: 45px;
-    right: 0px;
-    font-size: 1.2em;
-    border: 1px solid #AAA;
-    border-right: 0;
-    text-shadow: 0 1px 0 white;
-    background-image: url(%%sidebarbg%%);
-    background-repeat: repeat-x;
-    padding: 5px 15px 5px 10px;
-    font-size: 1.2em;
-    color: #777;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-bottomleft: 5px;
-    -webkit-border-radius-topleft: 5px;
-    -webkit-border-radius-bottomleft: 5px;
-}
-.titlebox .usertext-body .md h5 a, .titlebox .usertext-body .md h5 a:link, .titlebox .usertext-body .md h5 a:visited {
-    color: #537BC0;
-}
-.titlebox .usertext-body .md h5 a:hover {
-    color: #324A74;
-}
-.titlebox .usertext-body .md h5 em {
-    color: red;
-    font-size: x-small;
-    font-weight: bold;
-    font-style: normal;
-    vertical-align: top;
+html:not([lang="ns"]) #header-img {
+height: 80px;
+width: auto;
+margin-top: 15px;
+display: inline-block;
+margin-left: 0;
 }
 
-/* User menu */
-#header-bottom-right {
-    background-color: transparent;
-    z-index: 99;
-    right: 15px;
-    bottom: 10px
-}
-#header-bottom-right a, #header-bottom-right .user {
-    color: #EEE;
-    text-shadow: #222 0px 1px 0px
-}
-	
-/* Navmenu */
-ul.tabmenu {
-    background-image: url(%%navmenubg%%);
-    border: 1px solid #aaa;
-    position: absolute;
-    font-size: 12px;
-    top: 125px;
-    left: 20px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px
-}
-ul.tabmenu li {
-    padding: 4px 0px;
-    display: block;
-    float: left
-}
-ul.tabmenu:after {
-    clear: both
-}
-ul.tabmenu li a, ul.tabmenu li.selected a {
-    background-color: transparent;
-    border: 0;
-    color: #777;
-    text-shadow: 0 1px 0 #fff;
-    font-weight: normal
-}
-ul.tabmenu li.selected a {
-    color: #324a74;
-    font-weight: bold
-}
-ul.tabmenu li a:hover {
-    color: #324a74;
+html:not([lang="ns"]) .pagename {
+font-weight: 300;
+font-variant: inherit;
+font-size: 6pt;
+position: absolute;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: rgb(204, 204, 204);
+top: 46px;
+display: inline-block;
+vertical-align: inherit;
+font-style: italic;
+text-indent: -99999pt;
+width: 111px;
+background: url("%%sprite%%") no-repeat 0px -150px scroll transparent;
+margin-left: -5px;
 }
 
-/* Searchbar */
-.side form#search input[name="q"] {
-    border: 1px solid #AAAAAA;
-    border-radius: 4px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    background-image: url(%%searchbg%%);
-    background-repeat: repeat-x;
-    color: #333;
-    font-size: 12px;
-    padding: 5px;
-    width: 289px;
+html:not([lang="ns"]) #header-bottom-left .pagename a {
+text-decoration: none;
+color: rgb(255, 255, 255);
+font-weight: 500;
+width: 110px;
+display: block;
+overflow: hidden;
+height: 32px;
 }
 
-/* Sidebar */
-.titlebox .usertext {
-    background-image: url(%%italy2012%%);
-    background-repeat: no-repeat;
-    background-position: 0 10px;
-    padding-top: 357px;
-}
-.titlebox blockquote {
-    border: 1px solid #AAA;
-    text-shadow: 0 1px 0 white;
-    background-image: url(%%sidebarbg%%);
-    background-repeat: repeat-x;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    font-size: 0.85em;
-    color: #777;
-    font-weight: bold;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
-.titlebox form.leavecontributor-button {
-    background: transparent;
-}
-.titlebox form.leavemoderator-button {
-    background: transparent;
-}
-.side {
-    z-index: 99;
-    float: right;
-    margin: 3px 15px 0 0;
-    background-color: transparent;
-}
-.sidecontentbox .content, .linkinfo, .footer {
-    background: #FAFAFA;
-    border: 1px solid #CDCDCD;
-    margin: 7px 0 0;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-}
-.link.last-clicked {
-    overflow: hidden;
-}
-.linkinfo {
-    background: #f7f7f7;
-    margin-bottom: 10px;
-    padding: 15px 15px 15px 15px;
-}
-#adlink {
-    background: transparent;
-}
-#adlink {
-    background: transparent;
-}
-.fancy-toggle-button .remove, .fancy-toggle-button .add {
-    border: 1px solid #AAA;
-    background-image: url(%%sidebarbg%%);
-    color: #2f4749;
-    text-shadow: 0 1px 0 white;
-}
-.morelink, .morelink:hover {
-    display: block;
-    text-align: center;
-    position: relative;
-    border: none;
-    background: white none repeat-x scroll center left;
-    background-image: url(%%sidebarbg%%);
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border: 1px solid #AAA;
-}
-.morelink:hover a {
-    color: #537BC0;
-}
-.morelink a {
-    color: #324a74;
-    text-shadow: #FFF 0px 1px 0px;
-}
-.morelink .nub {
-    display: none;
-}
-.sidebox .spacer, .icon-menu a {
-    background-color: transparent;
-}
-.titlebox .usertext-body h2 {
-    color: #444444;
-    text-shadow: 0 1px 0 white;
-    font-weight: bold;
-}
-.titlebox .usertext-body .md h4 {
-    font-size: 10px;
-    color: #777;
-    text-align: right;
-    margin-bottom: 5px;
-}
-.titlebox .usertext-body .md h4 a:hover {
-    text-decoration: underline;
-}
-.sidecontentbox .flair {
-    display: none;
-}
-.sidecontentbox .author:after {
-    display: none !important;
+html:not([lang="ns"]) #header-bottom-right {
+top: 98px;
+font-size: 11px;
+background: transparent;
+height: 24px;
+line-height: 28px;
+padding-right: 10px;
 }
 
-/* Submit+mod */
-.delete-field {background-color: transparent;}
-.tabmenu.formtab .selected a {
-    color: #324A74;
-    font-size: 100%;
-    background-color: transparent
-}
-.tabmenu.formtab a {border: none;}
-.roundfield {background-color: #DDD;}
-.formtabs-content {border-top: 0px;}
-
-/* Misc. fixes */
-#sitetable, body > div.content {margin-top: 4.5em;}
-.midcol {margin-right: 12px;}
-.commentarea .infobar, .tabpane-content, .panestack-title, #sr-form, .last-clicked, .searchpane, .menuarea {margin-right: 320px;}
-a.thumbnail[href^="/r/formula1/"], a.thumbnail[href^="/r/vilkku/"] {display: none;}
-#newlink > .formtabs-content {margin-top: 0;}
-.stylesheet-customize-container, .create-reddit, .searchpane, .content > .usertable {margin-top: -30px;}
-.commentarea #noresults {margin: auto;}
-
-/* Change subreddit settings layout */
-.sheets {margin-right: 340px;}
-#sr-form > .linefield {width: auto;}
-#sr-form .usertext-edit {width: auto;}
-#sr-form .usertext-edit textarea[name="description"] {height: 400px; width: 100%;}
-
-/* Text colors */
-.entry .buttons li a {
-    color: #6D6D6D
-}
-.sidecontentbox h1 {
-    text-transform: lowercase;
-    text-shadow: 0 1px 0 white
-}
-textarea {
-    border-radius: 5px;
-    background-color: #FAFAFA;
-    border: 1px solid #CDCDCD
-}
-a.title {
-    text-shadow: 0 1px 0 #FFF
-}
-.thing.spam {
-    margin-right: 5px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    background: #FC9590
-}
-.tagline a {
-    color: #324a74
-}
-.tagline .friend {
-    color: #852500
-}
-.tagline .submitter {
-    color: #147
-}
-.link .score.likes {
-    color: #FC8F00
-}
-.link .score {
-    color: #AAA;
-    text-shadow: 0 1px 0 white
-}
-.link .score.dislikes {
-    color: #007EFC
-}
-.link .usertext .md {
-    border: 1px solid #CDCDCD;
-    background-color: #FAFAFA
-}
-.linkinfo .upvotes {
-    color: #252525
-}
-.linkinfo .downvotes {
-    color: #46699c
-}
-.link {
-    padding: 1px 10px;
-}
-.link .midcol {
-    margin: 0 20px;
-}
-.error {
-    color: #7a0000;
-    font-weight: bold
-}
-.red {
-    color: #852500
-}
-.md strong {
-    color: #444;
-    text-shadow: 0 1px 0 white
-}
-.md a strong {
-    color: #368
-}
-.content h3 {
-    color: #444444;
-    margin-top: 7px;
-}
-.md td, .md th {
-    border-color: #aaaaaa;
+html:not([lang="ns"]) #userbarToggle {
+background: none repeat scroll 0% 0% transparent !important;
+color: #000;
+border-right: 1px solid #ccc !important;
+padding-right: 5px !important;
+left: -10px !important;
+border-radius: 0px !important;
+height: 18px !important;
+line-height: 22px !important;
+top: 7px !important;
 }
 
-/* Submission page */
-#link-desc:after, #text-desc:after {
-    content: "Remember - no spoilers in your headline within 24 hours of qualifying or race! In addition, tag these submissions with [Spoiler]. Thank you!";
-    display: block;
-    font-weight: bold;
-    margin-bottom: 1em;
-    margin-top: 1em;
+/* [2.1] Tab Menu  */
+html:not([lang="ns"]) div#header-bottom-left ul.tabmenu {
+position: absolute;
+padding: 8px 0;
+margin: 0;
+left: 80px;
+bottom: 1px;
+z-index: 400;
 }
 
-/* RES Fixes */
-.res-nightmode .md strong, .res-nightmode .res-nightmode .morelink a, .res-nightmode #header-bottom-right .user, .res-nightmode #header-bottom-right a, .res-nightmode a.title, .res-nightmode .link .score, .res-nightmode .fancy-toggle-button .remove, .fancy-toggle-button .add, .res-nightmode .sr-bar a, .dropdown.srdrop .selected, .res-nightmode .titlebox .usertext-body h2 {
-    text-shadow: none !important;
-}
-.res-nightmode .side form#search input[name="q"], .res-nightmode .fancy-toggle-button .remove, .res-nightmode .fancy-toggle-button .add, .res-nightmode .titlebox form.toggle, .res-nightmode .leavemoderator, .res-nightmode .sidecontentbox .content, .res-nightmode .linkinfo, .res-nightmode .footer, ul.tabmenu li a, ul.tabmenu li.selected a {
-    background: transparent !important;
-}
-.res-nightmode .md strong {
-    color: #CCC;
+html:not([lang="ns"]) div#header-bottom-left .tabmenu li a {
+background-color: transparent;
+font-size: 13px;
+color:#2f2f2f
 }
 
-/* Medals */
-.author[href$="/P-Nuts"]:after, .author[href$="/HeikkiKovalainen"]:after, .author[href$="/the30thElement"]:after, .author[href$="/Amolol"]:after, .author[href$="/Vilkku"]:after, .author[href$="/dragonaut"]:after {
-    height: 16px;
-    padding-left: 3px;
-    vertical-align: middle;
-    position: relative;
-    top: 4px;
+html:not([lang="ns"]) div#header-bottom-left .tabmenu li.selected a {
+background-color: transparent;
+border: 0 none;
+color:red;
 }
-.author[href$="/P-Nuts"]:after {content: url(%%medal-2010-gold%%);}
-.author[href$="/HeikkiKovalainen"]:after {content: url(%%medal-2010-silver%%);}
-.author[href$="/the30thElement"]:after {content: url(%%medal-2010-bronze%%);}
-.author[href$="/Amolol"]:after {content: url(%%medal-2011-gold%%);}
-.author[href$="/Vilkku"]:after {content: url(%%medal-2011-silver%%);}
-.author[href$="/dragonaut"]:after {content: url(%%medal-2011-bronze%%);}
 
-/* Flags */
-a[href="/au"]:after, a[href="/be"]:after, a[href="/br"]:after, a[href="/ch"]:after, a[href="/co"]:after, a[href="/de"]:after, a[href="/es"]:after, a[href="/fi"]:after, a[href="/fr"]:after, a[href="/gb"]:after, a[href="/in"]:after, a[href="/it"]:after, a[href="/jp"]:after, a[href="/mx"]:after, a[href="/ru"]:after, a[href="/ve"]:after {
-	width: 16px;
-	height: 11px;
-	content: " ";
-	background-image: url(%%flags%%);
-	display: inline-block;
+html:not([lang="ns"]) div#header-bottom-left  .tabmenu li {
+border-right: 1px dotted #ccc;
+margin:0;
+padding:0 5px;
 }
-.usertext-body a {
-	display: inline-block;
-}
-a[href="/au"]:after {background-position: -32px -33px;}
-a[href="/be"]:after {background-position: -228px -33px;}
-a[href="/br"]:after {background-position: -172px -61px;}
-a[href="/ch"]:after {background-position: -200px -89px;}
-a[href="/co"]:after {background-position: -60px -117px;}
-a[href="/de"]:after {background-position: -284px -117px;}
-a[href="/es"]:after {background-position: -4px -173px;}
-a[href="/fi"]:after {background-position: -88px -173px;}
-a[href="/fr"]:after {background-position: -228px -173px}
-a[href="/gb"]:after {background-position: -284px -173px;}
-a[href="/in"]:after {background-position: -32px -257px;}
-a[href="/it"]:after {background-position: -172px -257px;}
-a[href="/jp"]:after {background-position: -256px -257px;}
-a[href="/mx"]:after {background-position: -172px -369px;}
-a[href="/ru"]:after {background-position: -144px -453px;}
-a[href="/ve"]:after {background-position: -172px -565px;}
 
-/* Flair */
-.linkflair-star p.title {
-    background: url(%%star%%) no-repeat scroll 0 2px transparent;
-    text-indent: 18px;
+html:not([lang="ns"]) div#header-bottom-left  .tabmenu li:last-child { border-right:0 none; }
+
+/* [2.2] Header Quick Menu  */
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child {
+border-left: none;
+position: absolute;
+background-color:#000205;
+top: 21px;
+left: 210px;
+height: 75px;
+border-left:1px solid #000;
+border-right:1px solid #2e2e2e;
+padding-left:0;
+margin:0;
+overflow:visible;
+border-bottom:none;
+z-index:1000;
+font-family: Helvetica,Arial,sans-serif;
 }
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child:hover {
+border-left:1px solid rgb(0, 0, 0);
+margin:0;
+padding:0;
+height:75px;
+border-bottom:none;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul { list-style-type:none; padding:0; margin:0; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul:hover li { display: block; background:#fff; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul > li { margin-left:1px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul { float: left; margin: 0px; }
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul > li {
+display: none;
+padding: 2px;
+text-align: left;
+cursor:pointer;
+font-family:helvetica, verdana, arial, sans-serif;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul>li:first-child {
+background: transparent;
+text-align: center;
+border: none;
+line-height: 82px;
+min-width: 0;
+padding: 0;
+color: #fff;
+font-style: inherit;
+font-size: 15px;
+height: 75px;
+border-right: 1px solid #000;
+border-left: 1px solid #2e2e2e;
+display: block;
+font-weight: bold;
+text-transform:lowercase;
+font-family:"Helvetica Neue", verdana, arial, sans-serif;
+margin-left:0;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(1) { width: 94px;  }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(1) >  li:first-child { width: 92px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(1) > li { width: 200px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(2) { width: 135px;  }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(2) >  li:first-child { width: 133px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(2) > li { width: 200px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(3) { width: 135px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(3) >  li:first-child { width: 133px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(3) > li { width: 200px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(4) { width: 100px;  }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(4) > li:first-child { width: 98px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(4) > li { width: 200px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(1):hover > li:first-child,
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(2):hover > li:first-child,
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(3):hover > li:first-child,
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(4):hover > li:first-child { background: #fff; color: #000; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(1)>li:last-child,
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(2)>li:last-child,
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(3)>li:last-child,
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(4)>li:last-child {
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+box-shadow: 0 2px 0px #000;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul li {
+border-bottom: 1px #ebebeb solid;
+font-size: 14px;
+line-height: 30px;
+min-width: 125px;
+padding: 2px 7px;
+color: black;
+border-left: 1px solid #ebebeb;
+border-right: 1px solid #ebebeb;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul li:hover { background:#f7f7f7; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul li ul { display:none; }
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child ul li {
+font-size: 12px;
+padding: 4px 7px 2px 15px;
+}
+
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child > ul:nth-child(2) > li:nth-child(2):before,
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child > ul:nth-child(3) > li:nth-child(2):before,
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child > ul:nth-child(3) > li:nth-child(3):before,
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child > ul:nth-child(3) > li:nth-child(4):before {
+content: "»";
+height: 30px;
+width: 20px;
+display: inline-block;
+float: right;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(3) li:hover ul {
+display: block;
+position: absolute;
+left: 453px;
+top: 75px;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul li:hover ul {
+display: block;
+position: absolute;
+left: 318px;
+top: 75px;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(2) li:nth-of-type(2) ul { width:270px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(2) li ul { width:245px; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(3) li ul { width:230px; }
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul ul {
+box-shadow: 0 2px 0px #000;
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul li a { font-weight:normal; color:#000; display:block; }
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul a:hover { font-weight:bold; }
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul em {
+display: block;
+line-height: 10px;
+margin-top: auto;
+position: relative;
+padding-bottom: 6px;
+color: #999;
+font-weight: normal;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul>li:hover { font-weight: bold; }
+
+/* [2.3] Top Header Bar (sr-header-area)  */
+html:not([lang="ns"]) #sr-header-area {
+height: 20px;
+background-color: rgb(45, 45, 45);
+border-bottom: 0px solid;
+box-shadow: 0px 0px 1px rgb(134, 134, 134);
+line-height: 20px;
+border-bottom:1px solid #000;
+}
+
+html:not([lang="ns"]) #sr-more-link { background-color: rgb(45, 45, 45); color:#f1f1f1; }
+
+html:not([lang="ns"]) #sr-header-area a { color:#f1f1f1; }
+
+html:not([lang="ns"]) .dropdown.srdrop .selected { color:#f1f1f1; }
+
+html:not([lang="ns"]) #sr-header-area .drop-choices.srdrop {
+z-index: 1000;
+background: rgb(45, 45, 45);
+border-color: rgb(45, 45, 45);
+}
+
+html:not([lang="ns"]) .drop-choices a.choice:hover { color:#000 !important; }
+
+/* [3.0] Content  */
+
+html:not([lang="ns"]) div.content {
+margin:60px 320px 0 10px;
+padding:20px;
+background:#fff;
+}
+
+html:not([lang="ns"]) .listing-page div.content,
+html:not([lang="ns"]) .comments-page div.content { padding:0; background:transparent; position:relative; }
+
+/* [3.1] Text Styling & Headings */
+
+html:not([lang="ns"]) .side .md > h1:nth-of-type(1) {
+width: 290px;
+display: block;
+padding: 347px 5px 3px;
+text-align: right;
+z-index: 1;
+margin: 0 -10px 10px;
+background-image: url(%%belgium2012%%);
+background-repeat: no-repeat;
+border-bottom: 4px solid rgb(238, 238, 238);
+border: 0px;
+font-size: 9pt;
+background-color:#fff;
+border-bottom:4px solid rgb(238, 238, 238);
+cursor:default;
+}
+
+html:not([lang="ns"]) .side .md > h2 {
+font-weight: bold;
+font-size: 12pt;
+color: #000;
+border-bottom: 1px solid #E6E6E6;
+padding-bottom: 5px;
+margin-bottom: 10px;
+margin-top: 10px;
+padding-left: 0;
+}
+
+html:not([lang="ns"]) .side hr:nth-of-type(4) {
+display: block;
+height: 4px;
+border: 0 none;
+background: rgb(238,238,238);
+margin: 0 -10px;
+}
+html:not([lang="ns"]) .side .md>h3:nth-of-type(2) {
+display: block;
+position: absolute;
+top: 144px;
+left: 10px;
+z-index: 50;
+width: auto;
+padding: 10px 15px 10px 33px;
+font-weight: normal;
+border-left: 4px solid #000;
+box-shadow: 0 0px 1px #ccc;
+color: #000;
+background-image: url(%%sprite%%);
+background-position: -145px -24px;
+background-repeat: no-repeat;
+background-color: #fff;
+font-size:10pt;
+}
+
+html:not([lang="ns"]) .side .md>h3:nth-of-type(3) {
+display: block;
+top: 155px;
+right: 330px;
+position: absolute;
+font-size: 12pt;
+color: #000;
+text-shadow: 0px 1px 0px #fff;
+}
+
+html:not([lang="ns"]) .side .md>h3:nth-of-type(3) a { color:rgb(210,50,45); }
+html:not([lang="ns"]) .side .md>h3:nth-of-type(2) a { font-weight:bold; margin:0 5px; font-size:12px; }
+html:not([lang="ns"]) .side .md>h3:nth-of-type(2) a:first-child { margin-left:10px; }
+html:not([lang="ns"]) .submit-page div.content > h1 { margin-top:0; }
+html:not([lang="ns"]) .link .title {
+line-height: 20px;
+outline: medium none;
+font-weight: normal;
+}
+
+html:not([lang="ns"])  .link .thing .entry .flat-list li.first a { font-weight:bold; }
+html:not([lang="ns"])  .link .thing .entry .flat-list li a { font-weight: normal; }
+html:not([lang="ns"]) .linklisting .rank { display: none; }
+html:not([lang="ns"]) .linklisting .midcol { margin-left:0; }
+
+/* [3.2] Link Listings  */
+html:not([lang="ns"]) .link.last-clicked {
+border-bottom: 0;
+border-top: 0;
+border-right: 1px dotted #0d0d0d;
+}
+
+html:not([lang="ns"]) .linklisting .thing.stickied {
+border-left:5px solid rgb(92, 184, 92);
+border-top:0;
+border-right:0;
+border-bottom:0;
+}
+
+html:not([lang="ns"]) .linklisting .stickied .entry a.title {
+width: inherit;
+color:rgb(34, 136, 34) !important;
+}
+
+html:not([lang="ns"]) .linklisting .thing {
+padding: 8px;
+border-left: 2px solid #ccc;
+margin-bottom: 2px;
+position: relative;
+background: #FCFCFC;
+box-shadow: 0 0 1px #E7E7E7;
+}
+
+html:not([lang="ns"]) .listing-page .expando .md, .link .usertext .md {
+padding: 10px;
+border-top: 1px dotted rgb(204, 204, 204);
+border-radius: 0px;
+line-height: 1.4;
+border-left: 0;
+border-right: 0;
+border-bottom: 0 !important;
+background: #fff;
+}
+
+html:not([lang="ns"]) .comments-page .link .usertext .md {
+border-bottom: 1px dotted rgb(204, 204, 204);
+}
+
+html:not([lang="ns"]) .listing-page .thing:hover .expando .md { background:none repeat scroll 0% 0% rgb(250, 250, 250); }
+
+html:not([lang="ns"]) .listing-page .entry { padding-left:5px; }
+
+/* [3.3] Misc Items */
+/* Buttons */
+html:not([lang="ns"]) #suggest-title button:hover {
+color: rgb(255, 255, 255);
+background-color: rgb(50, 118, 177);
+border-color: rgb(40, 94, 142);
+}
+
+html:not([lang="ns"]) #suggest-title button {
+color: rgb(255, 255, 255);
+background-color: rgb(66, 139, 202);
+border-color: rgb(53, 126, 189);
+padding: 8px 15px;
+border: 1px solid;
+border-radius: 4px;
+font-size: 11pt;
+}
+
+html:not([lang="ns"]) body.submit-page form.submit button[type="submit"] {
+color: #FFF;
+background-color: #5CB85C;
+border-color: #4CAE4C;
+padding: 8px 15px;
+border: 1px solid;
+border-radius: 4px;
+font-size: 11pt;
+}
+
+html:not([lang="ns"]) body.submit-page form.submit button[type="submit"]:hover {
+color: rgb(255, 255, 255);
+background-color: rgb(71, 164, 71);
+border-color: rgb(57, 132, 57);
+}
+
+html:not([lang="ns"]) #suggest-title button { margin-right:4px; }
+
+html:not([lang="ns"]) .titlebox .subButtons {
+padding: 10px 0 5px;
+}
+
+html:not([lang="ns"]) .fancy-toggle-button .remove,
+html:not([lang="ns"]) .RESshortcutside.remove,
+html:not([lang="ns"]) .REStoggle.remove {
+color: rgb(255, 255, 255) !important;
+background-color: rgb(217, 83, 79) !important;
+border-color: rgb(212, 63, 58) !important;
+background-image:none !important;
+}
+
+html:not([lang="ns"]) .fancy-toggle-button .remove:hover,
+html:not([lang="ns"]) .RESshortcutside.remove:hover,
+html:not([lang="ns"]) .REStoggle.remove:hover {
+color: rgb(255, 255, 255) !important;
+background-color: rgb(210, 50, 45) !important;
+border-color: rgb(172, 41, 37) !important;
+background-image:none !important;
+}
+
+html:not([lang="ns"]) .fancy-toggle-button .add {
+color: rgb(255, 255, 255);
+background-color: rgb(92, 184, 92);
+border-color: rgb(76, 174, 76) !important;
+background-image:none !important;
+}
+
+html:not([lang="ns"]) .fancy-toggle-button .add:hover {
+color: rgb(255, 255, 255);
+background-color: rgb(71, 164, 71) !important;
+border-color: rgb(57, 132, 57) !important;
+background-image:none !important;
+}
+
+html:not([lang="ns"]) .RESshortcutside, html:not([lang="ns"]) .REStoggle {
+color: rgb(255,255,255);
+background-color: rgb(92,184,92);
+border-color: rgb(76,174,76)!important;
+background-image: none!important;
+}
+
+html:not([lang="ns"]) .RESshortcutside:hover,
+html:not([lang="ns"]) .REStoggle:hover
+{
+color: rgb(255, 255, 255);
+background-color: rgb(71, 164, 71) !important;
+border-color: rgb(57, 132, 57) !important;
+background-image:none !important;
+}
+
+/* button sizing */
+html:not([lang="ns"]) .fancy-toggle-button .active,
+html:not([lang="ns"]) .RESshortcut.RESshortcutside.remove,
+html:not([lang="ns"]) .REStoggle.RESDashboardToggle.remove,
+html:not([lang="ns"]) .REStoggle.RESDashboardToggle,
+html:not([lang="ns"]) .RESshortcut.RESshortcutside {
+padding: 4px 8px !important;
+width: auto !important;
+line-height: 1 !important;
+margin: 0 !important;
+display: inline-block !important;
+margin-right: 5px !important;
+}
+
+html:not([lang="ns"]) .fancy-toggle-button .option.remove.active,
+html:not([lang="ns"]) .fancy-toggle-button .option.add.active { margin-right:0 !important; }
+
+/* Thumbnails */
+html:not([lang="ns"]) .thumbnail.default {
+height: 50px;
+background-position: -8px -80px;
+background-repeat: no-repeat;
+background-image:url(%%sprite%%);
+}
+
+html:not([lang="ns"]) .thumbnail.self {
+height: 50px;
+background-position: -10px -8px;
+background-repeat: no-repeat;
+background-image:url(%%sprite%%);
+}
+
+html:not([lang="ns"]) .hover-bubble.multi-selector { z-index:60000; }
+
+/* Custom Mail Icon */
+html:not([lang="ns"]) #mail.havemail,
+html:not([lang="ns"]) #mail.nohavemail {
+background: url(%%sprite%%) no-repeat 0 0 scroll transparent;
+width: 16px !important;
+height: 16px;
+top:4px;
+}
+
+html:not([lang="ns"]) #mail.havemail { background-position:-155px -86px; margin-right:5px; }
+html:not([lang="ns"]) #mail.nohavemail { background-position:-155px -70px; opacity:.5 }
+
+/* User Warnings and Messages */
+.comment .midcol .arrow.down:hover:after {
+position:fixed;
+display:block;
+z-index:1000;
+padding:5px 0;
+border-top:1px solid rgb(212, 63, 58);
+content:"Remember Reddiquette! Downvotes are for comments that don't add to the discussion...";
+text-align:center;
+bottom:0;
+width:100%;
+left:0;
+background-color:rgb(217, 83, 79);
+color:#FEFEFE;
+font-size:16px
+}
+
+/* For Gold... */
+.gold-accent.comment-visits-box {
+margin: 10px 0 -5px;
+width: 100%;
+display: block;
+max-width: 100%;
+border-radius: 0;
+border-left: medium none;
+border-right: medium none;
+padding: 10px 0;
+text-indent: 14px;
+}
+
+/* Hides Subreddit Founder */
+html:not([lang="ns"]) .titlebox .bottom { font-size: 0px; color: #FFF; }
+html:not([lang="ns"]) .titlebox .bottom:before { font-size: 10px; color: gray; content: " "; }
+html:not([lang="ns"]) .titlebox .bottom .age { font-size: 10px; color: gray; }
+
+/* hide post in recent links */
+html:not([lang="ns"]) .side .gadget .click-gadget .thing.self { display:none !important; }
+
+/* Message to non subscribers */
+html:not([lang="ns"]) body:not(.subscriber) > .content > #siteTable:before {
+content: " You haven't subscribed to /r/formula1 - Click the subscribe button in the sidebar!";
+display: block;
+background-color: rgb(217, 83, 79);
+padding: 5px 8px;
+margin: 0;
+font-size: small;
+color: #2e2e2e;
+font-weight: bold;
+font-size: 10px;
+border-left: 2px solid rgb(212, 63, 58);
+}
+
+/* Report Button Hover */
+.report-button span.option.error.active:before { content: "only if breaking the rules of reddit or /r/formula1! "; }
+.report-button .main a:after { content: " to the moderators"; }
+
+/* Misc */
+html:not([lang="ns"]) .flairselector { z-index: 5000; }
+html:not([lang="ns"]) .side hr { display:none; }
+html:not([lang="ns"]) #link-desc:after, html:not([lang="ns"]) #text-desc:after { content: ""; }
+
+/* [4.0] Comments Page */
+html:not([lang="ns"]) .comments-page div.content { padding:0; background:none; }
+html:not([lang="ns"]) .comments-page .commentarea { margin-top:5px; padding:0; }
+html:not([lang="ns"]) .comments-page .sitetable { background:#fff; }
+html:not([lang="ns"]) .comments-page .commentarea .sitetable { background:none; margin-top:15px; border-left:0 none }
+html:not([lang="ns"]) .commentarea>.usertext {
+padding: 0 20px;
+overflow: auto;
+background: #fff;
+margin: 0;
+}
+
+html:not([lang="ns"]) .commentarea .menuarea {
+border: none;
+margin: 0;
+padding: 10px 20px 0px;
+color: gray;
+background: #fff;
+}
+
+html:not([lang="ns"]) .panestack-title {
+padding: 10px 20px;
+border-bottom: 1px dotted gray;
+background: #fff;
+margin:0;
+}
+
+html:not([lang="ns"]) #noresults {
+width: 100%;
+text-align: center;
+padding: 10px 0;
+font-weight: bold;
+text-shadow: 0 1px 0 #fff;
+}
+
+html:not([lang="ns"])  .comment .child { border-left:0 none; }
+
+html:not([lang="ns"]) .res .commentarea .thing {
+border-top: 0!important;
+border-bottom: 0!important;
+border-right: 0!important;
+margin-left: 0!important;
+margin-right: 0!important;
+}
+
+html:not([lang="ns"]) .commentarea .thing {
+background: #fff;
+border-left: 3px #ccc solid!important;
+padding: 5px;
+margin: 0 0 3px 0;
+border-top: medium none;
+border-right: medium none;
+border-bottom: medium none;
+}
+
+html:not([lang="ns"]) .commentarea > .thing { box-shadow: 0px 0px 1px rgb(227,227,227); }
+html:not([lang="ns"]) .commentarea .thing .entry { padding:3px 5px 0 }
+html:not([lang="ns"]) .usertext.grayed .usertext-body { margin-top:10px; }
+html:not([lang="ns"]) .thing .morerecursion { margin-bottom:10px; }
+
+html:not([lang="ns"]) .commentarea .child .thing {
+border:  none;
+border-left:  2px rgb(227,227,227) solid !important;
+padding: 5px 5px 2px 4px;
+background:#f7f7f7;
+}
+
+html:not([lang="ns"]) .commentarea .child .thing .child .thing {
+border:  none;
+border-left:  1px #ccc solid !important;
+background:#fff;
+}
+
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing { background:#f7f7f7; }
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing { background:#fff; }
+
+html:not([lang="ns"]) .commentarea .thing.spam {
+    background-color: #FA8072 !important;
+}
+
+/* [4.1] Link Info Box */
+html:not([lang="ns"]) .linkinfo {
+margin-right: 5px;
+background:-webkit-linear-gradient(bottom,#f1f1f1,#ffffff);
+background:-moz-linear-gradient(bottom,#f1f1f1,#ffffff);
+background:-ms-linear-gradient(bottom,#f1f1f1,#ffffff);
+background:-o-linear-gradient(bottom,#f1f1f1,#ffffff);
+color: rgb(54, 54, 54);
+font-size: 11px;
+padding: 10px 10px 5px;
+border: 1px solid rgb(241, 241, 241);
+}
+
+html:not([lang="ns"]) .linkinfo .date {
+text-align: center;
+padding: 10px;
+background: #000;
+color: #fff;
+margin: -10px -10px 10px;
+font-size: 9pt;
+text-transform: lowercase;
+}
+
+html:not([lang="ns"]) .linkinfo .score,
+html:not([lang="ns"]) .linkinfo .upvotes { border-right: 1px solid rgb(232, 231, 231); }
+html:not([lang="ns"]) .linkinfo .upvotes,
+html:not([lang="ns"]) .linkinfo .downvotes,
+html:not([lang="ns"]) .linkinfo .score {
+float: left;
+padding: 5px 0px;
+margin: 10px 0px;
+width: 33%;
+text-align: center;
+}
+html:not([lang="ns"]) .linkinfo .score {
+font-size: 11px;
+color: rgb(170, 170, 170);
+display: block;
+min-width: 59px;
+}
+
+html:not([lang="ns"]) .linkinfo .score .number { color: rgb(54, 54, 54); }
+html:not([lang="ns"]) .linkinfo .upvotes { color: rgb(37, 37, 37); }
+html:not([lang="ns"]) .linkinfo .upvotes .number { color: rgb(130, 202, 52); }
+html:not([lang="ns"]) .linkinfo .downvotes { color: rgb(70, 105, 156); }
+
+html:not([lang="ns"]) .linkinfo .downvotes .number,
+html:not([lang="ns"]) .linkinfo .upvotes .number,
+html:not([lang="ns"]) .linkinfo .score .number {
+font-size: 20px !important;
+display: block;
+font-weight: normal !important;
+}
+
+html:not([lang="ns"]) .linkinfo .score .word { display: none; }
+html:not([lang="ns"]) .linkinfo .downvotes .word,
+html:not([lang="ns"]) .linkinfo .upvotes .word { font-size: 11px; color: rgb(170, 170, 170); }
+html:not([lang="ns"]) .linkinfo .downvotes .number { color: rgb(241, 28, 24); }
+html:not([lang="ns"]) .linkinfo .shortlink {
+clear: both;
+font-size: 10px;
+margin-top: 10px;
+}
+
+html:not([lang="ns"]) .linkinfo .shortlink input {
+background: none repeat scroll 0% 0% rgb(255, 255, 255);
+border: medium none;
+border-radius: 15px;
+padding-left: 8px;
+font-size: 10px;
+font-family: arial;
+color: rgb(51, 102, 153);
+display:inline;
+}
+
+/* [5.0] Sidebar */
+/* Flair Selector */
+html:not([lang="ns"]) .titlebox form.flairtoggle {
+border-top: 1px solid rgb(232,232,232);
+background: rgb(244,248,250);
+padding: 10px;
+margin-top: 10px;
+color: rgb(0,0,0);
+font-style: oblique;
+font-size: 12px;
+margin-left: -10px;
+margin-right: -10px;
+
+}
+
+html:not([lang="ns"]) .titlebox .tagline {
+margin: 0 -10px;
+text-align: center;
+font-size: 11px;
+padding: 5px;
+background: rgb(244,248,250);
+border-bottom: 1px solid rgb(232,232,232);
+}
+
+html:not([lang="ns"]) .side {
+margin:112px 10px 0 0;
+line-height:1.8em;
+font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+html:not([lang="ns"]) .side .spacer:first-child { margin: 0px 0px 0px; }
+html:not([lang="ns"]) .side .spacer .submit-text { display:none; }
+
+html:not([lang="ns"]) .side .titlebox,
+html:not([lang="ns"]) .side .sidecontentbox  { margin:7px 10px; }
+
+html:not([lang="ns"]) .side .md {
+border-top: 4px solid rgb(238, 238, 238);
+margin-left: -10px;
+margin-right: -10px;
+padding: 0px 10px 5px;
+width:280px;
+}
+
+html:not([lang="ns"]) .listing-page .side .md { padding-top:10px; }
+html:not([lang="ns"]) .titlebox .bottom { border-top:none; padding:0; font-weight:bold;}
+
+html:not([lang="ns"]) .titlebox .bottom > .flair,
+html:not([lang="ns"]) .titlebox .bottom > .author { display:none; }
+
+html:not([lang="ns"]) .titlebox h1.redditname {
+margin: 0px 0px 12px;
+font-weight: bold;
+font-size: 12pt;
+border-bottom: 1px solid rgb(238, 238, 238);
+padding-bottom: 5px;
+padding-top:4px;
+}
+
+html:not([lang="ns"]) .titlebox h1.redditname a { color:darkgray; }
+html:not([lang="ns"]) .titlebox h1.redditname a:before { content: "Welcome to /r/"; }
+html:not([lang="ns"]) .titlebox h1 a:hover { color: darkgray; text-decoration:none; }
+html:not([lang="ns"]) .side div.linkinfo { margin:10px; }
+
+/* New Post Button */
+html:not([lang="ns"]) .morelink {
+color: #fff;
+background-color: rgb(203,29,24);
+border-color: #C50000;
+background-image: -webkit-linear-gradient(top, #C20306, #C50000);
+background: -moz-linear-gradient(top, #C20306, #C50000);
+background: -ms-linear-gradient(top, #C20306, #C50000);
+background: -o-linear-gradient(top, #C20306, #C50000);
+height: 32px;
+line-height: 32px;
+text-transform: uppercase;
+background-position: 0;
+box-shadow: 0 1px 0 #fff;
+font-style: italic;
+text-shadow: 0 1px 0 #5C0000;
+}
+
+html:not([lang="ns"]) .morelink:hover, .morelink:focus {
+color: rgb(255,255,255);
+background-color: #960505;
+border-color: rgb(172,41,37);
+background-image: -webkit-linear-gradient(top, #C30003, #960505);
+background: -moz-linear-gradient(top, #C30003, #960505);
+background: -ms-linear-gradient(top, #C30003, #960505);
+background: -o-linear-gradient(top, #C30003, #960505);
+box-shadow: none;
+}
+
+html:not([lang="ns"]) .morelink a {
+color: rgb(255, 255, 255);
+font-size: 16px;
+font-weight: 900;
+letter-spacing: .5px;
+}
+html:not([lang="ns"]) .morelink .nub { display:none; }
+
+html:not([lang="ns"]) .side .spacer .submit-link {
+position: absolute;
+top: 195px;
+right: 17px;
+width: 285px;
+}
+
+html:not([lang="ns"]) .side .create { display:none; }
+
+/* Search */
+html:not([lang="ns"]) .side #search {
+top: 150px;
+right: 17px;
+position: absolute;
+z-index: 1000;
+max-width: 286px;
+}
+
+html:not([lang="ns"]) #search input[type="text"] {
+width: 245px;
+line-height: 32px;
+height: 32px;
+padding: 0 5px 0 35px;
+background-image: url(%%sprite%%);
+background-repeat: no-repeat;
+background-position: -145px -115px;
+border-color: #c0c0c0;
+}
+
+html:not([lang="ns"]) #search input[type="text"]:focus {
+border-color: rgb(102, 175, 233);
+outline: 0px none;
+}
+
+html:not([lang="ns"]) #searchexpando { max-width:264px; width:280px; margin-top:2px }
+
+/* Misc */
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li table {
+width: 100%;
+margin:0;
+}
+
+html:not([lang="ns"]) .titlebox .md  blockquote table tr th,
+html:not([lang="ns"]) .titlebox .md  blockquote table tr td { padding:2px 8px; border:0 none; }
+html:not([lang="ns"]) .titlebox .md  > blockquote table tr th:last-child,
+html:not([lang="ns"]) .titlebox .usertext-body > blockquote table tr td:last-child { text-align:center; }
+html:not([lang="ns"]) .titlebox .usertext-body > blockquote table tr th:first-child,
+html:not([lang="ns"]) .titlebox .usertext-body > blockquote table tr td:first-child { text-align:center; }
+
+html:not([lang="ns"]) .titlebox .md blockquote h1 {
+color: #fff;
+padding-bottom: 9px;
+font-size: 11pt;
+margin-bottom: 10px;
+border-bottom: 2px solid red;
+padding-left: 12px;
+border-collapse: collapse;
+padding-top: 9px;
+background: #000;
+cursor: pointer;
+}
+
+html:not([lang="ns"]) .titlebox .md > h1
+{
+color: #000;
+padding-bottom: 6px;
+font-size: 11pt;
+margin-bottom: 10px;
+border-left: 2px solid rgb(0, 0, 0);
+padding-left: 12px;
+border-collapse: collapse;
+padding-top: 6px;
+background: none repeat scroll 0% 0% rgb(250, 250, 250);
+cursor:pointer;
+}
+
+/* new sidebar edits */
+html:not([lang="ns"]) .side blockquote { margin:0; padding:0; border:0 none; }
+
+/* track guide */
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) {
+display: block;
+position: relative;
+padding: 0;
+border: 0;
+margin: 0;
+width: 280px;
+list-style-type: none;
+position:absolute;
+top:245px;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) ul { list-style-type:none; margin:0; padding:0; }
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>a {
+width: 300px;
+height: 160px;
+display: block;
+text-align: center;
+background-color: #fff;
+font-size: 14px;
+color: #000;
+background: url(%%race-picture%%) no-repeat 0 0 scroll transparent;
+font-weight: bold;
+text-indent: -9999pt;
+cursor: default;
+margin-left: -10px;
+margin-bottom: 5px;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>ul>li {
+font-weight: normal;
+border-bottom: none;
+color: #2e2e2e;
+font-size: 10pt;
+padding:4px 0;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1) {
+text-align: center;
+font-weight: bold;
+font-size: 18px;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li { position:relative; }
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li blockquote { display:none; }
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li:hover blockquote { display:block; cursor:default }
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li:nth-of-type(2),
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li:nth-of-type(3),
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li:nth-of-type(4) {
+padding:5px 20px;
+background-image: -o-linear-gradient(bottom, #303030, #000000);
+background-image: -moz-linear-gradient(bottom, #303030, #000000);
+background-image: -webkit-linear-gradient(bottom, #303030, #000000);
+background-image: -ms-linear-gradient(bottom, #303030, #000000);
+background-image: linear-gradient(to bottom, #303030, #000000);
+background-color:#303030;
+color:#fff;
+margin:2px 0;
+border-radius:3px;
+cursor:pointer
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li>p {
+text-align: left;
+margin: 5px -5px;
+font-size: 10pt;
+text-transform: uppercase;
+font-style: oblique;
+font-weight:bold;
+}
+
+/* pop ups */
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li blockquote {
+background: #fff;
+border: 1px solid #ccc;
+padding: 10px;
+position: absolute;
+right: 288px;
+z-index: 1000;
+width: 340px;
+color: #000;
+border-radius: 4px;
+top: -20px;
+box-shadow: 1px 1px 1px #ccc;
+text-align:left;
+font-size:14px;
+}
+
+/* pop up arrow */
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li blockquote:after {
+width: 10px;
+content: "";
+background: url(%%box-arrow%%) no-repeat 0 30px transparent;
+position: absolute;
+right: -10px;
+height: 100%;
+top: 0px;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>a {
+width: 300px;
+height: 160px;
+display: block;
+text-align: center;
+background-color: #fff;
+font-size: 14px;
+color: #000;
+background: url(%%race-picture%%) no-repeat 0 0 scroll transparent;
+font-weight: bold;
+text-indent: -9999pt;
+cursor: default;
+margin-left: -10px;
+margin-bottom: 5px;
+}
+
+/* Circuit Guide */
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3):hover>blockquote {
+padding-right: 370px;
+min-height: 250px;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) blockquote p:first-child {
+font-weight: bold;
+text-align: left;
+font-size: 14px;
+border-bottom: 1px solid #e0e0e0;
+margin-bottom: 10px;
+padding-bottom: 5px;
+margin-top:0;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li table thead {display: none;}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) blockquote p:last-child {
+border-top:1px solid #e0e0e0;
+padding:12px 5px 0
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1) > li a[href="#map"] {
+background:url(%%circuit-map%%) no-repeat 0 0 transparent;
+display: block;
+height: 250px;
+width: 350px;
+position: absolute;
+right: 10px;
+text-indent: -99999pt;
+box-shadow: 0px 0px 3px #ccc;
+border-radius: 3px;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) table { margin-bottom:25px; font-size:13px; }
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) table tr td:first-child { font-weight:bold; }
+
+html:not([lang="ns"]) body.comments-page .side .md > h1:nth-of-type(1) {
+position: relative;
+display: block !important;
+top: 0;
+margin: 0 -10px 10px;
+}
+
+
+/* Event Schedule */
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(2)>blockquote p { font-size:12px; }
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(2)>blockquote p:nth-of-type(1) {
+border-top: 1px solid #ccc;
+padding-top: 8px;
+margin-top: 5px;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(2)>blockquote table td:nth-of-type(1) {
+font-weight: bold;
+}
+
+/* Last Time Out */
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(4)>blockquote h3 {
+padding-bottom: 4px;
+border-bottom: 1px solid #ccc;
+font-size: 14px;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(4)>blockquote p {
+margin: 6px 0;
+font-size: 13px;
+}
+
+/* sidebar padding fix 1 */
+html:not([lang="ns"]) body .side {
+padding-top: 335px;
+}
+
+/* sidebar padding fix 2 */
+html:not([lang="ns"]) body.listing-page .side {
+padding-top: 725px;
+}
+
+html:not([lang="ns"])  body.listing-page .usertext-body .md>h1:nth-of-type(1) { position:absolute; top:575px; margin-top:14px; }
+
+/* timer */
+html:not([lang="ns"]) .side .md > h3:nth-child(1) {
+position: absolute;
+top: 254px;
+right:15px;
+z-index: 99;
+color: lime;
+font-family: monaco,monospace;
+text-transform: uppercase;
+font-size: 14px;
+word-spacing: -5px;
+background:#000;
+padding:2px 4px;
+border-radius:3px;
+}
+
+/* [5.3] Driver/Team Standings */
+/* constructors & driver standings */
+html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1),
+html:not([lang="ns"]) .side .md > blockquote:nth-of-type(2) {
+height: 45px;
+overflow:hidden;
+}
+
+html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1):hover,
+html:not([lang="ns"]) .side .md > blockquote:nth-of-type(2):hover {
+height: auto;
+padding-bottom:15px;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote table {
+width: 100%;
+margin: 0px auto 5px;
+line-height: 20px;
+font-size: 13px;
+border-spacing: 2px;
+border-collapse: separate;
+}
+
+html:not([lang="ns"]) .titlebox .md > blockquote table thead tr th {
+background:#000; color:#fff;
+}
+
+html:not([lang="ns"]) .titlebox .md  > blockquote table tr td:first-child {
+background: rgb(225, 225, 225);
+font-weight: bold;
+width: 10px;
+height: 20px;
+line-height: 20px;
+}
+
+html:not([lang="ns"]) .titlebox .md>blockquote table tr td:nth-of-type(2) {
+background: rgb(198, 198, 198);
+color: #2C2C2C;
+font-weight: 500;
+text-transform: uppercase;
+}
+
+html:not([lang="ns"]) .titlebox .md  > blockquote table tr td:nth-of-type(2) a { text-decoration:none; color: #2C2C2C; top:5px}
+
+html:not([lang="ns"]) .titlebox .md  > blockquote table tr td:nth-of-type(3) {
+background: #000;
+color: #fff;
+width: 20px;
+text-align:center;
+}
+
+html:not([lang="ns"]) .titlebox .md  > blockquote:nth-of-type(1) p {
+background: #DADADA;
+padding: 5px 0px;
+margin: -5px 2px 0;
+text-align: center;
+}
+
+html:not([lang="ns"]) .titlebox  .md  > blockquote:nth-of-type(1) p a {
+color:#000;
+font-weight:500;
+text-transform:uppercase;
+}
+
+/* [6.0] Footer & Pagination */
+
+html:not([lang="ns"]) .footer {
+color: gray;
+padding: 5px;
+margin: 15px;
+border: 1px solid #F0F0F0;
+display: inline-block;
+position: relative;
+margin-bottom:35px;
+}
+
+html:not([lang="ns"]) .footer-parent .footer:before {
+width: 170px;
+height: 150px;
+display: inline-block;
+background: url(%%sprite%%) no-repeat 0 -180px scroll transparent;
+content: "";
+position: absolute;
+left: -200px;
+top: 0;
+}
+
+/* Pagination & Never Ending Reddit Support*/
+
+html:not([lang="ns"]) div#endOfReddit {
+width: 100%;
+text-align: center;
+font-size: 10pt;
+font-weight: bold;
+text-shadow: 0 1px 0 #f1f1f1;
+color: #818181;
+padding: 5px 0;
+}
+
+html:not([lang="ns"]) .sitetable div.nav-buttons {
+padding: 7px 0 10px;
+background: transparent;
+border-bottom: 1px solid #ccc;
+width: 100%;
+margin-bottom: 5px;
+text-indent:10px;
+}
+
+html:not([lang="ns"]) .NERPageMarker {
+color: #818181 !important;
+font-size: 10pt !important;
+background-color: transparent !important;
+border: 0 none !important;
+border-radius: 0  !important;
+padding: 3px 0px;
+font-weight:bold !important;
+text-shadow:0 1px 0 #f1f1f1;
+}
+
+html:not([lang="ns"]) #progressIndicator {
+width: 80%;
+min-height: 20px;
+margin: 0px auto;
+font-size: 10pt !important;
+border: 0 none!important;
+border-radius: 0 !important;
+padding: 5px !important;
+text-align: center;
+background-color: transparent !important;
+cursor: pointer;
+color:#818181;
+}
+
+html:not([lang="ns"]) .nextprev a, .next-suggestions a {
+display: inline-block;
+padding: 5px 14px 5px 0;
+background-color: rgb(255, 255, 255);
+border: 1px solid rgb(221, 221, 221);
+border-radius: 3px;
+color:#000;
+}
+
+html:not([lang="ns"]) .nextprev a:hover, .next-suggestions a:hover {
+background: #fff;
+border: 1px solid #ccc;
+color: #000;
+box-shadow: 1px 1px 1px #ccc;
+}
+
+html:not([lang="ns"]) #NERFail .nextprev a, .next-suggestions a {
+padding:5px 10px;
+text-align:center;
+}
+
+html:not([lang="ns"]) #NERFail {
+width: auto;
+margin: 20px 0;
+padding: 15px 0;
+display: block;
+border-radius: 0px;
+border: 0 none;
+border-top: 1px dashed #ccc;
+}
+
+html:not([lang="ns"]) #NERFail a[href="/r/random"] { display:none; }
+
+/* [7.0] Wiki Styles */
+html:not([lang="ns"]) .wiki-page .wiki-page-content {  margin: 0; position:relative; }
+
+body.wiki-page-index .wiki-page-content .md.wiki blockquote {
+width: 100%;
+padding: 0 0;
+margin: 0 0;
+border: 0 none;
+}
+
+.wiki-page .wiki-page-content .md.wiki>.toc>ul { background:#fff; }
+
+body.wiki-page .wiki-page-content .md.wiki h3 {
+font-size: 1.6em;
+margin-top: 30px;
+border-bottom: 1px solid #ededed;
+padding-bottom: 5px;
+}
+
+.wiki-page .wiki-page-content .md.wiki h4 {
+font-size: 1.4em;
+color: #555;
+margin-top: 25px;
+margin-bottom: 0px;
+}
+
+body.wiki-page .wiki-page-content .md.wiki hr {
+margin: 30px 40px;
+background: #e5e5e5;
+border: 0px;
+height: 1px;
+}
+
+.wiki-page-index .wiki-page-content .md.wiki h5 {
+margin-top: 25px;
+}
+
+body.wiki-page .md.wiki blockquote table { width: 100%; margin: 0; }
+
+body.wiki-page table td,
+body.wiki-page table th { padding: 4px 8px; }
+
+body.wiki-page table th,
+table th {
+background: -webkit-linear-gradient(bottom,#2f2f2f,#525252);
+background: -moz-linear-gradient(bottom,#2f2f2f,#525252);
+background: -ms-linear-gradient(bottom,#2f2f2f,#525252);
+background: -o-linear-gradient(bottom,#2f2f2f,#525252);
+border-width: medium 1px medium;
+border-style: none solid solid solid;
+border-color: #525252;
+color: #fff;
+font-weight: bold;
+text-shadow: 0 1px 0px rgb(47,47,47);
+}
+
+/* Calendar */
+body.wiki-page-index .md.wiki blockquote:first-of-type table { margin-top:15px; }
+
+body.wiki-page-index .md.wiki blockquote:first-of-type table tr th:nth-of-type(1) { width:48px; text-align:center; }
+body.wiki-page-index .md.wiki blockquote:first-of-type table tr td:nth-of-type(4),
+body.wiki-page-index .md.wiki blockquote:first-of-type table tr th:nth-of-type(4),
+body.wiki-page-index .md.wiki blockquote:first-of-type table tr td:nth-of-type(5),
+body.wiki-page-index .md.wiki blockquote:first-of-type table tr th:nth-of-type(5) { text-align:center; }
+
+body.wiki-page-index .md.wiki blockquote:first-of-type table tr:nth-of-type(12) td:nth-of-type(2) {
+background: -webkit-linear-gradient(bottom,#2f2f2f,#525252);
+background: -moz-linear-gradient(bottom,#2f2f2f,#525252);
+background: -ms-linear-gradient(bottom,#2f2f2f,#525252);
+background: -o-linear-gradient(bottom,#2f2f2f,#525252);
+background-color: #525252;
+display: table-caption;
+position: absolute;
+width: 100%;
+padding: 4px 0;
+border: none;
+left: 0px;
+text-align: center;
+line-height: 18px;
+color:#fff;
+}
+
+/* TV Schedule */
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table { margin-top:15px; }
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr th { padding:4px 0; }
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td {
+text-align: center;
+position:relative;
+padding:4px 0;
+color: #c0c0c0;
+}
+
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:before {
+content: "•";
+font-size: 18px;
+line-height: 18px;
+text-shadow: 0px 1px 0px #000;
+}
+
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover:before { color:#000;  }
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td strong { display:none; }
+
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover strong {
+color: #000;
+display: block;
+background: none repeat scroll 0px 0px #FAFAFA;
+min-width: 175px;
+border: 1px solid #CCC;
+z-index: 1000;
+vertical-align: middle;
+margin: 0px auto;
+box-shadow: 1px 1px 1px #CCC;
+border-radius: 4px;
+font-weight: normal;
+text-align: left;
+padding: 10px;
+position: absolute;
+margin-top: -30px;
+margin-left: -190px;
+}
+
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover { cursor: pointer; }
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover strong:after {
+background-color: transparent;
+background-image: url(%%box-arrow%%);
+background-repeat: no-repeat;
+color: #000;
+content: "";
+height: 18px;
+width: 40px;
+top: 10px;
+display: block;
+position: absolute;
+right: -40px;
+}
+
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover strong a { font-weight:bold; display:block; clear:both; padding-top:10px; }
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover strong a:first-child { padding-top:0; }
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr th { text-align:center; }
+
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:nth-of-type(1) {
+min-width: 200px;
+text-indent: 0;
+text-align: left;
+padding:4px 8px;
+color: #000;
+}
+
+body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:nth-of-type(1):before { display:none; }
+
+
+/* [8.0] Graphic Elements  */
+/* [8.1] Cars  */
+.link .entry a[href="#E22"], .wiki a[href="#E22"],
+.link .entry a[href="#F14T"], .wiki a[href="#F14T"],
+.link .entry a[href="#RB10"], .wiki a[href="#RB10"],
+.link .entry a[href="#VJM07"], .wiki a[href="#VJM07"],
+.link .entry a[href="#MR03"], .wiki a[href="#MR03"],
+.link .entry a[href="#MP4-29"], .wiki a[href="#MP4-29"],
+.link .entry a[href="#F1W05"], .wiki a[href="#F1W05"],
+.link .entry a[href="#C33"], .wiki a[href="#C33"],
+.link .entry a[href="#STR9"], .wiki a[href="#STR9"],
+.link .entry a[href="#FW36"], .wiki a[href="#FW36"],
+.link .entry a[href="#CT05"], .wiki a[href="#CT05"] {
+width: 34px;
+height: 18px;
+text-align: center;
+display: block;
+position: relative;
+background: black;
+margin-right: 50px;
+margin-left: 0;
+border-radius: inherit;
+border-top-right-radius: 9px;
+border-bottom-left-radius: 9px;
+border-top-left-radius: 3px;
+border-bottom-right-radius: 3px;
+color: #fff;
+font-weight: bold;
+font-style: italic;
+margin-right:75px
+}
+
+.link .entry a[href="#E22"],
+.wiki a[href="#E22"] {
+background-color: #464646;
+color:gold;
+background-image:linear-gradient(90deg, #464646, #1e1e1e);
+background-image: -webkit-linear-gradient(90deg, #464646, #1e1e1e);
+background-image: -moz-linear-gradient(90deg, #464646, #1e1e1e);
+background-image: -ms-linear-gradient(90deg, #464646, #1e1e1e);
+background-image: -o-linear-gradient(90deg, #464646, #1e1e1e);
+border:1px solid #464646;
+}
+
+.link .entry a[href="#F14T"],
+.wiki a[href="#F14T"] {
+background-color: #e31e27;
+background-image:linear-gradient(90deg, #e31e27, #c51a22);
+background-image: -webkit-linear-gradient(90deg, #e31e27, #c51a22);
+background-image: -moz-linear-gradient(90deg, #e31e27, #c51a22);
+background-image: -ms-linear-gradient(90deg, #e31e27, #c51a22);
+background-image: -o-linear-gradient(90deg, #e31e27, #c51a22);
+color:white;
+border: 1px solid #e31e27;
+}
+
+.link .entry a[href="#RB10"],
+.wiki a[href="#RB10"] {
+background-color:#082d70;
+background-image:linear-gradient(90deg, #082d70, #4f2682);
+background-image: -webkit-linear-gradient(90deg, #082d70, #4f2682);
+background-image: -moz-linear-gradient(90deg, #082d70, #4f2682);
+background-image: -ms-linear-gradient(90deg, #082d70, #4f2682);
+background-image: -o-linear-gradient(90deg, #082d70, #4f2682);
+border:1px solid #8b34f8;
+color:white;
+}
+
+.link .entry a[href="#VJM07"],
+.wiki a[href="#VJM07"] {
+background-color: #fc5f00;
+background-image:linear-gradient(90deg, #fc5f00, #e25500);
+background-image: -webkit-linear-gradient(90deg, #fc5f00, #e25500);
+background-image: -moz-linear-gradient(90deg, #fc5f00, #e25500);
+background-image: -ms-linear-gradient(90deg, #fc5f00, #e25500);
+background-image: -o-linear-gradient(90deg, #fc5f00, #e25500);
+color:green;
+border: 1px solid #fc5f00;
+}
+
+.link .entry a[href="#MR03"],
+.wiki a[href="#MR03"] {
+background-color: #f83d38;
+background-image:linear-gradient(90deg, #f83d38, #d83531);
+background-image: -webkit-linear-gradient(90deg, #f83d38, #d83531);
+background-image: -moz-linear-gradient(90deg, #f83d38, #d83531);
+background-image: -ms-linear-gradient(90deg, #f83d38, #d83531);
+background-image: -o-linear-gradient(90deg, #f83d38, #d83531);
+border: 1px solid #f83d38;
+color:black;
+}
+
+.link .entry a[href="#MP4-29"],
+.wiki a[href="#MP4-29"] {
+background-image:linear-gradient(90deg, silver, #f7f7f7);
+background-image: -webkit-linear-gradient(90deg, silver, #f7f7f7);
+background-image: -moz-linear-gradient(90deg, silver, #f7f7f7);
+background-image: -ms-linear-gradient(90deg, silver, #f7f7f7);
+background-image: -o-linear-gradient(90deg, silver, #f7f7f7);
+background-color: silver;
+color:red;
+border:1px solid silver;
+}
+
+.link .entry a[href="#F1W05"],
+.wiki a[href="#F1W05"] {
+background-image:linear-gradient(90deg, silver, #f7f7f7);
+background-image: -webkit-linear-gradient(90deg, silver, #f7f7f7);
+background-image: -moz-linear-gradient(90deg, silver, #f7f7f7);
+background-image: -ms-linear-gradient(90deg, silver, #f7f7f7);
+background-image: -o-linear-gradient(90deg, silver, #f7f7f7);
+background-color: silver;
+color:teal;
+border:1px solid silver;
+}
+
+.link .entry a[href="#C33"],
+.wiki a[href="#C33"] {
+background-color:#424242;
+background-image:linear-gradient(90deg, #424242, #2e2e2e);
+background-image: -webkit-linear-gradient(90deg, #424242, #2e2e2e);
+background-image: -moz-linear-gradient(90deg, #424242, #2e2e2e);
+background-image: -ms-linear-gradient(90deg, #424242, #2e2e2e);
+background-image: -o-linear-gradient(90deg, #424242, #2e2e2e);
+color:white;
+border:1px solid #424242;
+}
+
+.link .entry a[href="#STR9"],
+.wiki a[href="#STR9"] {
+background-image:linear-gradient(90deg, navy, #00224b);
+background-image: -webkit-linear-gradient(90deg, navy, #00224b);
+background-image: -moz-linear-gradient(90deg, navy, #00224b);
+background-image: -ms-linear-gradient(90deg, navy, #00224b);
+background-image: -o-linear-gradient(90deg, navy, #00224b);
+background-color:navy;
+color:red;
+border:1px solid navy;
+}
+
+.link .entry a[href="#FW36"],
+.wiki a[href="#FW36"] {
+background-color: #003b84;
+background-image:linear-gradient(90deg, #003b84, #003372);
+background-image: -webkit-linear-gradient(90deg, #003b84, #003372);
+background-image: -moz-linear-gradient(90deg, #003b84, #003372);
+background-image: -ms-linear-gradient(90deg, #003b84, #003372);
+background-image: -o-linear-gradient(90deg, #003b84, #003372);
+color:white;
+border:1px solid #003b84;
+}
+
+.link .entry a[href="#CT05"],
+.wiki a[href="#CT05"] {
+background-image:linear-gradient(90deg, #153726, #2a5a00);
+background-image: -webkit-linear-gradient(90deg, #153726, #2a5a00);
+background-image: -moz-linear-gradient(90deg, #153726, #2a5a00);
+background-image: -ms-linear-gradient(90deg, #153726, #2a5a00);
+background-image: -o-linear-gradient(90deg, #153726, #2a5a00);
+background-color: #153726;
+color:#92c700;
+border:1px solid #153726;
+}
+
+.link .entry a[href="#E22"]:after, 
+.link .entry a[href="#F14T"]:after, 
+.link .entry a[href="#RB10"]:after, 
+.link .entry a[href="#VJM07"]:after, 
+.link .entry a[href="#MR03"]:after,
+.link .entry a[href="#MP4-29"]:after, 
+.link .entry a[href="#F1W05"]:after, 
+.link .entry a[href="#C33"]:after, 
+.link .entry a[href="#STR9"]:after, 
+.link .entry a[href="#FW36"]:after, 
+.link .entry a[href="#CT05"]:after,
+.wiki a[href="#E22"]:after, 
+.wiki a[href="#F14T"]:after, 
+.wiki a[href="#RB10"]:after, 
+.wiki a[href="#VJM07"]:after, 
+.wiki a[href="#MR03"]:after,
+.wiki a[href="#MP4-29"]:after, 
+.wiki a[href="#F1W05"]:after, 
+.wiki a[href="#C33"]:after, 
+.wiki a[href="#STR9"]:after, 
+.wiki a[href="#FW36"]:after, 
+.wiki a[href="#CT05"]:after {
+width: 65px;
+height: 22px;
+display: inline-block;
+background-image: url(%%cars-2014%%);
+background-repeat: no-repeat;
+text-indent: -99999pt;
+content: "";
+position: absolute;
+left: 48px;
+top: 0px;
+}
+
+.link .entry a[href="#E22"]:after, .wiki a[href="#E22"]:after { background-position:0 -181px; }
+.link .entry a[href="#F14T"]:after, .wiki a[href="#F14T"]:after  { background-position:0 -39px; }
+.link .entry a[href="#RB10"]:after, .wiki a[href="#RB10"]:after  { background-position:0 -161px; }
+.link .entry a[href="#VJM07"]:after, .wiki a[href="#VJM07"]:after  { background-position:0 -18px; }
+.link .entry a[href="#MR03"]:after, .wiki a[href="#MR03"]:after  { background-position:0 -100px; }
+.link .entry a[href="#MP4-29"]:after, .wiki a[href="#MP4-29"]:after  { background-position:0 -59px; }
+.link .entry a[href="#F1W05"]:after, .wiki a[href="#F1W05"]:after  { background-position:0 -120px; }
+.link .entry a[href="#C33"]:after, .wiki a[href="#C33"]:after  { background-position:0 -140px; }
+.link .entry a[href="#STR9"]:after, .wiki a[href="#STR9"]:after  { background-position:0 -79px; }
+.link .entry a[href="#FW36"]:after, .wiki a[href="#FW36"]:after  { background-position:0 2px; }
+.link .entry a[href="#CT05"]:after, .wiki a[href="#CT05"]:after  { background-position:0 -201px; }
+
+/* [8.2] User Flair */
+.flairoptionpane .flair {
+width: 135px;
+padding-right: 2px;
+}
+.flairoptionpane .author {
+display: none;
+}
+.flair-empty, .flair-label {display: none;}
+.flairoptionpane .flair-empty, .flairoptionpane .flair-label {display: block;}
+.flairoptionpane .flair-empty:after {content: "No flair";}
+.flairoptionpane .flair-label {background-color: #BBBBBB; width: 100%; text-align: center;}
+
+.flair, .linkflairlabel {
+display: inline-block;
+margin-right: 0.5em;
+padding: 0px 2px;
+background: none repeat scroll 0% 0% rgb(245, 245, 245);
+color: rgb(85, 85, 85);
+border: 1px solid rgb(221, 221, 221);
+border-radius: 2px;
+}
+
 .flair {
-    background: url(%%flair-spritesheet-spaced%%) no-repeat scroll -9999px -9999px transparent;
-    height: 16px !important;
-    width: 20px;
-    vertical-align: middle;
-    border: 0;
-    padding: 0;
-    overflow: hidden;
-    text-indent: 27px;
-    white-space: nowrap;
+width: 20px;
+height: 16px;
+line-height: 16px;
+overflow: hidden;
+vertical-align: middle;
+font-size: inherit;
+background-color: transparent;
+color: #222;
+padding: 2px;
+margin-right: 3px;
+border-width: 0;
+border-radius: 3px;
+padding-bottom:4px;
 }
-.flair:hover {
-    padding-right: 2px;
-    width: auto;
-    min-width: 20px;
-}
-.flair-empty {display: none;}
-.flair-alonso {background-position: -1px -1px;}
-.flair-button {background-position: -1px -18px;}
-.flair-delarosa {background-position: -1px -35px;}
-.flair-diresta {background-position: -1px -52px;}
-.flair-glock {background-position: -1px -69px;}
-.flair-grosjean {background-position: -1px -86px;}
-.flair-hamilton {background-position: -1px -103px;}
-.flair-hulkenberg {background-position: -1px -120px;}
-.flair-karthikeyan {background-position: -1px -137px;}
-.flair-kobayashi {background-position: -1px -154px;}
-.flair-kovalainen {background-position: -1px -171px;}
-.flair-maldonado {background-position: -1px -188px;}
-.flair-massa {background-position: -1px -205px;}
-.flair-perez {background-position: -1px -222px;}
-.flair-petrov {background-position: -1px -239px;}
-.flair-raikkonen {background-position: -1px -256px;}
-.flair-ricciardo {background-position: -1px -273px;}
-.flair-rosberg {background-position: -1px -290px;}
-.flair-schumacher {background-position: -1px -307px;}
-.flair-senna {background-position: -1px -324px;}
-.flair-vergne {background-position: -1px -341px;}
-.flair-vettel {background-position: -1px -358px;}
-.flair-webber {background-position: -1px -375px;}
-.flair-mika {background-position: -1px -392px;}
-.flair-damon {background-position: -1px -409px;}
-.flair-alain {background-position: -1px -426px;}
-.flair-ayrton {background-position: -1px -443px;}
-.flair-gilles {background-position: -1px -460px;}
-/* Additions 22/3/2012 */
-.flair-bellof {background-position: -1px -477px;}
-.flair-clark {background-position: -1px -494px;}
-.flair-rindt {background-position: -1px -511px;}
-.flair-david {background-position: -1px -528px;}
 
-/* Downvote hovertext */
-.comment .arrow.down:hover:before {
-    position: absolute;
-    display: block;
-    z-index: 1000;
-    width: 100px;
-    padding: 4px;
-    border: 1px solid #333;
-    background-color: #66B5FF;
-    content: "Remember Reddiquette!";
-    text-align: center;
-    font-size: 11px;
-    font-weight: bold;
-    margin-left: 25px;
-    margin-top: 5px;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px
+*+html .flair, .flair:hover {
+width: auto;
+border-width: 1px;
+background-color: #f5f5f5;
+padding: 1px 1ex 3px 1px;
+}
+
+a[href="/alonso"]:before,a[href="/button"]:before,a[href="/delarosa"]:before,a[href="/diresta"]:before,
+a[href="/glock"]:before,a[href="/grosjean"]:before,a[href="/hamilton"]:before,a[href="/hulkenberg"]:before,
+a[href="/karthikeyan"]:before,a[href="/kobayashi"]:before,a[href="/kovalainen"]:before,a[href="/maldonado"]:before,
+a[href="/massa"]:before,a[href="/perez"]:before,a[href="/petrov"]:before,a[href="/raikkonen"]:before,
+a[href="/ricciardo"]:before,a[href="/rosberg"]:before,a[href="/schumacher"]:before,a[href="/senna"]:before,
+a[href="/vergne"]:before,a[href="/vettel"]:before,a[href="/webber"]:before,a[href="/mika"]:before,
+a[href="/damon"]:before,a[href="/alain"]:before,a[href="/ayrton"]:before,a[href="/gilles"]:before,
+a[href="/bellof"]:before,a[href="/clark"]:before,a[href="/rindt"]:before,a[href="/david"]:before,
+a[href="/kubica"]:before,a[href="/dambrosio"]:before,a[href="/alguersuari"]:before,a[href="/andretti"]:before,
+a[href="/badoer"]:before,a[href="/barrichello"]:before,a[href="/bottas"]:before,a[href="/cevert"]:before,
+a[href="/chilton"]:before,a[href="/dacosta"]:before,a[href="/fabi"]:before,a[href="/fisichella"]:before,
+a[href="/fittipaldi"]:before,a[href="/frentzen"]:before,a[href="/gutierrez"]:before,a[href="/hunt"]:before,
+a[href="/ide"]:before,a[href="/inoue"]:before,a[href="/kovalainen2"]:before,a[href="/lauda"]:before,
+a[href="/montoya"]:before,a[href="/patrese"]:before,a[href="/peterson"]:before,a[href="/pic"]:before,
+a[href="/piquet"]:before,a[href="/pryce"]:before,a[href="/purley"]:before,a[href="/razia"]:before,
+a[href="/rossi"]:before,a[href="/sato"]:before,a[href="/speed"]:before,a[href="/villeneuve"]:before,
+a[href="/visoiu"]:before,a[href="/brabham"]:before,a[href="/chandhok"]:before,a[href="/hill"]:before,
+a[href="/mansell"]:before,a[href="/stewart"]:before,a[href="/caterham"]:before,a[href="/ferrari"]:before,
+a[href="/forceindia"]:before,a[href="/lotus"]:before,a[href="/marussia"]:before,a[href="/mclaren"]:before,
+a[href="/mercedes"]:before,a[href="/redbull"]:before,a[href="/sauber"]:before,a[href="/tororosso"]:before,
+a[href="/williams"]:before,a[href="/alesi"]:before,a[href="/bianchi"]:before,a[href="/brundle"]:before,
+a[href="/philhill"]:before,a[href="/sutil"]:before,a[href="/vandergarde"]:before,a[href="/vandergarde"]:before,
+a[href="/aguri-suzuki"]:before,a[href="/alan-jones"]:before,a[href="/alberto-ascari"]:before,
+a[href="/alex-zanardi"]:before,a[href="/bruce-mclaren"]:before,a[href="/button-2009"]:before,
+a[href="/carlos-pace"]:before,a[href="/carlos-reutemann"]:before,a[href="/chris-amon"]:before,
+a[href="/christijan-albers"]:before,a[href="/denny-hulme"]:before,a[href="/eddie-cheever"]:before,
+a[href="/eddie-irvine"]:before,a[href="/elio-de-angelis"]:before,a[href="/ericsson"]:before,
+a[href="/gaston-mazzacane"]:before,a[href="/gerhard-berger"]:before,a[href="/guiseppe-farina"]:before,
+a[href="/jacky-ickx"]:before,a[href="/jarno-trulli"]:before,a[href="/jody-scheckter"]:before,
+a[href="/john-surtees"]:before,a[href="/john-watson"]:before,a[href="/jos-verstappen"]:before,
+a[href="/juan-manuel-fangio"]:before,a[href="/keke-rosberg"]:before,a[href="/luciano-burti"]:before,
+a[href="/magnussen"]:before,a[href="/michael-andretti"]:before,a[href="/mike-hawthorn"]:before,
+a[href="/nick-heidfeld"]:before,a[href="/ralf-schumacher"]:before,a[href="/schumacher-1990s"]:before,
+a[href="/stirling-moss"]:before,a[href="/thierry-boutsen"]:before,a[href="/kvyat"]:before,a[href="/hamiltonALT"]:before{
+width:20px;
+height:16px;
+content:" ";
+background:url(%%flair-august-2014%%) no-repeat scroll -9999px -9999px transparent;
+display:inline-block
+}
+
+.flair:before {
+content: "";
+height: 16px;
+width: 20px;
+display: inline-block;
+background-image:url(%%flair-april-2014%%);
+background-repeat: no-repeat;
+vertical-align: middle;
+margin-right: 4px;
+}
+
+.flair-alonso:before,a[href="/alonso"]:before{background-position:-1px -1px}
+.flair-button:before,a[href="/button"]:before{background-position:-1px -18px}
+.flair-delarosa:before,a[href="/delarosa"]:before{background-position:-1px -35px}
+.flair-diresta:before,a[href="/diresta"]:before{background-position:-1px -52px}
+.flair-glock:before,a[href="/glock"]:before{background-position:-1px -69px}
+.flair-grosjean:before,a[href="/grosjean"]:before{background-position:-1px -86px}
+.flair-hamilton:before,a[href="/hamilton"]:before{background-position:-1px -103px}
+.flair-hulkenberg:before,a[href="/hulkenberg"]:before{background-position:-1px -120px}
+.flair-karthikeyan:before,a[href="/karthikeyan"]:before{background-position:-1px -137px}
+.flair-kobayashi:before,a[href="/kobayashi"]:before{background-position:-1px -154px}
+.flair-kovalainen:before,a[href="/kovalainen"]:before{background-position:-1px -171px}
+.flair-maldonado:before,a[href="/maldonado"]:before{background-position:-1px -188px}
+.flair-massa:before,a[href="/massa"]:before{background-position:-1px -205px}
+.flair-perez:before,a[href="/perez"]:before{background-position:-1px -222px}
+.flair-petrov:before,a[href="/petrov"]:before{background-position:-1px -239px}
+.flair-raikkonen:before,a[href="/raikkonen"]:before{background-position:-1px -256px}
+.flair-ricciardo:before,a[href="/ricciardo"]:before{background-position:-1px -273px}
+.flair-rosberg:before,a[href="/rosberg"]:before{background-position:-1px -290px}
+.flair-schumacher:before,a[href="/schumacher"]:before{background-position:-1px -307px}
+.flair-senna:before,a[href="/senna"]:before{background-position:-1px -324px}
+.flair-vergne:before,a[href="/vergne"]:before{background-position:-1px -341px}
+.flair-vettel:before,a[href="/vettel"]:before{background-position:-1px -358px}
+.flair-webber:before,a[href="/webber"]:before{background-position:-1px -375px}
+.flair-mika:before,a[href="/mika"]:before{background-position:-1px -392px}
+.flair-damon:before,a[href="/damon"]:before{background-position:-1px -409px}
+.flair-alain:before,a[href="/alain"]:before{background-position:-1px -426px}
+.flair-ayrton:before,a[href="/ayrton"]:before{background-position:-1px -443px}
+.flair-gilles:before,a[href="/gilles"]:before{background-position:-1px -460px}
+.flair-bellof:before,a[href="/bellof"]:before{background-position:-1px -477px}
+.flair-clark:before,a[href="/clark"]:before{background-position:-1px -494px}
+.flair-rindt:before,a[href="/rindt"]:before{background-position:-1px -511px}
+.flair-david:before,a[href="/david"]:before{background-position:-1px -528px}
+.flair-kubica:before,a[href="/kubica"]:before{background-position:-1px -545px}
+.flair-dambrosio:before,a[href="/dambrosio"]:before{background-position:-1px -562px}
+.flair-alguersuari:before,a[href="/alguersuari"]:before{background-position:-1px -579px}
+.flair-andretti:before,a[href="/andretti"]:before{background-position:-1px -596px}
+.flair-badoer:before,a[href="/badoer"]:before{background-position:-1px -613px}
+.flair-barrichello:before,a[href="/barrichello"]:before{background-position:-1px -630px}
+.flair-bottas:before,a[href="/bottas"]:before{background-position:-1px -647px}
+.flair-cevert:before,a[href="/cevert"]:before{background-position:-1px -664px}
+.flair-chilton:before,a[href="/chilton"]:before{background-position:-1px -681px}
+.flair-dacosta:before,a[href="/dacosta"]:before{background-position:-1px -698px}
+.flair-fabi:before,a[href="/fabi"]:before{background-position:-1px -715px}
+.flair-fisichella:before,a[href="/fisichella"]:before{background-position:-1px -732px}
+.flair-fittipaldi:before,a[href="/fittipaldi"]:before{background-position:-1px -749px}
+.flair-frentzen:before,a[href="/frentzen"]:before{background-position:-1px -766px}
+.flair-gutierrez:before,a[href="/gutierrez"]:before{background-position:-1px -783px}
+.flair-hunt:before,a[href="/hunt"]:before{background-position:-1px -800px}
+.flair-ide:before,a[href="/ide"]:before{background-position:-1px -817px}
+.flair-inoue:before,a[href="/inoue"]:before{background-position:-1px -834px}
+.flair-kovalainen2:before,a[href="/kovalainen2"]:before{background-position:-1px -851px}
+.flair-lauda:before,a[href="/lauda"]:before{background-position:-1px -868px}
+.flair-montoya:before,a[href="/montoya"]:before{background-position:-1px -885px}
+.flair-patrese:before,a[href="/patrese"]:before{background-position:-1px -902px}
+.flair-peterson:before,a[href="/peterson"]:before{background-position:-1px -919px}
+.flair-pic:before,a[href="/pic"]:before{background-position:-1px -936px}
+.flair-piquet:before,a[href="/piquet"]:before{background-position:-1px -953px}
+.flair-pryce:before,a[href="/pryce"]:before{background-position:-1px -970px}
+.flair-purley:before,a[href="/purley"]:before{background-position:-1px -987px}
+.flair-razia:before,a[href="/razia"]:before{background-position:-1px -1004px}
+.flair-rossi:before,a[href="/rossi"]:before{background-position:-1px -1021px}
+.flair-sato:before,a[href="/sato"]:before{background-position:-1px -1038px}
+.flair-speed:before,a[href="/speed"]:before{background-position:-1px -1055px}
+.flair-villeneuve:before,a[href="/villeneuve"]:before{background-position:-1px -1072px}
+.flair-visoiu:before,a[href="/visoiu"]:before{background-position:-1px -1089px}
+.flair-brabham:before,a[href="/brabham"]:before{background-position:-1px -1106px}
+.flair-chandhok:before,a[href="/chandhok"]:before{background-position:-1px -1123px}
+.flair-hill:before,a[href="/hill"]:before{background-position:-1px -1140px}
+.flair-mansell:before,a[href="/mansell"]:before{background-position:-1px -1157px}
+.flair-stewart:before,a[href="/stewart"]:before{background-position:-1px -1174px}
+.flair-caterham:before,a[href="/caterham"]:before{background-position:-1px -1191px}
+.flair-ferrari:before,a[href="/ferrari"]:before{background-position:-1px -1208px}
+.flair-forceindia:before,a[href="/forceindia"]:before{background-position:-1px -1225px}
+.flair-lotus:before,a[href="/lotus"]:before{background-position:-1px -1242px}
+.flair-marussia:before,a[href="/marussia"]:before{background-position:-1px -1259px}
+.flair-mclaren:before,a[href="/mclaren"]:before{background-position:-1px -1276px}
+.flair-mercedes:before,a[href="/mercedes"]:before{background-position:-1px -1293px}
+.flair-redbull:before,a[href="/redbull"]:before{background-position:-1px -1310px}
+.flair-sauber:before,a[href="/sauber"]:before{background-position:-1px -1327px}
+.flair-tororosso:before,a[href="/tororosso"]:before{background-position:-1px -1344px}
+.flair-williams:before,a[href="/williams"]:before{background-position:-1px -1361px}
+.flair-alesi:before,a[href="/alesi"]:before{background-position:-1px -1378px}
+.flair-bianchi:before,a[href="/bianchi"]:before{background-position:-1px -1395px}
+.flair-brundle:before,a[href="/brundle"]:before{background-position:-1px -1412px}
+.flair-philhill:before,a[href="/philhill"]:before{background-position:-1px -1429px}
+.flair-sutil:before,a[href="/sutil"]:before{background-position:-1px -1446px}
+.flair-vandergarde:before,a[href="/vandergarde"]:before{background-position:-1px -1463px}
+.flair-aguri-suzuki:before,a[href="/aguri-suzuki"]:before{background-position:-1px -1480px}
+.flair-alan-jones:before,a[href="/alan-jones"]:before{background-position:-1px -1497px}
+.flair-alberto-ascari:before,a[href="/alberto-ascari"]:before{background-position:-1px -1514px}
+.flair-alex-zanardi:before,a[href="/alex-zanardi"]:before{background-position:-1px -1531px}
+.flair-bruce-mclaren:before,a[href="/bruce-mclaren"]:before{background-position:-1px -1548px}
+.flair-button-2009:before,a[href="/button-2009"]:before{background-position:-1px -1565px}
+.flair-carlos-pace:before,a[href="/carlos-pace"]:before{background-position:-1px -1582px}
+.flair-carlos-reutemann:before,a[href="/carlos-reutemann"]:before{background-position:-1px -1599px}
+.flair-chris-amon:before,a[href="/chris-amon"]:before{background-position:-1px -1616px}
+.flair-christijan-albers:before,a[href="/christijan-albers"]:before{background-position:-1px -1633px}
+.flair-denny-hulme:before,a[href="/denny-hulme"]:before{background-position:-1px -1650px}
+.flair-eddie-cheever:before,a[href="/eddie-cheever"]:before{background-position:-1px -1667px}
+.flair-eddie-irvine:before,a[href="/eddie-irvine"]:before{background-position:-1px -1684px}
+.flair-elio-de-angelis:before,a[href="/elio-de-angelis"]:before{background-position:-1px -1701px}
+.flair-ericsson:before,a[href="/ericsson"]:before{background-position:-1px -1718px}
+.flair-gaston-mazzacane:before,a[href="/gaston-mazzacane"]:before{background-position:-1px -1735px}
+.flair-gerhard-berger:before,a[href="/gerhard-berger"]:before{background-position:-1px -1752px}
+.flair-guiseppe-farina:before,a[href="/guiseppe-farina"]:before{background-position:-1px -1769px}
+.flair-jacky-ickx:before,a[href="/jacky-ickx"]:before{background-position:-1px -1786px}
+.flair-jarno-trulli:before,a[href="/jarno-trulli"]:before{background-position:-1px -1803px}
+.flair-jody-scheckter:before,a[href="/jody-scheckter"]:before{background-position:-1px -1820px}
+.flair-john-surtees:before,a[href="/john-surtees"]:before{background-position:-1px -1837px}
+.flair-john-watson:before,a[href="/john-watson"]:before{background-position:-1px -1854px}
+.flair-jos-verstappen:before,a[href="/jos-verstappen"]:before{background-position:-1px -1871px}
+.flair-juan-manuel-fangio:before,a[href="/juan-manuel-fangio"]:before{background-position:-1px -1888px}
+.flair-keke-rosberg:before,a[href="/keke-rosberg"]:before{background-position:-1px -1905px}
+.flair-luciano-burti:before,a[href="/luciano-burti"]:before{background-position:-1px -1922px}
+.flair-magnussen:before,a[href="/magnussen"]:before{background-position:-1px -1939px}
+.flair-michael-andretti:before,a[href="/michael-andretti"]:before{background-position:-1px -1956px}
+.flair-mike-hawthorn:before,a[href="/mike-hawthorn"]:before{background-position:-1px -1973px}
+.flair-nick-heidfeld:before,a[href="/nick-heidfeld"]:before{background-position:-1px -1990px}
+.flair-ralf-schumacher:before,a[href="/ralf-schumacher"]:before{background-position:-1px -2007px}
+.flair-schumacher-1990s:before,a[href="/schumacher-1990s"]:before{background-position:-1px -2024px}
+.flair-stirling-moss:before,a[href="/stirling-moss"]:before{background-position:-1px -2041px}
+.flair-thierry-boutsen:before,a[href="/thierry-boutsen"]:before{background-position:-1px -2058px}
+.flair-kvyat:before,a[href="/kvyat"]:before{background-position:-1px -2075px }
+.flair-hamiltonALT:before,a[href="/hamiltonALT"]:before{background-position:-1px -2092px }
+
+
+
+/* Put team logos beside their names */
+
+html:not([lang="ns"]) .titlebox blockquote>ul:nth-of-type(2)>li:nth-of-type(2) a { padding-left:25px; position:relative; }
+html:not([lang="ns"]) .titlebox blockquote>ul:nth-of-type(2)>li:nth-of-type(2) a:before {
+content: "";
+display: inline-block;
+width: 19px;
+height: 18px;
+background-image: url(%%flair-april-2014%%);background-repeat: no-repeat;
+position: absolute;
+top: 6px;
+left: -2px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://caterhamf1.com"]:before {
+background-position: -2px -1190px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://formula1.ferrari.com"]:before {
+background-position: -2px -1207px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://forceindiaf1.com"]:before {
+background-position: -2px -1224px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://lotusf1team.com"]:before {
+background-position: -2px -1240px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://marussiaf1team.com"]:before {
+background-position: -2px -1258px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://mclaren.com/formula1"]:before {
+background-position: -2px -1275px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://mercedes-amg-f1.com"]:before {
+background-position: -2px -1292px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://infiniti-redbullracing.com"]:before {
+background-position: -2px -1309px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote:last-child > ul li a[href="http://sauberf1team.com"]:before {
+background-position: -2px -1326px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://redbull.com/cs/Satellite/en_INT/Toro-Rosso/001242807620404"]:before {
+background-position: -2px -1343px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://williamsf1.com"]:before {
+background-position: -2px -1360px;
+}
+
+
+
+/* [8.3] Link Flair */
+/* [8.3.1] Default Display */
+html:not([lang="ns"]) p.title>.linkflairlabel {
+padding: 0 4px;
+border-radius: 0;
+background: #323232;
+color: #fff;
+}
+
+/* Link Flair Colors */
+html:not([lang="ns"]) .linkflair-star p.title:before {
+background: url(%%sprite%%) no-repeat scroll -155px 0px transparent;
+text-indent: 20px;
+display: inline-block;
+height: 16px;
+width: 18px;
+content: "";
+}
+
+html:not([lang="ns"]) div.linkflair-star p.title>.linkflairlabel {
+display: none;
+}
+
+.linkflair-star p.title .domain { text-indent:0; }
+
+/* Link Flair Colors */
+html:not([lang="ns"]) .linkflair-paywall p.title>.linkflairlabel { color: rgb(115, 230, 115); }
+html:not([lang="ns"]) .linkflair-rumour p.title>.linkflairlabel { color:orange;  }
+html:not([lang="ns"]) .linkflair-video p.title>.linkflairlabel { color:red; }
+html:not([lang="ns"]) .linkflair-off-topic p.title>.linkflairlabel { color: rgb(27, 227, 241);  }
+
+/* [8.3.2] Filters */
+.sitetable.linklisting .thing .flair, ul.content span.flair,
+html:lang(wt) .link:not(.linkflair-feature),
+html:lang(so) .link,
+html:lang(hs) .link.linkflair-race,
+html:lang(hs) .link.linkflair-qualifying,
+html:lang(hs) .link.linkflair-post-race,
+html:lang(hs) .link.linkflair-post-qualifying,
+html:lang(hs) .link.linkflair-practice { display: none }
+
+html:lang(so) .link.linkflair-race,
+html:lang(so) .link.linkflair-qualifying,
+html:lang(so) .link.linkflair-post-race,
+html:lang(so) .link.linkflair-post-qualifying,
+html:lang(so) .link.linkflair-practice { display: block    }
+
+html:not([lang="ns"]) .thing.linkflair.linkflair-race { border-left: 5px solid #6db81c; }
+html:not([lang="ns"]) .thing.linkflair.linkflair-qualifying { border-left: 5px solid #369; }
+html:not([lang="ns"]) .thing.linkflair.linkflair-post-race,
+html:not([lang="ns"]) .thing.linkflair.linkflair-post-qualifying { border-left: 5px solid #6D6D6D;}
+html:not([lang="ns"]) .thing.linkflair.linkflair-practice  { border-left: 5px solid rgb(210,50,45); }
+html:not([lang="ns"]) .thing.linkflair.linkflair-feature { border-left: 5px solid #0D0D0D; }
+html:not([lang="ns"]) .thing.linkflair.linkflair-meetup { border-left: 5px solid #0D0D0D; }
+html:not([lang="ns"]) .linkflairlabel { border:0px none; color:#000; line-height:1.5em;  }
+html:not([lang="ns"]) .linkflair-practice p.title > .linkflairlabel,
+html:not([lang="ns"]) .linkflair-qualifying p.title >  .linkflairlabel,
+html:not([lang="ns"]) .linkflair-race p.title >  .linkflairlabel { color:#fff; border:0 none; display:inline-block; }
+html:not([lang="ns"]) .linkflair-practice p.title >  .linkflairlabel { background:rgb(210,50,45); }
+html:not([lang="ns"]) .linkflair-qualifying p.title >  .linkflairlabel  { background:#369; }
+html:not([lang="ns"]) .linkflair-post-qualifying p.title >  .linkflairlabel { background:#6D6D6D; color:#FFF }
+html:not([lang="ns"]) .linkflair-post-race p.title >  .linkflairlabel { background:#6D6D6D; color:#FFF }
+html:not([lang="ns"]) .linkflair-race p.title >  .linkflairlabel { background:#6db81c; }
+html:not([lang="ns"]) .linkflair-feature p.title > .linkflairlabel {  background: #000; color:#fff; }
+
+/* remove html:not([lang="ns"]) .thing.comment .usertext-body .md { overflow: visible; } */
+
+
+/* [8.3.3] Filters Images */
+html:not([lang="ns"]) .linkflair-practice a.thumbnail,
+html:not([lang="ns"]) .linkflair-qualifying a.thumbnail,
+html:not([lang="ns"]) .linkflair-post-qualifying a.thumbnail,
+html:not([lang="ns"]) .linkflair-post-race a.thumbnail,
+html:not([lang="ns"]) .linkflair-race a.thumbnail,
+html:not([lang="ns"]) .linkflair-meetup a.thumbnail,
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="australian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="albert_park"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="malaysian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="malaysia"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="sepang"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="bahrain"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="chinese"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="shanghai"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="spanish"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="monaco"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="canadian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="montreal_gp"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="circuit_gilles"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="austrian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="british"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="german"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="hungarian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="belgian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="italian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="singapore"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="japanese"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="russian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="united_states"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="brazilian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="abu_dhabi"] {
+background-image:url(%%flag-med-sprite%%);
+width:60px;
+height:60px;
+border-radius: 2px
+}
+
+
+/* [8.4] Country Flags */
+html:not([lang="ns"]) a[href="#au"], html:not([lang="ns"]) a[href="/au"],
+html:not([lang="ns"]) a[href="#br"], html:not([lang="ns"]) a[href="/br"],
+html:not([lang="ns"]) a[href="#de"], html:not([lang="ns"]) a[href="/de"],
+html:not([lang="ns"]) a[href="#dk"], html:not([lang="ns"]) a[href="/dk"],
+html:not([lang="ns"]) a[href="#es"], html:not([lang="ns"]) a[href="/es"],
+html:not([lang="ns"]) a[href="#en"], html:not([lang="ns"]) a[href="/en"],
+html:not([lang="ns"]) a[href="#gb"], html:not([lang="ns"]) a[href="/gb"],
+html:not([lang="ns"]) a[href="#fi"], html:not([lang="ns"]) a[href="/fi"],
+html:not([lang="ns"]) a[href="#fr"], html:not([lang="ns"]) a[href="/fr"],
+html:not([lang="ns"]) a[href="#mx"], html:not([lang="ns"]) a[href="/mx"],
+html:not([lang="ns"]) a[href="#nl"], html:not([lang="ns"]) a[href="/nl"],
+html:not([lang="ns"]) a[href="#ru"], html:not([lang="ns"]) a[href="/ru"],
+html:not([lang="ns"]) a[href="#ve"], html:not([lang="ns"]) a[href="/ve"],
+html:not([lang="ns"]) a[href="#se"], html:not([lang="ns"]) a[href="/se"],
+html:not([lang="ns"]) a[href="#it"], html:not([lang="ns"]) a[href="/it"],
+html:not([lang="ns"]) a[href="#jp"], html:not([lang="ns"]) a[href="/jp"],
+html:not([lang="ns"]) a[href="#ch"], html:not([lang="ns"]) a[href="/ch"],
+html:not([lang="ns"]) a[href="#at"], html:not([lang="ns"]) a[href="/at"],
+html:not([lang="ns"]) a[href="#in"], html:not([lang="ns"]) a[href="/in"],
+html:not([lang="ns"]) a[href="#my"], html:not([lang="ns"]) a[href="/my"],
+html:not([lang="ns"]) a[href="#ca"], html:not([lang="ns"]) a[href="/ca"],
+html:not([lang="ns"]) a[href="#us"], html:not([lang="ns"]) a[href="/us"],
+html:not([lang="ns"]) a[href="#co"], html:not([lang="ns"]) a[href="/co"]
+{
+background-image:url(%%flags%%);
+background-repeat:no-repeat;
+background-color:transparent;
+width:16px;
+height:11px;
+text-indent:-99999pt;
+display:inline-block;
+position:relative;
+margin-right:2px;
+top:1px;
+padding:0;
+}
+
+
+html:not([lang="ns"]) a[href="#au"], html:not([lang="ns"]) a[href="/au"] {
+background-position:-32px -33px;
+
+}
+
+html:not([lang="ns"]) a[href="#br"], html:not([lang="ns"]) a[href="/br"] {
+background-position: -172px -61px;
+}
+
+html:not([lang="ns"]) a[href="#de"], html:not([lang="ns"]) a[href="/de"] {
+background-position: -284px -117px;
+}
+
+html:not([lang="ns"]) a[href="#dk"], html:not([lang="ns"]) a[href="/dk"] {
+background-position:-32px -145px;
+
+}
+
+html:not([lang="ns"]) a[href="#es"], html:not([lang="ns"]) a[href="/es"] {
+background-position:-4px -173px;
+
+}
+
+html:not([lang="ns"]) a[href="#jp"], html:not([lang="ns"]) a[href="/jp"] {
+background-position:-256px -257px;
+
+}
+
+html:not([lang="ns"]) a[href="#gb"], html:not([lang="ns"]) a[href="/gb"] {
+background-position:-284px -173px;
+
+}
+
+html:not([lang="ns"]) a[href="#fi"], html:not([lang="ns"]) a[href="/fi"] {
+background-position:-88px -173px;
+}
+
+
+html:not([lang="ns"])  a[href="#fr"], html:not([lang="ns"]) a[href="/fr"] {
+background-position:-228px -173px;
+
+}
+
+html:not([lang="ns"]) a[href="#mx"], html:not([lang="ns"]) a[href="/mx"] {
+background-position:-172px -369px;
+
+}
+
+html:not([lang="ns"]) a[href="#nl"], html:not([lang="ns"]) a[href="/nl"] {
+background-position:-116px -397px;
+
+}
+
+html:not([lang="ns"]) a[href="#ru"], html:not([lang="ns"]) a[href="/ru"] {
+background-position:-144px -453px;
+
+}
+
+html:not([lang="ns"]) a[href="#ve"], html:not([lang="ns"]) a[href="/ve"] {
+background-position:-172px -565px;
+
+}
+
+
+html:not([lang="ns"]) a[href="#it"], html:not([lang="ns"]) a[href="/it"] {
+background-position:-172px -257px;
+}
+
+html:not([lang="ns"]) a[href="#in"], html:not([lang="ns"]) a[href="/in"] {
+background-position:-32px -257px;
+
+}
+
+html:not([lang="ns"]) a[href="#se"], html:not([lang="ns"]) a[href="/se"] {
+background-position:-32px -481px
+}
+
+html:not([lang="ns"]) a[href="#at"], html:not([lang="ns"]) a[href="/at"] {
+background-position:-4px -33px
+}
+
+html:not([lang="ns"]) a[href="#ch"], html:not([lang="ns"]) a[href="/xh"] {
+background-position:-198px -89px
+}
+
+html:not([lang="ns"]) a[href="#in"], html:not([lang="ns"]) a[href="/in"] {
+background-position:-32px -257px
+}
+
+html:not([lang="ns"]) a[href="#ca"], html:not([lang="ns"]) a[href="/ca"] {
+background-position:-60px -89px
+}
+
+html:not([lang="ns"]) a[href="#us"], html:not([lang="ns"]) a[href="/us"] {
+background-position:-4px -565px
+}
+
+html:not([lang="ns"]) a[href="#my"], html:not([lang="ns"]) a[href="/my"] {
+background-position:-200px -369px
+}
+
+html:not([lang="ns"]) a[href="#co"], html:not([lang="ns"]) a[href="/co"] {
+background-position:-60px -117px
+}
+
+/* [8.6] Thumbnails for Session Threads */
+
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_australian"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="albert_park"]  { background-position: 0px 0px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_malaysian"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="malaysia"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="sepang"] { background-position: -60px 0px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="bahrain"] { background-position: -120px 0px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="chinese"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="shanghai"] { background-position: -180px 0px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_spanish"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="spanish"] { background-position: -240px 0px;}
+
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_monaco"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="monaco"] { background-position: 0px -60px; }
+
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_canadian"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="montreal_gp"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="canadian"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="circuit_gilles"] { background-position: -60px -60px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_austrian"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="austrian"] { background-position: -120px -60px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_british"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="british"] { background-position: -180px -60px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_german"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="german"] { background-position: -240px -60px; }
+
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="hungarian"] { background-position: 0px -120px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_belgian"] { background-position: -60px -120px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_italian"] { background-position: -120px -120px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_singapore"] { background-position: -168px -120px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_japanese"] { background-position: -240px -120px; }
+
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_russian"] { background-position: 0px -180px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_united_states"] { background-position: -60px -180px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_brazilian"] { background-position: -120px -180px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_abu_dhabi"] { background-position: -240px -180px; }
+
+
+/* [8.7] Session Thread Styling */
+
+.post-linkflair-practice .linkflair .md hr,
+.post-linkflair-qualifying .linkflair .md hr,
+.post-linkflair-post-qualifying .linkflair .md hr,
+.post-linkflair-race .linkflair .md hr,
+.post-linkflair-post-race .linkflair .md hr { height: 1px; background: #ccc; border: 0 none; margin: 15px 0; }
+
+.post-linkflair-practice .linkflair .md h3,
+.post-linkflair-qualifying .linkflair .md h3,
+.post-linkflair-post-qualifying .linkflair .md h3,
+.post-linkflair-race .linkflair .md h3,
+.post-linkflair-post-race .linkflair .md h3 { text-align:center; font-size:14pt; margin-bottom:10px; }
+
+.post-linkflair-practice .linkflair .md h4,
+.post-linkflair-qualifying .linkflair .md h4,
+.post-linkflair-post-qualifying .linkflair .md h4,
+.post-linkflair-race .linkflair .md h4,
+.post-linkflair-post-race .linkflair .md h4 { font-size:12pt; margin-bottom:10px; }
+
+.post-linkflair-practice .linkflair .md  table:nth-of-type(1),
+.post-linkflair-qualifying .linkflair .md  table:nth-of-type(1),
+.post-linkflair-post-qualifying .linkflair .md  table:nth-of-type(1),
+.post-linkflair-race .linkflair .md  table:nth-of-type(1),
+.post-linkflair-post-race .linkflair .md  table:nth-of-type(1) { margin: 0 auto 10px; }
+
+.post-linkflair-practice .linkflair .md table,
+.post-linkflair-qualifying .linkflair .md table,
+.post-linkflair-post-qualifying .linkflair .md table,
+.post-linkflair-race .linkflair .md table,
+.post-linkflair-post-race .linkflair .md table { margin: 0 auto 10px; width:100%; }
+
+.post-linkflair-practice .linkflair .md table th,
+.post-linkflair-qualifying .linkflair .md table th,
+.post-linkflair-post-qualifying .linkflair .md table th,
+.post-linkflair-race .linkflair .md table th,
+.post-linkflair-post-race .linkflair .md table th {  border-right: 1px solid #525252; border-top:none; border-left:none; border-bottom: 1px solid #525252; }
+
+.linkflair .md table tr:nth-of-type(even) { background:#f6f6f6; }
+.linkflair .md table tr { background:#f9f9f9; }
+.linkflair .md table tr:hover { background:#fff; }
+
+.res-nightmode .linkflair .md table th { border:1px solid #000; }
+.res-nightmode .linkflair .md table tr:nth-of-type(even) { background:#222222; }
+.res-nightmode .linkflair .md table tr { background:#393939; }
+.res-nightmode .linkflair .md table tr:hover { background:#2e2e2e; }
+.res-nightmode .linkflair .md table td { border-color:#000; }
+
+/* .linkflair .md table tr:nth-of-type(n+11) { display:none; } */
+.linkflair .md table:hover tr { display:table-row }
+
+.linkflair  .md table th {
+background:#000;
+color:#fff;
+padding:5px;
+}
+
+.linkflair .md table td { padding:5px; }
+.linkflair .md table a { top: 1px; }
+
+.post-linkflair-qualifying .linkflair .md p:first-child,
+.post-linkflair-race .linkflair .md p:first-child { text-align:center; }
+
+.linkflair-race .md table span.keyNavAnnotation,
+.linkflair-qualifying .md table span.keyNavAnnotation { display: none !important; }
+
+.linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(1),
+.linkflair-qualifying  .md table:nth-of-type(2) tr td:nth-of-type(1),
+.linkflair-race .md table:nth-of-type(2) tr th:nth-of-type(1),
+.linkflair-qualifying  .md table:nth-of-type(2) tr th:nth-of-type(1) { width:32px; text-align:center; }
+
+.linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(2),
+.linkflair-qualifying  .md table:nth-of-type(2) tr td:nth-of-type(2) { width:115px; }
+
+.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(5),
+.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(6),
+.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(7),
+.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(5),
+.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(6),
+.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(7) { width: 60px; text-align: center; }
+
+.linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(5),
+.linkflair-race .md table:nth-of-type(2) tr th:nth-of-type(5) { width: 125px; text-align: center; }
+
+
+/* [9.0] Reddit Enhancement Suite */
+
+/* [9.1] Never Ending Reddit */
+
+/* Try to override the RES default loader */
+html:not([lang="ns"]) #progressIndicator { font-weight:bold; text-shadow:0 1px 0 #fff; }
+
+html:not([lang="ns"]) #progressIndicator>img {
+content: "";
+height: 24px;
+width: 21px;
+padding-left:21px;
+display: block;
+background: url(%%sprite%%);
+margin: 0 auto;
+background-position:-89px -60px;
+overflow:hidden;
+display:none;
+}
+
+
+/* [9.2] RES Features */
+
+html:not([lang="ns"]) #srList { z-index:50001 !important; }
+html:not([lang="ns"]) #RESShortcutsEditContainer { background:transparent !important; }
+
+html:not([lang="ns"]) #RESShortcutsSort,
+html:not([lang="ns"]) #RESShortcutsRight,
+html:not([lang="ns"]) #RESShortcutsLeft,
+html:not([lang="ns"]) #RESShortcutsAdd,
+html:not([lang="ns"]) #RESShortcutsTrash {
+background:transparent !important;
+color:#f1f1f1 !important;
+width:12px !important;
+font-size:11px !important;
+}
+
+html:not([lang="ns"]) #RESShortcutsSort {font-size: 12px !important;}
+html:not([lang="ns"]) #RESShortcuts { color:#fff; }
+html:not([lang="ns"]) div.res-navTop a { color:#000; }
+
+
+/* [9.3] RES Nightmode Support  */
+
+html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child > ul > li,
+html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child,
+html.res-nightmode:not([lang="ns"]) body,
+html:not([lang="ns"]) body.res-nightmode .comments-page .sitetable,
+html:not([lang="ns"]) body.res-nightmode  { background: #181818!important; background-color: #181818!important; background-image:none !important; }
+html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child>ul:hover>li:first-child, 
+html:not([lang="ns"]) body.res-nightmode blockquote:last-child>ul:hover>li:first-child { color: #C6C6C6 !important; }
+html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child ul li,
+html:not([lang="ns"]) .res-nightmode .titlebox blockquote:last-child ul li { border-color: #373737; color: #fff; background-color:#181818 !important;}
+html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child ul li:first-child,
+html:not([lang="ns"]) .res-nightmode .titlebox blockquote:last-child ul li:first-child  { border-right:0px; }
+html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child ul li a,
+html:not([lang="ns"]) .res-nightmode .titlebox blockquote:last-child ul li a { border-color: #373737; color: #fff; }
+html.res-nightmode:not([lang="ns"]) #header-bottom-left,
+html:not([lang="ns"]) .res-nightmode #header-bottom-left { background: #181818 !important; background-color: #181818 !important; box-shadow: 0 2px 1px #000; }
+html.res-nightmode:not([lang="ns"]) #header-bottom-left:after,
+html:not([lang="ns"]) .res-nightmode #header-bottom-left:after { background-color: #242323 !important; background: #242323 !important; border-top: 2px solid rgb(54, 52, 52); }
+html:not([lang="ns"]) .res-nightmode div.res-navTop a,
+html:not([lang="ns"]) .res-nightmode #userbarToggle,
+html:not([lang="ns"]) .res-nightmode .usertext-body .md>h2,
+html:not([lang="ns"]) .res-nightmode .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>ul>li { color: #ccc; }
+html:not([lang="ns"]) .res-nightmode.side .md>ul:nth-of-type(1)>li:nth-of-type(2):hover>blockquote,
+html:not([lang="ns"]) .res-nightmode .side .md>ul:nth-of-type(1)>li:nth-of-type(3):hover>blockquote,
+html:not([lang="ns"]) .res-nightmode .side .md>ul:nth-of-type(1)>li:nth-of-type(4):hover>blockquote { box-shadow:-1px 1px 3px rgb(0, 0, 0); border-color:#000; color:#ccc; }
+html:not([lang="ns"]) .res-nightmode .titlebox blockquote:last-child ul li li { background-color: #181818; }
+html:not([lang="ns"]) .res-nightmode .side .md,
+html:not([lang="ns"]) .res-nightmode .titlebox .bottom .age { border-color: rgb(20, 20, 20); }
+html:not([lang="ns"]) .res-nightmode div.content { background-color: #181818; }
+html:not([lang="ns"]) .res-nightmode  .side hr:nth-of-type(4) { background: rgb(20, 20, 20); }
+html:not([lang="ns"]) .res-nightmode .link,
+html:not([lang="ns"]) .res-nightmode .link:hover { background: inherit; }
+html:not([lang="ns"]) .res-nightmode .side .submit { border: none; background: none; }
+html:not([lang="ns"]) .res-nightmode .side .submit .morelink { box-shadow: none; }
+html:not([lang="ns"]) .res-nightmode .side .submit .morelink a { background: #000; }
+html:not([lang="ns"]) .res-nightmode .side .submit .morelink a:hover { color: #aaa; }
+html:not([lang="ns"]) .res-nightmode .linklisting .thing,
+html.res-nightmode:not([lang="ns"]) .linklisting .thing { background-color:transparent; box-shadow:none; }
+html:not([lang="ns"]) .res-nightmode .side .md>h3:nth-of-type(2),
+html.res-nightmode:not([lang="ns"]) .side .md>h3:nth-of-type(2) {  
+border-left: 4px solid #353535; 
+background-color: #242424!important; 
+box-shadow: 0 0px 1px #242424; 
+color: #8A8A8A; 
+background-image:url(%%sprite%%);  
+text-shadow: 0px 1px 0px #000; 
+}
+html:not([lang="ns"]) .res-nightmode .side .md>h3:nth-of-type(3) { color: #CACACA; text-shadow: 0px 1px 0 #000; }
+html:not([lang="ns"]) .res-nightmode .md table { border: 1px solid black; }
+html:not([lang="ns"]) .res-nightmode .md th { background: black; }
+html:not([lang="ns"]) .res-nightmode .md tr { background: #333; }
+html:not([lang="ns"]) .res-nightmode .md tr:nth-of-type(odd) { background: #222; }
+html:not([lang="ns"]) .res-nightmode .md td { border-top: 1px solid #555; }
+html:not([lang="ns"]) .res-nightmode .side .md h1 { background: #444; color: #aaa; }
+html:not([lang="ns"]) .res-nightmode .side .md li { color: #ccc; border-color: black; }
+html:not([lang="ns"]) .res-nightmode .number { background: #000; border: 1px solid #000; }
+html:not([lang="ns"]) .res-nightmode .searchpane { padding: 15px 0 15px 96px; border-color: #2D2D2D; background: #282828; }
+html:not([lang="ns"]) .res-nightmode .sitetable>div:nth-of-type(4n+1), html.res-nightmode:not([lang="ns"]) .sitetable>div:nth-of-type(4n+1) { background: #111111; border-left-color:#2D2D2D !important}
+html:not([lang="ns"]) .res-nightmode .comments-page .sitetable { background:#111111; }
+html:not([lang="ns"]) .res-nightmode .flair:after,
+html:not([lang="ns"]) .res-nightmode .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>a,
+html:not([lang="ns"]) .res-nightmode .usertext-body .md>h1:nth-of-type(1) { opacity:.3; }
+html:not([lang="ns"]) .res-nightmode .usertext-body .md>h1:nth-of-type(1) { background: url(%%belgium2012%%) no-repeat !important; }
+html:not([lang="ns"]) .res-nightmode .sitetable.linklisting .thing .thumbnail { opacity: .5; }
+html:not([lang="ns"]) .res-nightmode .sitetable.linklisting .thing:hover .thumbnail { opacity: 1; }
+
+html:not([lang="ns"]) .res-nightmode .commentarea .thing { background-color:#000; border-left-color: #2D2D2D !important; }
+
+html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing,
+html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing { background:#111111; border-left-color:#2D2D2D !important }
+html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing { background:#000000; border-left-color:#2D2D2D !important}
+
+.res-nightmode .commentarea .morechildren { background:#000 !important; }
+
+html:not([lang="ns"]) .res-nightmode .panestack-title,
+html:not([lang="ns"]) .res-nightmode .commentarea>.usertext,
+html:not([lang="ns"]) .res-nightmode .commentarea .menuarea { background: #454545; color: #C8C8C8; }
+html:not([lang="ns"]) .res-nightmode .side div.linkinfo { background-image: none; }
+html:not([lang="ns"]) .res-nightmode #header-bottom-left .tabmenu .selected a { color:orangered; }
+html:not([lang="ns"]) .res-nightmode #header-bottom-left .tabmenu li a { color:#807E50; }
+html:not([lang="ns"]) .res-nightmode  #header { border:0 none; box-shadow:none; }
+html:not([lang="ns"]) .res-nightmode .comment code,
+html:not([lang="ns"]) .res-nightmode .comment pre { background: black; color: #aaa; border: 1px solid #666; }
+html:not([lang="ns"]) .res-nightmode .comment pre code { border: none; }
+html:not([lang="ns"]) .res-nightmode .comment h1,
+html:not([lang="ns"]) .res-nightmode .comment h2,
+html:not([lang="ns"]) .res-nightmode .comment h3,
+html:not([lang="ns"]) .res-nightmode .comment h4,
+html:not([lang="ns"]) .res-nightmode .comment h5,
+html:not([lang="ns"]) .res-nightmode .comment h6 { color: #ccc; }
+html:not([lang="ns"]) .res-nightmode .pretty-form textarea { box-shadow: none; }
+html:not([lang="ns"]) .res-nightmode .content button { border: 1px solid #666; border-radius: 0; }
+html:not([lang="ns"]) .res-nightmode .commentarea { border: none; }
+html:not([lang="ns"]) .res-nightmode .footer-parent { border-top: 1px solid #000; background: #333; }
+html:not([lang="ns"]) .res-nightmode .debuginfo { background: #333; }
+html:not([lang="ns"]) .res-nightmode .footer { border-color: #222; background: none; }
+html:not([lang="ns"]) .res-nightmode .footer-parent .footer:before { display:none; }
+
+
+/* [10.0] House Keeping  */
+
+html:not([lang="ns"]) .search-page .content {
+padding: 0;
+background-color: transparent;
+}
+
+html:not([lang="ns"]) .searchpane {
+background-color:#fff;
+padding: 15px 0 15px 96px;
+border-color:#ccc;
+}
+
+html:not([lang="ns"]) .search-page .menuarea {
+margin-top:12px;
+margin-bottom:10px;
+}
+
+html:not([lang="ns"]) .search-page .side .md>h3:nth-of-type(3) { right:45px; }
+
+
+/* Hacks for easier css editing! */
+
+.stylesheet-customize-container { width: 100%; }
+#subreddit_stylesheet { display: block; overflow: hidden; }
+.sheets { margin: 0;}
+#stylesheet_contents {
+padding:5px;
+background-color:#222;
+color:#ace;
+border:2px solid #222;
+height: 500px;
+font-size: 13px;
+line-height:1.4}
+body.res-nightmode #stylesheet_contents{
+background-color:#111;
+border-color:#111;
+height: 500px;
+font-size: 13px;
+line-height:1.4
+}
+
+
+/* offset first reddit ad slightly */
+html:not([lang="ns"]) .side div.spacer:nth-of-type(2) .sponsorshipbox{
+margin-top:-5px;
+margin-bottom:-7px;
+}
+
+html:not([lang="ns"]) .titlebox blockquote:nth-of-type(2) table { position:relative; }
+html:not([lang="ns"]) .titlebox blockquote:nth-of-type(2) table:after {
+content: "";
+background: transparent;
+width: 16px;
+height: 292px;
+position: absolute;
+display: block;
+top: 30px;
+left: 44px;
+bottom: 0;
+}
+
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) blockquote p:first-child:after {
+content: "";display: block;position: absolute;height: 205px;width: 280px;background: transparent;top: 10px;right: 10px;}
+
+html:not([lang="ns"]) #NREFloat { z-index:2000; }
+
+.flairselector .flairsample-left a.title { display:none; }
+
+.flairselector .linkflair-feature,
+.flairselector .linkflair-race,
+.flairselector .linkflair-qualifying,
+.flairselector .linkflair-star,
+.flairselector .linkflair-practice,
+.flairselector .linkflair-post-race,
+.flairselector .linkflair-post-qualifying { display:none; }
+
+body.moderator .flairselector .linkflair-feature,
+body.moderator .flairselector .linkflair-race,
+body.moderator .flairselector .linkflair-qualifying,
+body.moderator .flairselector .linkflair-star,
+body.moderator .flairselector .linkflair-practice,
+body.moderator .flairselector .linkflair-post-race,
+body.moderator .flairselector .linkflair-post-qualifying { display:block; }
+
+.flairselector .selected, .flairselector.active li  { text-align:left !important; }
+.flairoptionpane .flair-label:before,
+.flair-empty:before,span.flair.flair-empty {display: none;}
+
+#authorInfoToolTip .blueButton { color:#fff !important; }
+
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child>ul:nth-of-type(2) > li:nth-child(5) > a:after { content: " by Andy Blackmore";font-size: 10px;}
+
+/* mask race pic */
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1) { position:relative; }
+html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1):after {content: "";display: block;background: transparent;height: 160px;width: 300px;position: absolute;top: 0px;left: -10px;}
+.post-linkflair-practice .linkflair .md table .keyNavAnnotation, .post-linkflair-qualifying .linkflair .md table .keyNavAnnotation, .post-linkflair-post-qualifying .linkflair .md table .keyNavAnnotation, .post-linkflair-race .linkflair .md table .keyNavAnnotation, .post-linkflair-post-race .linkflair .md table .keyNavAnnotation { display:none; }
+
+/* zindex fixes */
+#userTaggerToolTip { z-index:99; }
+
+/* weight watchers for F1 */
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(2) > li:nth-child(3) > a:before { content: "2014 "; }
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child >  ul:nth-child(2) > li:nth-child(6) > a:before { content: "Formula 1 "; }
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child >  ul:nth-child(2) > li:nth-child(7) > a:after { content: " for new F1 Fans"; }
+html:not([lang="ns"]) .side .md > ul:nth-of-type(1) > li:nth-child(2) > p:before { content: "Event "; }
+html:not([lang="ns"]) .side .md > ul:nth-of-type(1) > li:nth-child(3) > p:after { content: " Guide"; }
+
+html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1), html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1) h1:after,
+html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1), html:not([lang="ns"]) .side .md > blockquote:nth-of-type(2) h1:after { content: " Championship" }
+
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(1) > li:nth-child(2) > a:before { content: "Posting "; }
+
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(3) > li:nth-child(5) > a:after { content: " Multi Reddit "; }
+
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(6) > a:before,
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(7) > a:before,
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(8) > a:before { content: "Search "; }
+
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(2) > li:nth-child(3) > a:before { content: "2014 "; }
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child >  ul:nth-child(2) > li:nth-child(6) > a:before { content: "Formula 1 "; }
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child >  ul:nth-child(2) > li:nth-child(7) > a:after { content: " for new F1 Fans"; }
+html:not([lang="ns"]) .side .md > ul:nth-of-type(1) > li:nth-child(2) > p:before { content: "Event "; }
+html:not([lang="ns"]) .side .md > ul:nth-of-type(1) > li:nth-child(3) > p:after { content: " Guide"; }
+
+html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1), html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1) h1:after,
+html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1), html:not([lang="ns"]) .side .md > blockquote:nth-of-type(2) h1:after { content: " Championship" }
+
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(1) > li:nth-child(2) > a:before { content: "Posting "; }
+
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(3) > li:nth-child(5) > a:after { content: " Multi Reddit "; }
+
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(6) > a:before,
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(7) > a:before,
+html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(8) > a:before { content: "Search "; }
+
+html:not([lang="ns"]) .side .md>h1:nth-of-type(1):before { content: "Illustrations by "; }
+
+/* temp fix for sticky */
+#siteTable > div.thing.id-t3_21qaoh.linkflair.linkflair-off-topic.odd.stickied.link.self > a {
+background-position: -5px -8px;
+}
+
+/* temp fix for off topic thumb */
+
+html:not([lang="ns"]) .linklisting .linkflair-off-topic .thumbnail.default {
+background-position: -8px -80px;
+}
+
+/* flair fix */
+p.tagline span.flair.flair-label {
+display: none;
 }
