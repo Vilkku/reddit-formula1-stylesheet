@@ -326,7 +326,7 @@ padding: 347px 5px 3px;
 text-align: right;
 z-index: 1;
 margin: 0 -10px 10px;
-background-image: url(%%belgium2012%%);
+background-image: url(%%italy2012%%);
 background-repeat: no-repeat;
 border-bottom: 4px solid rgb(238, 238, 238);
 border: 0px;
@@ -2541,7 +2541,7 @@ html:not([lang="ns"]) .res-nightmode .comments-page .sitetable { background:#111
 html:not([lang="ns"]) .res-nightmode .flair:after,
 html:not([lang="ns"]) .res-nightmode .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>a,
 html:not([lang="ns"]) .res-nightmode .usertext-body .md>h1:nth-of-type(1) { opacity:.3; }
-html:not([lang="ns"]) .res-nightmode .usertext-body .md>h1:nth-of-type(1) { background: url(%%belgium2012%%) no-repeat !important; }
+html:not([lang="ns"]) .res-nightmode .usertext-body .md>h1:nth-of-type(1) { background: url(%%italy2012%%) no-repeat !important; }
 html:not([lang="ns"]) .res-nightmode .sitetable.linklisting .thing .thumbnail { opacity: .5; }
 html:not([lang="ns"]) .res-nightmode .sitetable.linklisting .thing:hover .thumbnail { opacity: 1; }
 
