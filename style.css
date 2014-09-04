@@ -2341,7 +2341,7 @@ html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="german"] { backg
 
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="hungarian"] { background-position: 0px -120px; }
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="belgian"] { background-position: -60px -120px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_italian"] { background-position: -120px -120px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="italian"] { background-position: -120px -120px; }
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_singapore"] { background-position: -168px -120px; }
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_japanese"] { background-position: -240px -120px; }
 
