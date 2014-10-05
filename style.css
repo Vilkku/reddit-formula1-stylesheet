@@ -2740,5 +2740,8 @@ display: none;
 
 html:not([lang="ns"]) .side .md>h1:nth-of-type(1) {padding:245px 5px 3px;}
 html:not([lang="ns"]) .side .md>h1:nth-of-type(1):before { content:""; }
-html:not([lang="ns"]) body.listing-page .usertext-body .md > h1:nth-of-type(1) a { display:none; }
+html:not([lang="ns"]) body.listing-page .usertext-body .md > h1:nth-of-type(1) a, 
+html:not([lang="ns"]) body.comments-page .side .md>h1:nth-of-type(1) a {
+display: none;
+}
 html:not([lang="ns"]) body.listing-page .side { padding-top:600px; }
