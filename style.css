@@ -920,13 +920,10 @@ max-width: 286px;
 }
 
 html:not([lang="ns"]) #search input[type="text"] {
-width: 245px;
+width: 285px;
 line-height: 32px;
 height: 32px;
-padding: 0 5px 0 35px;
-background-image: url(%%sprite%%);
-background-repeat: no-repeat;
-background-position: -145px -115px;
+padding: 0 5px 0 0;
 border-color: #c0c0c0;
 }
 
