@@ -1813,7 +1813,7 @@ a[href="/matra"]:before,a[href="/midland"]:before,a[href="/minardi"]:before,
 a[href="/orange-arrows"]:before,a[href="/renault"]:before,a[href="/repco-brabham"]:before,
 a[href="/super-aguri"]:before,a[href="/team-lotus"]:before,a[href="/toleman"]:before,
 a[href="/toyota-racing"]:before,a[href="/tyrrell"]:before,a[href="/us-f1"]:before,
-a[href="/virgin-racing"]:before,a[href="/walter-wolf"] {
+a[href="/virgin-racing"]:before,a[href="/walter-wolf"],a[href="/aar"] {
 width:20px;
 height:16px;
 content:" ";
@@ -1997,6 +1997,7 @@ margin-right: 4px;
 .flair-us-f1:before,a[href="/us-f1"]:before{background-position: 0 -2773px}
 .flair-virgin-racing:before,a[href="/virgin-racing"]:before{background-position: 0 -2790px}
 .flair-walter-wolf:before,a[href="/walter-wolf"]:before{background-position: 0 -2807px}
+.flair-aar:before,a[href="/aar"]:before{background-position: 0 -2807px}
 
 /* Put team logos beside their names */
 
