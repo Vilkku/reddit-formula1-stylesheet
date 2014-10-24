@@ -1997,7 +1997,7 @@ margin-right: 4px;
 .flair-us-f1:before,a[href="/us-f1"]:before{background-position: 0 -2773px}
 .flair-virgin-racing:before,a[href="/virgin-racing"]:before{background-position: 0 -2790px}
 .flair-walter-wolf:before,a[href="/walter-wolf"]:before{background-position: 0 -2807px}
-.flair-aar:before,a[href="/aar"]:before{background-position: 0 -2807px}
+.flair-aar:before,a[href="/aar"]:before{background-position: 0 -2825px; height:18px;}
 
 /* Put team logos beside their names */
 
