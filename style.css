@@ -2349,7 +2349,7 @@ html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="russian"] { back
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="sochi"] { background-position: 0px -180px; }
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="united_states"] { background-position: -60px -180px; }
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="brazilian"] { background-position: -120px -180px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="abu_dhabi"] { background-position: -240px -180px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="abu_dhabi"] { background-position: -180px -180px; }
 
 
 /* [8.7] Session Thread Styling */
