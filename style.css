@@ -2160,7 +2160,8 @@ html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="russian"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="sochi"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="united_states"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="brazilian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="abu_dhabi"] {
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="abu_dhabi"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="yas_marina"]{
 background-image:url(%%flag-med-sprite%%);
 width:60px;
 height:60px;
@@ -2349,7 +2350,8 @@ html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="russian"] { back
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="sochi"] { background-position: 0px -180px; }
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="united_states"] { background-position: -60px -180px; }
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="brazilian"] { background-position: -120px -180px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="abu_dhabi"] { background-position: -180px -180px; }
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="abu_dhabi"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="yas_marina"] { background-position: -180px -180px; }
 
 
 /* [8.7] Session Thread Styling */
