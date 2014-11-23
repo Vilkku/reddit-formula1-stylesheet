@@ -2752,7 +2752,7 @@ body.post-linkflair-race.comments-page .commentarea span.score:after {content: "
 
 /* special helmett for contets winners*/
 .flair-award:before,a[href="/award"]:before{
-    background:url(%%award-flair%%) no-repeat 0 0 transparent
+    background:url(%%award-flair%%) no-repeat 0 0 transparent;
 content: "";
 display: inline-block;
 width: 19px;
