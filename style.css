@@ -2750,3 +2750,5 @@ display: none;
 html:not([lang="ns"]) body.listing-page .side { padding-top:600px; }
 body.post-linkflair-race.comments-page .commentarea span.score:after {content: "(x2)";color: #5F5F5F;}
 
+/* special helmett for contets winners*/
+.flair-contest:before,a[href="/contest"]:before{background-position: 0 -2886px}
