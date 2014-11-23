@@ -2748,3 +2748,5 @@ html:not([lang="ns"]) body.comments-page .side .md>h1:nth-of-type(1) a {
 display: none;
 }
 html:not([lang="ns"]) body.listing-page .side { padding-top:600px; }
+body.post-linkflair-race.comments-page .commentarea span.score:after {content: "(x2)";color: #5F5F5F;}
+
