@@ -2751,13 +2751,5 @@ html:not([lang="ns"]) body.listing-page .side { padding-top:600px; }
 body.post-linkflair-race.comments-page .commentarea span.score:after {content: "(x2)";color: #5F5F5F;}
 
 /* special helmett for contets winners*/
-.flair-award:before,a[href="/award"]:before{
-    background:url(%%award-flair%%) no-repeat 0 0 transparent;
-content: "";
-display: inline-block;
-width: 19px;
-height: 18px;
-position: absolute;
-top: 6px;
-left: -2px;
-}
+.flair-award:before,a[href="/award"]:before{background:url(%%award-flair%%) no-repeat 0 0 transparent;content: "";display: inline-block;width: 20px;height: 18px;top: 6px;left: -2px;}
+.flair-award:hover {background-color: #FFEFBD;border-color: #BA8600;}
