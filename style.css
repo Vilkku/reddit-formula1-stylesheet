@@ -2170,148 +2170,67 @@ border-radius: 2px
 
 
 /* [8.4] Country Flags */
-html:not([lang="ns"]) a[href="#au"], html:not([lang="ns"]) a[href="/au"],
-html:not([lang="ns"]) a[href="#br"], html:not([lang="ns"]) a[href="/br"],
-html:not([lang="ns"]) a[href="#de"], html:not([lang="ns"]) a[href="/de"],
-html:not([lang="ns"]) a[href="#dk"], html:not([lang="ns"]) a[href="/dk"],
-html:not([lang="ns"]) a[href="#es"], html:not([lang="ns"]) a[href="/es"],
-html:not([lang="ns"]) a[href="#en"], html:not([lang="ns"]) a[href="/en"],
-html:not([lang="ns"]) a[href="#gb"], html:not([lang="ns"]) a[href="/gb"],
-html:not([lang="ns"]) a[href="#fi"], html:not([lang="ns"]) a[href="/fi"],
-html:not([lang="ns"]) a[href="#fr"], html:not([lang="ns"]) a[href="/fr"],
-html:not([lang="ns"]) a[href="#mx"], html:not([lang="ns"]) a[href="/mx"],
-html:not([lang="ns"]) a[href="#nl"], html:not([lang="ns"]) a[href="/nl"],
-html:not([lang="ns"]) a[href="#ru"], html:not([lang="ns"]) a[href="/ru"],
-html:not([lang="ns"]) a[href="#ve"], html:not([lang="ns"]) a[href="/ve"],
-html:not([lang="ns"]) a[href="#se"], html:not([lang="ns"]) a[href="/se"],
-html:not([lang="ns"]) a[href="#it"], html:not([lang="ns"]) a[href="/it"],
-html:not([lang="ns"]) a[href="#jp"], html:not([lang="ns"]) a[href="/jp"],
-html:not([lang="ns"]) a[href="#ch"], html:not([lang="ns"]) a[href="/ch"],
-html:not([lang="ns"]) a[href="#at"], html:not([lang="ns"]) a[href="/at"],
-html:not([lang="ns"]) a[href="#in"], html:not([lang="ns"]) a[href="/in"],
-html:not([lang="ns"]) a[href="#my"], html:not([lang="ns"]) a[href="/my"],
-html:not([lang="ns"]) a[href="#ca"], html:not([lang="ns"]) a[href="/ca"],
-html:not([lang="ns"]) a[href="#us"], html:not([lang="ns"]) a[href="/us"],
-html:not([lang="ns"]) a[href="#co"], html:not([lang="ns"]) a[href="/co"]
-{
-background-image:url(%%flags%%);
-background-repeat:no-repeat;
-background-color:transparent;
-width:16px;
-height:11px;
-text-indent:-99999pt;
-display:inline-block;
-position:relative;
-margin-right:2px;
-top:1px;
-padding:0;
-}
+html:not([lang="ns"]) a[href="#au"],html:not([lang="ns"]) a[href="/au"],
+html:not([lang="ns"]) a[href="#br"],html:not([lang="ns"]) a[href="/br"],
+html:not([lang="ns"]) a[href="#de"],html:not([lang="ns"]) a[href="/de"],
+html:not([lang="ns"]) a[href="#be"],html:not([lang="ns"]) a[href="/be"],
+html:not([lang="ns"]) a[href="#dk"],html:not([lang="ns"]) a[href="/dk"],
+html:not([lang="ns"]) a[href="#es"],html:not([lang="ns"]) a[href="/es"],
+html:not([lang="ns"]) a[href="#en"],html:not([lang="ns"]) a[href="/en"],
+html:not([lang="ns"]) a[href="#gb"],html:not([lang="ns"]) a[href="/gb"],
+html:not([lang="ns"]) a[href="#fi"],html:not([lang="ns"]) a[href="/fi"],
+html:not([lang="ns"]) a[href="#fr"],html:not([lang="ns"]) a[href="/fr"],
+html:not([lang="ns"]) a[href="#mx"],html:not([lang="ns"]) a[href="/mx"],
+html:not([lang="ns"]) a[href="#nl"],html:not([lang="ns"]) a[href="/nl"],
+html:not([lang="ns"]) a[href="#ru"],html:not([lang="ns"]) a[href="/ru"],
+html:not([lang="ns"]) a[href="#ve"],html:not([lang="ns"]) a[href="/ve"],
+html:not([lang="ns"]) a[href="#se"],html:not([lang="ns"]) a[href="/se"],
+html:not([lang="ns"]) a[href="#it"],html:not([lang="ns"]) a[href="/it"],
+html:not([lang="ns"]) a[href="#jp"],html:not([lang="ns"]) a[href="/jp"],
+html:not([lang="ns"]) a[href="#ch"],html:not([lang="ns"]) a[href="/ch"],
+html:not([lang="ns"]) a[href="#at"],html:not([lang="ns"]) a[href="/at"],
+html:not([lang="ns"]) a[href="#in"],html:not([lang="ns"]) a[href="/in"],
+html:not([lang="ns"]) a[href="#my"],html:not([lang="ns"]) a[href="/my"],
+html:not([lang="ns"]) a[href="#ca"],html:not([lang="ns"]) a[href="/ca"],
+html:not([lang="ns"]) a[href="#us"],html:not([lang="ns"]) a[href="/us"],
+html:not([lang="ns"]) a[href="#co"],html:not([lang="ns"]) a[href="/co"],
+html:not([lang="ns"]) a[href="#cn"],html:not([lang="ns"]) a[href="/cn"],
+html:not([lang="ns"]) a[href="#bh"],html:not([lang="ns"]) a[href="/bh"],
+html:not([lang="ns"]) a[href="#mc"],html:not([lang="ns"]) a[href="/mc"],
+html:not([lang="ns"]) a[href="#hu"],html:not([lang="ns"]) a[href="/hu"],
+html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"],
+html:not([lang="ns"]) a[href="#ae"],html:not([lang="ns"]) a[href="/ae"]
+{background-image:url(%%flags%%);background-repeat:no-repeat;background-color:transparent;width:16px;height:11px;text-indent:-99999pt;display:inline-block;position:relative;margin-right:2px;top:1px;padding:0}
 
-
-html:not([lang="ns"]) a[href="#au"], html:not([lang="ns"]) a[href="/au"] {
-background-position:-32px -33px;
-
-}
-
-html:not([lang="ns"]) a[href="#br"], html:not([lang="ns"]) a[href="/br"] {
-background-position: -172px -61px;
-}
-
-html:not([lang="ns"]) a[href="#de"], html:not([lang="ns"]) a[href="/de"] {
-background-position: -284px -117px;
-}
-
-html:not([lang="ns"]) a[href="#dk"], html:not([lang="ns"]) a[href="/dk"] {
-background-position:-32px -145px;
-
-}
-
-html:not([lang="ns"]) a[href="#es"], html:not([lang="ns"]) a[href="/es"] {
-background-position:-4px -173px;
-
-}
-
-html:not([lang="ns"]) a[href="#jp"], html:not([lang="ns"]) a[href="/jp"] {
-background-position:-256px -257px;
-
-}
-
-html:not([lang="ns"]) a[href="#gb"], html:not([lang="ns"]) a[href="/gb"] {
-background-position:-284px -173px;
-
-}
-
-html:not([lang="ns"]) a[href="#fi"], html:not([lang="ns"]) a[href="/fi"] {
-background-position:-88px -173px;
-}
-
-
-html:not([lang="ns"])  a[href="#fr"], html:not([lang="ns"]) a[href="/fr"] {
-background-position:-228px -173px;
-
-}
-
-html:not([lang="ns"]) a[href="#mx"], html:not([lang="ns"]) a[href="/mx"] {
-background-position:-172px -369px;
-
-}
-
-html:not([lang="ns"]) a[href="#nl"], html:not([lang="ns"]) a[href="/nl"] {
-background-position:-116px -397px;
-
-}
-
-html:not([lang="ns"]) a[href="#ru"], html:not([lang="ns"]) a[href="/ru"] {
-background-position:-144px -453px;
-
-}
-
-html:not([lang="ns"]) a[href="#ve"], html:not([lang="ns"]) a[href="/ve"] {
-background-position:-172px -565px;
-
-}
-
-
-html:not([lang="ns"]) a[href="#it"], html:not([lang="ns"]) a[href="/it"] {
-background-position:-172px -257px;
-}
-
-html:not([lang="ns"]) a[href="#in"], html:not([lang="ns"]) a[href="/in"] {
-background-position:-32px -257px;
-
-}
-
-html:not([lang="ns"]) a[href="#se"], html:not([lang="ns"]) a[href="/se"] {
-background-position:-32px -481px
-}
-
-html:not([lang="ns"]) a[href="#at"], html:not([lang="ns"]) a[href="/at"] {
-background-position:-4px -33px
-}
-
-html:not([lang="ns"]) a[href="#ch"], html:not([lang="ns"]) a[href="/xh"] {
-background-position:-198px -89px
-}
-
-html:not([lang="ns"]) a[href="#in"], html:not([lang="ns"]) a[href="/in"] {
-background-position:-32px -257px
-}
-
-html:not([lang="ns"]) a[href="#ca"], html:not([lang="ns"]) a[href="/ca"] {
-background-position:-60px -89px
-}
-
-html:not([lang="ns"]) a[href="#us"], html:not([lang="ns"]) a[href="/us"] {
-background-position:-4px -565px
-}
-
-html:not([lang="ns"]) a[href="#my"], html:not([lang="ns"]) a[href="/my"] {
-background-position:-200px -369px
-}
-
-html:not([lang="ns"]) a[href="#co"], html:not([lang="ns"]) a[href="/co"] {
-background-position:-60px -117px
-}
+html:not([lang="ns"]) a[href="#au"],html:not([lang="ns"]) a[href="/au"]{background-position:-32px -33px}
+html:not([lang="ns"]) a[href="#br"],html:not([lang="ns"]) a[href="/br"]{background-position:-172px -61px}
+html:not([lang="ns"]) a[href="#de"],html:not([lang="ns"]) a[href="/de"]{background-position:-284px -117px}
+html:not([lang="ns"]) a[href="#be"],html:not([lang="ns"]) a[href="/be"]{background-position:-228px -33px}
+html:not([lang="ns"]) a[href="#dk"],html:not([lang="ns"]) a[href="/dk"]{background-position:-32px -145px}
+html:not([lang="ns"]) a[href="#es"],html:not([lang="ns"]) a[href="/es"]{background-position:-4px -173px}
+html:not([lang="ns"]) a[href="#jp"],html:not([lang="ns"]) a[href="/jp"]{background-position:-256px -257px}
+html:not([lang="ns"]) a[href="#gb"],html:not([lang="ns"]) a[href="/gb"]{background-position:-284px -173px}
+html:not([lang="ns"]) a[href="#fi"],html:not([lang="ns"]) a[href="/fi"]{background-position:-88px -173px}
+html:not([lang="ns"])  a[href="#fr"],html:not([lang="ns"]) a[href="/fr"]{background-position:-228px -173px}
+html:not([lang="ns"]) a[href="#mx"],html:not([lang="ns"]) a[href="/mx"]{background-position:-172px -369px}
+html:not([lang="ns"]) a[href="#nl"],html:not([lang="ns"]) a[href="/nl"]{background-position:-116px -397px}
+html:not([lang="ns"]) a[href="#ru"],html:not([lang="ns"]) a[href="/ru"]{background-position:-144px -453px}
+html:not([lang="ns"]) a[href="#ve"],html:not([lang="ns"]) a[href="/ve"]{background-position:-172px -565px}
+html:not([lang="ns"]) a[href="#it"],html:not([lang="ns"]) a[href="/it"]{background-position:-172px -257px}
+html:not([lang="ns"]) a[href="#in"],html:not([lang="ns"]) a[href="/in"]{background-position:-32px -257px}
+html:not([lang="ns"]) a[href="#se"],html:not([lang="ns"]) a[href="/se"]{background-position:-32px -481px}
+html:not([lang="ns"]) a[href="#at"],html:not([lang="ns"]) a[href="/at"]{background-position:-4px -33px}
+html:not([lang="ns"]) a[href="#ch"],html:not([lang="ns"]) a[href="/xh"]{background-position:-198px -89px}
+html:not([lang="ns"]) a[href="#in"],html:not([lang="ns"]) a[href="/in"]{background-position:-32px -257px}
+html:not([lang="ns"]) a[href="#ca"],html:not([lang="ns"]) a[href="/ca"]{background-position:-60px -89px}
+html:not([lang="ns"]) a[href="#us"],html:not([lang="ns"]) a[href="/us"]{background-position:-4px -565px}
+html:not([lang="ns"]) a[href="#my"],html:not([lang="ns"]) a[href="/my"]{background-position:-200px -369px}
+html:not([lang="ns"]) a[href="#cn"],html:not([lang="ns"]) a[href="/cn"]{background-position:-32px -117px}
+html:not([lang="ns"]) a[href="#bh"],html:not([lang="ns"]) a[href="/bh"]{background-position:-4px -61px}
+html:not([lang="ns"]) a[href="#mc"],html:not([lang="ns"]) a[href="/mc"]{background-position:-256px -229px}
+html:not([lang="ns"]) a[href="#hu"],html:not([lang="ns"]) a[href="/hu"]{background-position:-228px -229px}
+html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"]{background-position:-60px -481px}
+html:not([lang="ns"]) a[href="#ae"],html:not([lang="ae"]) a[href="/hu"]{background-position:-32px -5px}
 
 /* [8.6] Thumbnails for Session Threads */
 
