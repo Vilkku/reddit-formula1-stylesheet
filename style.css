@@ -681,7 +681,7 @@ html:not([lang="ns"]) .res-nightmode .side .usertext-body:before{display:none;}
 
 
 .formtabs-content {padding-top: 225px;position: relative;}
-.formtabs-content .md blockquote {
+.formtabs-content .md > ul:nth-of-type(1) {
 margin: 0;
 border: 0;
 position: absolute;
