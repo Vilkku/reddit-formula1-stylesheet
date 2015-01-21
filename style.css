@@ -1100,7 +1100,7 @@ html:not([lang="ns"]) div#header:after {
 content: "";
 background-image: url(%%jules-badge%%);
 height: 38px;
-width: 289px;
+width: 290px;
 display: block;
 top: 33px;
 position: absolute;
