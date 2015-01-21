@@ -1096,6 +1096,17 @@ position: relative;
 margin-bottom: 35px;
 }
 
+html:not([lang="ns"]) div#header:after {
+content: "";
+background-image: url(%%jules-badge%%);
+height: 38px;
+width: 289px;
+display: block;
+top: 33px;
+position: absolute;
+right: 10px;
+}
+
 /* preseason temp */
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8) { background-color: #B00000; } 
 html:not([lang="ns"]) .listing-page .side {padding-top: 645px;}
