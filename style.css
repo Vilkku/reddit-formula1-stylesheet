@@ -1,1679 +1,567 @@
-/* [1.0] Default css  */
-html:not([lang="ns"])  body {
-position: relative;
-background-color:transparent;
-background-image:url(%%backdrop%%);
-background-repeat:repeat;
-}
-html:not([lang="ns"]) { background:rgb(233, 233, 233);}
-a, a:link{ color:#08c; }
-a:hover, a:focus{ color:#005580; }
+/*reset*/
+html:not([lang="ns"]) div#header,html:not([lang="ns"]) div#sr-header-area,html:not([lang="ns"]) div#header-bottom-right{border:0 none;background:none;border-radius:0}
+/* add this later: html:not([lang="ns"]) .link .rank */
+html:not([lang="ns"]) .side .submit-text,html:not([lang="ns"]) .submit .morelink .nub,html:not([lang="ns"]) h1.redditname,html:not([lang="ns"]) .side .leavemoderator,html:not([lang="ns"]) .side .leavecontributor-button,html:not([lang="ns"]) .sidebox.create,html:not([lang="ns"]) .bottom,.post-linkflair-practice .linkflair .md table .keyNavAnnotation,.post-linkflair-qualifying .linkflair .md table .keyNavAnnotation,.post-linkflair-post-qualifying .linkflair .md table .keyNavAnnotation,.post-linkflair-race .linkflair .md table .keyNavAnnotation,.post-linkflair-post-race .linkflair .md table .keyNavAnnotation{display:none}
 
-/* [2.0] Header */
-html:not([lang="ns"]) #header {
-border-bottom:none;
-background:none;
-font-family:"Helvetica", Arial, sans-serif;
-}
+html:not([lang="ns"]) body{background:url(%%tile%%) repeat 0 0 scroll #f1f1f1}
+html:not([lang="ns"]) .res-nightmode { background-image:none; background-color:#444;}
 
-html:not([lang="ns"]) #header-bottom-left {
-height: 110px;
-color: rgb(255,255,255);
-box-shadow: 0px 2px 1px rgb(204,204,204);
-border-bottom: 2px solid #fff;
-background-color:#000205;
-background:#000205
-}
+/*nostyle cleanup*/
+:lang(ns) .side blockquote blockquote{padding:0;margin:0;border:0}
+ 
+/*header*/
+html:not([lang="ns"]) #header{font-family:"Helvetica",Arial,sans-serif}
+html:not([lang="ns"]) div#header-bottom-left{height:60px;background:url(%%chequered%%) no-repeat right 0 scroll #222;border-bottom:2px solid #c90000}
+html:not([lang="ns"]) div#header-bottom-right{bottom:4px}
+html:not([lang="ns"]) div#header{background:#fff;height:80px;padding-bottom:35px;border-bottom:1px solid #ccc;box-shadow:0 0 1px #BEBEBE}
+html:not([lang="ns"]) div#header ul.tabmenu{position:absolute;top:87px;left:5px}
+html:not([lang="ns"]) #header-img{margin-top:5px;margin-right:5px;margin-left:10px}
+html:not([lang="ns"]) div#sr-header-area{background:#2d2d2d;color:#fff;border-bottom:1px solid #222;height:20px;line-height:20px}
+html:not([lang="ns"]) .pagename{font-weight:300;font-variant:inherit;font-size:6pt;position:absolute;text-transform:uppercase;letter-spacing:1px;color:rgb(204,204,204);top:42px;display:inline-block;vertical-align:inherit;font-style:italic;text-indent:-99999pt;margin-left:5px;background:url(%%sprite%%) no-repeat -2px -168px scroll transparent;height:26px;width:120px}
+html:not([lang="ns"]) .pagename a{display:block;height:19px}
+html:not([lang="ns"]) #header-bottom-right{top:86px;font-size:11px;background:transparent;height:24px;line-height:28px;padding:0;margin-right:10px}
+html:not([lang="ns"]) #userbarToggle{background:none repeat scroll 0% 0% transparent!important;color:#000;border-right:1px solid #ccc!important;padding-right:5px!important;left:-13px!important;border-radius:0px!important;height:18px!important;line-height:22px!important;top:2px!important}
+html:not([lang="ns"]) div.res-navTop a{color:#000}
+html:not([lang=ns]) div#header-bottom-left .tabmenu li{border-right:1px dotted #ccc;margin:0;padding:0 5px}
+html:not([lang=ns]) div#header-bottom-left .tabmenu li a{background-color:transparent;font-size:13px;color:#2f2f2f}
+html:not([lang=ns]) div#header-bottom-left .tabmenu li.selected a{background-color:transparent;border:0 none;color:red}
+html:not([lang="ns"]) #sr-header-area a{color:#f1f1f1;background:#000;}
+html:not([lang="ns"]) .dropdown.srdrop .selected{color:#f1f1f1}
+html:not([lang="ns"]) #sr-header-area .drop-choices.srdrop{z-index:1000;background:rgb(45,45,45);border-color:rgb(45,45,45)}
+html:not([lang="ns"]) .drop-choices a.choice:hover{color:#000!important}
 
-html:not([lang="ns"]) #header-bottom-left:after {
-content: "";
-height: 35px;
-background: #fff;
-width: 100%;
-display: inline-block;
-position: absolute;
-left: 0px;
-bottom: 0px;
-border-top:2px solid red;
-}
-
-html:not([lang="ns"]) #header-img-a {
-display: inline-block;
-position: relative;
-z-index:100
-}
-
-html:not([lang="ns"]) #header-img {
-height: 80px;
-width: auto;
-margin-top: 15px;
-display: inline-block;
-margin-left: 0;
-}
-
-html:not([lang="ns"]) .pagename {
-font-weight: 300;
-font-variant: inherit;
-font-size: 6pt;
-position: absolute;
-text-transform: uppercase;
-letter-spacing: 1px;
-color: rgb(204, 204, 204);
-top: 46px;
-display: inline-block;
-vertical-align: inherit;
-font-style: italic;
-text-indent: -99999pt;
-width: 111px;
-background: url("%%sprite%%") no-repeat 0px -150px scroll transparent;
-margin-left: -5px;
-}
-
-html:not([lang="ns"]) #header-bottom-left .pagename a {
-text-decoration: none;
-color: rgb(255, 255, 255);
-font-weight: 500;
-width: 110px;
-display: block;
-overflow: hidden;
-height: 32px;
-}
-
-html:not([lang="ns"]) #header-bottom-right {
-top: 98px;
-font-size: 11px;
-background: transparent;
-height: 24px;
-line-height: 28px;
-padding-right: 10px;
-}
-
-html:not([lang="ns"]) #userbarToggle {
-background: none repeat scroll 0% 0% transparent !important;
-color: #000;
-border-right: 1px solid #ccc !important;
-padding-right: 5px !important;
-left: -10px !important;
-border-radius: 0px !important;
-height: 18px !important;
-line-height: 22px !important;
-top: 7px !important;
-}
-
-/* [2.1] Tab Menu  */
-html:not([lang="ns"]) div#header-bottom-left ul.tabmenu {
-position: absolute;
-padding: 8px 0;
-margin: 0;
-left: 80px;
-bottom: 1px;
-z-index: 400;
-}
-
-html:not([lang="ns"]) div#header-bottom-left .tabmenu li a {
-background-color: transparent;
-font-size: 13px;
-color:#2f2f2f
-}
-
-html:not([lang="ns"]) div#header-bottom-left .tabmenu li.selected a {
-background-color: transparent;
-border: 0 none;
-color:red;
-}
-
-html:not([lang="ns"]) div#header-bottom-left  .tabmenu li {
-border-right: 1px dotted #ccc;
-margin:0;
-padding:0 5px;
-}
-
-html:not([lang="ns"]) div#header-bottom-left  .tabmenu li:last-child { border-right:0 none; }
-
-/* [2.2] Header Quick Menu  */
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child {
-border-left: none;
-position: absolute;
-background-color:#000205;
-top: 21px;
-left: 210px;
-height: 75px;
-border-left:1px solid #000;
-border-right:1px solid #2e2e2e;
-padding-left:0;
-margin:0;
-overflow:visible;
-border-bottom:none;
-z-index:1000;
-font-family: Helvetica,Arial,sans-serif;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child:hover {
-border-left:1px solid rgb(0, 0, 0);
-margin:0;
-padding:0;
-height:75px;
-border-bottom:none;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul { list-style-type:none; padding:0; margin:0; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul:hover li { display: block; background:#fff; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul > li { margin-left:1px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul { float: left; margin: 0px; }
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul > li {
-display: none;
-padding: 2px;
-text-align: left;
-cursor:pointer;
-font-family:helvetica, verdana, arial, sans-serif;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul>li:first-child {
-background: transparent;
-text-align: center;
-border: none;
-line-height: 82px;
-min-width: 0;
-padding: 0;
-color: #fff;
-font-style: inherit;
-font-size: 15px;
-height: 75px;
-border-right: 1px solid #000;
-border-left: 1px solid #2e2e2e;
-display: block;
-font-weight: bold;
-text-transform:lowercase;
-font-family:"Helvetica Neue", verdana, arial, sans-serif;
-margin-left:0;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(1) { width: 94px;  }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(1) >  li:first-child { width: 92px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(1) > li { width: 200px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(2) { width: 135px;  }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(2) >  li:first-child { width: 133px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(2) > li { width: 200px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(3) { width: 135px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(3) >  li:first-child { width: 133px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(3) > li { width: 200px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(4) { width: 100px;  }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(4) > li:first-child { width: 98px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul:nth-of-type(4) > li { width: 200px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(1):hover > li:first-child,
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(2):hover > li:first-child,
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(3):hover > li:first-child,
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(4):hover > li:first-child { background: #fff; color: #000; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(1)>li:last-child,
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(2)>li:last-child,
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(3)>li:last-child,
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(4)>li:last-child {
-border-bottom-left-radius: 4px;
-border-bottom-right-radius: 4px;
-box-shadow: 0 2px 0px #000;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul li {
-border-bottom: 1px #ebebeb solid;
-font-size: 14px;
-line-height: 30px;
-min-width: 125px;
-padding: 2px 7px;
-color: black;
-border-left: 1px solid #ebebeb;
-border-right: 1px solid #ebebeb;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul li:hover { background:#f7f7f7; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child ul li ul { display:none; }
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child ul li {
-font-size: 12px;
-padding: 4px 7px 2px 15px;
-}
-
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child > ul:nth-child(2) > li:nth-child(2):before,
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child > ul:nth-child(3) > li:nth-child(2):before,
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child > ul:nth-child(3) > li:nth-child(3):before,
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child > ul:nth-child(3) > li:nth-child(4):before {
-content: "»";
-height: 30px;
-width: 20px;
-display: inline-block;
-float: right;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(3) li:hover ul {
-display: block;
-position: absolute;
-left: 453px;
-top: 75px;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul li:hover ul {
-display: block;
-position: absolute;
-left: 318px;
-top: 75px;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(2) li:nth-of-type(2) ul { width:270px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(2) li ul { width:245px; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul:nth-of-type(3) li ul { width:230px; }
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul ul {
-box-shadow: 0 2px 0px #000;
-border-bottom-left-radius: 4px;
-border-bottom-right-radius: 4px;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child > ul li a { font-weight:normal; color:#000; display:block; }
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul a:hover { font-weight:bold; }
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul em {
-display: block;
-line-height: 10px;
-margin-top: auto;
-position: relative;
-padding-bottom: 6px;
-color: #999;
-font-weight: normal;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote:last-child>ul>li:hover { font-weight: bold; }
-
-/* [2.3] Top Header Bar (sr-header-area)  */
-html:not([lang="ns"]) #sr-header-area {
-height: 20px;
-background-color: rgb(45, 45, 45);
-border-bottom: 0px solid;
-box-shadow: 0px 0px 1px rgb(134, 134, 134);
-line-height: 20px;
-border-bottom:1px solid #000;
-}
-
-html:not([lang="ns"]) #sr-more-link { background-color: rgb(45, 45, 45); color:#f1f1f1; }
-
-html:not([lang="ns"]) #sr-header-area a { color:#f1f1f1; }
-
-html:not([lang="ns"]) .dropdown.srdrop .selected { color:#f1f1f1; }
-
-html:not([lang="ns"]) #sr-header-area .drop-choices.srdrop {
-z-index: 1000;
-background: rgb(45, 45, 45);
-border-color: rgb(45, 45, 45);
-}
-
-html:not([lang="ns"]) .drop-choices a.choice:hover { color:#000 !important; }
-
-/* [3.0] Content  */
-
-html:not([lang="ns"]) div.content {
-margin:60px 320px 0 10px;
-padding:20px;
-background:#fff;
-}
-
+/*content*/
+html:not([lang="ns"]) div.content{margin:48px 331px 10px 10px;padding:20px;background:#fff}
 html:not([lang="ns"]) .listing-page div.content,
-html:not([lang="ns"]) .comments-page div.content { padding:0; background:transparent; position:relative; }
+html:not([lang="ns"]) .comments-page div.content{padding:0;background:transparent;position:relative}
 
-/* [3.1] Text Styling & Headings */
+/*listings*/
+html:not([lang=ns]) .linklisting .thing.even{background-color:#F8F8F8}
+html:not([lang=ns]) .res-nightmode .linklisting .thing.even { background-color:#222; }
+html:not([lang=ns]) .linklisting .thing{padding:8px;border-left:3px solid #ccc;margin-bottom:1px;position:relative;background:#FCFCFC;box-shadow:0 0 1px #E7E7E7}
+html:not([lang=ns]) .res-nightmode .linklisting .thing { border-color:#000; }
+html:not([lang=ns]) .listing-page .entry{padding-left:5px}
+html:not([lang="ns"]) .link.last-clicked{border-bottom:0;border-top:0;border-right:0 none}
+html:not([lang="ns"]) .linklisting .thing.stickied{border-left:5px solid rgb(92,184,92);border-top:0;border-right:0;border-bottom:0}
+html:not([lang="ns"]) .linklisting .stickied .entry a.title{width:inherit;color:rgb(34,136,34)!important;font-weight:normal}
+html:not([lang="ns"]) .listing-page .expando .md,.link .usertext .md{padding:10px;border-top:1px dotted rgb(204,204,204);border-radius:0px;line-height:1.4;border-left:0;border-right:0;border-bottom:0!important;background:#fff}
+html:not([lang="ns"]) .comments-page .link .usertext .md{border-bottom:1px dotted rgb(204,204,204)}
+html:not([lang="ns"]) .listing-page .thing:hover .expando .md{background:none repeat scroll 0% 0% rgb(250,250,250)}
 
-html:not([lang="ns"]) .side .md > h1:nth-of-type(1) {
-width: 290px;
+/*comments*/
+html:not([lang="ns"]) .comments-page div.content{padding:0;background:none}
+html:not([lang="ns"]) .comments-page .commentarea{margin-top:5px;padding:0}
+html:not([lang="ns"]) .comments-page .sitetable{background:#fff}
+html:not([lang="ns"]) .comments-page .commentarea .sitetable{background:none;margin-top:15px;border-left:0 none}
+html:not([lang="ns"]) .commentarea>.usertext{padding:0 20px;overflow:auto;background:#fff;margin:0}
+html:not([lang="ns"]) .commentarea .menuarea{border:none;margin:0;padding:10px 20px 0px;color:gray;background:#fff}
+html:not([lang="ns"]) .panestack-title{padding:10px 20px;border-bottom:1px dotted gray;background:#fff;margin:0}
+html:not([lang="ns"]) #noresults{width:100%;text-align:center;padding:10px 0;font-weight:bold;text-shadow:0 1px 0 #fff}
+html:not([lang="ns"])  .comment .child{border-left:0 none}
+html:not([lang="ns"]) .res .commentarea .thing{border-top:0!important;border-bottom:0!important;border-right:0!important;margin-left:0!important;margin-right:0!important}
+html:not([lang="ns"]) .commentarea .thing{background:#fff;border-left:3px #ccc solid!important;padding:5px;margin:0 0 3px 0;border-top:medium none;border-right:medium none;border-bottom:medium none}
+html:not([lang="ns"]) .commentarea>.thing{box-shadow:0px 0px 1px rgb(227,227,227)}
+html:not([lang="ns"]) .commentarea .thing .entry{padding:3px 5px 0}
+html:not([lang="ns"]) .usertext.grayed .usertext-body{margin-top:10px}
+html:not([lang="ns"]) .thing .morerecursion{margin-bottom:10px}
+html:not([lang="ns"]) .commentarea .child .thing{border:none;border-left:2px rgb(227,227,227) solid!important;padding:5px 5px 2px 4px;background:#f7f7f7}
+html:not([lang="ns"]) .commentarea .child .thing .child .thing{border:none;border-left:1px #ccc solid!important;background:#fff}
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing{background:#f7f7f7}
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
+html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing{background:#fff}
+html:not([lang="ns"]) .commentarea .thing.spam{background-color:#FA8072!important}
+
+/*sidebar*/
+html:not([lang="ns"]) .side{background:#ededed;margin:0;padding:405px 10px 10px;border-left:1px solid #d6d6d6;border-bottom:1px solid #f4f4f4}
+html:not([lang="ns"]) .res-nightmode .side { background:#171717;border-color:#000 }
+html:not([lang="ns"]) .listing-page .side{padding-top:608px;}
+html:not([lang="ns"]) .titlebox .md > ul:nth-of-type(3):hover {
+height: 507px;
+z-index: 1000000000000;
+overflow:visible;
+}
+html:not([lang="ns"]) .titlebox .md blockquote{margin:0;padding:0;border:0}
+html:not([lang="ns"]) .side .spacer{background:#fff;border-radius:3px}
+html:not([lang="ns"]) .res-nightmode .side .spacer {background: #222;}
+html:not([lang="ns"]) .side .spacer>div{border:1px solid #e2e2e2;border-radius:3px}
+html:not([lang="ns"]) .res-nightmode .side .spacer>div { border-color:#000; }
+html:not([lang="ns"]) .side .spacer>div.sponsorshipbox∂{border:0 none}
+html:not([lang="ns"]) .sidecontentbox,.spacer .titlebox{padding:12px}
+html:not([lang="ns"]) .sidecontentbox .title{margin-bottom:10px}
+html:not([lang="ns"]) .sidecontentbox .title h1{font-weight:900;color:#000}
+html:not([lang="ns"]) .res-nightmode .sidecontentbox .title h1 { color:#ccc; border:0 none; }
+html:not([lang="ns"]) #moderation_tools span.collapse-button{position:absolute;right:14px}
+html:not([lang="ns"]) .sidecontentbox .content{border:0 none;border-top:1px solid #ededed;background:#fff}
+html:not([lang="ns"]) .res-nightmode .sidecontentbox .content { background-color:#222;border-color:#000; }
+html:not([lang="ns"]) .side .spacer:last-of-type{padding-bottom:0;margin-bottom:0}
+html:not([lang="ns"]) .account-activity-box{margin-top:-2px;padding:10px 0;border-top:10px solid #ededed}
+html:not([lang="ns"]) .titlebox .md{font-size:100%;border-top:2px solid #ebebeb;margin:12px 9px -23px}
+html:not([lang="ns"]) .side .usertext-body{margin:0px -22px}
+html:not([lang="ns"]) .titlebox .md>p{padding:0 10px 10px;border-bottom:10px solid #ededed;margin-bottom:0}
+html:not([lang="ns"]) .res-nightmode .titlebox .md>p { border-color:#171717; }
+html:not([lang="ns"]) .titlebox .md>h1{border-top:1px solid #e2e2e2;margin:0 1px;padding:10px 10px 8px;font-size:10pt;text-transform:uppercase;font-weight:900;font-family:verdana,arial,helvetica,sans-serif;background:rgb(255,255,255);color:#2C2C2C;border-bottom:1px solid #e2e2e2}
+
+html:not([lang="ns"]) .res-nightmode .titlebox .md>h1 { border-color:#000; background-color:#222;color:#ccc }
+html:not([lang="ns"]) .res-nightmode .titlebox .md {border-color: #171717;}
+
+/*race guide*/
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(1):before{content:"";display:block;height:200px;width:300px;margin:-10px -10px 10px;background:url(%%race-pic%%) no-repeat 0 0 scroll transparent}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3) ul{list-style-type:none;padding:0;margin:0}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3){position:absolute;top:216px;list-style-type:none;padding:0;margin:0;width:300px;font-family:'Helvetica',verdana,arial sans-serif;background:#3c3c3c; height:305px;overflow:hidden;}
+html:not([lang="ns"]) .listing-page .titlebox .md>ul:nth-of-type(3){height:auto;overflow:visible;border-bottom:1px solid #3c3c3c;}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:first-of-type{background:url("%%chequered%%") no-repeat -60px 224px scroll #222;padding:10px;font-size:12pt;text-align:left;font-weight:900;color:#fff;border:0 none;text-transform:uppercase;margin:0}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:first-of-type li{font-size:12px !important;font-weight:normal;padding-top:4px;text-transform:none}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote{display:none}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li{background:#222;color:#fff;margin:1px 0}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>p{text-indent:25px;color:#b9b9b9;cursor:pointer;padding:10px;margin:0;font-size:10pt !important;}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:first-of-type li:last-of-type {
+padding: 5px;
+background: #3C3C3C;
+margin-top: 6px;
+font-size: 15px!important;
+font-weight: 100;
+color: rgb(26, 255, 0);
+text-shadow: 1px 1px 0 #171717;
+}html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:first-of-type li:last-of-type strong { font-weight:normal }
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:hover>p{text-indent:25px;color:#fff}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>p:before,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>p:before,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>p:before{display:block;content:"";width:18px;height:18px;position:absolute;background:url("%%sprite%%") no-repeat 0 -17px transparent;margin-top:-2px}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:first-of-type:after {
+content: "- hover over this box for race guide & standings -";
 display: block;
-padding: 347px 5px 3px;
-text-align: right;
-z-index: 1;
-margin: 0 -10px 10px;
-background-image: url(%%Jules%%);
-background-repeat: no-repeat;
-border-bottom: 4px solid rgb(238, 238, 238);
-border: 0px;
-font-size: 9pt;
-background-color:#fff;
-border-bottom:4px solid rgb(238, 238, 238);
-cursor:default;
+font-size: 10px;
+font-weight: 100;
+text-decoration: none;
+text-transform: None;
+margin-top: 8px;
+text-align: center;
+color: #818181;
+}
+html:not([lang="ns"]) .listing-page .titlebox .md>ul:nth-of-type(3)>li:first-of-type:after,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3):hover>li:first-of-type:after { display:none; }
+/*hover*/
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(2)>p:before{background-position:-17px -17px}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(2):hover>p:before{background-position:-17px 0}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3)>p:before{background-position:0 -17px}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3):hover>p:before{background-position:0 0}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(4)>p:before{background-position:-70px -17px}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(4):hover>p:before{background-position:-70px 0}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5)>p:before{background-position:-34px -17px}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5):hover>p:before{background-position:-34px 0}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6)>p:before,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(7)>p:before{background-position:-52px -17px}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6):hover>p:before,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(7):hover>p:before{background-position:-52px 0}
+
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(2):hover:before,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3):hover:before,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(4):hover:before,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5):hover:before,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6):hover:before,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(7):hover:before{display:block;content:"";background:#f1f1f1;height:10px;width:10px;position:absolute;margin-top:12px;left:-5px;z-index:101;-webkit-transform:rotate(45deg)}
+
+/*pops*/
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote{min-height:289px;color:#000;position:absolute;right:300px;display:none;top:200px;min-width:325px;background:#f1f1f1;border:1px solid #CCC;padding:8px;z-index:100}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:hover blockquote{display:block}
+/*pop content*/
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote p {
+padding: 5px;
+margin: 10px 0 -10px;
 }
 
-html:not([lang="ns"]) .side .md > h2 {
+/*stickies*/
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(1){position:absolute;top:123px;left:10px;background:#FFF;list-style-type:none;margin:0;padding:0;padding-right:5px;border:1px solid rgba(187,187,187,0.52)}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(1)>li{display:inline;margin:0;padding:8px;border-left:1px solid #e2e2e2;float:left}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(1)>li:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(1)>li:nth-of-type(3){font-weight:bold;text-align:center;border-left:0 none;background:#222;color:#fff;position:relative}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(1)>li:nth-of-type(1):after,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(1)>li:nth-of-type(3):after{content:"";display:block;height:8px;width:8px;background:#222;position:absolute;-webkit-transform:rotate(-45deg);right:-4px;top:12px;bottom:auto}
+
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) {
+top: 124px;
+right: 332px;
+position: absolute;
+z-index: 1000;
+margin: 0;
+padding: 0;
+}
+
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li {display:block;background-color:#B00000;border-color:#C50000;background-image:-webkit-linear-gradient(top,#C20306,#B00000);background:-moz-linear-gradient(top,#C20306,#B00000);background:-ms-linear-gradient(top,#C20306,#B00000);background:-o-linear-gradient(top,#C20306,#B00000);color:#fff;cursor:pointer;text-transform:uppercase;font-weight:900;font-size:10px;padding:10px 30px 10px 10px}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li:hover ul{display:block}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li ul{display:none;position:absolute;right:-1px;top:32px;margin:0;padding:0;width:100%;text-align:left;background:#f2f2f2;color:#000;list-style-type:none;border-left:1px solid #ddd;border-right:1px solid #ddd;font-size:100%;z-index:1001}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li ul li{border-bottom:0px solid #fff;padding:0 8px;font-size:13px;font-weight:normal;text-transform:none;border-right:0px solid #fff;cursor:default}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li:after{content:"";width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:6px solid #fff;right:11px;top:12px;position:absolute;display:block;z-index:199999;box-shadow:-1px 0px 0px #A00000}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li:hover:after{-webkit-transform:rotate(90deg)}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li ul li a{width:100%;display:block;border-bottom:1px dotted #ccc;padding:5px 0;color:#222}
+
+
+
+/*quick menus*/
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{display:none;background:transparent;padding-top:0;position:absolute;top:51px;border-top:2px solid #454545}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2){top:30px;left:0px;position:absolute;z-index:1000;display:block}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>h1,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1{display:block;height:61px;width:58px;background:#222;position:absolute;top:-10px;left:190px;text-indent:-999pt;border-radius:0;color:#fff;border-right:1px solid #2C2C2C;border-left:1px solid #2C2C2C;margin:0;padding:0;cursor:pointer}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{display:none;background:#f2f2f2}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover>blockquote,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>blockquote{display:block}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1{left:249px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover>blockquote>ul,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>blockquote>ul{background:#f2f2f2;margin:0;padding:0;width:633px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul{padding:15px 15px 0}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote{background:#f2f2f2;width:200px;float:left;min-height:365px;border-right:1px solid #fff}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1) ul,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2) ul{margin:0;list-style-type:none}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote{width:718px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul>li>ul,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul>li>ul{font-size:10pt;line-height:1.9em;font-weight:normal;padding:5px 0 15px 0;color:#000;font-style:normal;border-top:1px solid #e2e2e2;margin-top:5px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul>li,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul>li{font-size:12pt;font-weight:600;color:#474747;}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul>li li em{color: #474747;
+font-style: normal;
 font-weight: bold;
-font-size: 12pt;
-color: #000;
-border-bottom: 1px solid #E6E6E6;
-padding-bottom: 5px;
-margin-bottom: 10px;
-margin-top: 10px;
-padding-left: 0;
+font-size: 8pt!important;
+text-transform: uppercase;}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote ul>li>ul>li>a{font-size:10pt!important;font-weight:normal;text-transform:none;font-variant:normal}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(2),
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote:nth-of-type(2){width:180px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(2){width:230px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(3){width:305px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{width:563px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote{min-height:472px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):before,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):before{display:block;content:"";height:18px;width:25px;position:absolute;z-index:1000;top:13px;cursor:pointer;background:url(%%sprite%%) no-repeat 0 0 scroll transparent}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):before{left:209px;background-position:-1px -61px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):before{left:266px;background-position:-30px -61px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover:before{background-position:-1px -36px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover:before{background-position:-30px -36px}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover>h1:after,
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>h1:after{content:"";height:10px;width:10px;background:#f2f2f2;display:block;position:absolute;bottom:-7px;left:24px;-webkit-transform:rotate(45deg);z-index:100}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul>li>ul>li, html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul>li>ul>li {
+line-height: 1.9em;
 }
 
-html:not([lang="ns"]) .side hr:nth-of-type(4) {
-display: block;
-height: 4px;
-border: 0 none;
-background: rgb(238,238,238);
-margin: 0 -10px;
-}
-html:not([lang="ns"]) .side .md>h3:nth-of-type(2) {
-display: block;
-position: absolute;
-top: 144px;
-left: 10px;
-z-index: 50;
-width: auto;
-padding: 10px 15px 10px 33px;
-font-weight: normal;
-border-left: 4px solid #000;
-box-shadow: 0 0px 1px #ccc;
-color: #000;
-background-image: url(%%sprite%%);
-background-position: -145px -24px;
-background-repeat: no-repeat;
-background-color: #fff;
-font-size:10pt;
+/*flair selector*/
+html:not([lang="ns"]) form.toggle.flairtoggle{background:rgb(238,243,244);padding:10px;margin:10px -11px;border-top:1px solid #DFDFDF}
+html:not([lang="ns"]) .titlebox .tagline{
+background:rgb(238,243,244);
+margin:-10px -11px 0!important;
+padding:0 11px 11px;
+width:100%;
+display:block;
+text-align:center;
+border-bottom:1px solid #E7E7E7;
 }
 
-html:not([lang="ns"]) .side .md>h3:nth-of-type(3) {
-display: block;
-top: 155px;
-right: 330px;
-position: absolute;
-font-size: 12pt;
-color: #000;
-text-shadow: 0px 1px 0px #fff;
-}
+/*search*/
+html:not([lang="ns"]) .side #search{top:127px;right:10px;position:absolute;z-index:1000}
+html:not([lang="ns"]) #search input[type="text"]{height:32px;border-color:#c0c0c0}
 
-html:not([lang="ns"]) .side .md>h3:nth-of-type(3) a { color:rgb(210,50,45); }
-html:not([lang="ns"]) .side .md>h3:nth-of-type(2) a { font-weight:bold; margin:0 5px; font-size:12px; }
-html:not([lang="ns"]) .side .md>h3:nth-of-type(2) a:first-child { margin-left:10px; }
-html:not([lang="ns"]) .submit-page div.content > h1 { margin-top:0; }
-html:not([lang="ns"]) .link .title {
-line-height: 20px;
-outline: medium none;
-font-weight: normal;
-}
+/*Session Threads*/
+.post-linkflair-practice .linkflair .md hr,
+.post-linkflair-qualifying .linkflair .md hr,
+.post-linkflair-post-qualifying .linkflair .md hr,
+.post-linkflair-race .linkflair .md hr,
+.post-linkflair-post-race .linkflair .md hr{height:1px;background:#ccc;border:0 none;margin:15px 0}
 
-html:not([lang="ns"])  .link .thing .entry .flat-list li.first a { font-weight:bold; }
-html:not([lang="ns"])  .link .thing .entry .flat-list li a { font-weight: normal; }
-html:not([lang="ns"]) .linklisting .rank { display: none; }
-html:not([lang="ns"]) .linklisting .midcol { margin-left:0; }
+.post-linkflair-practice .linkflair .md h3,
+.post-linkflair-qualifying .linkflair .md h3,
+.post-linkflair-post-qualifying .linkflair .md h3,
+.post-linkflair-race .linkflair .md h3,
+.post-linkflair-post-race .linkflair .md h3{text-align:center;font-size:14pt;margin-bottom:10px}
 
-/* [3.2] Link Listings  */
-html:not([lang="ns"]) .link.last-clicked {
-border-bottom: 0;
-border-top: 0;
-border-right: 1px dotted #0d0d0d;
-}
+.post-linkflair-practice .linkflair .md h4,
+.post-linkflair-qualifying .linkflair .md h4,
+.post-linkflair-post-qualifying .linkflair .md h4,
+.post-linkflair-race .linkflair .md h4,
+.post-linkflair-post-race .linkflair .md h4{font-size:12pt;margin-bottom:10px}
 
-html:not([lang="ns"]) .linklisting .thing.stickied {
-border-left:5px solid rgb(92, 184, 92);
-border-top:0;
-border-right:0;
-border-bottom:0;
-}
+.post-linkflair-practice .linkflair .md table:nth-of-type(1),
+.post-linkflair-qualifying .linkflair .md table:nth-of-type(1),
+.post-linkflair-post-qualifying .linkflair .md table:nth-of-type(1),
+.post-linkflair-race .linkflair .md table:nth-of-type(1),
+.post-linkflair-post-race .linkflair .md table:nth-of-type(1){margin:0 auto 10px;width:100%}
 
-html:not([lang="ns"]) .linklisting .stickied .entry a.title {
-width: inherit;
-color:rgb(34, 136, 34) !important;
-}
+.post-linkflair-practice .linkflair .md table th,
+.post-linkflair-qualifying .linkflair .md table th,
+.post-linkflair-post-qualifying .linkflair .md table th,
+.post-linkflair-race .linkflair .md table th,
+.post-linkflair-post-race .linkflair .md table th{border-right:1px solid #525252;border-top:none;border-left:none;border-bottom:1px solid #525252}
+.linkflair .md table tr:nth-of-type(even){background:#f6f6f6}.linkflair .md table tr{background:#f9f9f9}
+.linkflair .md table tr:hover{background:#fff}.res-nightmode .linkflair .md table th{border:1px solid #000}
+.res-nightmode .linkflair .md table tr:nth-of-type(even){background:#222}
+.res-nightmode .linkflair .md table tr{background:#393939}
+.res-nightmode .linkflair .md table tr:hover{background:#2e2e2e}
+.res-nightmode .linkflair .md table td{border-color:#000}
+.linkflair .md table:hover tr{display:table-row}
+.linkflair .md table th{background:#000;color:#fff;padding:5px}
+.linkflair .md table td{padding:5px}
+.linkflair .md table a{top:1px}
+.post-linkflair-qualifying .linkflair .md p:first-child,
+.post-linkflair-race .linkflair .md p:first-child{text-align:center}
+.linkflair-race .md table span.keyNavAnnotation,
+.linkflair-qualifying .md table span.keyNavAnnotation{display:none!important}
+.linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(1),
+.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(1),
+.linkflair-race .md table:nth-of-type(2) tr th:nth-of-type(1),
+.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(1){width:32px;text-align:center}
+.linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(2),
+.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(2){width:115px}
+.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(5),
+.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(6),
+.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(7),
+.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(5),
+.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(6),
+.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(7){width:60px;text-align:center}
+.linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(5),
+.linkflair-race .md table:nth-of-type(2) tr th:nth-of-type(5){width:125px;text-align:center}
 
-html:not([lang="ns"]) .linklisting .thing {
-padding: 8px;
-border-left: 2px solid #ccc;
-margin-bottom: 2px;
-position: relative;
-background: #FCFCFC;
-box-shadow: 0 0 1px #E7E7E7;
-}
-
-html:not([lang="ns"]) .listing-page .expando .md, .link .usertext .md {
-padding: 10px;
-border-top: 1px dotted rgb(204, 204, 204);
-border-radius: 0px;
-line-height: 1.4;
-border-left: 0;
-border-right: 0;
-border-bottom: 0 !important;
-background: #fff;
-}
-
-html:not([lang="ns"]) .comments-page .link .usertext .md {
-border-bottom: 1px dotted rgb(204, 204, 204);
-}
-
-html:not([lang="ns"]) .listing-page .thing:hover .expando .md { background:none repeat scroll 0% 0% rgb(250, 250, 250); }
-
-html:not([lang="ns"]) .listing-page .entry { padding-left:5px; }
-
-/* [3.3] Misc Items */
-/* Buttons */
-html:not([lang="ns"]) #suggest-title button:hover {
-color: rgb(255, 255, 255);
-background-color: rgb(50, 118, 177);
-border-color: rgb(40, 94, 142);
-}
-
-html:not([lang="ns"]) #suggest-title button {
-color: rgb(255, 255, 255);
-background-color: rgb(66, 139, 202);
-border-color: rgb(53, 126, 189);
-padding: 8px 15px;
-border: 1px solid;
-border-radius: 4px;
-font-size: 11pt;
-}
-
-html:not([lang="ns"]) body.submit-page form.submit button[type="submit"] {
-color: #FFF;
-background-color: #5CB85C;
-border-color: #4CAE4C;
-padding: 8px 15px;
-border: 1px solid;
-border-radius: 4px;
-font-size: 11pt;
-}
-
-html:not([lang="ns"]) body.submit-page form.submit button[type="submit"]:hover {
-color: rgb(255, 255, 255);
-background-color: rgb(71, 164, 71);
-border-color: rgb(57, 132, 57);
-}
-
-html:not([lang="ns"]) #suggest-title button { margin-right:4px; }
-
-html:not([lang="ns"]) .titlebox .subButtons {
-padding: 10px 0 5px;
-}
-
-html:not([lang="ns"]) .fancy-toggle-button .remove,
-html:not([lang="ns"]) .RESshortcutside.remove,
-html:not([lang="ns"]) .REStoggle.remove {
-color: rgb(255, 255, 255) !important;
-background-color: rgb(217, 83, 79) !important;
-border-color: rgb(212, 63, 58) !important;
-background-image:none !important;
-}
-
-html:not([lang="ns"]) .fancy-toggle-button .remove:hover,
-html:not([lang="ns"]) .RESshortcutside.remove:hover,
-html:not([lang="ns"]) .REStoggle.remove:hover {
-color: rgb(255, 255, 255) !important;
-background-color: rgb(210, 50, 45) !important;
-border-color: rgb(172, 41, 37) !important;
-background-image:none !important;
-}
-
-html:not([lang="ns"]) .fancy-toggle-button .add {
-color: rgb(255, 255, 255);
-background-color: rgb(92, 184, 92);
-border-color: rgb(76, 174, 76) !important;
-background-image:none !important;
-}
-
-html:not([lang="ns"]) .fancy-toggle-button .add:hover {
-color: rgb(255, 255, 255);
-background-color: rgb(71, 164, 71) !important;
-border-color: rgb(57, 132, 57) !important;
-background-image:none !important;
-}
-
-html:not([lang="ns"]) .RESshortcutside, html:not([lang="ns"]) .REStoggle {
-color: rgb(255,255,255);
-background-color: rgb(92,184,92);
-border-color: rgb(76,174,76)!important;
-background-image: none!important;
-}
-
-html:not([lang="ns"]) .RESshortcutside:hover,
-html:not([lang="ns"]) .REStoggle:hover
-{
-color: rgb(255, 255, 255);
-background-color: rgb(71, 164, 71) !important;
-border-color: rgb(57, 132, 57) !important;
-background-image:none !important;
-}
-
-/* button sizing */
+/*buttons*/
+div.titlebox>div:nth-of-type(1){padding-bottom:2px}
+html:not([lang="ns"]) .titlebox .subButtons{padding:10px 0 5px}
 html:not([lang="ns"]) .fancy-toggle-button .active,
 html:not([lang="ns"]) .RESshortcut.RESshortcutside.remove,
 html:not([lang="ns"]) .REStoggle.RESDashboardToggle.remove,
 html:not([lang="ns"]) .REStoggle.RESDashboardToggle,
-html:not([lang="ns"]) .RESshortcut.RESshortcutside {
-padding: 4px 8px !important;
-width: auto !important;
-line-height: 1 !important;
-margin: 0 !important;
-display: inline-block !important;
-margin-right: 5px !important;
-}
-
-html:not([lang="ns"]) .fancy-toggle-button .option.remove.active,
-html:not([lang="ns"]) .fancy-toggle-button .option.add.active { margin-right:0 !important; }
-
-/* Thumbnails */
-html:not([lang="ns"]) .thumbnail.default {
-height: 50px;
-background-position: -8px -80px;
-background-repeat: no-repeat;
-background-image:url(%%sprite%%);
-}
-
-html:not([lang="ns"]) .thumbnail.self {
-height: 50px;
-background-position: -10px -8px;
-background-repeat: no-repeat;
-background-image:url(%%sprite%%);
-}
-
-html:not([lang="ns"]) .hover-bubble.multi-selector { z-index:60000; }
-
-/* Custom Mail Icon */
-html:not([lang="ns"]) #mail.havemail,
-html:not([lang="ns"]) #mail.nohavemail {
-background: url(%%sprite%%) no-repeat 0 0 scroll transparent;
-width: 16px !important;
-height: 16px;
-top:4px;
-}
-
-html:not([lang="ns"]) #mail.havemail { background-position:-155px -86px; margin-right:5px; }
-html:not([lang="ns"]) #mail.nohavemail { background-position:-155px -70px; opacity:.5 }
-
-/* User Warnings and Messages */
-.comment .midcol .arrow.down:hover:after {
-position:fixed;
-display:block;
-z-index:1000;
-padding:5px 0;
-border-top:1px solid rgb(212, 63, 58);
-content:"Remember Reddiquette! Downvotes are for comments that don't add to the discussion...";
-text-align:center;
-bottom:0;
-width:100%;
-left:0;
-background-color:rgb(217, 83, 79);
-color:#FEFEFE;
-font-size:16px
-}
-
-/* For Gold... */
-.gold-accent.comment-visits-box {
-margin: 10px 0 -5px;
-width: 100%;
-display: block;
-max-width: 100%;
-border-radius: 0;
-border-left: medium none;
-border-right: medium none;
-padding: 10px 0;
-text-indent: 14px;
-}
-
-/* Hides Subreddit Founder */
-html:not([lang="ns"]) .titlebox .bottom { font-size: 0px; color: #FFF; }
-html:not([lang="ns"]) .titlebox .bottom:before { font-size: 10px; color: gray; content: " "; }
-html:not([lang="ns"]) .titlebox .bottom .age { font-size: 10px; color: gray; }
-
-/* hide post in recent links */
-html:not([lang="ns"]) .side .gadget .click-gadget .thing.self { display:none !important; }
-
-/* Message to non subscribers */
-html:not([lang="ns"]) body:not(.subscriber) > .content > #siteTable:before {
-content: " You haven't subscribed to /r/formula1 - Click the subscribe button in the sidebar!";
-display: block;
-background-color: rgb(217, 83, 79);
-padding: 5px 8px;
-margin: 0;
-font-size: small;
-color: #2e2e2e;
-font-weight: bold;
-font-size: 10px;
-border-left: 2px solid rgb(212, 63, 58);
-}
-
-/* Report Button Hover */
-.report-button span.option.error.active:before { content: "only if breaking the rules of reddit or /r/formula1! "; }
-.report-button .main a:after { content: " to the moderators"; }
-
-/* Misc */
-html:not([lang="ns"]) .flairselector { z-index: 5000; }
-html:not([lang="ns"]) .side hr { display:none; }
-html:not([lang="ns"]) #link-desc:after, html:not([lang="ns"]) #text-desc:after { content: ""; }
-
-/* [4.0] Comments Page */
-html:not([lang="ns"]) .comments-page div.content { padding:0; background:none; }
-html:not([lang="ns"]) .comments-page .commentarea { margin-top:5px; padding:0; }
-html:not([lang="ns"]) .comments-page .sitetable { background:#fff; }
-html:not([lang="ns"]) .comments-page .commentarea .sitetable { background:none; margin-top:15px; border-left:0 none }
-html:not([lang="ns"]) .commentarea>.usertext {
-padding: 0 20px;
-overflow: auto;
-background: #fff;
-margin: 0;
-}
-
-html:not([lang="ns"]) .commentarea .menuarea {
-border: none;
-margin: 0;
-padding: 10px 20px 0px;
-color: gray;
-background: #fff;
-}
-
-html:not([lang="ns"]) .panestack-title {
-padding: 10px 20px;
-border-bottom: 1px dotted gray;
-background: #fff;
-margin:0;
-}
-
-html:not([lang="ns"]) #noresults {
-width: 100%;
-text-align: center;
-padding: 10px 0;
-font-weight: bold;
-text-shadow: 0 1px 0 #fff;
-}
-
-html:not([lang="ns"])  .comment .child { border-left:0 none; }
-
-html:not([lang="ns"]) .res .commentarea .thing {
-border-top: 0!important;
-border-bottom: 0!important;
-border-right: 0!important;
-margin-left: 0!important;
-margin-right: 0!important;
-}
-
-html:not([lang="ns"]) .commentarea .thing {
-background: #fff;
-border-left: 3px #ccc solid!important;
-padding: 5px;
-margin: 0 0 3px 0;
-border-top: medium none;
-border-right: medium none;
-border-bottom: medium none;
-}
-
-html:not([lang="ns"]) .commentarea > .thing { box-shadow: 0px 0px 1px rgb(227,227,227); }
-html:not([lang="ns"]) .commentarea .thing .entry { padding:3px 5px 0 }
-html:not([lang="ns"]) .usertext.grayed .usertext-body { margin-top:10px; }
-html:not([lang="ns"]) .thing .morerecursion { margin-bottom:10px; }
-
-html:not([lang="ns"]) .commentarea .child .thing {
-border:  none;
-border-left:  2px rgb(227,227,227) solid !important;
-padding: 5px 5px 2px 4px;
-background:#f7f7f7;
-}
-
-html:not([lang="ns"]) .commentarea .child .thing .child .thing {
-border:  none;
-border-left:  1px #ccc solid !important;
-background:#fff;
-}
-
-html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing { background:#f7f7f7; }
-html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing { background:#fff; }
-
-html:not([lang="ns"]) .commentarea .thing.spam {
-    background-color: #FA8072 !important;
-}
-
-/* [4.1] Link Info Box */
-html:not([lang="ns"]) .linkinfo {
-margin-right: 5px;
-background:-webkit-linear-gradient(bottom,#f1f1f1,#ffffff);
-background:-moz-linear-gradient(bottom,#f1f1f1,#ffffff);
-background:-ms-linear-gradient(bottom,#f1f1f1,#ffffff);
-background:-o-linear-gradient(bottom,#f1f1f1,#ffffff);
-color: rgb(54, 54, 54);
-font-size: 11px;
-padding: 10px 10px 5px;
-border: 1px solid rgb(241, 241, 241);
-}
-
-html:not([lang="ns"]) .linkinfo .date {
-text-align: center;
-padding: 10px;
-background: #000;
-color: #fff;
-margin: -10px -10px 10px;
-font-size: 9pt;
-text-transform: lowercase;
-}
-
-html:not([lang="ns"]) .linkinfo .score,
-html:not([lang="ns"]) .linkinfo .upvotes { border-right: 1px solid rgb(232, 231, 231); }
-html:not([lang="ns"]) .linkinfo .upvotes,
-html:not([lang="ns"]) .linkinfo .downvotes,
-html:not([lang="ns"]) .linkinfo .score {
-float: left;
-padding: 5px 0px;
-margin: 10px 0px;
-width: 33%;
-text-align: center;
-}
-html:not([lang="ns"]) .linkinfo .score {
-font-size: 11px;
-color: rgb(170, 170, 170);
-display: block;
-min-width: 59px;
-}
-
-html:not([lang="ns"]) .linkinfo .score .number { color: rgb(54, 54, 54); }
-html:not([lang="ns"]) .linkinfo .upvotes { color: rgb(37, 37, 37); }
-html:not([lang="ns"]) .linkinfo .upvotes .number { color: rgb(130, 202, 52); }
-html:not([lang="ns"]) .linkinfo .downvotes { color: rgb(70, 105, 156); }
-
-html:not([lang="ns"]) .linkinfo .downvotes .number,
-html:not([lang="ns"]) .linkinfo .upvotes .number,
-html:not([lang="ns"]) .linkinfo .score .number {
-font-size: 20px !important;
-display: block;
-font-weight: normal !important;
-}
-
-html:not([lang="ns"]) .linkinfo .score .word { display: none; }
-html:not([lang="ns"]) .linkinfo .downvotes .word,
-html:not([lang="ns"]) .linkinfo .upvotes .word { font-size: 11px; color: rgb(170, 170, 170); }
-html:not([lang="ns"]) .linkinfo .downvotes .number { color: rgb(241, 28, 24); }
-html:not([lang="ns"]) .linkinfo .shortlink {
-clear: both;
-font-size: 10px;
-margin-top: 10px;
-}
-
-html:not([lang="ns"]) .linkinfo .shortlink input {
-background: none repeat scroll 0% 0% rgb(255, 255, 255);
-border: medium none;
-border-radius: 15px;
-padding-left: 8px;
-font-size: 10px;
-font-family: arial;
-color: rgb(51, 102, 153);
-display:inline;
-}
-
-/* [5.0] Sidebar */
-/* Flair Selector */
-html:not([lang="ns"]) .titlebox form.flairtoggle {
-border-top: 1px solid rgb(232,232,232);
-background: rgb(244,248,250);
-padding: 10px;
-margin-top: 10px;
-color: rgb(0,0,0);
-font-style: oblique;
-font-size: 12px;
-margin-left: -10px;
-margin-right: -10px;
-
-}
-
-html:not([lang="ns"]) .titlebox .tagline {
-margin: 0 -10px;
-text-align: center;
-font-size: 11px;
-padding: 5px;
-background: rgb(244,248,250);
-border-bottom: 1px solid rgb(232,232,232);
-}
-
-html:not([lang="ns"]) .side {
-margin:112px 10px 0 0;
-line-height:1.8em;
-font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-
-html:not([lang="ns"]) .side .spacer:first-child { margin: 0px 0px 0px; }
-html:not([lang="ns"]) .side .spacer .submit-text { display:none; }
-
-html:not([lang="ns"]) .side .titlebox,
-html:not([lang="ns"]) .side .sidecontentbox  { margin:7px 10px; }
-
-html:not([lang="ns"]) .side .md {
-border-top: 4px solid rgb(238, 238, 238);
-margin-left: -10px;
-margin-right: -10px;
-padding: 0px 10px 5px;
-width:280px;
-}
-
-html:not([lang="ns"]) .listing-page .side .md { padding-top:10px; }
-html:not([lang="ns"]) .titlebox .bottom { border-top:none; padding:0; font-weight:bold;}
-
-html:not([lang="ns"]) .titlebox .bottom > .flair,
-html:not([lang="ns"]) .titlebox .bottom > .author { display:none; }
-
-html:not([lang="ns"]) .titlebox h1.redditname {
-margin: 0px 0px 12px;
-font-weight: bold;
-font-size: 12pt;
-border-bottom: 1px solid rgb(238, 238, 238);
-padding-bottom: 5px;
-padding-top:4px;
-}
-
-html:not([lang="ns"]) .titlebox h1.redditname a { color:darkgray; }
-html:not([lang="ns"]) .titlebox h1.redditname a:before { content: "Welcome to /r/"; }
-html:not([lang="ns"]) .titlebox h1 a:hover { color: darkgray; text-decoration:none; }
-html:not([lang="ns"]) .side div.linkinfo { margin:10px; }
-
-/* New Post Button */
-html:not([lang="ns"]) .morelink {
-color: #fff;
-background-color: rgb(203,29,24);
-border-color: #C50000;
-background-image: -webkit-linear-gradient(top, #C20306, #C50000);
-background: -moz-linear-gradient(top, #C20306, #C50000);
-background: -ms-linear-gradient(top, #C20306, #C50000);
-background: -o-linear-gradient(top, #C20306, #C50000);
-height: 32px;
-line-height: 32px;
-text-transform: uppercase;
-background-position: 0;
-box-shadow: 0 1px 0 #fff;
-font-style: italic;
-text-shadow: 0 1px 0 #5C0000;
-}
-
-html:not([lang="ns"]) .morelink:hover, .morelink:focus {
-color: rgb(255,255,255);
-background-color: #960505;
-border-color: rgb(172,41,37);
-background-image: -webkit-linear-gradient(top, #C30003, #960505);
-background: -moz-linear-gradient(top, #C30003, #960505);
-background: -ms-linear-gradient(top, #C30003, #960505);
-background: -o-linear-gradient(top, #C30003, #960505);
-box-shadow: none;
-}
-
-html:not([lang="ns"]) .morelink a {
-color: rgb(255, 255, 255);
-font-size: 16px;
-font-weight: 900;
-letter-spacing: .5px;
-}
-html:not([lang="ns"]) .morelink .nub { display:none; }
-
-html:not([lang="ns"]) .side .spacer .submit-link {
-position: absolute;
-top: 195px;
-right: 17px;
-width: 285px;
-}
-
-html:not([lang="ns"]) .side .create { display:none; }
-
-/* Search */
-html:not([lang="ns"]) .side #search {
-top: 150px;
-right: 17px;
-position: absolute;
-z-index: 1000;
-max-width: 286px;
-}
-
-html:not([lang="ns"]) #search input[type="text"] {
-width: 285px;
-line-height: 32px;
-height: 32px;
-padding: 0 5px;
-border-color: #c0c0c0;
-}
-
-html:not([lang="ns"]) #search input[type="text"]:focus {
-border-color: rgb(102, 175, 233);
-outline: 0px none;
-}
-
-html:not([lang="ns"]) #searchexpando { max-width:264px; width:280px; margin-top:2px }
-
-/* Misc */
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li table {
-width: 100%;
-margin:0;
-}
-
-html:not([lang="ns"]) .titlebox .md  blockquote table tr th,
-html:not([lang="ns"]) .titlebox .md  blockquote table tr td { padding:2px 8px; border:0 none; }
-html:not([lang="ns"]) .titlebox .md  > blockquote table tr th:last-child,
-html:not([lang="ns"]) .titlebox .usertext-body > blockquote table tr td:last-child { text-align:center; }
-html:not([lang="ns"]) .titlebox .usertext-body > blockquote table tr th:first-child,
-html:not([lang="ns"]) .titlebox .usertext-body > blockquote table tr td:first-child { text-align:center; }
-
-html:not([lang="ns"]) .titlebox .md blockquote h1 {
-color: #fff;
-padding-bottom: 9px;
-font-size: 11pt;
-margin-bottom: 10px;
-border-bottom: 2px solid red;
-padding-left: 12px;
-border-collapse: collapse;
-padding-top: 9px;
-background: #000;
-cursor: pointer;
-}
-
-html:not([lang="ns"]) .titlebox .md > h1
-{
-color: #000;
-padding-bottom: 6px;
-font-size: 11pt;
-margin-bottom: 10px;
-border-left: 2px solid rgb(0, 0, 0);
-padding-left: 12px;
-border-collapse: collapse;
-padding-top: 6px;
-background: none repeat scroll 0% 0% rgb(250, 250, 250);
-cursor:pointer;
-}
-
-/* new sidebar edits */
-html:not([lang="ns"]) .side blockquote { margin:0; padding:0; border:0 none; }
-
-/* track guide */
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) {
-display: block;
-position: relative;
-padding: 0;
-border: 0;
-margin: 0;
-width: 280px;
-list-style-type: none;
-position:absolute;
-top:245px;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) ul { list-style-type:none; margin:0; padding:0; }
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>a {
-width: 300px;
-height: 160px;
-display: block;
-text-align: center;
-background-color: #fff;
-font-size: 14px;
-color: #000;
-background: url(%%race-picture%%) no-repeat 0 0 scroll transparent;
-font-weight: bold;
-text-indent: -9999pt;
-cursor: default;
-margin-left: -10px;
-margin-bottom: 5px;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>ul>li {
-font-weight: normal;
-border-bottom: none;
-color: #2e2e2e;
-font-size: 10pt;
-padding:4px 0;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1) {
-text-align: center;
-font-weight: bold;
-font-size: 18px;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li { position:relative; }
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li blockquote { display:none; }
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li:hover blockquote { display:block; cursor:default }
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li:nth-of-type(2),
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li:nth-of-type(3),
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li:nth-of-type(4) {
-padding:5px 20px;
-background-image: -o-linear-gradient(bottom, #303030, #000000);
-background-image: -moz-linear-gradient(bottom, #303030, #000000);
-background-image: -webkit-linear-gradient(bottom, #303030, #000000);
-background-image: -ms-linear-gradient(bottom, #303030, #000000);
-background-image: linear-gradient(to bottom, #303030, #000000);
-background-color:#303030;
-color:#fff;
-margin:2px 0;
-border-radius:3px;
-cursor:pointer
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li>p {
-text-align: left;
-margin: 5px -5px;
-font-size: 10pt;
-text-transform: uppercase;
-font-style: oblique;
-font-weight:bold;
-}
-
-/* pop ups */
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li blockquote {
-background: #fff;
-border: 1px solid #ccc;
-padding: 10px;
-position: absolute;
-right: 288px;
-z-index: 1000;
-width: 340px;
-color: #000;
-border-radius: 4px;
-top: -20px;
-box-shadow: 1px 1px 1px #ccc;
-text-align:left;
-font-size:14px;
-}
-
-/* pop up arrow */
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) li blockquote:after {
-width: 10px;
-content: "";
-background: url(%%box-arrow%%) no-repeat 0 30px transparent;
-position: absolute;
-right: -10px;
-height: 100%;
-top: 0px;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>a {
-width: 300px;
-height: 160px;
-display: block;
-text-align: center;
-background-color: #fff;
-font-size: 14px;
-color: #000;
-background: url(%%race-picture%%) no-repeat 0 0 scroll transparent;
-font-weight: bold;
-text-indent: -9999pt;
-cursor: default;
-margin-left: -10px;
-margin-bottom: 5px;
-}
-
-/* Circuit Guide */
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3):hover>blockquote {
-padding-right: 370px;
-min-height: 250px;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) blockquote p:first-child {
-font-weight: bold;
-text-align: left;
-font-size: 14px;
-border-bottom: 1px solid #e0e0e0;
-margin-bottom: 10px;
-padding-bottom: 5px;
-margin-top:0;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li table thead {display: none;}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) blockquote p:last-child {
-border-top:1px solid #e0e0e0;
-padding:12px 5px 0
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1) > li a[href="#map"] {
-background:url(%%circuit-map%%) no-repeat 0 0 transparent;
-display: block;
-height: 250px;
-width: 350px;
-position: absolute;
-right: 10px;
-text-indent: -99999pt;
-box-shadow: 0px 0px 3px #ccc;
-border-radius: 3px;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) table { margin-bottom:25px; font-size:13px; }
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) table tr td:first-child { font-weight:bold; }
-
-html:not([lang="ns"]) body.comments-page .side .md > h1:nth-of-type(1) {
-position: relative;
-display: block !important;
-top: 0;
-margin: 0 -10px 10px;
-}
-
-
-/* Event Schedule */
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(2)>blockquote p { font-size:12px; }
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(2)>blockquote p:nth-of-type(1) {
-border-top: 1px solid #ccc;
-padding-top: 8px;
-margin-top: 5px;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(2)>blockquote table td:nth-of-type(1) {
-font-weight: bold;
-}
-
-/* Last Time Out */
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(4)>blockquote h3 {
-padding-bottom: 4px;
-border-bottom: 1px solid #ccc;
-font-size: 14px;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(4)>blockquote p {
-margin: 6px 0;
-font-size: 13px;
-}
-
-/* sidebar padding fix 1 */
-html:not([lang="ns"]) body .side {
-padding-top: 335px;
-}
-
-/* sidebar padding fix 2 */
-html:not([lang="ns"]) body.listing-page .side {
-padding-top: 725px;
-}
-
-html:not([lang="ns"])  body.listing-page .usertext-body .md>h1:nth-of-type(1) { position:absolute; top:575px; margin-top:14px; }
-
-/* timer */
-html:not([lang="ns"]) .side .md > h3:nth-child(1) {
-position: absolute;
-top: 254px;
-right:15px;
-z-index: 99;
-color: lime;
-font-family: monaco,monospace;
-text-transform: uppercase;
-font-size: 14px;
-word-spacing: -5px;
-background:#000;
-padding:2px 4px;
-border-radius:3px;
-}
-
-/* [5.3] Driver/Team Standings */
-/* constructors & driver standings */
-html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1),
-html:not([lang="ns"]) .side .md > blockquote:nth-of-type(2) {
-height: 45px;
-overflow:hidden;
-}
-
-html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1):hover,
-html:not([lang="ns"]) .side .md > blockquote:nth-of-type(2):hover {
-height: auto;
-padding-bottom:15px;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote table {
-width: 100%;
-margin: 0px auto 5px;
-line-height: 20px;
-font-size: 13px;
-border-spacing: 2px;
-border-collapse: separate;
-}
-
-html:not([lang="ns"]) .titlebox .md > blockquote table thead tr th {
-background:#000; color:#fff;
-}
-
-html:not([lang="ns"]) .titlebox .md  > blockquote table tr td:first-child {
-background: rgb(225, 225, 225);
-font-weight: bold;
-width: 10px;
-height: 20px;
-line-height: 20px;
-}
-
-html:not([lang="ns"]) .titlebox .md>blockquote table tr td:nth-of-type(2) {
-background: rgb(198, 198, 198);
-color: #2C2C2C;
-font-weight: 500;
-text-transform: uppercase;
-}
-
-html:not([lang="ns"]) .titlebox .md  > blockquote table tr td:nth-of-type(2) a { text-decoration:none; color: #2C2C2C; top:5px}
-
-html:not([lang="ns"]) .titlebox .md  > blockquote table tr td:nth-of-type(3) {
-background: #000;
-color: #fff;
-width: 20px;
-text-align:center;
-}
-
-html:not([lang="ns"]) .titlebox .md  > blockquote:nth-of-type(1) p {
-background: #DADADA;
-padding: 5px 0px;
-margin: -5px 2px 0;
-text-align: center;
-}
-
-html:not([lang="ns"]) .titlebox  .md  > blockquote:nth-of-type(1) p a {
-color:#000;
-font-weight:500;
-text-transform:uppercase;
-}
-
-/* [6.0] Footer & Pagination */
-
-html:not([lang="ns"]) .footer {
-color: gray;
-padding: 5px;
-margin: 15px;
-border: 1px solid #F0F0F0;
-display: inline-block;
-position: relative;
-margin-bottom:35px;
-}
-
-html:not([lang="ns"]) .footer-parent .footer:before {
-width: 170px;
-height: 150px;
-display: inline-block;
-background: url(%%sprite%%) no-repeat 0 -180px scroll transparent;
-content: "";
-position: absolute;
-left: -200px;
-top: 0;
-}
-
-/* Pagination & Never Ending Reddit Support*/
-
-html:not([lang="ns"]) div#endOfReddit {
-width: 100%;
-text-align: center;
-font-size: 10pt;
-font-weight: bold;
-text-shadow: 0 1px 0 #f1f1f1;
-color: #818181;
-padding: 5px 0;
-}
-
-html:not([lang="ns"]) .sitetable div.nav-buttons {
-padding: 7px 0 10px;
-background: transparent;
-border-bottom: 1px solid #ccc;
-width: 100%;
-margin-bottom: 5px;
-text-indent:10px;
-}
-
-html:not([lang="ns"]) .NERPageMarker {
-color: #818181 !important;
-font-size: 10pt !important;
-background-color: transparent !important;
-border: 0 none !important;
-border-radius: 0  !important;
-padding: 3px 0px;
-font-weight:bold !important;
-text-shadow:0 1px 0 #f1f1f1;
-}
-
-html:not([lang="ns"]) #progressIndicator {
-width: 80%;
-min-height: 20px;
-margin: 0px auto;
-font-size: 10pt !important;
-border: 0 none!important;
-border-radius: 0 !important;
-padding: 5px !important;
-text-align: center;
-background-color: transparent !important;
-cursor: pointer;
-color:#818181;
-}
-
-html:not([lang="ns"]) .nextprev a, .next-suggestions a {
-display: inline-block;
-padding: 5px 14px 5px 0;
-background-color: rgb(255, 255, 255);
-border: 1px solid rgb(221, 221, 221);
-border-radius: 3px;
-color:#000;
-}
-
-html:not([lang="ns"]) .nextprev a:hover, .next-suggestions a:hover {
-background: #fff;
-border: 1px solid #ccc;
-color: #000;
-box-shadow: 1px 1px 1px #ccc;
-}
-
-html:not([lang="ns"]) #NERFail .nextprev a, .next-suggestions a {
-padding:5px 10px;
-text-align:center;
-}
-
-html:not([lang="ns"]) #NERFail {
-width: auto;
-margin: 20px 0;
-padding: 15px 0;
-display: block;
-border-radius: 0px;
-border: 0 none;
-border-top: 1px dashed #ccc;
-}
-
-html:not([lang="ns"]) #NERFail a[href="/r/random"] { display:none; }
-
-/* [7.0] Wiki Styles */
-html:not([lang="ns"]) .wiki-page .wiki-page-content {  margin: 0; position:relative; }
-
-body.wiki-page-index .wiki-page-content .md.wiki blockquote {
-width: 100%;
-padding: 0 0;
-margin: 0 0;
-border: 0 none;
-}
-
-.wiki-page .wiki-page-content .md.wiki>.toc>ul { background:#fff; }
-
-body.wiki-page .wiki-page-content .md.wiki h3 {
-font-size: 1.6em;
-margin-top: 30px;
-border-bottom: 1px solid #ededed;
-padding-bottom: 5px;
-}
-
-.wiki-page .wiki-page-content .md.wiki h4 {
-font-size: 1.4em;
-color: #555;
-margin-top: 25px;
-margin-bottom: 0px;
-}
-
-body.wiki-page .wiki-page-content .md.wiki hr {
-margin: 30px 40px;
-background: #e5e5e5;
-border: 0px;
-height: 1px;
-}
-
-.wiki-page-index .wiki-page-content .md.wiki h5 {
-margin-top: 25px;
-}
-
-body.wiki-page .md.wiki blockquote table { width: 100%; margin: 0; }
-
-body.wiki-page table td,
-body.wiki-page table th { padding: 4px 8px; }
-
-body.wiki-page table th,
-table th {
-background: -webkit-linear-gradient(bottom,#2f2f2f,#525252);
-background: -moz-linear-gradient(bottom,#2f2f2f,#525252);
-background: -ms-linear-gradient(bottom,#2f2f2f,#525252);
-background: -o-linear-gradient(bottom,#2f2f2f,#525252);
-border-width: medium 1px medium;
-border-style: none solid solid solid;
-border-color: #525252;
-color: #fff;
-font-weight: bold;
-text-shadow: 0 1px 0px rgb(47,47,47);
-}
-
-/* Calendar */
-body.wiki-page-index .md.wiki blockquote:first-of-type table { margin-top:15px; }
-
-body.wiki-page-index .md.wiki blockquote:first-of-type table tr th:nth-of-type(1) { width:48px; text-align:center; }
-body.wiki-page-index .md.wiki blockquote:first-of-type table tr td:nth-of-type(4),
-body.wiki-page-index .md.wiki blockquote:first-of-type table tr th:nth-of-type(4),
-body.wiki-page-index .md.wiki blockquote:first-of-type table tr td:nth-of-type(5),
-body.wiki-page-index .md.wiki blockquote:first-of-type table tr th:nth-of-type(5) { text-align:center; }
-
-body.wiki-page-index .md.wiki blockquote:first-of-type table tr:nth-of-type(12) td:nth-of-type(2) {
-background: -webkit-linear-gradient(bottom,#2f2f2f,#525252);
-background: -moz-linear-gradient(bottom,#2f2f2f,#525252);
-background: -ms-linear-gradient(bottom,#2f2f2f,#525252);
-background: -o-linear-gradient(bottom,#2f2f2f,#525252);
-background-color: #525252;
-display: table-caption;
-position: absolute;
-width: 100%;
-padding: 4px 0;
-border: none;
-left: 0px;
-text-align: center;
-line-height: 18px;
-color:#fff;
-}
-
-/* TV Schedule */
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table { margin-top:15px; }
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr th { padding:4px 0; }
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td {
-text-align: center;
-position:relative;
-padding:4px 0;
-color: #c0c0c0;
-}
-
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:before {
-content: "•";
-font-size: 18px;
-line-height: 18px;
-text-shadow: 0px 1px 0px #000;
-}
-
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover:before { color:#000;  }
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td strong { display:none; }
-
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover strong {
-color: #000;
-display: block;
-background: none repeat scroll 0px 0px #FAFAFA;
-min-width: 175px;
-border: 1px solid #CCC;
-z-index: 1000;
-vertical-align: middle;
-margin: 0px auto;
-box-shadow: 1px 1px 1px #CCC;
-border-radius: 4px;
-font-weight: normal;
-text-align: left;
-padding: 10px;
-position: absolute;
-margin-top: -30px;
-margin-left: -190px;
-}
-
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover { cursor: pointer; }
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover strong:after {
-background-color: transparent;
-background-image: url(%%box-arrow%%);
-background-repeat: no-repeat;
-color: #000;
-content: "";
-height: 18px;
-width: 40px;
-top: 10px;
-display: block;
-position: absolute;
-right: -40px;
-}
-
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover strong a { font-weight:bold; display:block; clear:both; padding-top:10px; }
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:hover strong a:first-child { padding-top:0; }
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr th { text-align:center; }
-
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:nth-of-type(1) {
-min-width: 200px;
-text-indent: 0;
-text-align: left;
-padding:4px 8px;
-color: #000;
-}
-
-body.wiki-page-index .md.wiki blockquote:nth-of-type(3) table tr td:nth-of-type(1):before { display:none; }
-
-
-/* [8.0] Graphic Elements  */
-/* [8.1] Cars  */
-.link .entry a[href="#E22"], .wiki a[href="#E22"],
-.link .entry a[href="#F14T"], .wiki a[href="#F14T"],
-.link .entry a[href="#RB10"], .wiki a[href="#RB10"],
-.link .entry a[href="#VJM07"], .wiki a[href="#VJM07"],
-.link .entry a[href="#MR03"], .wiki a[href="#MR03"],
-.link .entry a[href="#MP4-29"], .wiki a[href="#MP4-29"],
-.link .entry a[href="#F1W05"], .wiki a[href="#F1W05"],
-.link .entry a[href="#C33"], .wiki a[href="#C33"],
-.link .entry a[href="#STR9"], .wiki a[href="#STR9"],
-.link .entry a[href="#FW36"], .wiki a[href="#FW36"],
-.link .entry a[href="#CT05"], .wiki a[href="#CT05"] {
-width: 34px;
-height: 18px;
-text-align: center;
-display: block;
-position: relative;
-background: black;
-margin-right: 50px;
-margin-left: 0;
-border-radius: inherit;
-border-top-right-radius: 9px;
-border-bottom-left-radius: 9px;
-border-top-left-radius: 3px;
-border-bottom-right-radius: 3px;
-color: #fff;
-font-weight: bold;
-font-style: italic;
-margin-right:75px
-}
-
+html:not([lang="ns"]) .RESshortcut.RESshortcutside{padding:4px 8px!important;width:auto!important;line-height:1!important;margin:0!important;display:inline-block!important;margin-right:5px!important}
+html:not([lang="ns"]) .fancy-toggle-button .remove,
+html:not([lang="ns"]) .RESshortcutside.remove,
+html:not([lang="ns"]) .REStoggle.remove{color:rgb(255,255,255)!important;background-color:rgb(217,83,79)!important;border-color:rgb(212,63,58)!important;background-image:none!important}
+html:not([lang="ns"]) .RESshortcutside,html:not([lang="ns"]) .REStoggle{color:rgb(255,255,255);background-color:rgb(92,184,92);border-color:rgb(76,174,76)!important;background-image:none!important}
+html:not([lang="ns"]) .side .spacer .submit-link{position:absolute;top:170px;right:10px;width:298px}
+html:not([lang="ns"]) .submit-link .morelink{color:#fff;background-color:#B00000;border-color:#C50000;background-image:-webkit-linear-gradient(top,#C20306,#B00000);background:-moz-linear-gradient(top,#C20306,#B00000);background:-ms-linear-gradient(top,#C20306,#B00000);background:-o-linear-gradient(top,#C20306,#B00000);height:32px;line-height:32px;text-transform:uppercase;background-position:0;text-shadow:0 1px 0 #5C0000}
+html:not([lang="ns"]) .submit-link .morelink a{color:rgb(255,255,255);font-size:16px;font-weight:900;letter-spacing:.5px}
+
+/*Custom Mail Icon*/
+html:not([lang=ns]) #mail.havemail,html:not([lang=ns]) #mail.nohavemail{background:url(%%sprite%%) no-repeat 0 0 scroll transparent;width:16px!important;height:16px;top:4px!important}html:not([lang=ns]) #mail.havemail{background-position:-111px -38px;margin-right:5px}html:not([lang=ns]) #mail.nohavemail{background-position:-111px -22px;opacity:.5}
+
+/*flair selection*/
+.flair{width:20px;height:16px;line-height:16px;overflow:hidden;vertical-align:middle;font-size:inherit;background-color:transparent;color:#222;padding:2px;margin-right:3px;border-width:0;border-radius:3px;padding-bottom:4px}
+.flairoptionpane .flair-label:before,.flair-empty:before,span.flair.flair-empty,.flairoptionpane .author{display:none}
+.flairoptionpane .flair:hover{width:auto;border-width:0;padding:4px;margin:0}
+.flairoptionpane .flair{background:none;border:0 none;width:auto;border-width:0}
+.flairoptionpane li{text-align:left!important;padding:0;margin-right:5px;border:0 none}
+.flairoptionpane li:hover{background:#f2f2f2;border:0px none}
+.flairoptionpane li .flair-label{background:#ccc;border-radius:3px;font-weight:bold;font-size:9pt;text-align:center;margin:0;display:block}
+.flairselector li.selected{border:0 none;font-weight:bold}
+*+html .flair,.flair:hover{width:auto;border-width:1px;background-color:#f5f5f5;padding:1px 1ex 3px 1px}
+
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(3) a{position:relative;text-indent:25px;padding-left:0;width:100%;display:block}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(3) a:before{content:"";display:inline-block;width:19px;height:18px;background-image:url(%%flair-block%%);background-repeat:no-repeat;top:3px;left:0;position:absolute}
+
+html:not([lang="ns"]) .side a[href="http://caterhamf1.com"]:before{background-position:-2px -1190px}html:not([lang="ns"]) .side a[href="http://formula1.ferrari.com"]:before{background-position:-2px -1207px}html:not([lang="ns"]) .side a[href="http://forceindiaf1.com"]:before{background-position:-2px -1224px}html:not([lang="ns"]) .side a[href="http://lotusf1team.com"]:before{background-position:-2px -1240px}html:not([lang="ns"]) .side a[href="http://marussiaf1team.com"]:before{background-position:-2px -1258px}html:not([lang="ns"]) .side a[href="http://mclaren.com/formula1"]:before{background-position:-2px -1275px}html:not([lang="ns"]) .side a[href="http://mercedes-amg-f1.com"]:before{background-position:-2px -1292px}html:not([lang="ns"]) .side a[href="http://infiniti-redbullracing.com"]:before{background-position:-2px -1309px}html:not([lang="ns"]) .titlebox blockquote:last-child>ul li a[href="http://sauberf1team.com"]:before{background-position:-2px -1326px}html:not([lang="ns"]) .side a[href="http://scuderiatororosso.com"]:before{background-position:-2px -1343px}html:not([lang="ns"]) .side a[href="http://williamsf1.com"]:before{background-position:-2px -1360px}
+
+/*Link Flair*/
+/*Default Display*/
+html:not([lang="ns"]) p.title>.linkflairlabel{padding:0 4px;border-radius:0;background:#323232;color:#fff}
+/*Link Flair Colors*/
+html:not([lang="ns"]) .linkflair-star p.title:before{background:url(%%sprite%%) no-repeat scroll -111px -1px transparent;text-indent:20px;display:inline-block;height:16px;width:18px;content:""}
+html:not([lang="ns"]) div.linkflair-star p.title>.linkflairlabel{display:none}
+.linkflair-star p.title .domain{text-indent:0}
+/*Link Flair Colors*/
+html:not([lang="ns"]) .linkflair-paywall p.title>.linkflairlabel{color:rgb(115,230,115)}
+html:not([lang="ns"]) .linkflair-rumour p.title>.linkflairlabel{color:orange}
+html:not([lang="ns"]) .linkflair-video p.title>.linkflairlabel{color:red}
+html:not([lang="ns"]) .linkflair-off-topic p.title>.linkflairlabel{color:rgb(27,227,241)}
+/*Filters*/
+.sitetable.linklisting .thing .flair,ul.content span.flair,
+html:lang(wt) .link:not(.linkflair-feature),
+html:lang(so) .link,
+html:lang(hs) .link.linkflair-race,
+html:lang(hs) .link.linkflair-qualifying,
+html:lang(hs) .link.linkflair-post-race,
+html:lang(hs) .link.linkflair-post-qualifying,
+html:lang(hs) .link.linkflair-practice{display:none}
+html:lang(so) .link.linkflair-race,
+html:lang(so) .link.linkflair-qualifying,
+html:lang(so) .link.linkflair-post-race,
+html:lang(so) .link.linkflair-post-qualifying,
+html:lang(so) .link.linkflair-practice{display:block}
+html:not([lang="ns"]) .thing.linkflair.linkflair-race{border-left:5px solid #6db81c}
+html:not([lang="ns"]) .thing.linkflair.linkflair-qualifying{border-left:5px solid #369}
+html:not([lang="ns"]) .thing.linkflair.linkflair-post-race,
+html:not([lang="ns"]) .thing.linkflair.linkflair-post-qualifying{border-left:5px solid #6D6D6D}
+html:not([lang="ns"]) .thing.linkflair.linkflair-practice{border-left:5px solid rgb(210,50,45)}
+html:not([lang="ns"]) .thing.linkflair.linkflair-feature{border-left:5px solid #0D0D0D}
+html:not([lang="ns"]) .thing.linkflair.linkflair-meetup{border-left:5px solid #0D0D0D}
+html:not([lang="ns"]) .linkflairlabel{border:0px none;color:#000;line-height:1.5em}
+html:not([lang="ns"]) .linkflair-practice p.title>.linkflairlabel,
+html:not([lang="ns"]) .linkflair-qualifying p.title>.linkflairlabel,
+html:not([lang="ns"]) .linkflair-race p.title>.linkflairlabel{color:#fff;border:0 none;display:inline-block}
+html:not([lang="ns"]) .linkflair-practice p.title>.linkflairlabel{background:rgb(210,50,45)}
+html:not([lang="ns"]) .linkflair-qualifying p.title>.linkflairlabel{background:#369}
+html:not([lang="ns"]) .linkflair-post-qualifying p.title>.linkflairlabel{background:#6D6D6D;color:#FFF}
+html:not([lang="ns"]) .linkflair-post-race p.title>.linkflairlabel{background:#6D6D6D;color:#FFF}
+html:not([lang="ns"]) .linkflair-race p.title>.linkflairlabel{background:#6db81c}
+html:not([lang="ns"]) .linkflair-feature p.title>.linkflairlabel{background:#000;color:#fff}
+
+/*Filters Images to delete
+html:not([lang="ns"]) .linkflair-practice a.thumbnail,
+html:not([lang="ns"]) .linkflair-qualifying a.thumbnail,
+html:not([lang="ns"]) .linkflair-post-qualifying a.thumbnail,
+html:not([lang="ns"]) .linkflair-post-race a.thumbnail,
+html:not([lang="ns"]) .linkflair-race a.thumbnail,
+html:not([lang="ns"]) .linkflair-meetup a.thumbnail,
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="australian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="albert_park"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="malaysian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="malaysia"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="sepang"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="bahrain"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="chinese"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="shanghai"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="spanish"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="monaco"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="canadian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="montreal_gp"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="circuit_gilles"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="austrian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="british"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="german"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="hungarian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="belgian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="italian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="singapore"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="japanese"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="russian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="sochi"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="united_states"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="brazilian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="abu_dhabi"]{background-image:url(%%flag-med-sprite%%);width:60px;height:60px;border-radius:2px}
+*/
+
+/*Country Flags*/
+html:not([lang="ns"]) a[href="#au"],html:not([lang="ns"]) a[href="/au"],
+html:not([lang="ns"]) a[href="#br"],html:not([lang="ns"]) a[href="/br"],
+html:not([lang="ns"]) a[href="#de"],html:not([lang="ns"]) a[href="/de"],
+html:not([lang="ns"]) a[href="#be"],html:not([lang="ns"]) a[href="/be"],
+html:not([lang="ns"]) a[href="#dk"],html:not([lang="ns"]) a[href="/dk"],
+html:not([lang="ns"]) a[href="#es"],html:not([lang="ns"]) a[href="/es"],
+html:not([lang="ns"]) a[href="#en"],html:not([lang="ns"]) a[href="/en"],
+html:not([lang="ns"]) a[href="#gb"],html:not([lang="ns"]) a[href="/gb"],
+html:not([lang="ns"]) a[href="#fi"],html:not([lang="ns"]) a[href="/fi"],
+html:not([lang="ns"]) a[href="#fr"],html:not([lang="ns"]) a[href="/fr"],
+html:not([lang="ns"]) a[href="#mx"],html:not([lang="ns"]) a[href="/mx"],
+html:not([lang="ns"]) a[href="#nl"],html:not([lang="ns"]) a[href="/nl"],
+html:not([lang="ns"]) a[href="#ru"],html:not([lang="ns"]) a[href="/ru"],
+html:not([lang="ns"]) a[href="#ve"],html:not([lang="ns"]) a[href="/ve"],
+html:not([lang="ns"]) a[href="#se"],html:not([lang="ns"]) a[href="/se"],
+html:not([lang="ns"]) a[href="#it"],html:not([lang="ns"]) a[href="/it"],
+html:not([lang="ns"]) a[href="#jp"],html:not([lang="ns"]) a[href="/jp"],
+html:not([lang="ns"]) a[href="#ch"],html:not([lang="ns"]) a[href="/ch"],
+html:not([lang="ns"]) a[href="#at"],html:not([lang="ns"]) a[href="/at"],
+html:not([lang="ns"]) a[href="#in"],html:not([lang="ns"]) a[href="/in"],
+html:not([lang="ns"]) a[href="#my"],html:not([lang="ns"]) a[href="/my"],
+html:not([lang="ns"]) a[href="#ca"],html:not([lang="ns"]) a[href="/ca"],
+html:not([lang="ns"]) a[href="#us"],html:not([lang="ns"]) a[href="/us"],
+html:not([lang="ns"]) a[href="#co"],html:not([lang="ns"]) a[href="/co"],
+html:not([lang="ns"]) a[href="#cn"],html:not([lang="ns"]) a[href="/cn"],
+html:not([lang="ns"]) a[href="#bh"],html:not([lang="ns"]) a[href="/bh"],
+html:not([lang="ns"]) a[href="#mc"],html:not([lang="ns"]) a[href="/mc"],
+html:not([lang="ns"]) a[href="#hu"],html:not([lang="ns"]) a[href="/hu"],
+html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"],
+html:not([lang="ns"]) a[href="#ae"],html:not([lang="ns"]) a[href="/ae"],
+html:not([lang="ns"]) a[href="#po"],html:not([lang="ns"]) a[href="/po"]
+{background-image:url(%%flags%%);background-repeat:no-repeat;background-color:transparent;width:16px;height:11px;text-indent:-99999pt;display:inline-block;position:relative;margin-right:2px;top:1px;padding:0}
+html:not([lang="ns"]) a[href="#au"],html:not([lang="ns"]) a[href="/au"]{background-position:-32px -33px}
+html:not([lang="ns"]) a[href="#br"],html:not([lang="ns"]) a[href="/br"]{background-position:-172px -61px}
+html:not([lang="ns"]) a[href="#de"],html:not([lang="ns"]) a[href="/de"]{background-position:-284px -117px}
+html:not([lang="ns"]) a[href="#be"],html:not([lang="ns"]) a[href="/be"]{background-position:-228px -33px}
+html:not([lang="ns"]) a[href="#dk"],html:not([lang="ns"]) a[href="/dk"]{background-position:-32px -145px}
+html:not([lang="ns"]) a[href="#es"],html:not([lang="ns"]) a[href="/es"]{background-position:-4px -173px}
+html:not([lang="ns"]) a[href="#jp"],html:not([lang="ns"]) a[href="/jp"]{background-position:-256px -257px}
+html:not([lang="ns"]) a[href="#gb"],html:not([lang="ns"]) a[href="/gb"]{background-position:-284px -173px}
+html:not([lang="ns"]) a[href="#fi"],html:not([lang="ns"]) a[href="/fi"]{background-position:-88px -173px}
+html:not([lang="ns"])  a[href="#fr"],html:not([lang="ns"]) a[href="/fr"]{background-position:-228px -173px}
+html:not([lang="ns"]) a[href="#mx"],html:not([lang="ns"]) a[href="/mx"]{background-position:-172px -369px}
+html:not([lang="ns"]) a[href="#nl"],html:not([lang="ns"]) a[href="/nl"]{background-position:-116px -397px}
+html:not([lang="ns"]) a[href="#ru"],html:not([lang="ns"]) a[href="/ru"]{background-position:-144px -453px}
+html:not([lang="ns"]) a[href="#ve"],html:not([lang="ns"]) a[href="/ve"]{background-position:-172px -565px}
+html:not([lang="ns"]) a[href="#it"],html:not([lang="ns"]) a[href="/it"]{background-position:-172px -257px}
+html:not([lang="ns"]) a[href="#in"],html:not([lang="ns"]) a[href="/in"]{background-position:-32px -257px}
+html:not([lang="ns"]) a[href="#se"],html:not([lang="ns"]) a[href="/se"]{background-position:-32px -481px}
+html:not([lang="ns"]) a[href="#at"],html:not([lang="ns"]) a[href="/at"]{background-position:-4px -33px}
+html:not([lang="ns"]) a[href="#ch"],html:not([lang="ns"]) a[href="/xh"]{background-position:-198px -89px}
+html:not([lang="ns"]) a[href="#in"],html:not([lang="ns"]) a[href="/in"]{background-position:-32px -257px}
+html:not([lang="ns"]) a[href="#ca"],html:not([lang="ns"]) a[href="/ca"]{background-position:-60px -89px}
+html:not([lang="ns"]) a[href="#us"],html:not([lang="ns"]) a[href="/us"]{background-position:-4px -565px}
+html:not([lang="ns"]) a[href="#my"],html:not([lang="ns"]) a[href="/my"]{background-position:-200px -369px}
+html:not([lang="ns"]) a[href="#cn"],html:not([lang="ns"]) a[href="/cn"]{background-position:-32px -117px}
+html:not([lang="ns"]) a[href="#bh"],html:not([lang="ns"]) a[href="/bh"]{background-position:-4px -61px}
+html:not([lang="ns"]) a[href="#mc"],html:not([lang="ns"]) a[href="/mc"]{background-position:-256px -229px}
+html:not([lang="ns"]) a[href="#hu"],html:not([lang="ns"]) a[href="/hu"]{background-position:-228px -229px}
+html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"]{background-position:-60px -481px}
+html:not([lang="ns"]) a[href="#ae"],html:not([lang="ns"]) a[href="/ae"]{background-position:-32px -5px}
+html:not([lang="ns"]) a[href="#po"],html:not([lang="ns"]) a[href="/po"]{background-position:-4px -453px}
+
+/*[8.6] Thumbnails for Session Threads - To Delete
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="australian"]{background-position:0px 0px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="malaysia"]{background-position:-60px 0px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="bahrain"]{background-position:-120px 0px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="chinese"]{background-position:-180px 0px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="spanish"]{background-position:-240px 0px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="monaco"]{background-position:0px -60px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="canadian"]{background-position:-60px -60px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="austrian"]{background-position:-120px -60px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="british"]{background-position:-180px -60px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="german"]{background-position:-240px -60px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="hungarian"]{background-position:0px -120px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="belgian"]{background-position:-60px -120px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="italian"]{background-position:-120px -120px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="singapore"]{background-position:-180px -120px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="japanese"]{background-position:-240px -120px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="russian"]{background-position:0px -180px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="sochi"]{background-position:0px -180px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="united_states"]{background-position:-60px -180px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="brazilian"]{background-position:-120px -180px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="abu_dhabi"]{background-position:-180px -180px}
+*/
+
+/*[8.1] Cars*/
+.link .entry a[href="#E22"],.wiki a[href="#E22"],
+.link .entry a[href="#F14T"],.wiki a[href="#F14T"],
+.link .entry a[href="#RB10"],.wiki a[href="#RB10"],
+.link .entry a[href="#VJM07"],.wiki a[href="#VJM07"],
+.link .entry a[href="#MR03"],.wiki a[href="#MR03"],
+.link .entry a[href="#MP4-29"],.wiki a[href="#MP4-29"],
+.link .entry a[href="#F1W05"],.wiki a[href="#F1W05"],
+.link .entry a[href="#C33"],.wiki a[href="#C33"],
+.link .entry a[href="#STR9"],.wiki a[href="#STR9"],
+.link .entry a[href="#FW36"],.wiki a[href="#FW36"],
+.link .entry a[href="#CT05"],.wiki a[href="#CT05"]{width:34px;height:18px;text-align:center;display:block;position:relative;background:black;margin-right:50px;margin-left:0;border-radius:inherit;border-top-right-radius:9px;border-bottom-left-radius:9px;border-top-left-radius:3px;border-bottom-right-radius:3px;color:#fff;font-weight:bold;font-style:italic;margin-right:75px}
 .link .entry a[href="#E22"],
-.wiki a[href="#E22"] {
-background-color: #464646;
-color:gold;
-background-image:linear-gradient(90deg, #464646, #1e1e1e);
-background-image: -webkit-linear-gradient(90deg, #464646, #1e1e1e);
-background-image: -moz-linear-gradient(90deg, #464646, #1e1e1e);
-background-image: -ms-linear-gradient(90deg, #464646, #1e1e1e);
-background-image: -o-linear-gradient(90deg, #464646, #1e1e1e);
-border:1px solid #464646;
-}
-
+.wiki a[href="#E22"]{background-color:#464646;color:gold;background-image:linear-gradient(90deg,#464646,#1e1e1e);background-image:-webkit-linear-gradient(90deg,#464646,#1e1e1e);background-image:-moz-linear-gradient(90deg,#464646,#1e1e1e);background-image:-ms-linear-gradient(90deg,#464646,#1e1e1e);background-image:-o-linear-gradient(90deg,#464646,#1e1e1e);border:1px solid #464646}
 .link .entry a[href="#F14T"],
-.wiki a[href="#F14T"] {
-background-color: #e31e27;
-background-image:linear-gradient(90deg, #e31e27, #c51a22);
-background-image: -webkit-linear-gradient(90deg, #e31e27, #c51a22);
-background-image: -moz-linear-gradient(90deg, #e31e27, #c51a22);
-background-image: -ms-linear-gradient(90deg, #e31e27, #c51a22);
-background-image: -o-linear-gradient(90deg, #e31e27, #c51a22);
-color:white;
-border: 1px solid #e31e27;
-}
-
+.wiki a[href="#F14T"]{background-color:#e31e27;background-image:linear-gradient(90deg,#e31e27,#c51a22);background-image:-webkit-linear-gradient(90deg,#e31e27,#c51a22);background-image:-moz-linear-gradient(90deg,#e31e27,#c51a22);background-image:-ms-linear-gradient(90deg,#e31e27,#c51a22);background-image:-o-linear-gradient(90deg,#e31e27,#c51a22);color:white;border:1px solid #e31e27}
 .link .entry a[href="#RB10"],
-.wiki a[href="#RB10"] {
-background-color:#082d70;
-background-image:linear-gradient(90deg, #082d70, #4f2682);
-background-image: -webkit-linear-gradient(90deg, #082d70, #4f2682);
-background-image: -moz-linear-gradient(90deg, #082d70, #4f2682);
-background-image: -ms-linear-gradient(90deg, #082d70, #4f2682);
-background-image: -o-linear-gradient(90deg, #082d70, #4f2682);
-border:1px solid #8b34f8;
-color:white;
-}
-
+.wiki a[href="#RB10"]{background-color:#082d70;background-image:linear-gradient(90deg,#082d70,#4f2682);background-image:-webkit-linear-gradient(90deg,#082d70,#4f2682);background-image:-moz-linear-gradient(90deg,#082d70,#4f2682);background-image:-ms-linear-gradient(90deg,#082d70,#4f2682);background-image:-o-linear-gradient(90deg,#082d70,#4f2682);border:1px solid #8b34f8;color:white}
 .link .entry a[href="#VJM07"],
-.wiki a[href="#VJM07"] {
-background-color: #fc5f00;
-background-image:linear-gradient(90deg, #fc5f00, #e25500);
-background-image: -webkit-linear-gradient(90deg, #fc5f00, #e25500);
-background-image: -moz-linear-gradient(90deg, #fc5f00, #e25500);
-background-image: -ms-linear-gradient(90deg, #fc5f00, #e25500);
-background-image: -o-linear-gradient(90deg, #fc5f00, #e25500);
-color:green;
-border: 1px solid #fc5f00;
-}
-
+.wiki a[href="#VJM07"]{background-color:#fc5f00;background-image:linear-gradient(90deg,#fc5f00,#e25500);background-image:-webkit-linear-gradient(90deg,#fc5f00,#e25500);background-image:-moz-linear-gradient(90deg,#fc5f00,#e25500);background-image:-ms-linear-gradient(90deg,#fc5f00,#e25500);background-image:-o-linear-gradient(90deg,#fc5f00,#e25500);color:green;border:1px solid #fc5f00}
 .link .entry a[href="#MR03"],
-.wiki a[href="#MR03"] {
-background-color: #f83d38;
-background-image:linear-gradient(90deg, #f83d38, #d83531);
-background-image: -webkit-linear-gradient(90deg, #f83d38, #d83531);
-background-image: -moz-linear-gradient(90deg, #f83d38, #d83531);
-background-image: -ms-linear-gradient(90deg, #f83d38, #d83531);
-background-image: -o-linear-gradient(90deg, #f83d38, #d83531);
-border: 1px solid #f83d38;
-color:black;
-}
-
+.wiki a[href="#MR03"]{background-color:#f83d38;background-image:linear-gradient(90deg,#f83d38,#d83531);background-image:-webkit-linear-gradient(90deg,#f83d38,#d83531);background-image:-moz-linear-gradient(90deg,#f83d38,#d83531);background-image:-ms-linear-gradient(90deg,#f83d38,#d83531);background-image:-o-linear-gradient(90deg,#f83d38,#d83531);border:1px solid #f83d38;color:black}
 .link .entry a[href="#MP4-29"],
-.wiki a[href="#MP4-29"] {
-background-image:linear-gradient(90deg, silver, #f7f7f7);
-background-image: -webkit-linear-gradient(90deg, silver, #f7f7f7);
-background-image: -moz-linear-gradient(90deg, silver, #f7f7f7);
-background-image: -ms-linear-gradient(90deg, silver, #f7f7f7);
-background-image: -o-linear-gradient(90deg, silver, #f7f7f7);
-background-color: silver;
-color:red;
-border:1px solid silver;
-}
-
+.wiki a[href="#MP4-29"]{background-image:linear-gradient(90deg,silver,#f7f7f7);background-image:-webkit-linear-gradient(90deg,silver,#f7f7f7);background-image:-moz-linear-gradient(90deg,silver,#f7f7f7);background-image:-ms-linear-gradient(90deg,silver,#f7f7f7);background-image:-o-linear-gradient(90deg,silver,#f7f7f7);background-color:silver;color:red;border:1px solid silver}
 .link .entry a[href="#F1W05"],
-.wiki a[href="#F1W05"] {
-background-image:linear-gradient(90deg, silver, #f7f7f7);
-background-image: -webkit-linear-gradient(90deg, silver, #f7f7f7);
-background-image: -moz-linear-gradient(90deg, silver, #f7f7f7);
-background-image: -ms-linear-gradient(90deg, silver, #f7f7f7);
-background-image: -o-linear-gradient(90deg, silver, #f7f7f7);
-background-color: silver;
-color:teal;
-border:1px solid silver;
-}
-
+.wiki a[href="#F1W05"]{background-image:linear-gradient(90deg,silver,#f7f7f7);background-image:-webkit-linear-gradient(90deg,silver,#f7f7f7);background-image:-moz-linear-gradient(90deg,silver,#f7f7f7);background-image:-ms-linear-gradient(90deg,silver,#f7f7f7);background-image:-o-linear-gradient(90deg,silver,#f7f7f7);background-color:silver;color:teal;border:1px solid silver}
 .link .entry a[href="#C33"],
-.wiki a[href="#C33"] {
-background-color:#424242;
-background-image:linear-gradient(90deg, #424242, #2e2e2e);
-background-image: -webkit-linear-gradient(90deg, #424242, #2e2e2e);
-background-image: -moz-linear-gradient(90deg, #424242, #2e2e2e);
-background-image: -ms-linear-gradient(90deg, #424242, #2e2e2e);
-background-image: -o-linear-gradient(90deg, #424242, #2e2e2e);
-color:white;
-border:1px solid #424242;
-}
-
+.wiki a[href="#C33"]{background-color:#424242;background-image:linear-gradient(90deg,#424242,#2e2e2e);background-image:-webkit-linear-gradient(90deg,#424242,#2e2e2e);background-image:-moz-linear-gradient(90deg,#424242,#2e2e2e);background-image:-ms-linear-gradient(90deg,#424242,#2e2e2e);background-image:-o-linear-gradient(90deg,#424242,#2e2e2e);color:white;border:1px solid #424242}
 .link .entry a[href="#STR9"],
-.wiki a[href="#STR9"] {
-background-image:linear-gradient(90deg, navy, #00224b);
-background-image: -webkit-linear-gradient(90deg, navy, #00224b);
-background-image: -moz-linear-gradient(90deg, navy, #00224b);
-background-image: -ms-linear-gradient(90deg, navy, #00224b);
-background-image: -o-linear-gradient(90deg, navy, #00224b);
-background-color:navy;
-color:red;
-border:1px solid navy;
-}
-
+.wiki a[href="#STR9"]{background-image:linear-gradient(90deg,navy,#00224b);background-image:-webkit-linear-gradient(90deg,navy,#00224b);background-image:-moz-linear-gradient(90deg,navy,#00224b);background-image:-ms-linear-gradient(90deg,navy,#00224b);background-image:-o-linear-gradient(90deg,navy,#00224b);background-color:navy;color:red;border:1px solid navy}
 .link .entry a[href="#FW36"],
-.wiki a[href="#FW36"] {
-background-color: #003b84;
-background-image:linear-gradient(90deg, #003b84, #003372);
-background-image: -webkit-linear-gradient(90deg, #003b84, #003372);
-background-image: -moz-linear-gradient(90deg, #003b84, #003372);
-background-image: -ms-linear-gradient(90deg, #003b84, #003372);
-background-image: -o-linear-gradient(90deg, #003b84, #003372);
-color:white;
-border:1px solid #003b84;
-}
-
+.wiki a[href="#FW36"]{background-color:#003b84;background-image:linear-gradient(90deg,#003b84,#003372);background-image:-webkit-linear-gradient(90deg,#003b84,#003372);background-image:-moz-linear-gradient(90deg,#003b84,#003372);background-image:-ms-linear-gradient(90deg,#003b84,#003372);background-image:-o-linear-gradient(90deg,#003b84,#003372);color:white;border:1px solid #003b84}
 .link .entry a[href="#CT05"],
-.wiki a[href="#CT05"] {
-background-image:linear-gradient(90deg, #153726, #2a5a00);
-background-image: -webkit-linear-gradient(90deg, #153726, #2a5a00);
-background-image: -moz-linear-gradient(90deg, #153726, #2a5a00);
-background-image: -ms-linear-gradient(90deg, #153726, #2a5a00);
-background-image: -o-linear-gradient(90deg, #153726, #2a5a00);
-background-color: #153726;
-color:#92c700;
-border:1px solid #153726;
-}
-
+.wiki a[href="#CT05"]{background-image:linear-gradient(90deg,#153726,#2a5a00);background-image:-webkit-linear-gradient(90deg,#153726,#2a5a00);background-image:-moz-linear-gradient(90deg,#153726,#2a5a00);background-image:-ms-linear-gradient(90deg,#153726,#2a5a00);background-image:-o-linear-gradient(90deg,#153726,#2a5a00);background-color:#153726;color:#92c700;border:1px solid #153726}
 .link .entry a[href="#E22"]:after,
 .link .entry a[href="#F14T"]:after,
 .link .entry a[href="#RB10"]:after,
@@ -1695,77 +583,262 @@ border:1px solid #153726;
 .wiki a[href="#C33"]:after,
 .wiki a[href="#STR9"]:after,
 .wiki a[href="#FW36"]:after,
-.wiki a[href="#CT05"]:after {
-width: 65px;
-height: 22px;
-display: inline-block;
-background-image: url(%%cars-2014%%);
-background-repeat: no-repeat;
-text-indent: -99999pt;
-content: "";
+.wiki a[href="#CT05"]:after{width:65px;height:22px;display:inline-block;background-image:url(%%cars-2014%%);background-repeat:no-repeat;text-indent:-99999pt;content:"";position:absolute;left:48px;top:0px}
+
+.link .entry a[href="#E22"]:after,.wiki a[href="#E22"]:after{background-position:0 -181px}
+.link .entry a[href="#F14T"]:after,.wiki a[href="#F14T"]:after{background-position:0 -39px}
+.link .entry a[href="#RB10"]:after,.wiki a[href="#RB10"]:after{background-position:0 -161px}
+.link .entry a[href="#VJM07"]:after,.wiki a[href="#VJM07"]:after{background-position:0 -18px}
+.link .entry a[href="#MR03"]:after,.wiki a[href="#MR03"]:after{background-position:0 -100px}
+.link .entry a[href="#MP4-29"]:after,.wiki a[href="#MP4-29"]:after{background-position:0 -59px}
+.link .entry a[href="#F1W05"]:after,.wiki a[href="#F1W05"]:after{background-position:0 -120px}
+.link .entry a[href="#C33"]:after,.wiki a[href="#C33"]:after{background-position:0 -140px}
+.link .entry a[href="#STR9"]:after,.wiki a[href="#STR9"]:after{background-position:0 -79px}
+.link .entry a[href="#FW36"]:after,.wiki a[href="#FW36"]:after{background-position:0 2px}
+.link .entry a[href="#CT05"]:after,.wiki a[href="#CT05"]:after{background-position:0 -201px}
+
+html:not([lang="ns"]) #srList{z-index:50001!important}
+html:not([lang="ns"]) #RESShortcutsEditContainer{background:transparent!important}
+html:not([lang="ns"]) #RESShortcutsSort,
+html:not([lang="ns"]) #RESShortcutsRight,
+html:not([lang="ns"]) #RESShortcutsLeft,
+html:not([lang="ns"]) #RESShortcutsAdd,
+html:not([lang="ns"]) #RESShortcutsTrash{background:transparent!important;color:#f1f1f1!important;width:12px!important;font-size:11px!important}
+html:not([lang="ns"]) #RESShortcutsSort{font-size:12px!important}
+html:not([lang="ns"]) #RESShortcuts{color:#fff}
+html:not([lang="ns"]) div.res-navTop a{color:#000}
+
+/*for editors*/
+ul#image-preview-list{padding:20px;font-size:larger;background:#fff!important;display:inline-block;height:100%;border-top:1px solid #ccc;margin-top:20px}
+.stylesheet-customize-container{width:100%}
+#subreddit_stylesheet{display:block;overflow:hidden}
+.sheets{margin:0}
+#stylesheet_contents{padding:5px;background-color:#222;color:#ace;border:2px solid #222;height:500px;font-size:13px;line-height:1.4}
+body.res-nightmode #stylesheet_contents{background-color:#111;border-color:#111;height:500px;font-size:13px;line-height:1.4}
+
+.side blockquote blockquote ul a{color:#4f4f4f}
+.side blockquote blockquote ul a:hover{color:#000}
+
+
+/*extra text*/
+html:not([lang="ns"]) .side a[href*="/r/formula1/w/userguide#wiki_irc_chat"]:after{content:"#f1 on irc.snoonet.org";display:block;width:100%;font-size:13px;height:12px;line-height:11px;margin-top:0;margin-bottom:5px}
+html:not([lang="ns"]) .side a[href*="http://spotterguides.com"]:after{content:"By Andy Blackmore";display:block;width:100%;font-size:13px;height:12px;line-height:11px;margin-top:0;margin-bottom:5px}
+
+
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3) table thead{display:none}
+
+/*circuit*/
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3) blockquote p,
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(4) blockquote p:first-child{font-size:13px;background:#222;color:#fff;padding:8px;margin:0}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3) table tr td:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(2) table tr td:nth-of-type(1){font-weight:bold;vertical-align:top;}
+
+/*map*/
+html:not([lang="ns"]) .titlebox .md a[href="#map"]{width:450px;height:250px;display:block;background:url(%%circuit-map%%) no-repeat 0 0 scroll transparent;background-size:cover;text-indent:-9999pt;pointer-events:none}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(4) blockquote p:nth-of-type(2) {
+margin: 7px 1px 0;
+padding: 0;
+}
+
+/*[7.0] Wiki Styles*/
+html:not([lang=ns]) .wiki-page .wiki-page-content{position:relative;margin:0}body.wiki-page-index .wiki-page-content .md.wiki blockquote{width:100%;border:0 none;margin:0;padding:0}.wiki-page .wiki-page-content .md.wiki>.toc>ul{background:#fff}body.wiki-page .wiki-page-content .md.wiki h3{font-size:1.6em;margin-top:30px;border-bottom:1px solid #ededed;padding-bottom:5px}.wiki-page .wiki-page-content .md.wiki h4{font-size:1.4em;color:#555;margin-top:25px;margin-bottom:0}body.wiki-page .wiki-page-content .md.wiki hr{background:#e5e5e5;border:0;height:1px;margin:30px 40px}.wiki-page-index .wiki-page-content .md.wiki h5{margin-top:25px}body.wiki-page .md.wiki blockquote table{width:100%;margin:0}body.wiki-page table td,body.wiki-page table th{padding:4px 8px}body.wiki-page table th,table th{background:-webkit-linear-gradient(bottom,#2f2f2f,#525252);background:-moz-linear-gradient(bottom,#2f2f2f,#525252);background:-ms-linear-gradient(bottom,#2f2f2f,#525252);background:-o-linear-gradient(bottom,#2f2f2f,#525252);border-width:medium 1px;border-style:none solid solid;border-color:#525252;color:#fff;font-weight:700;text-shadow:0 1px 0 #2f2f2f}
+
+/*Calendar*/
+body.wiki-page-index .md.wiki blockquote:first-of-type table{margin-top:15px}body.wiki-page-index .md.wiki blockquote:first-of-type table tr th:nth-of-type(1){width:48px;text-align:center}body.wiki-page-index .md.wiki blockquote:first-of-type table tr td:nth-of-type(4),body.wiki-page-index .md.wiki blockquote:first-of-type table tr td:nth-of-type(5),body.wiki-page-index .md.wiki blockquote:first-of-type table tr th:nth-of-type(4),body.wiki-page-index .md.wiki blockquote:first-of-type table tr th:nth-of-type(5){text-align:center}body.wiki-page-index .md.wiki blockquote:first-of-type table tr:nth-of-type(12) td:nth-of-type(2){background:-webkit-linear-gradient(bottom,#2f2f2f,#525252);background:-moz-linear-gradient(bottom,#2f2f2f,#525252);background:-ms-linear-gradient(bottom,#2f2f2f,#525252);background:-o-linear-gradient(bottom,#2f2f2f,#525252);background-color:#525252;display:table-caption;position:absolute;width:100%;padding:4px 0;border:none;left:0;text-align:center;line-height:18px;color:#fff}
+
+/*TV Schedule*/
+
+/*[9.1] Never Ending Reddit*/
+html:not([lang=ns]) div#endOfReddit{width:100%;text-align:center;font-size:10pt;font-weight:700;text-shadow:0 1px 0 #f1f1f1;color:#818181;padding:5px 0}html:not([lang=ns]) .sitetable div.nav-buttons{padding:7px 0 10px;background:0 0;border-bottom:1px solid #ccc;width:100%;margin-bottom:5px;text-indent:10px}html:not([lang=ns]) .NERPageMarker{color:#818181!important;font-size:10pt!important;background-color:transparent!important;border:0 none!important;border-radius:0!important;padding:3px 0;font-weight:700!important;text-shadow:0 1px 0 #f1f1f1}html:not([lang=ns]) #progressIndicator{width:80%;min-height:20px;margin:0 auto;font-size:10pt!important;border:0 none!important;border-radius:0!important;padding:5px!important;text-align:center;background-color:transparent!important;cursor:pointer;color:#818181}.next-suggestions a,html:not([lang=ns]) .nextprev a{display:inline-block;padding:5px 14px 5px 0;background-color:#fff;border:1px solid #ddd;border-radius:3px;color:#000}.next-suggestions a:hover,html:not([lang=ns]) .nextprev a:hover{background:#fff;border:1px solid #ccc;color:#000;box-shadow:1px 1px 1px #ccc}.next-suggestions a,html:not([lang=ns]) #NERFail .nextprev a{padding:5px 10px;text-align:center}html:not([lang=ns]) #NERFail{width:auto;margin:20px 0;padding:15px 0;display:block;border-radius:0;border:0 none;border-top:1px dashed #ccc}html:not([lang=ns]) #NERFail a[href="/r/random"]{display:none}
+html:not([lang=ns]) #progressIndicator{font-weight:700;text-shadow:0 1px 0 #fff}html:not([lang=ns]) #progressIndicator>img{content:"";height:24px;width:21px;padding-left:21px;background:url(%%sprite%%);margin:0 auto;background-position:-89px -60px;overflow:hidden;display:none}html:not([lang=ns]) #progressIndicator h2{color:#000}#NERContent{padding-bottom:10px;padding-right:0;width:50%;left:0 !important;right:0;margin:0 auto}.RESThrobber{margin-right:5px;margin-bottom:-10px;margin-top:10px}.RESThrobber:before, .RESThrobber:after{display:none}#NERContent .RESThrobber{margin:0 auto}#NERContent .RESThrobber{margin:10px auto 0;left:0;right:0;display:block}
+.RESThrobber{background-color:transparent;border-right:4px solid red;border-left:4px solid black;border-top:4px solid black;border-bottom:4px solid black;box-shadow:none;height:20px;width:20px;-webkit-transition:all .75s ease 0s;transition:all .75s ease 0s;border-radius:100%;-webkit-animation:standard .75s infinite linear;animation:standard .75s infinite linear;-webkit-transform-origin:center;-ms-transform-origin:center;transform-origin:center}
+
+@-webkit-keyframes standard{
+  from{
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+ }
+  to{
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+ }
+}
+@keyframes standard{
+  from{
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+ }
+  to{
+    -webkit-transform:rotate(360deg);
+    transform:rotate(360deg);
+ }
+}
+
+/*alien car*/
+
+html:not([lang="ns"]) .side .usertext-body:before{display:block;content:'';height:150px;margin-bottom:-12px;background:url(%%snoo-car%%) no-repeat center 8px scroll #EDEDED}
+html:not([lang="ns"]) .res-nightmode .side .usertext-body:before{display:none;}
+
+
+.formtabs-content {padding-top: 225px;position: relative;}
+.formtabs-content .md blockquote {
+margin: 0;
+border: 0;
 position: absolute;
-left: 48px;
-top: 0px;
+top: 0;
+left: 0px;
+padding: 10px;
+background: rgb(237,237,237);
+right: 0px;
+height: 190px;
+overflow-y: scroll;
 }
-
-.link .entry a[href="#E22"]:after, .wiki a[href="#E22"]:after { background-position:0 -181px; }
-.link .entry a[href="#F14T"]:after, .wiki a[href="#F14T"]:after  { background-position:0 -39px; }
-.link .entry a[href="#RB10"]:after, .wiki a[href="#RB10"]:after  { background-position:0 -161px; }
-.link .entry a[href="#VJM07"]:after, .wiki a[href="#VJM07"]:after  { background-position:0 -18px; }
-.link .entry a[href="#MR03"]:after, .wiki a[href="#MR03"]:after  { background-position:0 -100px; }
-.link .entry a[href="#MP4-29"]:after, .wiki a[href="#MP4-29"]:after  { background-position:0 -59px; }
-.link .entry a[href="#F1W05"]:after, .wiki a[href="#F1W05"]:after  { background-position:0 -120px; }
-.link .entry a[href="#C33"]:after, .wiki a[href="#C33"]:after  { background-position:0 -140px; }
-.link .entry a[href="#STR9"]:after, .wiki a[href="#STR9"]:after  { background-position:0 -79px; }
-.link .entry a[href="#FW36"]:after, .wiki a[href="#FW36"]:after  { background-position:0 2px; }
-.link .entry a[href="#CT05"]:after, .wiki a[href="#CT05"]:after  { background-position:0 -201px; }
-
-/* [8.2] User Flair */
-.flairoptionpane .flair {
-width: 135px;
-padding-right: 2px;
+.formtabs-content .md blockquote>ul { list-style-type:none;padding:0;margin:0}
+.formtabs-content .md blockquote>ul>li {float: left;display: inline-block;font-weight: bold;font-size:14px;width:100%}
+.formtabs-content .md blockquote>ul>li li {font-weight:normal}
+.formtabs-content .md blockquote>ul>li>ul {
+padding: 5px 0 10px 5px;
+line-height: 1.5em;
+font-size: 13px;
+margin-top: 0;
+margin: 0 20px;
 }
-.flairoptionpane .author {
-display: none;
-}
-.flair-empty, .flair-label {display: none;}
-.flairoptionpane .flair-empty, .flairoptionpane .flair-label {display: block;}
-.flairoptionpane .flair-empty:after {content: "No flair";}
-.flairoptionpane .flair-label {background-color: #BBBBBB; width: 100%; text-align: center;}
-
-.flair, .linkflairlabel {
-display: inline-block;
-margin-right: 0.5em;
-padding: 0px 2px;
-background: none repeat scroll 0% 0% rgb(245, 245, 245);
-color: rgb(85, 85, 85);
-border: 1px solid rgb(221, 221, 221);
-border-radius: 2px;
-}
-
-.flair {
-width: 20px;
-height: 16px;
+.formtabs-content .md blockquote>ul>li>ul ul {
+margin-top: 0;
+margin-bottom: 0;
+font-size: 11px;
 line-height: 16px;
-overflow: hidden;
-vertical-align: middle;
-font-size: inherit;
-background-color: transparent;
-color: #222;
-padding: 2px;
-margin-right: 3px;
-border-width: 0;
-border-radius: 3px;
-padding-bottom:4px;
+list-style-type: none;
+margin: 0;
+color: #6B6B6B;
+}
+.formtabs-content .md blockquote>ul>li>ul ul li:before,
+.formtabs-content .md blockquote>ul>li>ul ul li:before{ content:"** "; }
+
+html:not([lang="ns"]) .submit-page .titlebox .md>ul:nth-of-type(1) li:nth-of-type(3):before {
+content: "Have an easy question? Ask the community anything in our Wednesday at Bernies thread!";
+display: block;
+position: absolute;
+top: 32px;
+left: 0px;
+width: 310px;
+text-align: left;
+padding: 7px 10px 10px 10px;
+font-weight: normal;
+background: #333;
 }
 
-*+html .flair, .flair:hover {
-width: auto;
-border-width: 1px;
-background-color: #f5f5f5;
-padding: 1px 1ex 3px 1px;
+/* new - sort */
+html:not([lang="ns"]) .titlebox .md>ul>li blockquote table {
+width: 100%;
+padding: 0;
+background: transparent;
+margin: 0;
 }
 
+html:not([lang="ns"]) .titlebox .md>ul>li blockquote table td {
+border: 0;
+padding: 8px 8px;
+border-bottom: 1px solid #e5e5e5;
+}
+
+html:not([lang="ns"]) .titlebox .md>ul>li blockquote table th {
+border:0;
+padding:8px;
+background:#1A1A1A;
+font-weight:normal;
+font-size:13px;
+}
+
+html:not([lang="ns"]) .titlebox .md>ul>li blockquote table tr:nth-child(odd) { background:#fff; }
+
+
+html:not([lang="ns"]) .titlebox .md>ul>li blockquote table tr:nth-child(even) { background:#f7f7f7; }
+
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3) blockquote table tr:nth-of-type(7) a {display: block;margin-bottom: 6px;}
+
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote h1 {
+background: #222;
+color: #fff;
+padding: 8px;
+font-size: 13px;
+font-weight: normal;
+margin:0
+}
+
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5)>blockquote p {
+background: #fff;
+margin: 0;
+padding: 8px;
+border-bottom:1px solid #f1f1f1;
+}
+
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5)>blockquote p:last-child {
+background: transparent;
+margin: 7px 0 -3px;
+text-align: center;
+color: #ccc;
+}
+
+html:not([lang"ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5)>blockquote p:last-child a { color:#222; }
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:hover {background: #1A1A1A;}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(1):hover { background:#222; }
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td,
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table td { border:0; }
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table td:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(3),
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table td:nth-of-type(3),
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table th:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table th:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table th:nth-of-type(3),
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table th:nth-of-type(3) {text-align:center;}
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(1), 
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table td:nth-of-type(1) {background: #DBDBDB;color:#6F6F6F;width:25px}
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(3), 
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table td:nth-of-type(3) {background: #222;color:#fff;width:35px;}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6)>blockquote p {margin: 0;text-align: center;padding: 10px 0 0;}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6)>blockquote p a { color:#222; }
+html:not([lang="ns"]) .link .title {line-height: 20px;outline: medium none;font-weight: normal;}
+
+/* nightmode stuff */
+html:not([lang="ns"]) .res-nightmode div#header {background: #202020;border-bottom-color: #000;}
+html:not([lang="ns"]) .res-nightmode div#header-bottom-left .tabmenu li a { color: #ccc; }
+html:not([lang="ns"]) .res-nightmode div#header-bottom-left { border-bottom-color:#454545; }
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(1) { background:#2A2A2A; border-color:#000 }
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(1)>li { border-color:#000; }
+html:not([lang="ns"]) .res-nightmode .titlebox .tagline { background:transparent; }
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul,
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul>li>ul,
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul>li>ul { background-color:transparent; border-color:#494949; }
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote,
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote,
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1):hover>h1:after, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2):hover>h1:after { background-color:#272727; border-color:#494949; }
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul>li, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul>li { color:#A0A0A0; }
+html:not([lang="ns"]) .res-nightmode .side blockquote blockquote ul a:hover,
+html:not([lang="ns"]) .res-nightmode #userbarToggle,
+html:not([lang="ns"]) .res-nightmode #userbarToggle a,
+html:not([lang="ns"]) .res-nightmode div.res-navTop a { color: #ccc; }
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li>blockquote { background:#3f3f3f; border-color:#000}
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(2):hover:before, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3):hover:before, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(4):hover:before, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5):hover:before, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6):hover:before, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(7):hover:before { background:#3f3f3f; }
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li blockquote table tr:nth-child(odd) {background: #4C4C4C;}
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li blockquote table tr:nth-child(even) {background: #323232;}
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5)>blockquote p {background: #545454;}
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(1), 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li:nth-of-type(7) blockquote table td:nth-of-type(1) {background: #2A2A2A;}
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(2)>li ul { border-color:transparent; background-color:#6b6b6b; }
+
+/* flair */
 a[href="/alonso"]:before,a[href="/button"]:before,a[href="/delarosa"]:before,a[href="/diresta"]:before,
 a[href="/glock"]:before,a[href="/grosjean"]:before,a[href="/hamilton"]:before,a[href="/hulkenberg"]:before,
 a[href="/karthikeyan"]:before,a[href="/kobayashi"]:before,a[href="/kovalainen"]:before,a[href="/maldonado"]:before,
@@ -1817,7 +890,7 @@ a[href="/virgin-racing"]:before,a[href="/walter-wolf"],a[href="/aar"],a[href="/f
 width:20px;
 height:16px;
 content:" ";
-background:url(%%flair-august-2014%%) no-repeat scroll -9999px -9999px transparent;
+background:url(%%flair-block%%) no-repeat scroll -9999px -9999px transparent;
 display:inline-block
 }
 
@@ -1826,7 +899,7 @@ content: "";
 height: 16px;
 width: 20px;
 display: inline-block;
-background-image:url(%%flair-august-2014%%);
+background-image:url(%%flair-block%%);
 background-repeat: no-repeat;
 vertical-align: middle;
 margin-right: 4px;
@@ -1999,678 +1072,40 @@ margin-right: 4px;
 .flair-walter-wolf:before,a[href="/walter-wolf"]:before{background-position: 0 -2807px}
 .flair-aar:before,a[href="/aar"]:before{background-position: 0 -2825px; height:18px;}
 .flair-f1doc:before,a[href="/f1doc"]:before{background-position: 0 -2846px}
+.flair-award:before,a[href="/award"]:before{background:url(%%award-flair%%) no-repeat 0 0 transparent;content:"";display:inline-block;width:20px;height:18px;top:6px;left:-2px}.flair-award:hover{background-color:#FFEFBD;border-color:#BA8600}
 
-/* Put team logos beside their names */
 
-html:not([lang="ns"]) .titlebox blockquote>ul:nth-of-type(2)>li:nth-of-type(2) a { padding-left:25px; position:relative; }
-html:not([lang="ns"]) .titlebox blockquote>ul:nth-of-type(2)>li:nth-of-type(2) a:before {
-content: "";
+html:not([lang="ns"]) .footer-parent .footer:before {
+width: 170px;
+height: 150px;
 display: inline-block;
-width: 19px;
-height: 18px;
-background-image: url(%%flair-august-2014%%);background-repeat: no-repeat;
+background: url(%%sprite%%) no-repeat 0 -200px scroll transparent;
+content: "";
 position: absolute;
-top: 6px;
-left: -2px;
+left: -200px;
+top: 0;
 }
 
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://caterhamf1.com"]:before {
-background-position: -2px -1190px;
+html:not([lang="ns"]) .footer {
+color: gray;
+padding: 5px;
+margin: 15px;
+border: 1px solid #F0F0F0;
+display: inline-block;
+position: relative;
+margin-bottom: 35px;
 }
 
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://formula1.ferrari.com"]:before {
-background-position: -2px -1207px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://forceindiaf1.com"]:before {
-background-position: -2px -1224px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://lotusf1team.com"]:before {
-background-position: -2px -1240px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://marussiaf1team.com"]:before {
-background-position: -2px -1258px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://mclaren.com/formula1"]:before {
-background-position: -2px -1275px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://mercedes-amg-f1.com"]:before {
-background-position: -2px -1292px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://infiniti-redbullracing.com"]:before {
-background-position: -2px -1309px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote:last-child > ul li a[href="http://sauberf1team.com"]:before {
-background-position: -2px -1326px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://scuderiatororosso.com"]:before {
-background-position: -2px -1343px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote > ul li a[href="http://williamsf1.com"]:before {
-background-position: -2px -1360px;
-}
-
-
-
-/* [8.3] Link Flair */
-/* [8.3.1] Default Display */
-html:not([lang="ns"]) p.title>.linkflairlabel {
-padding: 0 4px;
-border-radius: 0;
-background: #323232;
+/* preseason temp */
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8) { background-color: #B00000; } 
+html:not([lang="ns"]) .listing-page .side {padding-top: 645px;}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote { min-height:322px }
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3) { border-bottom:0 none !important; }
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8)> p:before { display:none; }
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8)>p {
+padding: 10px;
+font-weight: 900;
 color: #fff;
-}
-
-/* Link Flair Colors */
-html:not([lang="ns"]) .linkflair-star p.title:before {
-background: url(%%sprite%%) no-repeat scroll -155px 0px transparent;
-text-indent: 20px;
-display: inline-block;
-height: 16px;
-width: 18px;
-content: "";
-}
-
-html:not([lang="ns"]) div.linkflair-star p.title>.linkflairlabel {
-display: none;
-}
-
-.linkflair-star p.title .domain { text-indent:0; }
-
-/* Link Flair Colors */
-html:not([lang="ns"]) .linkflair-paywall p.title>.linkflairlabel { color: rgb(115, 230, 115); }
-html:not([lang="ns"]) .linkflair-rumour p.title>.linkflairlabel { color:orange;  }
-html:not([lang="ns"]) .linkflair-video p.title>.linkflairlabel { color:red; }
-html:not([lang="ns"]) .linkflair-off-topic p.title>.linkflairlabel { color: rgb(27, 227, 241);  }
-
-/* [8.3.2] Filters */
-.sitetable.linklisting .thing .flair, ul.content span.flair,
-html:lang(wt) .link:not(.linkflair-feature),
-html:lang(so) .link,
-html:lang(hs) .link.linkflair-race,
-html:lang(hs) .link.linkflair-qualifying,
-html:lang(hs) .link.linkflair-post-race,
-html:lang(hs) .link.linkflair-post-qualifying,
-html:lang(hs) .link.linkflair-practice { display: none }
-
-html:lang(so) .link.linkflair-race,
-html:lang(so) .link.linkflair-qualifying,
-html:lang(so) .link.linkflair-post-race,
-html:lang(so) .link.linkflair-post-qualifying,
-html:lang(so) .link.linkflair-practice { display: block    }
-
-html:not([lang="ns"]) .thing.linkflair.linkflair-race { border-left: 5px solid #6db81c; }
-html:not([lang="ns"]) .thing.linkflair.linkflair-qualifying { border-left: 5px solid #369; }
-html:not([lang="ns"]) .thing.linkflair.linkflair-post-race,
-html:not([lang="ns"]) .thing.linkflair.linkflair-post-qualifying { border-left: 5px solid #6D6D6D;}
-html:not([lang="ns"]) .thing.linkflair.linkflair-practice  { border-left: 5px solid rgb(210,50,45); }
-html:not([lang="ns"]) .thing.linkflair.linkflair-feature { border-left: 5px solid #0D0D0D; }
-html:not([lang="ns"]) .thing.linkflair.linkflair-meetup { border-left: 5px solid #0D0D0D; }
-html:not([lang="ns"]) .linkflairlabel { border:0px none; color:#000; line-height:1.5em;  }
-html:not([lang="ns"]) .linkflair-practice p.title > .linkflairlabel,
-html:not([lang="ns"]) .linkflair-qualifying p.title >  .linkflairlabel,
-html:not([lang="ns"]) .linkflair-race p.title >  .linkflairlabel { color:#fff; border:0 none; display:inline-block; }
-html:not([lang="ns"]) .linkflair-practice p.title >  .linkflairlabel { background:rgb(210,50,45); }
-html:not([lang="ns"]) .linkflair-qualifying p.title >  .linkflairlabel  { background:#369; }
-html:not([lang="ns"]) .linkflair-post-qualifying p.title >  .linkflairlabel { background:#6D6D6D; color:#FFF }
-html:not([lang="ns"]) .linkflair-post-race p.title >  .linkflairlabel { background:#6D6D6D; color:#FFF }
-html:not([lang="ns"]) .linkflair-race p.title >  .linkflairlabel { background:#6db81c; }
-html:not([lang="ns"]) .linkflair-feature p.title > .linkflairlabel {  background: #000; color:#fff; }
-
-/* remove html:not([lang="ns"]) .thing.comment .usertext-body .md { overflow: visible; } */
-
-
-/* [8.3.3] Filters Images */
-html:not([lang="ns"]) .linkflair-practice a.thumbnail,
-html:not([lang="ns"]) .linkflair-qualifying a.thumbnail,
-html:not([lang="ns"]) .linkflair-post-qualifying a.thumbnail,
-html:not([lang="ns"]) .linkflair-post-race a.thumbnail,
-html:not([lang="ns"]) .linkflair-race a.thumbnail,
-html:not([lang="ns"]) .linkflair-meetup a.thumbnail,
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="australian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="albert_park"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="malaysian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="malaysia"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="sepang"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="bahrain"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="chinese"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="shanghai"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="spanish"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="monaco"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="canadian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="montreal_gp"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="circuit_gilles"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="austrian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="british"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="german"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="hungarian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="belgian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="italian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="singapore"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="japanese"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="russian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="sochi"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="united_states"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="brazilian"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="abu_dhabi"],
-html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="yas_marina"]{
-background-image:url(%%flag-med-sprite%%);
-width:60px;
-height:60px;
-border-radius: 2px
-}
-
-
-/* [8.4] Country Flags */
-html:not([lang="ns"]) a[href="#au"],html:not([lang="ns"]) a[href="/au"],
-html:not([lang="ns"]) a[href="#br"],html:not([lang="ns"]) a[href="/br"],
-html:not([lang="ns"]) a[href="#de"],html:not([lang="ns"]) a[href="/de"],
-html:not([lang="ns"]) a[href="#be"],html:not([lang="ns"]) a[href="/be"],
-html:not([lang="ns"]) a[href="#dk"],html:not([lang="ns"]) a[href="/dk"],
-html:not([lang="ns"]) a[href="#es"],html:not([lang="ns"]) a[href="/es"],
-html:not([lang="ns"]) a[href="#en"],html:not([lang="ns"]) a[href="/en"],
-html:not([lang="ns"]) a[href="#gb"],html:not([lang="ns"]) a[href="/gb"],
-html:not([lang="ns"]) a[href="#fi"],html:not([lang="ns"]) a[href="/fi"],
-html:not([lang="ns"]) a[href="#fr"],html:not([lang="ns"]) a[href="/fr"],
-html:not([lang="ns"]) a[href="#mx"],html:not([lang="ns"]) a[href="/mx"],
-html:not([lang="ns"]) a[href="#nl"],html:not([lang="ns"]) a[href="/nl"],
-html:not([lang="ns"]) a[href="#ru"],html:not([lang="ns"]) a[href="/ru"],
-html:not([lang="ns"]) a[href="#ve"],html:not([lang="ns"]) a[href="/ve"],
-html:not([lang="ns"]) a[href="#se"],html:not([lang="ns"]) a[href="/se"],
-html:not([lang="ns"]) a[href="#it"],html:not([lang="ns"]) a[href="/it"],
-html:not([lang="ns"]) a[href="#jp"],html:not([lang="ns"]) a[href="/jp"],
-html:not([lang="ns"]) a[href="#ch"],html:not([lang="ns"]) a[href="/ch"],
-html:not([lang="ns"]) a[href="#at"],html:not([lang="ns"]) a[href="/at"],
-html:not([lang="ns"]) a[href="#in"],html:not([lang="ns"]) a[href="/in"],
-html:not([lang="ns"]) a[href="#my"],html:not([lang="ns"]) a[href="/my"],
-html:not([lang="ns"]) a[href="#ca"],html:not([lang="ns"]) a[href="/ca"],
-html:not([lang="ns"]) a[href="#us"],html:not([lang="ns"]) a[href="/us"],
-html:not([lang="ns"]) a[href="#co"],html:not([lang="ns"]) a[href="/co"],
-html:not([lang="ns"]) a[href="#cn"],html:not([lang="ns"]) a[href="/cn"],
-html:not([lang="ns"]) a[href="#bh"],html:not([lang="ns"]) a[href="/bh"],
-html:not([lang="ns"]) a[href="#mc"],html:not([lang="ns"]) a[href="/mc"],
-html:not([lang="ns"]) a[href="#hu"],html:not([lang="ns"]) a[href="/hu"],
-html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"],
-html:not([lang="ns"]) a[href="#ae"],html:not([lang="ns"]) a[href="/ae"],
-html:not([lang="ns"]) a[href="#po"],html:not([lang="ns"]) a[href="/po"]
-{background-image:url(%%flags%%);background-repeat:no-repeat;background-color:transparent;width:16px;height:11px;text-indent:-99999pt;display:inline-block;position:relative;margin-right:2px;top:1px;padding:0}
-
-html:not([lang="ns"]) a[href="#au"],html:not([lang="ns"]) a[href="/au"]{background-position:-32px -33px}
-html:not([lang="ns"]) a[href="#br"],html:not([lang="ns"]) a[href="/br"]{background-position:-172px -61px}
-html:not([lang="ns"]) a[href="#de"],html:not([lang="ns"]) a[href="/de"]{background-position:-284px -117px}
-html:not([lang="ns"]) a[href="#be"],html:not([lang="ns"]) a[href="/be"]{background-position:-228px -33px}
-html:not([lang="ns"]) a[href="#dk"],html:not([lang="ns"]) a[href="/dk"]{background-position:-32px -145px}
-html:not([lang="ns"]) a[href="#es"],html:not([lang="ns"]) a[href="/es"]{background-position:-4px -173px}
-html:not([lang="ns"]) a[href="#jp"],html:not([lang="ns"]) a[href="/jp"]{background-position:-256px -257px}
-html:not([lang="ns"]) a[href="#gb"],html:not([lang="ns"]) a[href="/gb"]{background-position:-284px -173px}
-html:not([lang="ns"]) a[href="#fi"],html:not([lang="ns"]) a[href="/fi"]{background-position:-88px -173px}
-html:not([lang="ns"])  a[href="#fr"],html:not([lang="ns"]) a[href="/fr"]{background-position:-228px -173px}
-html:not([lang="ns"]) a[href="#mx"],html:not([lang="ns"]) a[href="/mx"]{background-position:-172px -369px}
-html:not([lang="ns"]) a[href="#nl"],html:not([lang="ns"]) a[href="/nl"]{background-position:-116px -397px}
-html:not([lang="ns"]) a[href="#ru"],html:not([lang="ns"]) a[href="/ru"]{background-position:-144px -453px}
-html:not([lang="ns"]) a[href="#ve"],html:not([lang="ns"]) a[href="/ve"]{background-position:-172px -565px}
-html:not([lang="ns"]) a[href="#it"],html:not([lang="ns"]) a[href="/it"]{background-position:-172px -257px}
-html:not([lang="ns"]) a[href="#in"],html:not([lang="ns"]) a[href="/in"]{background-position:-32px -257px}
-html:not([lang="ns"]) a[href="#se"],html:not([lang="ns"]) a[href="/se"]{background-position:-32px -481px}
-html:not([lang="ns"]) a[href="#at"],html:not([lang="ns"]) a[href="/at"]{background-position:-4px -33px}
-html:not([lang="ns"]) a[href="#ch"],html:not([lang="ns"]) a[href="/xh"]{background-position:-198px -89px}
-html:not([lang="ns"]) a[href="#in"],html:not([lang="ns"]) a[href="/in"]{background-position:-32px -257px}
-html:not([lang="ns"]) a[href="#ca"],html:not([lang="ns"]) a[href="/ca"]{background-position:-60px -89px}
-html:not([lang="ns"]) a[href="#us"],html:not([lang="ns"]) a[href="/us"]{background-position:-4px -565px}
-html:not([lang="ns"]) a[href="#my"],html:not([lang="ns"]) a[href="/my"]{background-position:-200px -369px}
-html:not([lang="ns"]) a[href="#cn"],html:not([lang="ns"]) a[href="/cn"]{background-position:-32px -117px}
-html:not([lang="ns"]) a[href="#bh"],html:not([lang="ns"]) a[href="/bh"]{background-position:-4px -61px}
-html:not([lang="ns"]) a[href="#mc"],html:not([lang="ns"]) a[href="/mc"]{background-position:-256px -229px}
-html:not([lang="ns"]) a[href="#hu"],html:not([lang="ns"]) a[href="/hu"]{background-position:-228px -229px}
-html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"]{background-position:-60px -481px}
-html:not([lang="ns"]) a[href="#ae"],html:not([lang="ns"]) a[href="/ae"]{background-position:-32px -5px}
-html:not([lang="ns"]) a[href="#po"],html:not([lang="ns"]) a[href="/po"]{background-position:-4px -453px}
-
-/* [8.6] Thumbnails for Session Threads */
-
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_australian"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="albert_park"]  { background-position: 0px 0px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_malaysian"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="malaysia"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="sepang"] { background-position: -60px 0px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="bahrain"] { background-position: -120px 0px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="chinese"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="shanghai"] { background-position: -180px 0px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_spanish"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="spanish"] { background-position: -240px 0px;}
-
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_monaco"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="monaco"] { background-position: 0px -60px; }
-
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_canadian"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="montreal_gp"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="canadian"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="circuit_gilles"] { background-position: -60px -60px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_austrian"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="austrian"] { background-position: -120px -60px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_british"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="british"] { background-position: -180px -60px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="2014_german"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="german"] { background-position: -240px -60px; }
-
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="hungarian"] { background-position: 0px -120px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="belgian"] { background-position: -60px -120px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="italian"] { background-position: -120px -120px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="singapore"] { background-position: -180px -120px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="japanese"] { background-position: -240px -120px; }
-
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="russian"] { background-position: 0px -180px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="sochi"] { background-position: 0px -180px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="united_states"] { background-position: -60px -180px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="brazilian"] { background-position: -120px -180px; }
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="abu_dhabi"],
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="yas_marina"] { background-position: -180px -180px; }
-
-
-/* [8.7] Session Thread Styling */
-
-.post-linkflair-practice .linkflair .md hr,
-.post-linkflair-qualifying .linkflair .md hr,
-.post-linkflair-post-qualifying .linkflair .md hr,
-.post-linkflair-race .linkflair .md hr,
-.post-linkflair-post-race .linkflair .md hr { height: 1px; background: #ccc; border: 0 none; margin: 15px 0; }
-
-.post-linkflair-practice .linkflair .md h3,
-.post-linkflair-qualifying .linkflair .md h3,
-.post-linkflair-post-qualifying .linkflair .md h3,
-.post-linkflair-race .linkflair .md h3,
-.post-linkflair-post-race .linkflair .md h3 { text-align:center; font-size:14pt; margin-bottom:10px; }
-
-.post-linkflair-practice .linkflair .md h4,
-.post-linkflair-qualifying .linkflair .md h4,
-.post-linkflair-post-qualifying .linkflair .md h4,
-.post-linkflair-race .linkflair .md h4,
-.post-linkflair-post-race .linkflair .md h4 { font-size:12pt; margin-bottom:10px; }
-
-.post-linkflair-practice .linkflair .md  table:nth-of-type(1),
-.post-linkflair-qualifying .linkflair .md  table:nth-of-type(1),
-.post-linkflair-post-qualifying .linkflair .md  table:nth-of-type(1),
-.post-linkflair-race .linkflair .md  table:nth-of-type(1),
-.post-linkflair-post-race .linkflair .md  table:nth-of-type(1) { margin: 0 auto 10px; }
-
-.post-linkflair-practice .linkflair .md table,
-.post-linkflair-qualifying .linkflair .md table,
-.post-linkflair-post-qualifying .linkflair .md table,
-.post-linkflair-race .linkflair .md table,
-.post-linkflair-post-race .linkflair .md table { margin: 0 auto 10px; width:100%; }
-
-.post-linkflair-practice .linkflair .md table th,
-.post-linkflair-qualifying .linkflair .md table th,
-.post-linkflair-post-qualifying .linkflair .md table th,
-.post-linkflair-race .linkflair .md table th,
-.post-linkflair-post-race .linkflair .md table th {  border-right: 1px solid #525252; border-top:none; border-left:none; border-bottom: 1px solid #525252; }
-
-.linkflair .md table tr:nth-of-type(even) { background:#f6f6f6; }
-.linkflair .md table tr { background:#f9f9f9; }
-.linkflair .md table tr:hover { background:#fff; }
-
-.res-nightmode .linkflair .md table th { border:1px solid #000; }
-.res-nightmode .linkflair .md table tr:nth-of-type(even) { background:#222222; }
-.res-nightmode .linkflair .md table tr { background:#393939; }
-.res-nightmode .linkflair .md table tr:hover { background:#2e2e2e; }
-.res-nightmode .linkflair .md table td { border-color:#000; }
-
-/* .linkflair .md table tr:nth-of-type(n+11) { display:none; } */
-.linkflair .md table:hover tr { display:table-row }
-
-.linkflair  .md table th {
-background:#000;
-color:#fff;
-padding:5px;
-}
-
-.linkflair .md table td { padding:5px; }
-.linkflair .md table a { top: 1px; }
-
-.post-linkflair-qualifying .linkflair .md p:first-child,
-.post-linkflair-race .linkflair .md p:first-child { text-align:center; }
-
-.linkflair-race .md table span.keyNavAnnotation,
-.linkflair-qualifying .md table span.keyNavAnnotation { display: none !important; }
-
-.linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(1),
-.linkflair-qualifying  .md table:nth-of-type(2) tr td:nth-of-type(1),
-.linkflair-race .md table:nth-of-type(2) tr th:nth-of-type(1),
-.linkflair-qualifying  .md table:nth-of-type(2) tr th:nth-of-type(1) { width:32px; text-align:center; }
-
-.linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(2),
-.linkflair-qualifying  .md table:nth-of-type(2) tr td:nth-of-type(2) { width:115px; }
-
-.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(5),
-.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(6),
-.linkflair-qualifying .md table:nth-of-type(2) tr td:nth-of-type(7),
-.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(5),
-.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(6),
-.linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(7) { width: 60px; text-align: center; }
-
-.linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(5),
-.linkflair-race .md table:nth-of-type(2) tr th:nth-of-type(5) { width: 125px; text-align: center; }
-
-
-/* [9.0] Reddit Enhancement Suite */
-
-/* [9.1] Never Ending Reddit */
-
-/* Try to override the RES default loader */
-html:not([lang="ns"]) #progressIndicator { font-weight:bold; text-shadow:0 1px 0 #fff; }
-
-html:not([lang="ns"]) #progressIndicator>img {
-content: "";
-height: 24px;
-width: 21px;
-padding-left:21px;
-display: block;
-background: url(%%sprite%%);
-margin: 0 auto;
-background-position:-89px -60px;
-overflow:hidden;
-display:none;
-}
-
-
-/* [9.2] RES Features */
-
-html:not([lang="ns"]) #srList { z-index:50001 !important; }
-html:not([lang="ns"]) #RESShortcutsEditContainer { background:transparent !important; }
-
-html:not([lang="ns"]) #RESShortcutsSort,
-html:not([lang="ns"]) #RESShortcutsRight,
-html:not([lang="ns"]) #RESShortcutsLeft,
-html:not([lang="ns"]) #RESShortcutsAdd,
-html:not([lang="ns"]) #RESShortcutsTrash {
-background:transparent !important;
-color:#f1f1f1 !important;
-width:12px !important;
-font-size:11px !important;
-}
-
-html:not([lang="ns"]) #RESShortcutsSort {font-size: 12px !important;}
-html:not([lang="ns"]) #RESShortcuts { color:#fff; }
-html:not([lang="ns"]) div.res-navTop a { color:#000; }
-
-
-/* [9.3] RES Nightmode Support  */
-
-html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child > ul > li,
-html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child,
-html.res-nightmode:not([lang="ns"]) body,
-html:not([lang="ns"]) body.res-nightmode .comments-page .sitetable,
-html:not([lang="ns"]) body.res-nightmode  { background: #181818!important; background-color: #181818!important; background-image:none !important; }
-html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child>ul:hover>li:first-child,
-html:not([lang="ns"]) body.res-nightmode blockquote:last-child>ul:hover>li:first-child { color: #C6C6C6 !important; }
-html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child ul li,
-html:not([lang="ns"]) .res-nightmode .titlebox blockquote:last-child ul li { border-color: #373737; color: #fff; background-color:#181818 !important;}
-html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child ul li:first-child,
-html:not([lang="ns"]) .res-nightmode .titlebox blockquote:last-child ul li:first-child  { border-right:0px; }
-html.res-nightmode:not([lang="ns"]) .titlebox blockquote:last-child ul li a,
-html:not([lang="ns"]) .res-nightmode .titlebox blockquote:last-child ul li a { border-color: #373737; color: #fff; }
-html.res-nightmode:not([lang="ns"]) #header-bottom-left,
-html:not([lang="ns"]) .res-nightmode #header-bottom-left { background: #181818 !important; background-color: #181818 !important; box-shadow: 0 2px 1px #000; }
-html.res-nightmode:not([lang="ns"]) #header-bottom-left:after,
-html:not([lang="ns"]) .res-nightmode #header-bottom-left:after { background-color: #242323 !important; background: #242323 !important; border-top: 2px solid rgb(54, 52, 52); }
-html:not([lang="ns"]) .res-nightmode div.res-navTop a,
-html:not([lang="ns"]) .res-nightmode #userbarToggle,
-html:not([lang="ns"]) .res-nightmode .usertext-body .md>h2,
-html:not([lang="ns"]) .res-nightmode .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>ul>li { color: #ccc; }
-html:not([lang="ns"]) .res-nightmode.side .md>ul:nth-of-type(1)>li:nth-of-type(2):hover>blockquote,
-html:not([lang="ns"]) .res-nightmode .side .md>ul:nth-of-type(1)>li:nth-of-type(3):hover>blockquote,
-html:not([lang="ns"]) .res-nightmode .side .md>ul:nth-of-type(1)>li:nth-of-type(4):hover>blockquote { box-shadow:-1px 1px 3px rgb(0, 0, 0); border-color:#000; color:#ccc; }
-html:not([lang="ns"]) .res-nightmode .titlebox blockquote:last-child ul li li { background-color: #181818; }
-html:not([lang="ns"]) .res-nightmode .side .md,
-html:not([lang="ns"]) .res-nightmode .titlebox .bottom .age { border-color: rgb(20, 20, 20); }
-html:not([lang="ns"]) .res-nightmode div.content { background-color: #181818; }
-html:not([lang="ns"]) .res-nightmode  .side hr:nth-of-type(4) { background: rgb(20, 20, 20); }
-html:not([lang="ns"]) .res-nightmode .link,
-html:not([lang="ns"]) .res-nightmode .link:hover { background: inherit; }
-html:not([lang="ns"]) .res-nightmode .side .submit { border: none; background: none; }
-html:not([lang="ns"]) .res-nightmode .side .submit .morelink { box-shadow: none; }
-html:not([lang="ns"]) .res-nightmode .side .submit .morelink a { background: #000; }
-html:not([lang="ns"]) .res-nightmode .side .submit .morelink a:hover { color: #aaa; }
-html:not([lang="ns"]) .res-nightmode .linklisting .thing,
-html.res-nightmode:not([lang="ns"]) .linklisting .thing { background-color:transparent; box-shadow:none; }
-html:not([lang="ns"]) .res-nightmode .side .md>h3:nth-of-type(2),
-html.res-nightmode:not([lang="ns"]) .side .md>h3:nth-of-type(2) {
-border-left: 4px solid #353535;
-background-color: #242424!important;
-box-shadow: 0 0px 1px #242424;
-color: #8A8A8A;
-background-image:url(%%sprite%%);
-text-shadow: 0px 1px 0px #000;
-}
-html:not([lang="ns"]) .res-nightmode .side .md>h3:nth-of-type(3) { color: #CACACA; text-shadow: 0px 1px 0 #000; }
-html:not([lang="ns"]) .res-nightmode .md table { border: 1px solid black; }
-html:not([lang="ns"]) .res-nightmode .md th { background: black; }
-html:not([lang="ns"]) .res-nightmode .md tr { background: #333; }
-html:not([lang="ns"]) .res-nightmode .md tr:nth-of-type(odd) { background: #222; }
-html:not([lang="ns"]) .res-nightmode .md td { border-top: 1px solid #555; }
-html:not([lang="ns"]) .res-nightmode .side .md h1 { background: #444; color: #aaa; }
-html:not([lang="ns"]) .res-nightmode .side .md li { color: #ccc; border-color: black; }
-html:not([lang="ns"]) .res-nightmode .number { background: #000; border: 1px solid #000; }
-html:not([lang="ns"]) .res-nightmode .searchpane { padding: 15px 0 15px 96px; border-color: #2D2D2D; background: #282828; }
-html:not([lang="ns"]) .res-nightmode .sitetable>div:nth-of-type(4n+1), html.res-nightmode:not([lang="ns"]) .sitetable>div:nth-of-type(4n+1) { background: #111111; border-left-color:#2D2D2D !important}
-html:not([lang="ns"]) .res-nightmode .comments-page .sitetable { background:#111111; }
-html:not([lang="ns"]) .res-nightmode .flair:after,
-html:not([lang="ns"]) .res-nightmode .side .md>ul:nth-of-type(1)>li:nth-of-type(1)>a,
-html:not([lang="ns"]) .res-nightmode .usertext-body .md>h1:nth-of-type(1) { opacity:.3; }
-html:not([lang="ns"]) .res-nightmode .usertext-body .md>h1:nth-of-type(1) { background: url(%%Jules%%) no-repeat !important; }
-html:not([lang="ns"]) .res-nightmode .sitetable.linklisting .thing .thumbnail { opacity: .5; }
-html:not([lang="ns"]) .res-nightmode .sitetable.linklisting .thing:hover .thumbnail { opacity: 1; }
-
-html:not([lang="ns"]) .res-nightmode .commentarea .thing { background-color:#000; border-left-color: #2D2D2D !important; }
-
-html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing,
-html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing { background:#111111; border-left-color:#2D2D2D !important }
-html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing,
-html:not([lang="ns"]) .res-nightmode .commentarea .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing .child .thing { background:#000000; border-left-color:#2D2D2D !important}
-
-.res-nightmode .commentarea .morechildren { background:#000 !important; }
-
-html:not([lang="ns"]) .res-nightmode .panestack-title,
-html:not([lang="ns"]) .res-nightmode .commentarea>.usertext,
-html:not([lang="ns"]) .res-nightmode .commentarea .menuarea { background: #454545; color: #C8C8C8; }
-html:not([lang="ns"]) .res-nightmode .side div.linkinfo { background-image: none; }
-html:not([lang="ns"]) .res-nightmode #header-bottom-left .tabmenu .selected a { color:orangered; }
-html:not([lang="ns"]) .res-nightmode #header-bottom-left .tabmenu li a { color:#807E50; }
-html:not([lang="ns"]) .res-nightmode  #header { border:0 none; box-shadow:none; }
-html:not([lang="ns"]) .res-nightmode .comment code,
-html:not([lang="ns"]) .res-nightmode .comment pre { background: black; color: #aaa; border: 1px solid #666; }
-html:not([lang="ns"]) .res-nightmode .comment pre code { border: none; }
-html:not([lang="ns"]) .res-nightmode .comment h1,
-html:not([lang="ns"]) .res-nightmode .comment h2,
-html:not([lang="ns"]) .res-nightmode .comment h3,
-html:not([lang="ns"]) .res-nightmode .comment h4,
-html:not([lang="ns"]) .res-nightmode .comment h5,
-html:not([lang="ns"]) .res-nightmode .comment h6 { color: #ccc; }
-html:not([lang="ns"]) .res-nightmode .pretty-form textarea { box-shadow: none; }
-html:not([lang="ns"]) .res-nightmode .content button { border: 1px solid #666; border-radius: 0; }
-html:not([lang="ns"]) .res-nightmode .commentarea { border: none; }
-html:not([lang="ns"]) .res-nightmode .footer-parent { border-top: 1px solid #000; background: #333; }
-html:not([lang="ns"]) .res-nightmode .debuginfo { background: #333; }
-html:not([lang="ns"]) .res-nightmode .footer { border-color: #222; background: none; }
-html:not([lang="ns"]) .res-nightmode .footer-parent .footer:before { display:none; }
-
-
-/* [10.0] House Keeping  */
-
-html:not([lang="ns"]) .search-page .content {
-padding: 0;
-background-color: transparent;
-}
-
-html:not([lang="ns"]) .searchpane {
-background-color:#fff;
-padding: 15px 0 15px 96px;
-border-color:#ccc;
-}
-
-html:not([lang="ns"]) .search-page .menuarea {
-margin-top:12px;
-margin-bottom:10px;
-}
-
-html:not([lang="ns"]) .search-page .side .md>h3:nth-of-type(3) { right:45px; }
-
-
-/* Hacks for easier css editing! */
-
-.stylesheet-customize-container { width: 100%; }
-#subreddit_stylesheet { display: block; overflow: hidden; }
-.sheets { margin: 0;}
-#stylesheet_contents {
-padding:5px;
-background-color:#222;
-color:#ace;
-border:2px solid #222;
-height: 500px;
-font-size: 13px;
-line-height:1.4}
-body.res-nightmode #stylesheet_contents{
-background-color:#111;
-border-color:#111;
-height: 500px;
-font-size: 13px;
-line-height:1.4
-}
-
-
-/* offset first reddit ad slightly */
-html:not([lang="ns"]) .side div.spacer:nth-of-type(2) .sponsorshipbox{
-margin-top:-5px;
-margin-bottom:-7px;
-}
-
-html:not([lang="ns"]) .titlebox blockquote:nth-of-type(2) table { position:relative; }
-html:not([lang="ns"]) .titlebox blockquote:nth-of-type(2) table:after {
-content: "";
-background: transparent;
-width: 16px;
-height: 292px;
-position: absolute;
-display: block;
-top: 30px;
-left: 44px;
-bottom: 0;
-}
-
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(3) blockquote p:first-child:after {
-content: "";display: block;position: absolute;height: 205px;width: 280px;background: transparent;top: 10px;right: 10px;}
-
-html:not([lang="ns"]) #NREFloat { z-index:2000; }
-
-.flairselector .flairsample-left a.title { display:none; }
-
-.flairselector .linkflair-feature,
-.flairselector .linkflair-race,
-.flairselector .linkflair-qualifying,
-.flairselector .linkflair-star,
-.flairselector .linkflair-practice,
-.flairselector .linkflair-post-race,
-.flairselector .linkflair-post-qualifying { display:none; }
-
-body.moderator .flairselector .linkflair-feature,
-body.moderator .flairselector .linkflair-race,
-body.moderator .flairselector .linkflair-qualifying,
-body.moderator .flairselector .linkflair-star,
-body.moderator .flairselector .linkflair-practice,
-body.moderator .flairselector .linkflair-post-race,
-body.moderator .flairselector .linkflair-post-qualifying { display:block; }
-
-.flairselector .selected, .flairselector.active li  { text-align:left !important; }
-.flairoptionpane .flair-label:before,
-.flair-empty:before,span.flair.flair-empty {display: none;}
-
-#authorInfoToolTip .blueButton { color:#fff !important; }
-
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child>ul:nth-of-type(2) > li:nth-child(5) > a:after { content: " by Andy Blackmore";font-size: 10px;}
-
-/* mask race pic */
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1) { position:relative; }
-html:not([lang="ns"]) .side .md>ul:nth-of-type(1)>li:nth-of-type(1):after {content: "";display: block;background: transparent;height: 160px;width: 300px;position: absolute;top: 0px;left: -10px;}
-.post-linkflair-practice .linkflair .md table .keyNavAnnotation, .post-linkflair-qualifying .linkflair .md table .keyNavAnnotation, .post-linkflair-post-qualifying .linkflair .md table .keyNavAnnotation, .post-linkflair-race .linkflair .md table .keyNavAnnotation, .post-linkflair-post-race .linkflair .md table .keyNavAnnotation { display:none; }
-
-/* zindex fixes */
-#userTaggerToolTip { z-index:99; }
-
-/* weight watchers for F1 */
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(2) > li:nth-child(3) > a:before { content: "2014 "; }
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child >  ul:nth-child(2) > li:nth-child(6) > a:before { content: "Formula 1 "; }
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child >  ul:nth-child(2) > li:nth-child(7) > a:after { content: " for new F1 Fans"; }
-html:not([lang="ns"]) .side .md > ul:nth-of-type(1) > li:nth-child(2) > p:before { content: "Event "; }
-html:not([lang="ns"]) .side .md > ul:nth-of-type(1) > li:nth-child(3) > p:after { content: " Guide"; }
-
-html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1), html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1) h1:after,
-html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1), html:not([lang="ns"]) .side .md > blockquote:nth-of-type(2) h1:after { content: " Championship" }
-
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(1) > li:nth-child(2) > a:before { content: "Posting "; }
-
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(3) > li:nth-child(5) > a:after { content: " Multi Reddit "; }
-
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(6) > a:before,
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(7) > a:before,
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(8) > a:before { content: "Search "; }
-
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(2) > li:nth-child(3) > a:before { content: "2014 "; }
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child >  ul:nth-child(2) > li:nth-child(6) > a:before { content: "Formula 1 "; }
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child >  ul:nth-child(2) > li:nth-child(7) > a:after { content: " for new F1 Fans"; }
-html:not([lang="ns"]) .side .md > ul:nth-of-type(1) > li:nth-child(2) > p:before { content: "Event "; }
-html:not([lang="ns"]) .side .md > ul:nth-of-type(1) > li:nth-child(3) > p:after { content: " Guide"; }
-
-html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1), html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1) h1:after,
-html:not([lang="ns"]) .side .md > blockquote:nth-of-type(1), html:not([lang="ns"]) .side .md > blockquote:nth-of-type(2) h1:after { content: " Championship" }
-
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(1) > li:nth-child(2) > a:before { content: "Posting "; }
-
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(3) > li:nth-child(5) > a:after { content: " Multi Reddit "; }
-
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(6) > a:before,
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(7) > a:before,
-html:not([lang="ns"]) .titlebox .md>blockquote:last-child  > ul:nth-child(4) > li:nth-child(8) > a:before { content: "Search "; }
-
-html:not([lang="ns"]) .side .md>h1:nth-of-type(1):before { content: "Illustrations by "; }
-
-/* temp fix for sticky */
-#siteTable > div.thing.id-t3_21qaoh.linkflair.linkflair-off-topic.odd.stickied.link.self > a {
-background-position: -5px -8px;
-}
-
-/* temp fix for off topic thumb */
-
-html:not([lang="ns"]) .linklisting .linkflair-off-topic .thumbnail.default {
-background-position: -8px -80px;
-}
-
-/* flair fix */
-p.tagline span.flair.flair-label {
-display: none;
-}
-
-
-html:not([lang="ns"]) .side .md>h1:nth-of-type(1) {padding:245px 5px 3px;}
-html:not([lang="ns"]) .side .md>h1:nth-of-type(1):before { content:""; }
-html:not([lang="ns"]) body.listing-page .usertext-body .md > h1:nth-of-type(1) a, 
-html:not([lang="ns"]) body.comments-page .side .md>h1:nth-of-type(1) a {
-display: none;
-}
-html:not([lang="ns"]) body.listing-page .side { padding-top:600px; }
-body.post-linkflair-race.comments-page .commentarea span.score:after {content: "(x2)";color: #5F5F5F;}
-
-/* special helmett for contets winners*/
-.flair-award:before,a[href="/award"]:before{background:url(%%award-flair%%) no-repeat 0 0 transparent;content: "";display: inline-block;width: 20px;height: 18px;top: 6px;left: -2px;}
-.flair-award:hover {background-color: #FFEFBD;border-color: #BA8600;}
+padding-bottom: 8px;
+text-indent: 5px;
+}html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8) blockquote p:first-child {font-size: 13px;background: #222;color: #fff;padding: 8px;margin: 0;margin-bottom:10px;}
