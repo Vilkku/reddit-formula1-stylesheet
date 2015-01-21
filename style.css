@@ -693,17 +693,17 @@ right: 0px;
 height: 190px;
 overflow-y: scroll;
 }
-.formtabs-content .md blockquote>ul { list-style-type:none;padding:0;margin:0}
-.formtabs-content .md blockquote>ul>li {float: left;display: inline-block;font-weight: bold;font-size:14px;width:100%}
-.formtabs-content .md blockquote>ul>li li {font-weight:normal}
-.formtabs-content .md blockquote>ul>li>ul {
+.formtabs-content .md > ul:nth-of-type(1)>ul { list-style-type:none;padding:0;margin:0}
+.formtabs-content .md > ul:nth-of-type(1)>ul>li {float: left;display: inline-block;font-weight: bold;font-size:14px;width:100%}
+.formtabs-content .md > ul:nth-of-type(1)>ul>li li {font-weight:normal}
+.formtabs-content .md > ul:nth-of-type(1)>ul>li>ul {
 padding: 5px 0 10px 5px;
 line-height: 1.5em;
 font-size: 13px;
 margin-top: 0;
 margin: 0 20px;
 }
-.formtabs-content .md blockquote>ul>li>ul ul {
+.formtabs-content .md > ul:nth-of-type(1)>ul>li>ul ul {
 margin-top: 0;
 margin-bottom: 0;
 font-size: 11px;
@@ -712,8 +712,8 @@ list-style-type: none;
 margin: 0;
 color: #6B6B6B;
 }
-.formtabs-content .md blockquote>ul>li>ul ul li:before,
-.formtabs-content .md blockquote>ul>li>ul ul li:before{ content:"** "; }
+.formtabs-content .md  > ul:nth-of-type(1)>ul>li>ul ul li:before,
+.formtabs-content .md  > ul:nth-of-type(1)>ul>li>ul ul li:before{ content:"** "; }
 
 html:not([lang="ns"]) .submit-page .titlebox .md>ul:nth-of-type(1) li:nth-of-type(3):before {
 content: "Have an easy question? Ask the community anything in our Wednesday at Bernies thread!";
