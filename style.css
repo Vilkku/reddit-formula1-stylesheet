@@ -839,6 +839,10 @@ html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-t
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(1), 
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li:nth-of-type(7) blockquote table td:nth-of-type(1) {background: #2A2A2A;}
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(2)>li ul { border-color:transparent; background-color:#6b6b6b; }
+html:not([lang=ns]) .res-nightmode .linklisting .thing,
+html:not([lang="ns"]) .res-nightmode .panestack-title,
+html:not([lang="ns"]) .res-nightmode .commentarea .menuarea,
+html:not([lang="ns"]) .res-nightmode .commentarea>.usertext {background: #222;}
 
 /* flair */
 a[href="/alonso"]:before,a[href="/button"]:before,a[href="/delarosa"]:before,a[href="/diresta"]:before,
