@@ -1,3 +1,7 @@
+/* prevent top margin */
+html {margin-top:0px !important;}
+html > shinebar {position: fixed;bottom: 0;left: 0;right: 0;height: 0;}
+
 /*reset*/
 html:not([lang="ns"]) div#header,html:not([lang="ns"]) div#sr-header-area,html:not([lang="ns"]) div#header-bottom-right{border:0 none;background:none;border-radius:0}
 /* add this later: html:not([lang="ns"]) .link .rank */
