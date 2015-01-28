@@ -1128,3 +1128,6 @@ padding-bottom: 8px;
 text-indent: 5px;
 margin-top:-1px;
 }html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8) blockquote p:first-child {font-size: 13px;background: #222;color: #fff;padding: 8px;margin: 0;margin-bottom:10px;}
+
+/* get rid of markdown fontsize update*/
+.md .-text, .md p, .md pre>code, .md th, .md td, .md li { font-size:10pt; }
