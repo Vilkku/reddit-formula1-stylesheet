@@ -694,6 +694,7 @@ background: rgb(237,237,237);
 right: 0px;
 height: 190px;
 overflow-y: scroll;
+font-size:10pt;
 }
 .formtabs-content .md > ul:nth-of-type(1)>ul { list-style-type:none;padding:0;margin:0}
 .formtabs-content .md > ul:nth-of-type(1)>ul>li {float: left;display: inline-block;font-weight: bold;font-size:14px;width:100%}
