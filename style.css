@@ -623,7 +623,7 @@ body.res-nightmode #stylesheet_contents{background-color:#111;border-color:#111;
 
 
 /*extra text*/
-html:not([lang="ns"]) .side a[href*="/r/formula1/w/userguide#wiki_irc_chat"]:after{content:"#f1 on irc.snoonet.org";display:block;width:100%;font-size:13px;height:12px;line-height:11px;margin-top:0;margin-bottom:5px}
+html:not([lang="ns"]) .side a[href*="https://kiwiirc.com/client/irc.snoonet.org/f1/"]:after{content:"#f1 on irc.snoonet.org";display:block;width:100%;font-size:13px;height:12px;line-height:11px;margin-top:0;margin-bottom:5px}
 html:not([lang="ns"]) .side a[href*="http://spotterguides.com"]:after{content:"By Andy Blackmore";display:block;width:100%;font-size:13px;height:12px;line-height:11px;margin-top:0;margin-bottom:5px}
 
 
