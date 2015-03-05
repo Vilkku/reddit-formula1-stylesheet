@@ -1133,14 +1133,14 @@ margin-top:-1px;
 .md .-text, .md p, .md pre>code, .md th, .md td, .md li { font-size:10pt; }
 
 
-.arrow.down:hover:after {
+.arrow.down:hover:before {
 background: #AB0303;
 content: "Please do not downvote based on team or driver fandom. Report inapropriate content.";
 display: block;
 position: fixed;
 left: 0;
 padding: 10px;
-bottom: 0;
+top: 0;
 right: 0;
 text-align: center;
 z-index: 10002;
