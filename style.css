@@ -408,7 +408,7 @@ html:not([lang="ns"]) .linkflair-post-race p.title>.linkflairlabel{background:#6
 html:not([lang="ns"]) .linkflair-race p.title>.linkflairlabel{background:#6db81c}
 html:not([lang="ns"]) .linkflair-feature p.title>.linkflairlabel{background:#000;color:#fff}
 
-/*Filters Images to delete
+/* filter images */
 html:not([lang="ns"]) .linkflair-practice a.thumbnail,
 html:not([lang="ns"]) .linkflair-qualifying a.thumbnail,
 html:not([lang="ns"]) .linkflair-post-qualifying a.thumbnail,
@@ -441,7 +441,6 @@ html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="sochi"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="united_states"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="brazilian"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="abu_dhabi"]{background-image:url(%%flag-med-sprite%%);width:60px;height:60px;border-radius:2px}
-*/
 
 /*Country Flags*/
 html:not([lang="ns"]) a[href="#au"],html:not([lang="ns"]) a[href="/au"],
@@ -507,7 +506,7 @@ html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"]{backgrou
 html:not([lang="ns"]) a[href="#ae"],html:not([lang="ns"]) a[href="/ae"]{background-position:-32px -5px}
 html:not([lang="ns"]) a[href="#po"],html:not([lang="ns"]) a[href="/po"]{background-position:-4px -453px}
 
-/*[8.6] Thumbnails for Session Threads - To Delete
+/*[8.6] Thumbnails for Session Threads */
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="australian"]{background-position:0px 0px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="malaysia"]{background-position:-60px 0px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="bahrain"]{background-position:-120px 0px}
@@ -528,7 +527,6 @@ html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="sochi"]{backgrou
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="united_states"]{background-position:-60px -180px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="brazilian"]{background-position:-120px -180px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="abu_dhabi"]{background-position:-180px -180px}
-*/
 
 /*[8.1] Cars*/
 .link .entry a[href="#E22"],.wiki a[href="#E22"],
