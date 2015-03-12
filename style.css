@@ -33,7 +33,7 @@ html:not([lang="ns"]) #sr-header-area .drop-choices.srdrop{z-index:1000;backgrou
 html:not([lang="ns"]) .drop-choices a.choice:hover{color:#000!important}
 
 /*content*/
-html:not([lang="ns"]) div.content{margin:48px 331px 10px 10px;padding:20px;background:#fff}
+html:not([lang="ns"]) div.content{margin:90px 331px 10px 10px;padding:20px;background:#fff}
 html:not([lang="ns"]) .listing-page div.content,
 html:not([lang="ns"]) .comments-page div.content{padding:0;background:transparent;position:relative}
 
@@ -1123,20 +1123,6 @@ position: absolute;
 right: 10px;
 }
 
-/* preseason temp 
-html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8) { background-color: #B00000; } 
-html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote { min-height:322px }
-html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3) { border-bottom:0 none !important; }
-html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8)> p:before { display:none; }
-html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8)>p {
-padding: 10px;
-font-weight: 900;
-color: #fff;
-padding-bottom: 8px;
-text-indent: 5px;
-margin-top:-1px;
-}html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(8) blockquote p:first-child {font-size: 13px;background: #222;color: #fff;padding: 8px;margin: 0;margin-bottom:10px;}
-*/
 
 /* get rid of markdown fontsize update*/
 .md .-text, .md p, .md pre>code, .md th, .md td, .md li { font-size:10pt; }
@@ -1155,4 +1141,14 @@ text-align: center;
 z-index: 10002;
 color: #fff;
 text-transform: uppercase;
+}
+
+/* flair psa */
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(3) {
+  color: red;
+  position: absolute;
+  left: 10px;
+  top: 164px;
+  font-size: 11px;
+  text-align: left;
 }
