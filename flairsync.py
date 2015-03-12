@@ -25,7 +25,7 @@ config_data.close()
 
 r = praw.Reddit(config['reddit']['user_agent'])
 r.login(config['reddit']['username'], config['reddit']['password'])
-subreddit = 'formula1'
+subreddit = config['reddit']['subreddit']
 
 print 'Parsing csv file ...'
 csv_templates = templates_from_csv('flair.csv')

@@ -2,6 +2,7 @@
     "reddit": {
         "username": "username",
         "password": "password",
-        "user_agent": "Descriptive user agent string"
+        "user_agent": "Descriptive user agent string",
+        "subreddit": "subreddit"
     }
 }
