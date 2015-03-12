@@ -360,7 +360,7 @@ html:not([lang=ns]) #mail.havemail,html:not([lang=ns]) #mail.nohavemail{backgrou
 *+html .flair,.flair:hover{width:auto;border-width:1px;background-color:#f5f5f5;padding:1px 1ex 3px 1px}
 
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(3) a{position:relative;text-indent:25px;padding-left:0;width:100%;display:block}
-html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(3) a:before{content:"";display:inline-block;width:19px;height:18px;background-image:url(%%flair-block%%);background-repeat:no-repeat;top:3px;left:0;position:absolute}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(3) a:before{content:"";display:inline-block;width:20px;height:18px;background-image:url(%%flair-block%%);background-repeat:no-repeat;top:3px;left:0;position:absolute}
 
 html:not([lang="ns"]) .side a[href="http://caterhamf1.com"]:before {background-position: 0 -522px;}
 html:not([lang="ns"]) .side a[href="http://formula1.ferrari.com"]:before {background-position: 0 -882px;}
