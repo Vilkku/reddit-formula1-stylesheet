@@ -327,7 +327,6 @@ html:not([lang="ns"]) #search input[type="text"]{height:32px;border-color:#c0c0c
 .linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(6),
 .linkflair-qualifying .md table:nth-of-type(2) tr th:nth-of-type(7){width:60px;text-align:center}
 .linkflair-race .md table:nth-of-type(2) tr td:nth-of-type(5),
-.linkflair-race .md table:nth-of-type(2) tr th:nth-of-type(5){width:125px;text-align:center}
 
 /*buttons*/
 div.titlebox>div:nth-of-type(1){padding-bottom:2px}
