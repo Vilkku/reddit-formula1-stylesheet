@@ -29,7 +29,7 @@ for i, name in enumerate(listdir(flair_directory)):
     width, height = im.size
     name = name.split('.')
     name = name[0].replace(' ', '').replace('-', '')
-    css_flair.append('.flair-%(name)s:before,a[href="/%(name)s"]:before{background-position:-1px -%(vpos)dpx}' % {'name': name, 'vpos': vpos})
+    css_flair.append('.flair-%(name)s:before{background-position:-1px -%(vpos)dpx}' % {'name': name, 'vpos': vpos})
     # 2 is the padding around the image which is set in the montage geometry option
     vpos = vpos + (height+2)
 

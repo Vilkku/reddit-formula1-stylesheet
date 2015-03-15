@@ -10,7 +10,7 @@ html:not([lang="ns"]) .res-nightmode { background-image:none; background-color:#
 
 /*nostyle cleanup*/
 :lang(ns) .side blockquote blockquote{padding:0;margin:0;border:0}
- 
+
 /*header*/
 html:not([lang="ns"]) #header{font-family:"Helvetica",Arial,sans-serif}
 html:not([lang="ns"]) div#header-bottom-left{height:60px;background:url(%%chequered%%) no-repeat right 0 scroll #222;border-bottom:2px solid #c90000}
@@ -801,9 +801,9 @@ html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table th:nth
 html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table th:nth-of-type(1),
 html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table th:nth-of-type(3),
 html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table th:nth-of-type(3) {text-align:center;}
-html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(1), 
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(1),
 html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table td:nth-of-type(1) {background: #DBDBDB;color:#6F6F6F;width:25px}
-html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(3), 
+html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(3),
 html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(7) blockquote table td:nth-of-type(3) {background: #222;color:#fff;width:35px;}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6)>blockquote p {margin: 0;text-align: center;padding: 10px 0 0;}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6)>blockquote p a { color:#222; }
@@ -816,33 +816,33 @@ html:not([lang="ns"]) .res-nightmode div#header-bottom-left { border-bottom-colo
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(1) { background:#2A2A2A; border-color:#000 }
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(1)>li { border-color:#000; }
 html:not([lang="ns"]) .res-nightmode .titlebox .tagline { background:transparent; }
-html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul,
 html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul,
 html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul>li>ul,
 html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul>li>ul { background-color:transparent; border-color:#494949; }
-html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote,
 html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote,
-html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote,
 html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote,
-html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1):hover>h1:after, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1):hover>h1:after,
 html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2):hover>h1:after { background-color:#272727; border-color:#494949; }
-html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul>li, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul>li,
 html:not([lang="ns"]) .res-nightmode .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul>li { color:#A0A0A0; }
 html:not([lang="ns"]) .res-nightmode .side blockquote blockquote ul a:hover,
 html:not([lang="ns"]) .res-nightmode #userbarToggle,
 html:not([lang="ns"]) .res-nightmode #userbarToggle a,
 html:not([lang="ns"]) .res-nightmode div.res-navTop a { color: #ccc; }
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li>blockquote { background:#3f3f3f; border-color:#000}
-html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(2):hover:before, 
-html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3):hover:before, 
-html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(4):hover:before, 
-html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5):hover:before, 
-html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6):hover:before, 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(2):hover:before,
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(3):hover:before,
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(4):hover:before,
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5):hover:before,
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(6):hover:before,
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(7):hover:before { background:#3f3f3f; }
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li blockquote table tr:nth-child(odd) {background: #4C4C4C;}
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li blockquote table tr:nth-child(even) {background: #323232;}
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5)>blockquote p {background: #545454;}
-html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(1), 
+html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li:nth-of-type(6) blockquote table td:nth-of-type(1),
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul>li:nth-of-type(7) blockquote table td:nth-of-type(1) {background: #2A2A2A;}
 html:not([lang="ns"]) .res-nightmode .titlebox .md>ul:nth-of-type(2)>li ul { border-color:transparent; background-color:#6b6b6b; }
 html:not([lang=ns]) .res-nightmode .linklisting .thing,
@@ -851,60 +851,6 @@ html:not([lang="ns"]) .res-nightmode .commentarea .menuarea,
 html:not([lang="ns"]) .res-nightmode .commentarea>.usertext {background: #222;}
 
 /* flair */
-a[href="/alonso"]:before,a[href="/button"]:before,a[href="/delarosa"]:before,a[href="/diresta"]:before,
-a[href="/glock"]:before,a[href="/grosjean"]:before,a[href="/hamilton"]:before,a[href="/hulkenberg"]:before,
-a[href="/karthikeyan"]:before,a[href="/kobayashi"]:before,a[href="/kovalainen"]:before,a[href="/maldonado"]:before,
-a[href="/massa"]:before,a[href="/perez"]:before,a[href="/petrov"]:before,a[href="/raikkonen"]:before,
-a[href="/ricciardo"]:before,a[href="/rosberg"]:before,a[href="/schumacher"]:before,a[href="/senna"]:before,
-a[href="/vergne"]:before,a[href="/vettel"]:before,a[href="/webber"]:before,a[href="/mika"]:before,
-a[href="/damon"]:before,a[href="/alain"]:before,a[href="/ayrton"]:before,a[href="/gilles"]:before,
-a[href="/bellof"]:before,a[href="/clark"]:before,a[href="/rindt"]:before,a[href="/david"]:before,
-a[href="/kubica"]:before,a[href="/dambrosio"]:before,a[href="/alguersuari"]:before,a[href="/andretti"]:before,
-a[href="/badoer"]:before,a[href="/barrichello"]:before,a[href="/bottas"]:before,a[href="/cevert"]:before,
-a[href="/chilton"]:before,a[href="/dacosta"]:before,a[href="/fabi"]:before,a[href="/fisichella"]:before,
-a[href="/fittipaldi"]:before,a[href="/frentzen"]:before,a[href="/gutierrez"]:before,a[href="/hunt"]:before,
-a[href="/ide"]:before,a[href="/inoue"]:before,a[href="/kovalainen2"]:before,a[href="/lauda"]:before,
-a[href="/montoya"]:before,a[href="/patrese"]:before,a[href="/peterson"]:before,a[href="/pic"]:before,
-a[href="/piquet"]:before,a[href="/pryce"]:before,a[href="/purley"]:before,a[href="/razia"]:before,
-a[href="/rossi"]:before,a[href="/sato"]:before,a[href="/speed"]:before,a[href="/villeneuve"]:before,
-a[href="/visoiu"]:before,a[href="/jack-brabham"]:before,a[href="/chandhok"]:before,a[href="/hill"]:before,
-a[href="/mansell"]:before,a[href="/stewart"]:before,a[href="/caterham"]:before,a[href="/ferrari"]:before,
-a[href="/forceindia"]:before,a[href="/lotus"]:before,a[href="/marussia"]:before,a[href="/mclaren"]:before,
-a[href="/mercedes"]:before,a[href="/redbull"]:before,a[href="/sauber"]:before,a[href="/tororosso"]:before,
-a[href="/williams"]:before,a[href="/alesi"]:before,a[href="/bianchi"]:before,a[href="/brundle"]:before,
-a[href="/philhill"]:before,a[href="/sutil"]:before,a[href="/vandergarde"]:before,a[href="/vandergarde"]:before,
-a[href="/aguri-suzuki"]:before,a[href="/alan-jones"]:before,a[href="/alberto-ascari"]:before,
-a[href="/alex-zanardi"]:before,a[href="/bruce-mclaren"]:before,a[href="/button-2009"]:before,
-a[href="/carlos-pace"]:before,a[href="/carlos-reutemann"]:before,a[href="/chris-amon"]:before,
-a[href="/christijan-albers"]:before,a[href="/denny-hulme"]:before,a[href="/eddie-cheever"]:before,
-a[href="/eddie-irvine"]:before,a[href="/elio-de-angelis"]:before,a[href="/ericsson"]:before,
-a[href="/gaston-mazzacane"]:before,a[href="/gerhard-berger"]:before,a[href="/guiseppe-farina"]:before,
-a[href="/jacky-ickx"]:before,a[href="/jarno-trulli"]:before,a[href="/jody-scheckter"]:before,
-a[href="/john-surtees"]:before,a[href="/john-watson"]:before,a[href="/jos-verstappen"]:before,
-a[href="/juan-manuel-fangio"]:before,a[href="/keke-rosberg"]:before,a[href="/luciano-burti"]:before,
-a[href="/magnussen"]:before,a[href="/michael-andretti"]:before,a[href="/mike-hawthorn"]:before,
-a[href="/nick-heidfeld"]:before,a[href="/ralf-schumacher"]:before,a[href="/schumacher-1990s"]:before,
-a[href="/stirling-moss"]:before,a[href="/thierry-boutsen"]:before,a[href="/kvyat"]:before,a[href="/hamiltonALT"]:before,
-a[href="/alfa-romeo-quadrifoglio"]:before,a[href="/alfa-romeo"]:before,a[href="/andrea-moda"]:before,
-a[href="/arrows"]:before,a[href="/bar-honda"]:before,a[href="/benetton"]:before,
-a[href="/bmw-sauber"]:before,a[href="/bmw-williams"]:before,a[href="/brabham"]:before,
-a[href="/brawn-gp"]:before,a[href="/brm"]:before,a[href="/coloni"]:before,
-a[href="/de-tomaso"]:before,a[href="/fittipaldi-copersucar-2"]:before,a[href="/fittipaldi-copersucar"]:before,
-a[href="/footwork"]:before,a[href="/forti"]:before,a[href="/hesketh"]:before,a[href="/honda-racing"]:before,
-a[href="/honda-rd"]:before,a[href="/hrt"]:before,a[href="/jaguar-difference"]:before,
-a[href="/jordan-gp"]:before,a[href="/jordan"]:before,a[href="/larrousse"]:before,
-a[href="/life"]:before,a[href="/ligier"]:before,a[href="/march"]:before,
-a[href="/matra"]:before,a[href="/midland"]:before,a[href="/minardi"]:before,
-a[href="/orange-arrows"]:before,a[href="/renault"]:before,a[href="/repco-brabham"]:before,
-a[href="/super-aguri"]:before,a[href="/team-lotus"]:before,a[href="/toleman"]:before,
-a[href="/toyota-racing"]:before,a[href="/tyrrell"]:before,a[href="/us-f1"]:before,
-a[href="/virgin-racing"]:before,a[href="/walter-wolf"],a[href="/aar"],a[href="/f1-doc"] {
-width:20px;
-height:16px;
-content:" ";
-background:url(%%flair-block%%) no-repeat scroll -9999px -9999px transparent;
-display:inline-block
-}
 
 .flair:before {
 content: "";
@@ -912,189 +858,195 @@ height: 16px;
 width: 20px;
 display: inline-block;
 background-image:url(%%flair-block%%);
+background-position:-1px -1px;
 background-repeat: no-repeat;
 vertical-align: middle;
 margin-right: 4px;
 }
 
-.flair-AdrianSutil:before,a[href="/AdrianSutil"]:before{background-position:-1px -1px}
-.flair-AguriSuzuki:before,a[href="/AguriSuzuki"]:before{background-position:-1px -19px}
-.flair-AlainProst:before,a[href="/AlainProst"]:before{background-position:-1px -37px}
-.flair-AlanJones:before,a[href="/AlanJones"]:before{background-position:-1px -55px}
-.flair-AlbertoAscari:before,a[href="/AlbertoAscari"]:before{background-position:-1px -73px}
-.flair-AlexZanardi:before,a[href="/AlexZanardi"]:before{background-position:-1px -91px}
-.flair-AlexanderRossi:before,a[href="/AlexanderRossi"]:before{background-position:-1px -109px}
-.flair-AlexanderWurz:before,a[href="/AlexanderWurz"]:before{background-position:-1px -127px}
-.flair-AlfaRomeoQuadrifoglio:before,a[href="/AlfaRomeoQuadrifoglio"]:before{background-position:-1px -145px}
-.flair-AlfaRomeo:before,a[href="/AlfaRomeo"]:before{background-position:-1px -163px}
-.flair-AndreLotterer:before,a[href="/AndreLotterer"]:before{background-position:-1px -181px}
-.flair-AndreaModa:before,a[href="/AndreaModa"]:before{background-position:-1px -199px}
-.flair-AngloAmericanRacers:before,a[href="/AngloAmericanRacers"]:before{background-position:-1px -217px}
-.flair-AntonioFelixdaCosta:before,a[href="/AntonioFelixdaCosta"]:before{background-position:-1px -235px}
-.flair-ArrowsOrange:before,a[href="/ArrowsOrange"]:before{background-position:-1px -253px}
-.flair-Arrows:before,a[href="/Arrows"]:before{background-position:-1px -271px}
-.flair-AyrtonSenna:before,a[href="/AyrtonSenna"]:before{background-position:-1px -289px}
-.flair-BARHonda:before,a[href="/BARHonda"]:before{background-position:-1px -307px}
-.flair-Benetton:before,a[href="/Benetton"]:before{background-position:-1px -325px}
-.flair-BMWSauber:before,a[href="/BMWSauber"]:before{background-position:-1px -343px}
-.flair-BMWWilliams:before,a[href="/BMWWilliams"]:before{background-position:-1px -361px}
-.flair-Brabham:before,a[href="/Brabham"]:before{background-position:-1px -379px}
-.flair-BrawnGP:before,a[href="/BrawnGP"]:before{background-position:-1px -397px}
-.flair-BRM:before,a[href="/BRM"]:before{background-position:-1px -415px}
-.flair-BruceMcLaren:before,a[href="/BruceMcLaren"]:before{background-position:-1px -433px}
-.flair-BrunoSenna:before,a[href="/BrunoSenna"]:before{background-position:-1px -451px}
-.flair-CarlosPace:before,a[href="/CarlosPace"]:before{background-position:-1px -469px}
-.flair-CarlosReutemann:before,a[href="/CarlosReutemann"]:before{background-position:-1px -487px}
-.flair-CarmenJorda:before,a[href="/CarmenJorda"]:before{background-position:-1px -505px}
-.flair-Caterham:before,a[href="/Caterham"]:before{background-position:-1px -523px}
-.flair-CharlesPic:before,a[href="/CharlesPic"]:before{background-position:-1px -541px}
-.flair-ChrisAmon:before,a[href="/ChrisAmon"]:before{background-position:-1px -559px}
-.flair-ChristijanAlbers:before,a[href="/ChristijanAlbers"]:before{background-position:-1px -577px}
-.flair-Coloni:before,a[href="/Coloni"]:before{background-position:-1px -595px}
-.flair-DamonHill:before,a[href="/DamonHill"]:before{background-position:-1px -613px}
-.flair-DanielRicciardo:before,a[href="/DanielRicciardo"]:before{background-position:-1px -631px}
-.flair-DaniilKvyat:before,a[href="/DaniilKvyat"]:before{background-position:-1px -649px}
-.flair-DavidCoulthard:before,a[href="/DavidCoulthard"]:before{background-position:-1px -667px}
-.flair-DavidPurley:before,a[href="/DavidPurley"]:before{background-position:-1px -685px}
-.flair-DeTomaso:before,a[href="/DeTomaso"]:before{background-position:-1px -703px}
-.flair-DennyHulme:before,a[href="/DennyHulme"]:before{background-position:-1px -721px}
-.flair-EddieCheever:before,a[href="/EddieCheever"]:before{background-position:-1px -739px}
-.flair-EddieIrvine:before,a[href="/EddieIrvine"]:before{background-position:-1px -757px}
-.flair-EliodeAngelis:before,a[href="/EliodeAngelis"]:before{background-position:-1px -775px}
-.flair-EmersonFittipaldi:before,a[href="/EmersonFittipaldi"]:before{background-position:-1px -793px}
-.flair-EstebanGutierrez:before,a[href="/EstebanGutierrez"]:before{background-position:-1px -811px}
-.flair-F1Doc:before,a[href="/F1Doc"]:before{background-position:-1px -829px}
-.flair-FelipeMassa:before,a[href="/FelipeMassa"]:before{background-position:-1px -847px}
-.flair-FernandoAlonso:before,a[href="/FernandoAlonso"]:before{background-position:-1px -865px}
-.flair-Ferrari:before,a[href="/Ferrari"]:before{background-position:-1px -883px}
-.flair-FittipaldiCopersucar2:before,a[href="/FittipaldiCopersucar2"]:before{background-position:-1px -901px}
-.flair-FittipaldiCopersucar:before,a[href="/FittipaldiCopersucar"]:before{background-position:-1px -919px}
-.flair-Footwork:before,a[href="/Footwork"]:before{background-position:-1px -937px}
-.flair-ForceIndia:before,a[href="/ForceIndia"]:before{background-position:-1px -955px}
-.flair-Forti:before,a[href="/Forti"]:before{background-position:-1px -973px}
-.flair-FrancoisCevert:before,a[href="/FrancoisCevert"]:before{background-position:-1px -991px}
-.flair-GastonMazzacane:before,a[href="/GastonMazzacane"]:before{background-position:-1px -1009px}
-.flair-GerhardBerger:before,a[href="/GerhardBerger"]:before{background-position:-1px -1027px}
-.flair-GiancarloFisichella:before,a[href="/GiancarloFisichella"]:before{background-position:-1px -1045px}
-.flair-GiedovanderGarde:before,a[href="/GiedovanderGarde"]:before{background-position:-1px -1063px}
-.flair-GillesVilleneuve:before,a[href="/GillesVilleneuve"]:before{background-position:-1px -1081px}
-.flair-GiuseppeFarina:before,a[href="/GiuseppeFarina"]:before{background-position:-1px -1099px}
-.flair-GrahamHill:before,a[href="/GrahamHill"]:before{background-position:-1px -1117px}
-.flair-Haas:before,a[href="/Haas"]:before{background-position:-1px -1135px}
-.flair-HeikkiKovalainen2:before,a[href="/HeikkiKovalainen2"]:before{background-position:-1px -1153px}
-.flair-HeikkiKovalainen:before,a[href="/HeikkiKovalainen"]:before{background-position:-1px -1171px}
-.flair-HeinzHaraldFrenzen:before,a[href="/HeinzHaraldFrenzen"]:before{background-position:-1px -1189px}
-.flair-Hesketh:before,a[href="/Hesketh"]:before{background-position:-1px -1207px}
-.flair-HondaRDCompany:before,a[href="/HondaRDCompany"]:before{background-position:-1px -1225px}
-.flair-HondaRacing:before,a[href="/HondaRacing"]:before{background-position:-1px -1243px}
-.flair-HRT:before,a[href="/HRT"]:before{background-position:-1px -1261px}
-.flair-JackBrabham:before,a[href="/JackBrabham"]:before{background-position:-1px -1279px}
-.flair-JackieStewart:before,a[href="/JackieStewart"]:before{background-position:-1px -1297px}
-.flair-JackyIckx:before,a[href="/JackyIckx"]:before{background-position:-1px -1315px}
-.flair-JacquesVilleneuve:before,a[href="/JacquesVilleneuve"]:before{background-position:-1px -1333px}
-.flair-Jaguar:before,a[href="/Jaguar"]:before{background-position:-1px -1351px}
-.flair-JamesHunt:before,a[href="/JamesHunt"]:before{background-position:-1px -1369px}
-.flair-JamieAlguersuari:before,a[href="/JamieAlguersuari"]:before{background-position:-1px -1387px}
-.flair-JarnoTrulli:before,a[href="/JarnoTrulli"]:before{background-position:-1px -1405px}
-.flair-JeanAlesi:before,a[href="/JeanAlesi"]:before{background-position:-1px -1423px}
-.flair-JeanEricVergne:before,a[href="/JeanEricVergne"]:before{background-position:-1px -1441px}
-.flair-JensonButton2009:before,a[href="/JensonButton2009"]:before{background-position:-1px -1459px}
-.flair-JensonButtonPink:before,a[href="/JensonButtonPink"]:before{background-position:-1px -1477px}
-.flair-JensonButton:before,a[href="/JensonButton"]:before{background-position:-1px -1495px}
-.flair-JeromedAmbrosio:before,a[href="/JeromedAmbrosio"]:before{background-position:-1px -1513px}
-.flair-JimClark:before,a[href="/JimClark"]:before{background-position:-1px -1531px}
-.flair-JochenRindt:before,a[href="/JochenRindt"]:before{background-position:-1px -1549px}
-.flair-JodyScheckter:before,a[href="/JodyScheckter"]:before{background-position:-1px -1567px}
-.flair-JohnSurtees:before,a[href="/JohnSurtees"]:before{background-position:-1px -1585px}
-.flair-JohnWatson:before,a[href="/JohnWatson"]:before{background-position:-1px -1603px}
-.flair-JordanGP:before,a[href="/JordanGP"]:before{background-position:-1px -1621px}
-.flair-Jordan:before,a[href="/Jordan"]:before{background-position:-1px -1639px}
-.flair-JosVerstappen:before,a[href="/JosVerstappen"]:before{background-position:-1px -1657px}
-.flair-JuanManuelFangio:before,a[href="/JuanManuelFangio"]:before{background-position:-1px -1675px}
-.flair-JuanPabloMontoya:before,a[href="/JuanPabloMontoya"]:before{background-position:-1px -1693px}
-.flair-JulesBianchi:before,a[href="/JulesBianchi"]:before{background-position:-1px -1711px}
-.flair-KamuiKobayashi:before,a[href="/KamuiKobayashi"]:before{background-position:-1px -1729px}
-.flair-KarunChandok:before,a[href="/KarunChandok"]:before{background-position:-1px -1747px}
-.flair-KekeRosberg:before,a[href="/KekeRosberg"]:before{background-position:-1px -1765px}
-.flair-KevinMagnussen:before,a[href="/KevinMagnussen"]:before{background-position:-1px -1783px}
-.flair-KimiRaikkonen:before,a[href="/KimiRaikkonen"]:before{background-position:-1px -1801px}
-.flair-Larrousse:before,a[href="/Larrousse"]:before{background-position:-1px -1819px}
-.flair-LewisHamiltonYellow:before,a[href="/LewisHamiltonYellow"]:before{background-position:-1px -1837px}
-.flair-LewisHamilton:before,a[href="/LewisHamilton"]:before{background-position:-1px -1855px}
-.flair-Life:before,a[href="/Life"]:before{background-position:-1px -1873px}
-.flair-Ligier:before,a[href="/Ligier"]:before{background-position:-1px -1891px}
-.flair-Lotus:before,a[href="/Lotus"]:before{background-position:-1px -1909px}
-.flair-LucaBadoer:before,a[href="/LucaBadoer"]:before{background-position:-1px -1927px}
-.flair-LucianoBurti:before,a[href="/LucianoBurti"]:before{background-position:-1px -1945px}
-.flair-LuizRazia:before,a[href="/LuizRazia"]:before{background-position:-1px -1963px}
-.flair-March:before,a[href="/March"]:before{background-position:-1px -1981px}
-.flair-MarcusEricsson:before,a[href="/MarcusEricsson"]:before{background-position:-1px -1999px}
-.flair-MarioAndretti:before,a[href="/MarioAndretti"]:before{background-position:-1px -2017px}
-.flair-MarkWebber:before,a[href="/MarkWebber"]:before{background-position:-1px -2035px}
-.flair-MartinBrundle:before,a[href="/MartinBrundle"]:before{background-position:-1px -2053px}
-.flair-Marussia:before,a[href="/Marussia"]:before{background-position:-1px -2071px}
-.flair-Matra:before,a[href="/Matra"]:before{background-position:-1px -2089px}
-.flair-MaxChilton:before,a[href="/MaxChilton"]:before{background-position:-1px -2107px}
-.flair-MaxVerstappen:before,a[href="/MaxVerstappen"]:before{background-position:-1px -2125px}
-.flair-McLaren:before,a[href="/McLaren"]:before{background-position:-1px -2143px}
-.flair-Mercedes:before,a[href="/Mercedes"]:before{background-position:-1px -2161px}
-.flair-MichaelAndretti:before,a[href="/MichaelAndretti"]:before{background-position:-1px -2179px}
-.flair-MichaelSchumacher1990s:before,a[href="/MichaelSchumacher1990s"]:before{background-position:-1px -2197px}
-.flair-MichaelSchumacher:before,a[href="/MichaelSchumacher"]:before{background-position:-1px -2215px}
-.flair-Midland:before,a[href="/Midland"]:before{background-position:-1px -2233px}
-.flair-MikaHakkinen:before,a[href="/MikaHakkinen"]:before{background-position:-1px -2251px}
-.flair-MikeHawthorn:before,a[href="/MikeHawthorn"]:before{background-position:-1px -2269px}
-.flair-Minardi:before,a[href="/Minardi"]:before{background-position:-1px -2287px}
-.flair-NarainKarthikeyan:before,a[href="/NarainKarthikeyan"]:before{background-position:-1px -2305px}
-.flair-NelsonPiquet:before,a[href="/NelsonPiquet"]:before{background-position:-1px -2323px}
-.flair-NickHeidfeld:before,a[href="/NickHeidfeld"]:before{background-position:-1px -2341px}
-.flair-NicoHulkenberg:before,a[href="/NicoHulkenberg"]:before{background-position:-1px -2359px}
-.flair-NicoRosberg:before,a[href="/NicoRosberg"]:before{background-position:-1px -2377px}
-.flair-NigelMansell:before,a[href="/NigelMansell"]:before{background-position:-1px -2395px}
-.flair-NikiLauda:before,a[href="/NikiLauda"]:before{background-position:-1px -2413px}
-.flair-PastorMaldonado:before,a[href="/PastorMaldonado"]:before{background-position:-1px -2431px}
-.flair-PatrickDepailler:before,a[href="/PatrickDepailler"]:before{background-position:-1px -2449px}
-.flair-PauldiResta:before,a[href="/PauldiResta"]:before{background-position:-1px -2467px}
-.flair-PedrodelaRosa:before,a[href="/PedrodelaRosa"]:before{background-position:-1px -2485px}
-.flair-PhilHill:before,a[href="/PhilHill"]:before{background-position:-1px -2503px}
-.flair-RalfSchumacher:before,a[href="/RalfSchumacher"]:before{background-position:-1px -2521px}
-.flair-RedBull:before,a[href="/RedBull"]:before{background-position:-1px -2539px}
-.flair-Renault:before,a[href="/Renault"]:before{background-position:-1px -2557px}
-.flair-RepcoBrabham:before,a[href="/RepcoBrabham"]:before{background-position:-1px -2575px}
-.flair-RiccardoPatrese:before,a[href="/RiccardoPatrese"]:before{background-position:-1px -2593px}
-.flair-RobertKubica:before,a[href="/RobertKubica"]:before{background-position:-1px -2611px}
-.flair-RobertVisoiu:before,a[href="/RobertVisoiu"]:before{background-position:-1px -2629px}
-.flair-RomainGrosjean:before,a[href="/RomainGrosjean"]:before{background-position:-1px -2647px}
-.flair-RonniePeterson:before,a[href="/RonniePeterson"]:before{background-position:-1px -2665px}
-.flair-RubensBarrichello:before,a[href="/RubensBarrichello"]:before{background-position:-1px -2683px}
-.flair-SafteyCar:before,a[href="/SafteyCar"]:before{background-position:-1px -2701px}
-.flair-Sauber:before,a[href="/Sauber"]:before{background-position:-1px -2719px}
-.flair-ScottSpeed:before,a[href="/ScottSpeed"]:before{background-position:-1px -2737px}
-.flair-SebastianVettel2014:before,a[href="/SebastianVettel2014"]:before{background-position:-1px -2755px}
-.flair-SebastianVettel:before,a[href="/SebastianVettel"]:before{background-position:-1px -2773px}
-.flair-SergioPerez:before,a[href="/SergioPerez"]:before{background-position:-1px -2791px}
-.flair-StefanBellof:before,a[href="/StefanBellof"]:before{background-position:-1px -2809px}
-.flair-StirlingMoss:before,a[href="/StirlingMoss"]:before{background-position:-1px -2827px}
-.flair-SuperAguri:before,a[href="/SuperAguri"]:before{background-position:-1px -2845px}
-.flair-SusieWolff:before,a[href="/SusieWolff"]:before{background-position:-1px -2863px}
-.flair-TakiInoue:before,a[href="/TakiInoue"]:before{background-position:-1px -2881px}
-.flair-TakumaSato:before,a[href="/TakumaSato"]:before{background-position:-1px -2899px}
-.flair-TeamLotus:before,a[href="/TeamLotus"]:before{background-position:-1px -2917px}
-.flair-TeoFabi:before,a[href="/TeoFabi"]:before{background-position:-1px -2935px}
-.flair-ThierryBoutsen:before,a[href="/ThierryBoutsen"]:before{background-position:-1px -2953px}
-.flair-TimoGlock:before,a[href="/TimoGlock"]:before{background-position:-1px -2971px}
-.flair-Toleman:before,a[href="/Toleman"]:before{background-position:-1px -2989px}
-.flair-TomPryce:before,a[href="/TomPryce"]:before{background-position:-1px -3007px}
-.flair-ToroRosso:before,a[href="/ToroRosso"]:before{background-position:-1px -3025px}
-.flair-Toyota:before,a[href="/Toyota"]:before{background-position:-1px -3043px}
-.flair-Tyrrell:before,a[href="/Tyrrell"]:before{background-position:-1px -3061px}
-.flair-USF1:before,a[href="/USF1"]:before{background-position:-1px -3079px}
-.flair-ValtteriBottas:before,a[href="/ValtteriBottas"]:before{background-position:-1px -3097px}
-.flair-VirginRacing:before,a[href="/VirginRacing"]:before{background-position:-1px -3115px}
-.flair-VitalyPetrov:before,a[href="/VitalyPetrov"]:before{background-position:-1px -3133px}
-.flair-WalterWolf:before,a[href="/WalterWolf"]:before{background-position:-1px -3151px}
-.flair-Williams:before,a[href="/Williams"]:before{background-position:-1px -3169px}
-.flair-YujiIde:before,a[href="/YujiIde"]:before{background-position:-1px -3187px}
+/* Begin flair.css copypaste */
+
+.flair-AdrianSutil:before{background-position:-1px -19px}
+.flair-AguriSuzuki:before{background-position:-1px -37px}
+.flair-AlainProst:before{background-position:-1px -55px}
+.flair-AlanJones:before{background-position:-1px -73px}
+.flair-AlbertoAscari:before{background-position:-1px -91px}
+.flair-AlexZanardi:before{background-position:-1px -109px}
+.flair-AlexanderRossi:before{background-position:-1px -127px}
+.flair-AlexanderWurz:before{background-position:-1px -145px}
+.flair-AlfaRomeoQuadrifoglio:before{background-position:-1px -163px}
+.flair-AlfaRomeo:before{background-position:-1px -181px}
+.flair-AndreLotterer:before{background-position:-1px -199px}
+.flair-AndreaModa:before{background-position:-1px -217px}
+.flair-AngloAmericanRacers:before{background-position:-1px -235px}
+.flair-AntonioFelixdaCosta:before{background-position:-1px -253px}
+.flair-ArrowsOrange:before{background-position:-1px -271px}
+.flair-Arrows:before{background-position:-1px -289px}
+.flair-AyrtonSenna:before{background-position:-1px -307px}
+.flair-BARHonda:before{background-position:-1px -325px}
+.flair-Benetton:before{background-position:-1px -343px}
+.flair-BMWSauber:before{background-position:-1px -361px}
+.flair-BMWWilliams:before{background-position:-1px -379px}
+.flair-Brabham:before{background-position:-1px -397px}
+.flair-BrawnGP:before{background-position:-1px -415px}
+.flair-BRM:before{background-position:-1px -433px}
+.flair-BruceMcLaren:before{background-position:-1px -451px}
+.flair-BrunoSenna:before{background-position:-1px -469px}
+.flair-CarlosPace:before{background-position:-1px -487px}
+.flair-CarlosReutemann:before{background-position:-1px -505px}
+.flair-CarmenJorda:before{background-position:-1px -523px}
+.flair-Caterham:before{background-position:-1px -541px}
+.flair-CharlesPic:before{background-position:-1px -559px}
+.flair-ChrisAmon:before{background-position:-1px -577px}
+.flair-ChristijanAlbers:before{background-position:-1px -595px}
+.flair-Coloni:before{background-position:-1px -613px}
+.flair-DamonHill:before{background-position:-1px -631px}
+.flair-DanielRicciardo:before{background-position:-1px -649px}
+.flair-DaniilKvyat:before{background-position:-1px -667px}
+.flair-DavidCoulthard:before{background-position:-1px -685px}
+.flair-DavidPurley:before{background-position:-1px -703px}
+.flair-DeTomaso:before{background-position:-1px -721px}
+.flair-DennyHulme:before{background-position:-1px -739px}
+.flair-EddieCheever:before{background-position:-1px -757px}
+.flair-EddieIrvine:before{background-position:-1px -775px}
+.flair-EliodeAngelis:before{background-position:-1px -793px}
+.flair-EmersonFittipaldi:before{background-position:-1px -811px}
+.flair-EstebanGutierrez:before{background-position:-1px -829px}
+.flair-F1Doc:before{background-position:-1px -847px}
+.flair-FelipeMassa:before{background-position:-1px -865px}
+.flair-FernandoAlonso:before{background-position:-1px -883px}
+.flair-Ferrari:before{background-position:-1px -901px}
+.flair-FittipaldiCopersucar2:before{background-position:-1px -919px}
+.flair-FittipaldiCopersucar:before{background-position:-1px -937px}
+.flair-Footwork:before{background-position:-1px -955px}
+.flair-ForceIndia:before{background-position:-1px -973px}
+.flair-Forti:before{background-position:-1px -991px}
+.flair-FrancoisCevert:before{background-position:-1px -1009px}
+.flair-GastonMazzacane:before{background-position:-1px -1027px}
+.flair-GerhardBerger:before{background-position:-1px -1045px}
+.flair-GiancarloFisichella:before{background-position:-1px -1063px}
+.flair-GiedovanderGarde:before{background-position:-1px -1081px}
+.flair-GillesVilleneuve:before{background-position:-1px -1099px}
+.flair-GiuseppeFarina:before{background-position:-1px -1117px}
+.flair-GrahamHill:before{background-position:-1px -1135px}
+.flair-Haas:before{background-position:-1px -1153px}
+.flair-HeikkiKovalainen2:before{background-position:-1px -1171px}
+.flair-HeikkiKovalainen:before{background-position:-1px -1189px}
+.flair-HeinzHaraldFrenzen:before{background-position:-1px -1207px}
+.flair-Hesketh:before{background-position:-1px -1225px}
+.flair-HondaRDCompany:before{background-position:-1px -1243px}
+.flair-HondaRacing:before{background-position:-1px -1261px}
+.flair-HRT:before{background-position:-1px -1279px}
+.flair-JackBrabham:before{background-position:-1px -1297px}
+.flair-JackieStewart:before{background-position:-1px -1315px}
+.flair-JackyIckx:before{background-position:-1px -1333px}
+.flair-JacquesVilleneuve:before{background-position:-1px -1351px}
+.flair-Jaguar:before{background-position:-1px -1369px}
+.flair-JamesHunt:before{background-position:-1px -1387px}
+.flair-JamieAlguersuari:before{background-position:-1px -1405px}
+.flair-JarnoTrulli:before{background-position:-1px -1423px}
+.flair-JeanAlesi:before{background-position:-1px -1441px}
+.flair-JeanEricVergne:before{background-position:-1px -1459px}
+.flair-JensonButton2009:before{background-position:-1px -1477px}
+.flair-JensonButtonPink:before{background-position:-1px -1495px}
+.flair-JensonButton:before{background-position:-1px -1513px}
+.flair-JeromedAmbrosio:before{background-position:-1px -1531px}
+.flair-JimClark:before{background-position:-1px -1549px}
+.flair-JochenRindt:before{background-position:-1px -1567px}
+.flair-JodyScheckter:before{background-position:-1px -1585px}
+.flair-JohnSurtees:before{background-position:-1px -1603px}
+.flair-JohnWatson:before{background-position:-1px -1621px}
+.flair-JordanGP:before{background-position:-1px -1639px}
+.flair-Jordan:before{background-position:-1px -1657px}
+.flair-JosVerstappen:before{background-position:-1px -1675px}
+.flair-JuanManuelFangio:before{background-position:-1px -1693px}
+.flair-JuanPabloMontoya:before{background-position:-1px -1711px}
+.flair-JulesBianchi:before{background-position:-1px -1729px}
+.flair-KamuiKobayashi:before{background-position:-1px -1747px}
+.flair-KarunChandok:before{background-position:-1px -1765px}
+.flair-KekeRosberg:before{background-position:-1px -1783px}
+.flair-KevinMagnussen:before{background-position:-1px -1801px}
+.flair-KimiRaikkonen:before{background-position:-1px -1819px}
+.flair-Larrousse:before{background-position:-1px -1837px}
+.flair-LewisHamiltonYellow:before{background-position:-1px -1855px}
+.flair-LewisHamilton:before{background-position:-1px -1873px}
+.flair-Life:before{background-position:-1px -1891px}
+.flair-Ligier:before{background-position:-1px -1909px}
+.flair-Lotus:before{background-position:-1px -1927px}
+.flair-LucaBadoer:before{background-position:-1px -1945px}
+.flair-LucianoBurti:before{background-position:-1px -1963px}
+.flair-LuizRazia:before{background-position:-1px -1981px}
+.flair-March:before{background-position:-1px -1999px}
+.flair-MarcusEricsson:before{background-position:-1px -2017px}
+.flair-MarioAndretti:before{background-position:-1px -2035px}
+.flair-MarkWebber:before{background-position:-1px -2053px}
+.flair-MartinBrundle:before{background-position:-1px -2071px}
+.flair-Marussia:before{background-position:-1px -2089px}
+.flair-Matra:before{background-position:-1px -2107px}
+.flair-MaxChilton:before{background-position:-1px -2125px}
+.flair-MaxVerstappen:before{background-position:-1px -2143px}
+.flair-McLaren:before{background-position:-1px -2161px}
+.flair-Mercedes:before{background-position:-1px -2179px}
+.flair-MichaelAndretti:before{background-position:-1px -2197px}
+.flair-MichaelSchumacher1990s:before{background-position:-1px -2215px}
+.flair-MichaelSchumacher:before{background-position:-1px -2233px}
+.flair-Midland:before{background-position:-1px -2251px}
+.flair-MikaHakkinen:before{background-position:-1px -2269px}
+.flair-MikeHawthorn:before{background-position:-1px -2287px}
+.flair-Minardi:before{background-position:-1px -2305px}
+.flair-NarainKarthikeyan:before{background-position:-1px -2323px}
+.flair-NelsonPiquet:before{background-position:-1px -2341px}
+.flair-NickHeidfeld:before{background-position:-1px -2359px}
+.flair-NicoHulkenberg:before{background-position:-1px -2377px}
+.flair-NicoRosberg:before{background-position:-1px -2395px}
+.flair-NigelMansell:before{background-position:-1px -2413px}
+.flair-NikiLauda:before{background-position:-1px -2431px}
+.flair-PastorMaldonado:before{background-position:-1px -2449px}
+.flair-PatrickDepailler:before{background-position:-1px -2467px}
+.flair-PauldiResta:before{background-position:-1px -2485px}
+.flair-PedrodelaRosa:before{background-position:-1px -2503px}
+.flair-PhilHill:before{background-position:-1px -2521px}
+.flair-RalfSchumacher:before{background-position:-1px -2539px}
+.flair-RedBull:before{background-position:-1px -2557px}
+.flair-Renault:before{background-position:-1px -2575px}
+.flair-RepcoBrabham:before{background-position:-1px -2593px}
+.flair-RiccardoPatrese:before{background-position:-1px -2611px}
+.flair-RobertKubica:before{background-position:-1px -2629px}
+.flair-RobertVisoiu:before{background-position:-1px -2647px}
+.flair-RomainGrosjean:before{background-position:-1px -2665px}
+.flair-RonniePeterson:before{background-position:-1px -2683px}
+.flair-RubensBarrichello:before{background-position:-1px -2701px}
+.flair-SafteyCar:before{background-position:-1px -2719px}
+.flair-Sauber:before{background-position:-1px -2737px}
+.flair-ScottSpeed:before{background-position:-1px -2755px}
+.flair-SebastianVettel2014:before{background-position:-1px -2773px}
+.flair-SebastianVettel:before{background-position:-1px -2791px}
+.flair-SergioPerez:before{background-position:-1px -2809px}
+.flair-StefanBellof:before{background-position:-1px -2827px}
+.flair-StirlingMoss:before{background-position:-1px -2845px}
+.flair-SuperAguri:before{background-position:-1px -2863px}
+.flair-SusieWolff:before{background-position:-1px -2881px}
+.flair-TakiInoue:before{background-position:-1px -2899px}
+.flair-TakumaSato:before{background-position:-1px -2917px}
+.flair-TeamLotus:before{background-position:-1px -2935px}
+.flair-TeoFabi:before{background-position:-1px -2953px}
+.flair-ThierryBoutsen:before{background-position:-1px -2971px}
+.flair-TimoGlock:before{background-position:-1px -2989px}
+.flair-Toleman:before{background-position:-1px -3007px}
+.flair-TomPryce:before{background-position:-1px -3025px}
+.flair-ToroRosso:before{background-position:-1px -3043px}
+.flair-Toyota:before{background-position:-1px -3061px}
+.flair-Tyrrell:before{background-position:-1px -3079px}
+.flair-USF1:before{background-position:-1px -3097px}
+.flair-ValtteriBottas:before{background-position:-1px -3115px}
+.flair-VirginRacing:before{background-position:-1px -3133px}
+.flair-VitalyPetrov:before{background-position:-1px -3151px}
+.flair-WalterWolf:before{background-position:-1px -3169px}
+.flair-Williams:before{background-position:-1px -3187px}
+.flair-YujiIde:before{background-position:-1px -3205px}
+
+/* End flair.css copypaste */
+
 .flair-award:before,a[href="/award"]:before{background:url(%%award-flair%%) no-repeat 0 0 transparent;content:"";display:inline-block;width:20px;height:18px;top:6px;left:-2px}.flair-award:hover{background-color:#FFEFBD;border-color:#BA8600}
 
 
