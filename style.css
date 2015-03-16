@@ -360,16 +360,41 @@ html:not([lang=ns]) #mail.havemail,html:not([lang=ns]) #mail.nohavemail{backgrou
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(3) a{position:relative;text-indent:25px;padding-left:0;width:100%;display:block}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(3) a:before{content:"";display:inline-block;width:22px;height:18px;background-image:url(%%flair-block%%);background-repeat:no-repeat;top:3px;left:0;position:absolute}
 
-html:not([lang="ns"]) .side a[href="http://caterhamf1.com"]:before {background-position: 0 -522px;}
-html:not([lang="ns"]) .side a[href="http://formula1.ferrari.com"]:before {background-position: 0 -882px;}
-html:not([lang="ns"]) .side a[href="http://forceindiaf1.com"]:before {background-position: 0 -954px;}
-html:not([lang="ns"]) .side a[href="http://lotusf1team.com"]:before {background-position: 0 -1908px;}
-html:not([lang="ns"]) .side a[href="http://mclaren.com/formula1"]:before {background-position: 0 -2141px;}
-html:not([lang="ns"]) .side a[href="http://infiniti-redbullracing.com"]:before {background-position: 0 -2539px;}
-html:not([lang="ns"]) .side a[href="http://sauberf1team.com"]:before {background-position: 0 -2718px;}
-html:not([lang="ns"]) .side a[href="http://scuderiatororosso.com"]:before {background-position: 0 -3024px;}
-html:not([lang="ns"]) .side a[href="http://williamsf1.com"]:before {background-position: 0 -3167px;}
-html:not([lang="ns"]) .side a[href="http://mercedes-amg-f1.com"]:before {background-position: 0 -2160px;}
+html:not([lang="ns"]) .side a[href="http://formula1.ferrari.com"]:before {
+  background-position: 0 -900px;
+}
+
+html:not([lang="ns"]) .side a[href="http://forceindiaf1.com"]:before {
+  background-position: 0 -972px;
+}
+
+html:not([lang="ns"]) .side a[href="http://lotusf1team.com"]:before {
+  background-position: 0 -1926px;
+}
+
+html:not([lang="ns"]) .side a[href="http://mclaren.com/formula1"]:before {
+  background-position: 0 -2159px;
+}
+
+html:not([lang="ns"]) .side a[href="http://mercedes-amg-f1.com"]:before {
+  background-position: 0 -2179px;
+}
+
+html:not([lang="ns"]) .side a[href="http://infiniti-redbullracing.com"]:before {
+  background-position: 0px -2557px;
+}
+
+html:not([lang="ns"]) .side a[href="http://sauberf1team.com"]:before {
+  background-position: 0 -2737px;
+}
+
+html:not([lang="ns"]) .side a[href="http://scuderiatororosso.com"]:before {
+  background-position: 0 -3043px;
+}
+
+html:not([lang="ns"]) .side a[href="http://williamsf1.com"]:before {
+  background-position: 0 -3186px;
+}
 
 /*Link Flair*/
 /*Default Display*/
