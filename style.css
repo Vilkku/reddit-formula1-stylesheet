@@ -361,39 +361,39 @@ html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockqu
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote:nth-of-type(3) a:before{content:"";display:inline-block;width:22px;height:18px;background-image:url(%%flair-block%%);background-repeat:no-repeat;top:3px;left:0;position:absolute}
 
 html:not([lang="ns"]) .side a[href="http://formula1.ferrari.com"]:before {
-  background-position: 0 -900px;
+  background-position: 0 -936px;
 }
 
 html:not([lang="ns"]) .side a[href="http://forceindiaf1.com"]:before {
-  background-position: 0 -972px;
+  background-position: 0 -1008px;
 }
 
 html:not([lang="ns"]) .side a[href="http://lotusf1team.com"]:before {
-  background-position: 0 -1926px;
+  background-position: 0 -1962px;
 }
 
 html:not([lang="ns"]) .side a[href="http://mclaren.com/formula1"]:before {
-  background-position: 0 -2159px;
+  background-position: 0 -2214px;
 }
 
 html:not([lang="ns"]) .side a[href="http://mercedes-amg-f1.com"]:before {
-  background-position: 0 -2179px;
+  background-position: 0 -2232px;
 }
 
 html:not([lang="ns"]) .side a[href="http://infiniti-redbullracing.com"]:before {
-  background-position: 0px -2557px;
+  background-position: 0px -2610px;
 }
 
 html:not([lang="ns"]) .side a[href="http://sauberf1team.com"]:before {
-  background-position: 0 -2737px;
+  background-position: 0 -2790px;
 }
 
 html:not([lang="ns"]) .side a[href="http://scuderiatororosso.com"]:before {
-  background-position: 0 -3043px;
+  background-position: 0 -3096px;
 }
 
 html:not([lang="ns"]) .side a[href="http://williamsf1.com"]:before {
-  background-position: 0 -3186px;
+  background-position: 0 -3240px;
 }
 
 /*Link Flair*/
@@ -891,6 +891,7 @@ margin-right: 4px;
 
 /* Begin flair.css copypaste */
 
+.flair-AAADefault:before{background-position:-1px -1px}
 .flair-AdrianSutil:before{background-position:-1px -19px}
 .flair-AguriSuzuki:before{background-position:-1px -37px}
 .flair-AlainProst:before{background-position:-1px -55px}
@@ -919,156 +920,159 @@ margin-right: 4px;
 .flair-BrunoSenna:before{background-position:-1px -469px}
 .flair-CarlosPace:before{background-position:-1px -487px}
 .flair-CarlosReutemann:before{background-position:-1px -505px}
-.flair-CarmenJorda:before{background-position:-1px -523px}
-.flair-Caterham:before{background-position:-1px -541px}
-.flair-CharlesPic:before{background-position:-1px -559px}
-.flair-ChrisAmon:before{background-position:-1px -577px}
-.flair-ChristijanAlbers:before{background-position:-1px -595px}
-.flair-Coloni:before{background-position:-1px -613px}
-.flair-DamonHill:before{background-position:-1px -631px}
-.flair-DanielRicciardo:before{background-position:-1px -649px}
-.flair-DaniilKvyat:before{background-position:-1px -667px}
-.flair-DavidCoulthard:before{background-position:-1px -685px}
-.flair-DavidPurley:before{background-position:-1px -703px}
-.flair-DeTomaso:before{background-position:-1px -721px}
-.flair-DennyHulme:before{background-position:-1px -739px}
-.flair-EddieCheever:before{background-position:-1px -757px}
-.flair-EddieIrvine:before{background-position:-1px -775px}
-.flair-EliodeAngelis:before{background-position:-1px -793px}
-.flair-EmersonFittipaldi:before{background-position:-1px -811px}
-.flair-EstebanGutierrez:before{background-position:-1px -829px}
-.flair-F1Doc:before{background-position:-1px -847px}
-.flair-FelipeMassa:before{background-position:-1px -865px}
-.flair-FernandoAlonso:before{background-position:-1px -883px}
-.flair-Ferrari:before{background-position:-1px -901px}
-.flair-FittipaldiCopersucar2:before{background-position:-1px -919px}
-.flair-FittipaldiCopersucar:before{background-position:-1px -937px}
-.flair-Footwork:before{background-position:-1px -955px}
-.flair-ForceIndia:before{background-position:-1px -973px}
-.flair-Forti:before{background-position:-1px -991px}
-.flair-FrancoisCevert:before{background-position:-1px -1009px}
-.flair-GastonMazzacane:before{background-position:-1px -1027px}
-.flair-GerhardBerger:before{background-position:-1px -1045px}
-.flair-GiancarloFisichella:before{background-position:-1px -1063px}
-.flair-GiedovanderGarde:before{background-position:-1px -1081px}
-.flair-GillesVilleneuve:before{background-position:-1px -1099px}
-.flair-GiuseppeFarina:before{background-position:-1px -1117px}
-.flair-GrahamHill:before{background-position:-1px -1135px}
-.flair-Haas:before{background-position:-1px -1153px}
-.flair-HeikkiKovalainen2:before{background-position:-1px -1171px}
-.flair-HeikkiKovalainen:before{background-position:-1px -1189px}
-.flair-HeinzHaraldFrenzen:before{background-position:-1px -1207px}
-.flair-Hesketh:before{background-position:-1px -1225px}
-.flair-HondaRDCompany:before{background-position:-1px -1243px}
-.flair-HondaRacing:before{background-position:-1px -1261px}
-.flair-HRT:before{background-position:-1px -1279px}
-.flair-JackBrabham:before{background-position:-1px -1297px}
-.flair-JackieStewart:before{background-position:-1px -1315px}
-.flair-JackyIckx:before{background-position:-1px -1333px}
-.flair-JacquesVilleneuve:before{background-position:-1px -1351px}
-.flair-Jaguar:before{background-position:-1px -1369px}
-.flair-JamesHunt:before{background-position:-1px -1387px}
-.flair-JamieAlguersuari:before{background-position:-1px -1405px}
-.flair-JarnoTrulli:before{background-position:-1px -1423px}
-.flair-JeanAlesi:before{background-position:-1px -1441px}
-.flair-JeanEricVergne:before{background-position:-1px -1459px}
-.flair-JensonButton2009:before{background-position:-1px -1477px}
-.flair-JensonButtonPink:before{background-position:-1px -1495px}
-.flair-JensonButton:before{background-position:-1px -1513px}
-.flair-JeromedAmbrosio:before{background-position:-1px -1531px}
-.flair-JimClark:before{background-position:-1px -1549px}
-.flair-JochenRindt:before{background-position:-1px -1567px}
-.flair-JodyScheckter:before{background-position:-1px -1585px}
-.flair-JohnSurtees:before{background-position:-1px -1603px}
-.flair-JohnWatson:before{background-position:-1px -1621px}
-.flair-JordanGP:before{background-position:-1px -1639px}
-.flair-Jordan:before{background-position:-1px -1657px}
-.flair-JosVerstappen:before{background-position:-1px -1675px}
-.flair-JuanManuelFangio:before{background-position:-1px -1693px}
-.flair-JuanPabloMontoya:before{background-position:-1px -1711px}
-.flair-JulesBianchi:before{background-position:-1px -1729px}
-.flair-KamuiKobayashi:before{background-position:-1px -1747px}
-.flair-KarunChandok:before{background-position:-1px -1765px}
-.flair-KekeRosberg:before{background-position:-1px -1783px}
-.flair-KevinMagnussen:before{background-position:-1px -1801px}
-.flair-KimiRaikkonen:before{background-position:-1px -1819px}
-.flair-Larrousse:before{background-position:-1px -1837px}
-.flair-LewisHamiltonYellow:before{background-position:-1px -1855px}
-.flair-LewisHamilton:before{background-position:-1px -1873px}
-.flair-Life:before{background-position:-1px -1891px}
-.flair-Ligier:before{background-position:-1px -1909px}
-.flair-Lotus:before{background-position:-1px -1927px}
-.flair-LucaBadoer:before{background-position:-1px -1945px}
-.flair-LucianoBurti:before{background-position:-1px -1963px}
-.flair-LuizRazia:before{background-position:-1px -1981px}
-.flair-March:before{background-position:-1px -1999px}
-.flair-MarcusEricsson:before{background-position:-1px -2017px}
-.flair-MarioAndretti:before{background-position:-1px -2035px}
-.flair-MarkWebber:before{background-position:-1px -2053px}
-.flair-MartinBrundle:before{background-position:-1px -2071px}
-.flair-Marussia:before{background-position:-1px -2089px}
-.flair-Matra:before{background-position:-1px -2107px}
-.flair-MaxChilton:before{background-position:-1px -2125px}
-.flair-MaxVerstappen:before{background-position:-1px -2143px}
-.flair-McLaren:before{background-position:-1px -2161px}
-.flair-Mercedes:before{background-position:-1px -2179px}
-.flair-MichaelAndretti:before{background-position:-1px -2197px}
-.flair-MichaelSchumacher1990s:before{background-position:-1px -2215px}
-.flair-MichaelSchumacher:before{background-position:-1px -2233px}
-.flair-Midland:before{background-position:-1px -2251px}
-.flair-MikaHakkinen:before{background-position:-1px -2269px}
-.flair-MikeHawthorn:before{background-position:-1px -2287px}
-.flair-Minardi:before{background-position:-1px -2305px}
-.flair-NarainKarthikeyan:before{background-position:-1px -2323px}
-.flair-NelsonPiquet:before{background-position:-1px -2341px}
-.flair-NickHeidfeld:before{background-position:-1px -2359px}
-.flair-NicoHulkenberg:before{background-position:-1px -2377px}
-.flair-NicoRosberg:before{background-position:-1px -2395px}
-.flair-NigelMansell:before{background-position:-1px -2413px}
-.flair-NikiLauda:before{background-position:-1px -2431px}
-.flair-PastorMaldonado:before{background-position:-1px -2449px}
-.flair-PatrickDepailler:before{background-position:-1px -2467px}
-.flair-PauldiResta:before{background-position:-1px -2485px}
-.flair-PedrodelaRosa:before{background-position:-1px -2503px}
-.flair-PhilHill:before{background-position:-1px -2521px}
-.flair-RalfSchumacher:before{background-position:-1px -2539px}
-.flair-RedBull:before{background-position:-1px -2557px}
-.flair-Renault:before{background-position:-1px -2575px}
-.flair-RepcoBrabham:before{background-position:-1px -2593px}
-.flair-RiccardoPatrese:before{background-position:-1px -2611px}
-.flair-RobertKubica:before{background-position:-1px -2629px}
-.flair-RobertVisoiu:before{background-position:-1px -2647px}
-.flair-RomainGrosjean:before{background-position:-1px -2665px}
-.flair-RonniePeterson:before{background-position:-1px -2683px}
-.flair-RubensBarrichello:before{background-position:-1px -2701px}
-.flair-SafteyCar:before{background-position:-1px -2719px}
-.flair-Sauber:before{background-position:-1px -2737px}
-.flair-ScottSpeed:before{background-position:-1px -2755px}
-.flair-SebastianVettel2014:before{background-position:-1px -2773px}
-.flair-SebastianVettel:before{background-position:-1px -2791px}
-.flair-SergioPerez:before{background-position:-1px -2809px}
-.flair-StefanBellof:before{background-position:-1px -2827px}
-.flair-StirlingMoss:before{background-position:-1px -2845px}
-.flair-SuperAguri:before{background-position:-1px -2863px}
-.flair-SusieWolff:before{background-position:-1px -2881px}
-.flair-TakiInoue:before{background-position:-1px -2899px}
-.flair-TakumaSato:before{background-position:-1px -2917px}
-.flair-TeamLotus:before{background-position:-1px -2935px}
-.flair-TeoFabi:before{background-position:-1px -2953px}
-.flair-ThierryBoutsen:before{background-position:-1px -2971px}
-.flair-TimoGlock:before{background-position:-1px -2989px}
-.flair-Toleman:before{background-position:-1px -3007px}
-.flair-TomPryce:before{background-position:-1px -3025px}
-.flair-ToroRosso:before{background-position:-1px -3043px}
-.flair-Toyota:before{background-position:-1px -3061px}
-.flair-Tyrrell:before{background-position:-1px -3079px}
-.flair-USF1:before{background-position:-1px -3097px}
-.flair-ValtteriBottas:before{background-position:-1px -3115px}
-.flair-VirginRacing:before{background-position:-1px -3133px}
-.flair-VitalyPetrov:before{background-position:-1px -3151px}
-.flair-WalterWolf:before{background-position:-1px -3169px}
-.flair-Williams:before{background-position:-1px -3187px}
-.flair-YujiIde:before{background-position:-1px -3205px}
+.flair-CarlosSainzJr:before{background-position:-1px -523px}
+.flair-CarmenJorda:before{background-position:-1px -541px}
+.flair-Caterham:before{background-position:-1px -559px}
+.flair-CharlesPic:before{background-position:-1px -577px}
+.flair-ChrisAmon:before{background-position:-1px -595px}
+.flair-ChristijanAlbers:before{background-position:-1px -613px}
+.flair-Coloni:before{background-position:-1px -631px}
+.flair-DamonHill:before{background-position:-1px -649px}
+.flair-DanielRicciardo:before{background-position:-1px -667px}
+.flair-DaniilKvyat:before{background-position:-1px -685px}
+.flair-DavidCoulthard:before{background-position:-1px -703px}
+.flair-DavidPurley:before{background-position:-1px -721px}
+.flair-DeTomaso:before{background-position:-1px -739px}
+.flair-DennyHulme:before{background-position:-1px -757px}
+.flair-EddieCheever:before{background-position:-1px -775px}
+.flair-EddieIrvine:before{background-position:-1px -793px}
+.flair-EliodeAngelis:before{background-position:-1px -811px}
+.flair-EmersonFittipaldi:before{background-position:-1px -829px}
+.flair-EstebanGutierrez:before{background-position:-1px -847px}
+.flair-F1Doc:before{background-position:-1px -865px}
+.flair-FelipeMassa:before{background-position:-1px -883px}
+.flair-FelipeNasr:before{background-position:-1px -901px}
+.flair-FernandoAlonso:before{background-position:-1px -919px}
+.flair-Ferrari:before{background-position:-1px -937px}
+.flair-FittipaldiCopersucar2:before{background-position:-1px -955px}
+.flair-FittipaldiCopersucar:before{background-position:-1px -973px}
+.flair-Footwork:before{background-position:-1px -991px}
+.flair-ForceIndia:before{background-position:-1px -1009px}
+.flair-Forti:before{background-position:-1px -1027px}
+.flair-FrancoisCevert:before{background-position:-1px -1045px}
+.flair-GastonMazzacane:before{background-position:-1px -1063px}
+.flair-GerhardBerger:before{background-position:-1px -1081px}
+.flair-GiancarloFisichella:before{background-position:-1px -1099px}
+.flair-GiedovanderGarde:before{background-position:-1px -1117px}
+.flair-GillesVilleneuve:before{background-position:-1px -1135px}
+.flair-GiuseppeFarina:before{background-position:-1px -1153px}
+.flair-GrahamHill:before{background-position:-1px -1171px}
+.flair-Haas:before{background-position:-1px -1189px}
+.flair-HeikkiKovalainen2:before{background-position:-1px -1207px}
+.flair-HeikkiKovalainen:before{background-position:-1px -1225px}
+.flair-HeinzHaraldFrenzen:before{background-position:-1px -1243px}
+.flair-Hesketh:before{background-position:-1px -1261px}
+.flair-HondaRDCompany:before{background-position:-1px -1279px}
+.flair-HondaRacing:before{background-position:-1px -1297px}
+.flair-HRT:before{background-position:-1px -1315px}
+.flair-JackBrabham:before{background-position:-1px -1333px}
+.flair-JackieStewart:before{background-position:-1px -1351px}
+.flair-JackyIckx:before{background-position:-1px -1369px}
+.flair-JacquesVilleneuve:before{background-position:-1px -1387px}
+.flair-Jaguar:before{background-position:-1px -1405px}
+.flair-JamesHunt:before{background-position:-1px -1423px}
+.flair-JamieAlguersuari:before{background-position:-1px -1441px}
+.flair-JarnoTrulli:before{background-position:-1px -1459px}
+.flair-JeanAlesi:before{background-position:-1px -1477px}
+.flair-JeanEricVergne:before{background-position:-1px -1495px}
+.flair-JensonButton2009:before{background-position:-1px -1513px}
+.flair-JensonButtonPink:before{background-position:-1px -1531px}
+.flair-JensonButton:before{background-position:-1px -1549px}
+.flair-JeromedAmbrosio:before{background-position:-1px -1567px}
+.flair-JimClark:before{background-position:-1px -1585px}
+.flair-JochenRindt:before{background-position:-1px -1603px}
+.flair-JodyScheckter:before{background-position:-1px -1621px}
+.flair-JohnSurtees:before{background-position:-1px -1639px}
+.flair-JohnWatson:before{background-position:-1px -1657px}
+.flair-JordanGP:before{background-position:-1px -1675px}
+.flair-Jordan:before{background-position:-1px -1693px}
+.flair-JosVerstappen:before{background-position:-1px -1711px}
+.flair-JuanManuelFangio:before{background-position:-1px -1729px}
+.flair-JuanPabloMontoya:before{background-position:-1px -1747px}
+.flair-JulesBianchi:before{background-position:-1px -1765px}
+.flair-KamuiKobayashi:before{background-position:-1px -1783px}
+.flair-KarunChandok:before{background-position:-1px -1801px}
+.flair-KekeRosberg:before{background-position:-1px -1819px}
+.flair-KevinMagnussen:before{background-position:-1px -1837px}
+.flair-KimiRaikkonen:before{background-position:-1px -1855px}
+.flair-Larrousse:before{background-position:-1px -1873px}
+.flair-LewisHamiltonYellow:before{background-position:-1px -1891px}
+.flair-LewisHamilton:before{background-position:-1px -1909px}
+.flair-Life:before{background-position:-1px -1927px}
+.flair-Ligier:before{background-position:-1px -1945px}
+.flair-Lotus:before{background-position:-1px -1963px}
+.flair-LucaBadoer:before{background-position:-1px -1981px}
+.flair-LucianoBurti:before{background-position:-1px -1999px}
+.flair-LuizRazia:before{background-position:-1px -2017px}
+.flair-Manor:before{background-position:-1px -2035px}
+.flair-March:before{background-position:-1px -2053px}
+.flair-MarcusEricsson:before{background-position:-1px -2071px}
+.flair-MarioAndretti:before{background-position:-1px -2089px}
+.flair-MarkWebber:before{background-position:-1px -2107px}
+.flair-MartinBrundle:before{background-position:-1px -2125px}
+.flair-Marussia:before{background-position:-1px -2143px}
+.flair-Matra:before{background-position:-1px -2161px}
+.flair-MaxChilton:before{background-position:-1px -2179px}
+.flair-MaxVerstappen:before{background-position:-1px -2197px}
+.flair-McLaren:before{background-position:-1px -2215px}
+.flair-Mercedes:before{background-position:-1px -2233px}
+.flair-MichaelAndretti:before{background-position:-1px -2251px}
+.flair-MichaelSchumacher1990s:before{background-position:-1px -2269px}
+.flair-MichaelSchumacher:before{background-position:-1px -2287px}
+.flair-Midland:before{background-position:-1px -2305px}
+.flair-MikaHakkinen:before{background-position:-1px -2323px}
+.flair-MikeHawthorn:before{background-position:-1px -2341px}
+.flair-Minardi:before{background-position:-1px -2359px}
+.flair-NarainKarthikeyan:before{background-position:-1px -2377px}
+.flair-NelsonPiquet:before{background-position:-1px -2395px}
+.flair-NickHeidfeld:before{background-position:-1px -2413px}
+.flair-NicoHulkenberg:before{background-position:-1px -2431px}
+.flair-NicoRosberg:before{background-position:-1px -2449px}
+.flair-NigelMansell:before{background-position:-1px -2467px}
+.flair-NikiLauda:before{background-position:-1px -2485px}
+.flair-PastorMaldonado:before{background-position:-1px -2503px}
+.flair-PatrickDepailler:before{background-position:-1px -2521px}
+.flair-PauldiResta:before{background-position:-1px -2539px}
+.flair-PedrodelaRosa:before{background-position:-1px -2557px}
+.flair-PhilHill:before{background-position:-1px -2575px}
+.flair-RalfSchumacher:before{background-position:-1px -2593px}
+.flair-RedBull:before{background-position:-1px -2611px}
+.flair-Renault:before{background-position:-1px -2629px}
+.flair-RepcoBrabham:before{background-position:-1px -2647px}
+.flair-RiccardoPatrese:before{background-position:-1px -2665px}
+.flair-RobertKubica:before{background-position:-1px -2683px}
+.flair-RobertVisoiu:before{background-position:-1px -2701px}
+.flair-RomainGrosjean:before{background-position:-1px -2719px}
+.flair-RonniePeterson:before{background-position:-1px -2737px}
+.flair-RubensBarrichello:before{background-position:-1px -2755px}
+.flair-SafteyCar:before{background-position:-1px -2773px}
+.flair-Sauber:before{background-position:-1px -2791px}
+.flair-ScottSpeed:before{background-position:-1px -2809px}
+.flair-SebastianVettel2014:before{background-position:-1px -2827px}
+.flair-SebastianVettel:before{background-position:-1px -2845px}
+.flair-SergioPerez:before{background-position:-1px -2863px}
+.flair-StefanBellof:before{background-position:-1px -2881px}
+.flair-StirlingMoss:before{background-position:-1px -2899px}
+.flair-SuperAguri:before{background-position:-1px -2917px}
+.flair-SusieWolff:before{background-position:-1px -2935px}
+.flair-TakiInoue:before{background-position:-1px -2953px}
+.flair-TakumaSato:before{background-position:-1px -2971px}
+.flair-TeamLotus:before{background-position:-1px -2989px}
+.flair-TeoFabi:before{background-position:-1px -3007px}
+.flair-ThierryBoutsen:before{background-position:-1px -3025px}
+.flair-TimoGlock:before{background-position:-1px -3043px}
+.flair-Toleman:before{background-position:-1px -3061px}
+.flair-TomPryce:before{background-position:-1px -3079px}
+.flair-ToroRosso:before{background-position:-1px -3097px}
+.flair-Toyota:before{background-position:-1px -3115px}
+.flair-Tyrrell:before{background-position:-1px -3133px}
+.flair-USF1:before{background-position:-1px -3151px}
+.flair-ValtteriBottas:before{background-position:-1px -3169px}
+.flair-VirginRacing:before{background-position:-1px -3187px}
+.flair-VitalyPetrov:before{background-position:-1px -3205px}
+.flair-WalterWolf:before{background-position:-1px -3223px}
+.flair-Williams:before{background-position:-1px -3241px}
+.flair-YujiIde:before{background-position:-1px -3259px}
 
 /* End flair.css copypaste */
 
