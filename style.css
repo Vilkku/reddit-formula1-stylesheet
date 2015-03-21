@@ -1151,9 +1151,9 @@ html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type
 html:not([lang="ns"]) body.pinHeader-sub #header-bottom-left { margin-top: 17px;}
 
 html:not([lang="ns"]) body.pinHeader-userbar div#header-bottom-right {
-  background-color: #fff !important;
-  opacity: 1 !important;
-  display: block;
+  background-color: #fff!important;
+  opacity: 1!important;
+  padding: 2px 5px;
 }
 
 html:not([lang="ns"]) body.pinHeader-userbar #userbarToggle { left:0; }
