@@ -197,7 +197,7 @@ html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li {display:block;backgr
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li:hover ul{display:block}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li ul{display:none;position:absolute;right:-1px;top:32px;margin:0;padding:0;width:100%;text-align:left;background:#f2f2f2;color:#000;list-style-type:none;border-left:1px solid #ddd;border-right:1px solid #ddd;font-size:100%;z-index:1001}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li ul li{border-bottom:0px solid #fff;padding:0 8px;font-size:13px;font-weight:normal;text-transform:none;border-right:0px solid #fff;cursor:default}
-html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li:after{content:"";width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:6px solid #fff;right:11px;top:12px;position:absolute;display:block;z-index:199999;box-shadow:-1px 0px 0px #A00000}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li:after{content:"";width:0;height:0;border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:6px solid #fff;right:11px;top:12px;position:absolute;display:block;box-shadow:-1px 0px 0px #A00000}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li:hover:after{-webkit-transform:rotate(90deg)}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li ul li a{width:100%;display:block;border-bottom:1px dotted #ccc;padding:5px 0;color:#222}
 
