@@ -188,7 +188,7 @@ html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) {
 top: 124px;
 right: 332px;
 position: absolute;
-z-index: 1000;
+/*z-index: 1000;*/
 margin: 0;
 padding: 0;
 }
@@ -267,7 +267,7 @@ border-bottom:1px solid #E7E7E7;
 }
 
 /*search*/
-html:not([lang="ns"]) .side #search{top:127px;right:10px;position:absolute;z-index:1000}
+html:not([lang="ns"]) .side #search{top:127px;right:10px;position:absolute;/*z-index:1000*/}
 html:not([lang="ns"]) #search input[type="text"]{height:32px;border-color:#c0c0c0}
 
 /*Session Threads*/
@@ -1140,3 +1140,8 @@ html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(3) {
   font-size: 11px;
   text-align: left;
 }
+
+/* fixes for res */
+html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(1)>h1, html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1 { position:fixed; top:20px; }
+
+html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(1):before, html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):before { position:fixed; top:42px; }
