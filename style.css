@@ -1142,6 +1142,8 @@ html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(3) {
 }
 
 /* fixes for res */
-html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(1)>h1, html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1 { position:fixed; top:20px; }
+html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(1)>h1, 
+html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(2)>h1 { position:fixed; top:20px; }
 
-html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(1):before, html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):before { position:fixed; top:42px; }
+html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(1):before, 
+html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(2):before { position:fixed; top:42px; }
