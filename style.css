@@ -267,7 +267,7 @@ border-bottom:1px solid #E7E7E7;
 }
 
 /*search*/
-html:not([lang="ns"]) .side #search{top:127px;right:10px;position:absolute;/*z-index:1000*/}
+html:not([lang="ns"]) .side #search{top:127px;right:10px;position:absolute;z-index:1000}
 html:not([lang="ns"]) #search input[type="text"]{height:32px;border-color:#c0c0c0}
 
 /*Session Threads*/
