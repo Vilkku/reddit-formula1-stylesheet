@@ -450,6 +450,7 @@ html:not([lang="ns"]) .linkflair-meetup a.thumbnail,
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="australian"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="albert_park"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="malaysian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="sepang"]
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="malaysia"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="sepang"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="bahrain"],
@@ -540,7 +541,8 @@ html:not([lang="ns"]) a[href="#po"],html:not([lang="ns"]) a[href="/po"]{backgrou
 
 /*[8.6] Thumbnails for Session Threads */
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="australian"]{background-position:0px 0px}
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="malaysia"]{background-position:-60px 0px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="malaysia"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="sepang"]{background-position:-60px 0px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="bahrain"]{background-position:-120px 0px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="chinese"]{background-position:-180px 0px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="spanish"]{background-position:-240px 0px}
