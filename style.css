@@ -545,7 +545,8 @@ html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="australian"]{bac
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="malaysia"],
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="sepang"]{background-position:-60px 0px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="bahrain"]{background-position:-120px 0px}
-html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="chinese"]{background-position:-180px 0px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="chinese"],
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="shanghai"]{background-position:-180px 0px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="spanish"]{background-position:-240px 0px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="monaco"]{background-position:0px -60px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="canadian"]{background-position:-60px -60px}
