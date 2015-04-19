@@ -1166,3 +1166,15 @@ html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type
   position: fixed;
   top: 81px;
 }
+
+
+html:not([lang="ns"]) a.message-count {
+  display: inline-block;
+  line-height: 16px;
+  top: -1px;
+  position: relative;
+  width: 10px;
+  min-height: 10px;
+  text-align: center;
+  padding-top: 1px;
+}
