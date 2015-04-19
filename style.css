@@ -1178,4 +1178,6 @@ html:not([lang="ns"]) a.message-count {
   min-height: 10px;
   text-align: center;
   padding-top: 1px;
+  color:#fff;
+  font-weight:bold;
 }
