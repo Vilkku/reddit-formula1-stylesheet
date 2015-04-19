@@ -1162,7 +1162,8 @@ html:not([lang="ns"]) body.pinHeader-subanduser div#header-bottom-right{
   padding: 2px 5px;
 }
 
-html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(1)>blockquote, html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote {
+html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(1)>blockquote, 
+html:not([lang="ns"]) body.pinHeader-header .titlebox .md>blockquote:nth-of-type(2)>blockquote {
   position: fixed;
   top: 81px;
 }
