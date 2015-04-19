@@ -33,7 +33,7 @@ html:not([lang="ns"]) #sr-header-area .drop-choices.srdrop{z-index:1000;backgrou
 html:not([lang="ns"]) .drop-choices a.choice:hover{color:#000!important}
 
 /*content*/
-html:not([lang="ns"]) div.content{margin:50px 331px 10px 10px;padding:20px;background:#fff}
+html:not([lang="ns"]) div.content{margin:90px 331px 10px 10px;padding:20px;background:#fff}
 html:not([lang="ns"]) .listing-page div.content,
 html:not([lang="ns"]) .comments-page div.content{padding:0;background:transparent;position:relative}
 
