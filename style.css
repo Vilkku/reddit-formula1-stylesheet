@@ -205,7 +205,7 @@ html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li ul li a{width:100%;di
 
 /*quick menus*/
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote,
-html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{max-height:0;overflow:hidden;opacity:0;background:transparent;padding-top:0;position:absolute;top:51px;border-top:2px solid #454545;-webkit-transition:max-height 0.5s, opacity 0.5s;}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{max-height:0;overflow:hidden;opacity:0;background:transparent;padding-top:0;position:absolute;top:51px;border-top:2px solid #454545;-webkit-transition:max-height 0.5s, opacity 0.5s;-moz-transition:max-height 0.5s, opacity 0.5s;-o-transition:max-height 0.5s, opacity 0.5s;transition:max-height 0.5s, opacity 0.5s;}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1),
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2){top:30px;left:0px;position:absolute;z-index:1000;display:block}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>h1,
@@ -213,7 +213,7 @@ html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1{display:block;h
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote,
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{background:#f2f2f2}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover>blockquote,
-html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>blockquote{max-height:600px;opacity:1;transition-delay:0.5s;-webkit-transition-delay:0.5s;}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>blockquote{max-height:600px;opacity:1;transition-delay:0.5s;-webkit-transition-delay:0.5s;-moz-transition-delay:0.5s;-o-transition-delay:0.5s;}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1{left:249px}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover>blockquote>ul,
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>blockquote>ul{background:#f2f2f2;margin:0;padding:0;width:633px}
@@ -249,9 +249,9 @@ html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):before{left:266px;
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover:before{background-position:-1px -36px}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover:before{background-position:-30px -36px}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>h1:after,
-html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1:after{content:"";height:10px;width:10px;background:#f2f2f2;display:block;position:absolute;bottom:-7px;left:24px;-webkit-transform:rotate(45deg);z-index:100;opacity:0;-webkit-transition:opacity .8s;}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1:after{content:"";height:10px;width:10px;background:#f2f2f2;display:block;position:absolute;bottom:-7px;left:24px;-webkit-transform:rotate(45deg);z-index:100;opacity:0;-webkit-transition:opacity .8s;-moz-transition:opacity .8s;-o-transition:opacity .8s;transition:opacity 8s;}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover>h1:after,
-html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>h1:after{opacity:1;-webkit-transition-delay:.8s;transition-delay:.8s;}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>h1:after{opacity:1;-webkit-transition-delay:.8s;transition-delay:.8s;-o-transition-delay:.8s;-moz-transition-delay:.8s}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote>blockquote>ul>li>ul>li, html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote>blockquote>ul>li>ul>li {
 line-height: 1.9em;
 }
