@@ -767,6 +767,7 @@ text-align: left;
 padding: 7px 10px 10px 10px;
 font-weight: normal;
 background: #333;
+z-index:100;
 }
 
 /* new - sort */
