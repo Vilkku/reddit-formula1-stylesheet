@@ -169,7 +169,7 @@ html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(7):hover:be
 
 /*pops*/
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote{min-height:300px;color:#000;position:absolute;right:300px;top:200px;width:325px;background:#f1f1f1;border:1px solid #CCC;padding:8px;z-index:100;opacity:0;-webkit-transition:opacity .4s}
-html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:hover blockquote{display:block;width:325px;opacity:1;}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:hover blockquote{display:block;opacity:1;}
 /*pop content*/
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote p {
 padding: 5px;
