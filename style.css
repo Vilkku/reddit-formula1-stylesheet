@@ -2,8 +2,7 @@
 
 /*reset*/
 html:not([lang="ns"]) div#header,html:not([lang="ns"]) div#sr-header-area,html:not([lang="ns"]) div#header-bottom-right{border:0 none;background:none;border-radius:0}
-/* add this later: html:not([lang="ns"]) .link .rank */html:nohtml:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote,html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li>blockquote
-html:not([lang="ns"]) .side .submit-text,html:not([lang="ns"]) .submit .morelink .nub,html:not([lang="ns"]) h1.redditname,html:not([lang="ns"]) .side .leavemoderator,html:not([lang="ns"]) .side .leavecontributor-button,html:not([lang="ns"]) .sidebox.create,html:not([lang="ns"]) .bottom,.post-linkflair-practice .linkflair .md table .keyNavAnnotation,.post-linkflair-qualifying .linkflair .md table .keyNavAnnotation,.post-linkflair-post-qualifying .linkflair .md table .keyNavAnnotation,.post-linkflair-race .linkflair .md table .keyNavAnnotation,.post-linkflair-post-race .linkflair .md table .keyNavAnnotation{display:none}
+/* add this later: html:not([lang="ns"]) .link .rank */html:not([lang="ns"]) .side .submit-text,html:not([lang="ns"]) .submit .morelink .nub,html:not([lang="ns"]) h1.redditname,html:not([lang="ns"]) .side .leavemoderator,html:not([lang="ns"]) .side .leavecontributor-button,html:not([lang="ns"]) .sidebox.create,html:not([lang="ns"]) .bottom,.post-linkflair-practice .linkflair .md table .keyNavAnnotation,.post-linkflair-qualifying .linkflair .md table .keyNavAnnotation,.post-linkflair-post-qualifying .linkflair .md table .keyNavAnnotation,.post-linkflair-race .linkflair .md table .keyNavAnnotation,.post-linkflair-post-race .linkflair .md table .keyNavAnnotation{display:none}
 
 html:not([lang="ns"]) body{background:url(%%tile%%) repeat 0 0 scroll #f1f1f1;position:relative;}
 html:not([lang="ns"]) .res-nightmode { background-image:none; background-color:#444;}
