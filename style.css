@@ -205,15 +205,15 @@ html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(2) > li ul li a{width:100%;di
 
 /*quick menus*/
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote,
-html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{display:none;background:transparent;padding-top:0;position:absolute;top:51px;border-top:2px solid #454545}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{max-height:0;overflow:hidden;opacity:0;background:transparent;padding-top:0;position:absolute;top:51px;border-top:2px solid #454545;-webkit-transition:max-height 0.5s, opacity 0.5s;}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1),
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2){top:30px;left:0px;position:absolute;z-index:1000;display:block}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>h1,
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1{display:block;height:61px;width:58px;background:#222;position:absolute;top:-10px;left:190px;text-indent:-999pt;border-radius:0;color:#fff;border-right:1px solid #2C2C2C;border-left:1px solid #2C2C2C;margin:0;padding:0;cursor:pointer}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1)>blockquote,
-html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{display:none;background:#f2f2f2}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>blockquote{background:#f2f2f2}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover>blockquote,
-html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>blockquote{display:block}
+html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>blockquote{max-height:600px;opacity:1;transition-delay:0.5s;-webkit-delay-transition:0.5s;}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2)>h1{left:249px}
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(1):hover>blockquote>ul,
 html:not([lang="ns"]) .titlebox .md>blockquote:nth-of-type(2):hover>blockquote>ul{background:#f2f2f2;margin:0;padding:0;width:633px}
