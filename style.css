@@ -91,7 +91,7 @@ html:not([lang="ns"]) .side .spacer{background:#fff;border-radius:3px}
 html:not([lang="ns"]) .res-nightmode .side .spacer {background: #222;}
 html:not([lang="ns"]) .side .spacer>div{border:1px solid #e2e2e2;border-radius:3px}
 html:not([lang="ns"]) .res-nightmode .side .spacer>div { border-color:#000; }
-html:not([lang="ns"]) .side .spacer>div.sponsorshipbox∂{border:0 none}
+html:not([lang="ns"]) .side .spacer>div.sponsorshipbox{border:0 none}
 html:not([lang="ns"]) .sidecontentbox,.spacer .titlebox{padding:12px}
 html:not([lang="ns"]) .sidecontentbox .title{margin-bottom:10px}
 html:not([lang="ns"]) .sidecontentbox .title h1{font-weight:900;color:#000}
@@ -817,7 +817,7 @@ text-align: center;
 color: #ccc;
 }
 
-html:not([lang"ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5)>blockquote p:last-child a { color:#222; }
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(5)>blockquote p:last-child a { color:#222; }
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:hover {background: #1A1A1A;}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(1):hover { background:#222; }
 html:not([lang="ns"]) .titlebox .md>ul>li:nth-of-type(6) blockquote table td,
