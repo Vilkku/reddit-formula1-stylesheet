@@ -414,13 +414,13 @@ html:not([lang="ns"]) .linkflair-video p.title>.linkflairlabel{color:red}
 html:not([lang="ns"]) .linkflair-off-topic p.title>.linkflairlabel{color:rgb(27,227,241)}
 html:not([lang="ns"]) p.title > .linkflair-mod-comment {
   background-color: #cccccc;
-  color: #000;
+  color: #000!important;
   border: 1px solid #BEBEBE;
 }
 
 html:not([lang="ns"]) p.title > .linkflair-mod-removal {
   background-color: #FF7878;
-  color: #000;
+  color: #000!important;
   border: 1px solid #FF3A3A;
 }
 /*Filters*/
