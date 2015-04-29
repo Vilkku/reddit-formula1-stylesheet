@@ -412,6 +412,17 @@ html:not([lang="ns"]) .linkflair-paywall p.title>.linkflairlabel{color:rgb(115,2
 html:not([lang="ns"]) .linkflair-rumour p.title>.linkflairlabel{color:orange}
 html:not([lang="ns"]) .linkflair-video p.title>.linkflairlabel{color:red}
 html:not([lang="ns"]) .linkflair-off-topic p.title>.linkflairlabel{color:rgb(27,227,241)}
+html:not([lang="ns"]) p.title > .linkflair-mod-comment {
+  background-color: #cccccc;
+  color: #000;
+  border: 1px solid #BEBEBE;
+}
+
+html:not([lang="ns"]) p.title > .linkflair-mod-removal {
+  background-color: #FF7878;
+  color: #000;
+  border: 1px solid #FF3A3A;
+}
 /*Filters*/
 .sitetable.linklisting .thing .flair,ul.content span.flair,
 html:lang(wt) .link:not(.linkflair-feature),
