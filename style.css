@@ -412,13 +412,14 @@ html:not([lang="ns"]) .linkflair-paywall p.title>.linkflairlabel{color:rgb(115,2
 html:not([lang="ns"]) .linkflair-rumour p.title>.linkflairlabel{color:orange}
 html:not([lang="ns"]) .linkflair-video p.title>.linkflairlabel{color:red}
 html:not([lang="ns"]) .linkflair-off-topic p.title>.linkflairlabel{color:rgb(27,227,241)}
-html:not([lang="ns"]) .linkflair-mod-comment {
+
+html:not([lang="ns"]) .linkflair-mod-comment p.title>.linkflairlabel{
   background-color: #cccccc!important;
   color: #000!important;
   border: 1px solid #BEBEBE!important;
 }
 
-html:not([lang="ns"]) p.title > .linkflair-mod-removal {
+html:not([lang="ns"]) .linkflair-mod-removal p.title>.linkflairlabel {
   background-color: #FF7878!important;
   color: #000!important;
   border: 1px solid #FF3A3A!important;
