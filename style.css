@@ -424,6 +424,17 @@ html:not([lang="ns"]) .linkflair-mod-removal p.title>.linkflairlabel {
   color: #000!important;
   border: 1px solid #FF3A3A!important;
 }
+
+html:not([lang="ns"]) .linkflair-sub-wec p.title>.linkflairlabel {
+  background-color: #234e70!important;
+  color: #96BF0D!important;
+}
+
+html:not([lang="ns"]) .linkflair-sub-f1feederseries p.title>.linkflairlabel {
+  background-color: #00E1E2!important;
+  color: #000!important;
+}
+
 /*Filters*/
 .sitetable.linklisting .thing .flair,ul.content span.flair,
 html:lang(wt) .link:not(.linkflair-feature),
