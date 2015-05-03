@@ -435,6 +435,11 @@ html:not([lang="ns"]) .linkflair-sub-f1feederseries p.title>.linkflairlabel {
   color: #000!important;
 }
 
+html:not([lang="ns"]) .linkflair-sub-supergt p.title>.linkflairlabel {
+  background-color: #BA3538!important;
+  color: #FFF!important;
+}
+
 /*Filters*/
 .sitetable.linklisting .thing .flair,ul.content span.flair,
 html:lang(wt) .link:not(.linkflair-feature),
