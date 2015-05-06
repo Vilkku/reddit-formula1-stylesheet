@@ -402,7 +402,7 @@ html:not([lang="ns"]) .side a[href="http://williamsf1.com"]:before {
 
 /*Link Flair*/
 /*Default Display*/
-html:not([lang="ns"]) p.title>.linkflairlabel{padding:0 4px;border-radius:0;background:#323232;color:#fff}
+html:not([lang="ns"]) p.title>.linkflairlabel{padding:0 4px;border-radius:1px;background:#323232;color:#fff}
 /*Link Flair Colors*/
 html:not([lang="ns"]) .linkflair-star p.title:before{background:url(%%sprite%%) no-repeat scroll -111px -1px transparent;text-indent:20px;display:inline-block;height:16px;width:18px;content:""}
 html:not([lang="ns"]) div.linkflair-star p.title>.linkflairlabel{display:none}
@@ -429,6 +429,12 @@ html:not([lang="ns"]) .linkflair-sub-wec p.title>.linkflairlabel {
   background-color: #234e70!important;
   color: #96BF0D!important;
 }
+
+html:not([lang="ns"]) .linkflair-sub-all p.title>.linkflairlabel {
+  background-color: orangered!important;
+  color: #fff!important;
+}
+
 
 html:not([lang="ns"]) .linkflair-sub-f1feederseries p.title>.linkflairlabel {
   background-color: #00E1E2!important;
