@@ -497,6 +497,7 @@ html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="shanghai"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="spanish"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="monaco"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="canadian"],
+html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="canada"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="montreal_gp"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="circuit_gilles"],
 html:not([lang="ns"]) .linkflair-feature a.thumbnail[href*="austrian"],
@@ -588,6 +589,7 @@ html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="shanghai"]{backg
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="spanish"]{background-position:-240px 0px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="monaco"]{background-position:0px -60px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="canadian"]{background-position:-60px -60px}
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="canada"]{background-position:-60px -60px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="austrian"]{background-position:-120px -60px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="british"]{background-position:-180px -60px}
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="german"]{background-position:-240px -60px}
