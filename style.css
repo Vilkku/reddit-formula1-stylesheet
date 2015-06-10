@@ -400,6 +400,10 @@ html:not([lang="ns"]) .side a[href="http://williamsf1.com"]:before {
   background-position: 0 -3240px;
 }
 
+html:not([lang="ns"]) .side a[href="http://manorf1team.com"]:before {
+  background-position: 0 -2035px;
+}
+
 /*Link Flair*/
 /*Default Display*/
 html:not([lang="ns"]) p.title>.linkflairlabel{padding:0 4px;border-radius:1px;background:#323232;color:#fff}
