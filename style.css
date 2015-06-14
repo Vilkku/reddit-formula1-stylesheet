@@ -59,7 +59,7 @@ html:not([lang="ns"]) .linkinfo .date {
 
 html:not([lang="ns"]) .linkinfo .score {
   background: #F9F9F9;
-  padding: 10px;
+  padding: 10px 10px 20px;
   margin: -5px -5px 5px;
   border-bottom: 1px solid #f0f0f0;
   text-align: center;
