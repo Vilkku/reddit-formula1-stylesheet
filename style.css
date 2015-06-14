@@ -49,6 +49,42 @@ html:not([lang="ns"]) .listing-page .expando .md,.link .usertext .md{padding:10p
 html:not([lang="ns"]) .comments-page .link .usertext .md{border-bottom:1px dotted rgb(204,204,204)}
 html:not([lang="ns"]) .listing-page .thing:hover .expando .md{background:none repeat scroll 0% 0% rgb(250,250,250)}
 
+html:not([lang="ns"]) .linkinfo .date {
+  padding: 8px;
+  background: #fff;
+  margin: -5px -5px 5px;
+  border-bottom: 1px solid #f1f1f1;
+  text-align: center;
+}
+
+html:not([lang="ns"]) .linkinfo .score {
+  background: #F9F9F9;
+  padding: 10px;
+  margin: -5px -5px 5px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+}
+
+html:not([lang="ns"]) .linkinfo span.totalvotes {
+  margin: -25px 0 15px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+html:not([lang="ns"]) .linkinfo .shortlink {
+  text-align: center;
+  padding: 0 5px 4px;
+}
+
+html:not([lang="ns"]) .linkinfo span.number,
+html:not([lang="ns"]) .linkinfo span.word
+ {
+  color:#4c4c4c;
+}
+
+html:not([lang="ns"]) .linkinfo { background-color:#F4F4F4; }
+
 /*comments*/
 html:not([lang="ns"]) .comments-page div.content{padding:0;background:none}
 html:not([lang="ns"]) .comments-page .commentarea{margin-top:5px;padding:0}
