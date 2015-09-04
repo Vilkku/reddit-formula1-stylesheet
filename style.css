@@ -1262,3 +1262,16 @@ html:not([lang="ns"]) a.message-count {
   color:#fff;
   font-weight:bold;
 }
+
+/* a better report button... */
+li.report-button a:hover {
+  background-color: red !important;
+}
+
+li.report-button a {
+  color: #fff !important;
+  background-color: rgba(240, 42, 9, 0.6) !important;
+  padding-left: 2px !important;
+  padding-right: 2px !important;
+  display: inline-block;
+}
