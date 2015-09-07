@@ -113,7 +113,7 @@ html:not([lang="ns"]) .commentarea .child .thing .child .thing .child .thing .ch
 html:not([lang="ns"]) .commentarea .thing.spam{background-color:#FA8072!important}
 
 /*sidebar*/
-html:not([lang="ns"]) .side{background:#ededed;margin:0;padding:405px 10px 10px;border-left:1px solid #d6d6d6;border-bottom:1px solid #f4f4f4}
+html:not([lang="ns"]) .side{background:#ededed;margin:0;padding:465px 10px 10px;border-left:1px solid #d6d6d6;border-bottom:1px solid #f4f4f4}
 html:not([lang="ns"]) .res-nightmode .side { background:#171717;border-color:#000 }
 html:not([lang="ns"]) .listing-page .side{padding-top:618px;}
 html:not([lang="ns"]) .titlebox .md > ul:nth-of-type(3):hover {
@@ -148,7 +148,7 @@ html:not([lang="ns"]) .res-nightmode .titlebox .md {border-color: #171717;}
 /*race guide*/
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(1):before{content:"";display:block;height:200px;width:300px;margin:-10px -10px 10px;background:url(%%race-pic%%) no-repeat 0 0 scroll transparent}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3) ul{list-style-type:none;padding:0;margin:0}
-html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3){position:absolute;top:216px;list-style-type:none;padding:0;margin:0;width:300px;font-family:'Helvetica',verdana,arial sans-serif;background:#3c3c3c; height:305px;overflow:hidden;}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3){position:absolute;top:275px;list-style-type:none;padding:0;margin:0;width:300px;font-family:'Helvetica',verdana,arial sans-serif;background:#3c3c3c; height:305px;overflow:hidden;}
 html:not([lang="ns"]) .listing-page .titlebox .md>ul:nth-of-type(3){height:auto;overflow:visible;border-bottom:1px solid #3c3c3c;}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:first-of-type{background:url("%%chequered%%") no-repeat -60px 224px scroll #222;padding:10px;font-size:12pt;text-align:left;font-weight:900;color:#fff;border:0 none;text-transform:uppercase;margin:0}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:first-of-type li{font-size:12px !important;font-weight:normal;padding-top:4px;text-transform:none}
@@ -1264,14 +1264,31 @@ html:not([lang="ns"]) a.message-count {
 }
 
 /* a better report button... */
-li.report-button a:hover {
-  background-color: red !important;
+li.report-button a {
+  color: red !important;
 }
 
-li.report-button a {
-  color: #fff !important;
-  background-color: rgba(240, 42, 9, 0.6) !important;
-  padding-left: 2px !important;
-  padding-right: 2px !important;
-  display: inline-block;
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) {
+  background-color: transparent;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 216px;
+  width: 300px;
+  right: 10px;
 }
+
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) a {
+  background-color: #003AA5;
+  display: inline-block;
+  width: 150px;
+  font-size: 13px;
+  text-align: center;
+  padding: 5px 0;
+  color:#fff;
+}
+
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) a:nth-of-type(2) {
+  background-color: #288B00;
+  }
