@@ -115,7 +115,7 @@ html:not([lang="ns"]) .commentarea .thing.spam{background-color:#FA8072!importan
 /*sidebar*/
 html:not([lang="ns"]) .side{background:#ededed;margin:0;padding:465px 10px 10px;border-left:1px solid #d6d6d6;border-bottom:1px solid #f4f4f4}
 html:not([lang="ns"]) .res-nightmode .side { background:#171717;border-color:#000 }
-html:not([lang="ns"]) .listing-page .side{padding-top:618px;}
+html:not([lang="ns"]) .listing-page .side{padding-top:668px;}
 html:not([lang="ns"]) .titlebox .md > ul:nth-of-type(3):hover {
 height: 507px;
 z-index: 1000000000000;
@@ -148,7 +148,7 @@ html:not([lang="ns"]) .res-nightmode .titlebox .md {border-color: #171717;}
 /*race guide*/
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:nth-of-type(1):before{content:"";display:block;height:200px;width:300px;margin:-10px -10px 10px;background:url(%%race-pic%%) no-repeat 0 0 scroll transparent}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3) ul{list-style-type:none;padding:0;margin:0}
-html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3){position:absolute;top:275px;list-style-type:none;padding:0;margin:0;width:300px;font-family:'Helvetica',verdana,arial sans-serif;background:#3c3c3c; height:305px;overflow:hidden;}
+html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3){position:absolute;top:265px;list-style-type:none;padding:0;margin:0;width:300px;font-family:'Helvetica',verdana,arial sans-serif;background:#3c3c3c; height:305px;overflow:hidden;}
 html:not([lang="ns"]) .listing-page .titlebox .md>ul:nth-of-type(3){height:auto;overflow:visible;border-bottom:1px solid #3c3c3c;}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:first-of-type{background:url("%%chequered%%") no-repeat -60px 224px scroll #222;padding:10px;font-size:12pt;text-align:left;font-weight:900;color:#fff;border:0 none;text-transform:uppercase;margin:0}
 html:not([lang="ns"]) .titlebox .md>ul:nth-of-type(3)>li:first-of-type li{font-size:12px !important;font-weight:normal;padding-top:4px;text-transform:none}
@@ -792,7 +792,7 @@ html:not([lang=ns]) #progressIndicator{font-weight:700;text-shadow:0 1px 0 #fff}
 
 /*alien car*/
 
-html:not([lang="ns"]) .side .usertext-body:before{display:block;content:'';height:255px;margin-bottom:-12px;background:url(%%tribute%%) no-repeat center 8px scroll #EDEDED; border-bottom:8px solid #ededed;}
+html:not([lang="ns"]) .side .usertext-body:before{display:block;content:'';height:300px;margin-bottom:-12px;background:url(%%tribute%%) no-repeat center 8px scroll #EDEDED; border-bottom:8px solid #ededed;border-top:5px solid #ededed;}
 html:not([lang="ns"]) .res-nightmode .side .usertext-body:before{display:none;}
 
 
