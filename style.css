@@ -792,7 +792,7 @@ html:not([lang=ns]) #progressIndicator{font-weight:700;text-shadow:0 1px 0 #fff}
 
 /*alien car*/
 
-html:not([lang="ns"]) .side .usertext-body:before{display:block;content:'';height:255px;margin-bottom:-12px;background:url(%%Jules2%%) no-repeat center 8px scroll #EDEDED}
+html:not([lang="ns"]) .side .usertext-body:before{display:block;content:'';height:255px;margin-bottom:-12px;background:url(%%tribute%%) no-repeat center 8px scroll #EDEDED; border-bottom:8px solid #ededed;}
 html:not([lang="ns"]) .res-nightmode .side .usertext-body:before{display:none;}
 
 
@@ -1203,7 +1203,7 @@ right: 10px;
 
 .arrow.down:hover:before {
 background: #AB0303;
-content: "Please do not downvote based on team or driver fandom. Report inapropriate content.";
+content: "Please do not downvote based on team or driver fandom. Report inaproppriate content.";
 display: block;
 position: fixed;
 left: 0;
@@ -1263,32 +1263,16 @@ html:not([lang="ns"]) a.message-count {
   font-weight:bold;
 }
 
-/* a better report button... */
-li.report-button a {
-  color: red !important;
-}
+.comments-page li.report-button a {color: red !important}
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) a {display: inline-block;width: 148px;font-size: 12px;text-align: center;padding: 5px 0;border-right: 1px solid #ccc;color: #7B7B7B;}
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) a:nth-of-type(3) {border-right: 0 none;}
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) a:hover {background-color: #EFEFEF;color: #000;}
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) {background-color: #E0E0E0;border: 0 none;margin: 0;padding: 0;position: absolute;top: 216px;width: 298px;right: 10px;border: 1px solid #ccc;}
+html:lang(nm) .link.linkflair-media, 
+html:lang(nm) .link.linkflair-video,
+.link.linkflair-media .linkflairlabel,
+html:lang(nm) .titlebox .md>h1:nth-of-type(2) a:nth-of-type(1),
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) a:nth-of-type(2) { display:none; }
 
-html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) {
-  background-color: transparent;
-  border: 0 none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 216px;
-  width: 300px;
-  right: 10px;
-}
+html:lang(nm) .titlebox .md>h1:nth-of-type(2) a:nth-of-type(2) { display:inline-block; }
 
-html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) a {
-  background-color: #003AA5;
-  display: inline-block;
-  width: 150px;
-  font-size: 13px;
-  text-align: center;
-  padding: 5px 0;
-  color:#fff;
-}
-
-html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) a:nth-of-type(2) {
-  background-color: #288B00;
-  }
