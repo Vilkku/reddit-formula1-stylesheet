@@ -1203,7 +1203,7 @@ right: 10px;
 
 .arrow.down:hover:before {
 background: #AB0303;
-content: "Please do not downvote based on team or driver fandom. Report inaproppriate content.";
+content: "Please do not downvote based on team or driver fandom. Report inappropriate content.";
 display: block;
 position: fixed;
 left: 0;
