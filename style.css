@@ -1184,6 +1184,9 @@ display: inline-block;
 position: relative;
 margin-bottom: 35px;
 }
+/*
+
+for badges, top right
 
 html:not([lang="ns"]) div#header:after {
 content: "";
@@ -1195,7 +1198,7 @@ top: 33px;
 position: absolute;
 right: 10px;
 }
-
+*/
 
 /* get rid of markdown fontsize update*/
 .md .-text, .md p, .md pre>code, .md th, .md td, .md li { font-size:10pt; }
