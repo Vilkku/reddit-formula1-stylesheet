@@ -118,7 +118,7 @@ html:not([lang="ns"]) .res-nightmode .side { background:#171717;border-color:#00
 html:not([lang="ns"]) .listing-page .side{padding-top:668px;}
 html:not([lang="ns"]) .titlebox .md > ul:nth-of-type(3):hover {
 height: 507px;
-z-index: 1000000000000;
+z-index: 10000;
 overflow:visible;
 }
 html:not([lang="ns"]) .titlebox .md blockquote{margin:0;padding:0;border:0}
@@ -1279,3 +1279,19 @@ html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(2) a:nth-of-type(2) { display
 
 html:lang(nm) .titlebox .md>h1:nth-of-type(2) a:nth-of-type(2) { display:inline-block; }
 
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(4) {
+    background-color: rgba(0, 0, 0, 0.66);
+    color: #fff;
+    position: absolute;
+    top: 432px;
+    width: 276px;
+    right: 15px;
+    border: 0 none;
+    font-size: 10px;
+    z-index: 10001;
+    padding: 6px 6px;
+}
+
+html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(4) a {
+    color: orangered;
+}
