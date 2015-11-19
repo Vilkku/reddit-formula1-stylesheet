@@ -585,7 +585,9 @@ html:not([lang="ns"]) a[href="#mc"],html:not([lang="ns"]) a[href="/mc"],
 html:not([lang="ns"]) a[href="#hu"],html:not([lang="ns"]) a[href="/hu"],
 html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"],
 html:not([lang="ns"]) a[href="#ae"],html:not([lang="ns"]) a[href="/ae"],
-html:not([lang="ns"]) a[href="#po"],html:not([lang="ns"]) a[href="/po"]
+html:not([lang="ns"]) a[href="#po"],html:not([lang="ns"]) a[href="/po"],
+html:not([lang="ns"]) a[href="#ar"],html:not([lang="ns"]) a[href="/ar"],
+html:not([lang="ns"]) a[href="#no"],html:not([lang="ns"]) a[href="/no"]
 {background-image:url(%%flags%%);background-repeat:no-repeat;background-color:transparent;width:16px;height:11px;text-indent:-99999pt;display:inline-block;position:relative;margin-right:2px;top:1px;padding:0}
 html:not([lang="ns"]) a[href="#au"],html:not([lang="ns"]) a[href="/au"]{background-position:-32px -33px}
 html:not([lang="ns"]) a[href="#br"],html:not([lang="ns"]) a[href="/br"]{background-position:-172px -61px}
@@ -618,6 +620,8 @@ html:not([lang="ns"]) a[href="#hu"],html:not([lang="ns"]) a[href="/hu"]{backgrou
 html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"]{background-position:-60px -481px}
 html:not([lang="ns"]) a[href="#ae"],html:not([lang="ns"]) a[href="/ae"]{background-position:-32px -5px}
 html:not([lang="ns"]) a[href="#po"],html:not([lang="ns"]) a[href="/po"]{background-position:-4px -453px}
+html:not([lang="ns"]) a[href="#ar"],html:not([lang="ns"]) a[href="/ar"]{background-position:-32px -5px}
+html:not([lang="ns"]) a[href="#no"],html:not([lang="ns"]) a[href="/no"]{background-position:-4px -453px}
 
 /*[8.6] Thumbnails for Session Threads */
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="australian"]{background-position:0px 0px}
