@@ -1303,3 +1303,14 @@ html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(4) {
 html:not([lang="ns"]) .titlebox .md>h1:nth-of-type(4) a {
     color: orangered;
 }
+
+div#thing_t3_3tl34e .entry table {
+    width: 100%;
+}
+
+html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="race_of_champions"] {
+    background-image:url(%%roc-logo%%);
+    background-position: 0;
+    background-size: cover;
+}
+
