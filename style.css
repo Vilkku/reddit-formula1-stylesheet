@@ -620,7 +620,9 @@ html:not([lang="ns"]) a[href="#mc"],html:not([lang="ns"]) a[href="/mc"]{backgrou
 html:not([lang="ns"]) a[href="#hu"],html:not([lang="ns"]) a[href="/hu"]{background-position:-228px -229px}
 html:not([lang="ns"]) a[href="#sg"],html:not([lang="ns"]) a[href="/sg"]{background-position:-60px -481px}
 html:not([lang="ns"]) a[href="#ae"],html:not([lang="ns"]) a[href="/ae"]{background-position:-32px -5px}
-html:not([lang="ns"]) a[href="#po"],html:not([lang="sct]) a[href="/no"]{background-position:-144px -397px}
+html:not([lang="ns"]) a[href="#ar"],html:not([lang="ns]) a[href="/ar"]{background-position:-257px -5px}
+html:not([lang="ns"]) a[href="#no"],html:not([lang="ns]) a[href="/no"]{background-position:-144px -397px}
+html:not([lang="ns"]) a[href="#sct"],html:not([lang="ns]) a[href="/sct"]{background-position:-144px -397px}
 
 /*[8.6] Thumbnails for Session Threads */
 html:not([lang="ns"]) .linklisting .linkflair .thumbnail[href*="australian"]{background-position:0px 0px}
